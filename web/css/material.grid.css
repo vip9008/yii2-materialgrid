@@ -151,6 +151,14 @@ th.visible-sm, td.visible-sm {
     display: none;
 }
 
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: initial;
+}
+
 /* LARGE SCREEN SIZE */
 @media (min-width: 840px) {
     .container, .container-fluid, .container-standard, .col {

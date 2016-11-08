@@ -10,6 +10,84 @@ html, body {
     opacity: 1 !important;
 }
 
+.plain-page {
+    padding: 1px 0;
+}
+
+.plain-page .top-logo {
+    margin: 25px 0 20px;
+    text-align: center;
+    height: 38px;
+    padding: 0 44px;
+}
+
+.plain-page .top-logo > img {
+    height: 100%;
+    width: auto;
+}
+
+.plain-page .banner {
+    text-align: center;
+    padding: 0 44px;
+}
+
+.plain-page .banner > h1 {
+    font-size: 29pt;
+    margin: 0 0 15px;
+    font-family: 'Open Sans', arial;
+    font-weight: 300;
+}
+
+.plain-page .banner > h3 {
+    margin: 0 0 15px;
+    font-family: 'Open Sans', arial;
+    font-weight: 400;
+}
+
+.plain-page .sign-in {
+    padding: 40px;
+    background-color: #F7F7F7;
+    width: 354px;
+    max-width: 100%;
+    margin: 0 auto 50px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.plain-page .sign-in .img {
+    margin: 0 0 10px;
+    padding: 0 40px;
+}
+
+.plain-page .sign-in .img > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.plain-page .sign-in a.action-button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #3079ed;
+    color: #fff;
+    text-shadow: 0 1px rgba(0,0,0,0.1);
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: -ms-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: linear-gradient(top,#4d90fe,#4787ed);
+}
+
+.plain-page .sign-in .footer {
+    text-align: right;
+}
+
+
+
 #side-nav {
     position: fixed;
     top: 0;
@@ -399,6 +477,10 @@ html, body {
 }
 
 @media (max-width: 599px) {
+    .plain-page .banner > h1 {
+        font-size: 17pt;
+    }
+
     #snackbars {
         left: 0;
         margin: 0;
