@@ -159,7 +159,8 @@ class AdminNav extends \yii\base\Widget
             if ($route[0] !== '/' && Yii::$app->controller) {
                 $route = Yii::$app->controller->module->getUniqueId() . '/' . $route;
             }
-            if (ltrim($route, '/') !== $this->route) {
+            $trimmed = substr($this->route, 0, strrpos($this->route, '/'));
+            if (ltrim($route, '/') !== $this->route && ltrim($route, '/') !== $trimmed) {
                 return false;
             }
             unset($item['url']['#']);
