@@ -86,7 +86,31 @@ html, body {
     text-align: right;
 }
 
+.plain-page .error-page {
+    max-width: 100%;
+    width: 720px;
+    margin: 32px auto;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+}
 
+.plain-page .error-page .header {
+    position: relative;
+    padding: 64px 32px;
+    font-size: 48pt;
+}
+
+.plain-page .error-page .header .btn.floating {
+    position: absolute;
+    margin: 0;
+    bottom: -28px;
+    right: 28px;
+}
+
+.plain-page .error-page .body {
+    padding: 32px;
+    font-size: 18pt;
+}
 
 #side-nav {
     position: fixed;
@@ -253,7 +277,7 @@ html, body {
 }
 
 #page-content > .top-bar.blend {
-    background: transparent;
+    /*background: transparent;*/
 }
 
 #page-content > .top-bar.active {
@@ -473,6 +497,21 @@ html, body {
     #page-content .page-header .page-title {
         padding: 0;
         font-size: 18pt;
+    }
+}
+
+@media (max-width: 719px) {
+    .plain-page .error-page {
+        max-width: 92%;
+        margin: 32px 4%;
+    }
+
+    .plain-page .error-page .header {
+        font-size: 20pt;
+    }
+
+    .plain-page .error-page .body {
+        font-size: 14pt;
     }
 }
 

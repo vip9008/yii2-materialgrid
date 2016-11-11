@@ -206,6 +206,18 @@ code {
     margin: 0 -8px;
 }
 
+.btn-group.btn-align-right {
+    text-align: right;
+}
+
+.btn-group.btn-align-left {
+    text-align: left;
+}
+
+.btn-group > .btn + .btn {
+    margin-left: 0;
+}
+
 .form-input {
     position: relative;
     width: 345px;
@@ -243,7 +255,6 @@ code {
     resize: none;
     height: auto;
     min-height: 130px;
-    box-sizing: content-box;
     transition: none;
 }
 
@@ -297,6 +308,38 @@ code {
     -ms-user-select: none;
     user-select: none;
     padding: 13px 15px;
+}
+
+.list {
+    background-color: white;
+}
+
+.list .list-group {
+    padding-bottom: 8px;
+}
+
+.list .list-group + .list-group {
+    padding-top: 8px;
+    border-top: solid 1px rgba(0, 0, 0, 0.12);
+}
+
+.list .list-group .group-title {
+    font-size: 11.3pt;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 13px 15px;
+}
+
+.list.list-card {
+    border-radius: 2px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2),
+                0 1px 1px 0 rgba(0, 0, 0, 0.14),
+                0 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.list.check-list .checkbox-input {
+    display: block;
+    color: inherit;
+    background-color: inherit;
 }
 
 .checkbox-input.disabled, .radiobutton-input.disabled {
@@ -564,6 +607,7 @@ code {
 
 .expansion-panel {
     max-width: 840px;
+    margin: 0 0 8px;
 }
 
 .expansion-panel > .panel {
@@ -794,6 +838,10 @@ code {
 .data-table > table th.number, .data-table > table td.number {
     text-align: right;
     width: 1%;
+}
+
+.data-table > table th.number + th.text, .data-table > table td.number + td.text {
+    padding-left: 24px;
 }
 
 .data-table > table th.number + th.number, .data-table > table td.number + td.number {

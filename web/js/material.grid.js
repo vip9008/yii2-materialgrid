@@ -93,7 +93,7 @@ function material_grid_init() {
         return;
     });
 
-    $('.checkbox-input').on('click', function() {
+    $('body').on('click', '.checkbox-input', function() {
         if ($(this).hasClass('disabled')) {
             return false;
         }
