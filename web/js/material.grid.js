@@ -28,13 +28,26 @@ function select_menu_width() {
     }
 
     $('.select-control').each(function() {
-        var width = $(this).removeAttr('style').children('.select-menu').removeAttr('style').width();
-        // console.log(width);
+        if ($(this).hasClass('list-menu')) {
+            return;
+        }
+
+        var width = $(this).css('width', '').children('.select-menu').css('width', '').width();
+        var label_width = $(this).css('width', '').children('.select-value').css('width', '').outerWidth();
+
         if (width > max_width) {
             $(this).width(width);
             width = width + margin;
             width = Math.ceil((width / chunk).toFixed(1)) * chunk;
             $(this).children('.select-menu').width(width);
+        } else {
+            if ((label_width + margin) > max_width) {
+                width = label_width;
+                $(this).width(width);
+                width = width + margin;
+                width = Math.ceil((width / chunk).toFixed(1)) * chunk;
+                $(this).children('.select-menu').width(width);
+            }
         }
     });
 }
@@ -132,14 +145,14 @@ function material_grid_init() {
         if (!$(this).hasClass('active')) {
             $(this).parents('thead').siblings('tbody').children('tr').children('td.control').children('.checkbox-input').each(function() {
                 if (!$(this).hasClass('active')) {
-                    $(this).addClass('active');
+                    $(this).addClass('active').parent('.control').parent('tr').addClass('seleceted');
                     $(this).children('.checkbox').children('input').val(1);
                 }
             });
         } else {
             $(this).parents('thead').siblings('tbody').children('tr').children('td.control').children('.checkbox-input').each(function() {
                 if ($(this).hasClass('active')) {
-                    $(this).removeClass('active');
+                    $(this).removeClass('active').parent('.control').parent('tr').removeClass('seleceted');
                     $(this).children('.checkbox').children('input').val(0);
                 }
             });
@@ -167,12 +180,29 @@ function material_grid_init() {
         }
     });
 
+    $('.select-control').each(function() {
+        if ($(this).children('input').val().length) {
+            var html = $(this).children('.select-menu').children('.menu-item.active').html();
+            $(this).children('.select-value').html(html);
+        }
+    });
+
     $('.select-control').on('click', '.select-value', function() {
         if ($(this).parent('.select-control').hasClass('active')) {
             $(this).parent('.select-control').removeClass('active');
             $(this).siblings('.select-menu').css('margin-top', '');
+
+            if ($(this).parent('.select-control').hasClass('bar-menu')) {
+                $(this).siblings('.value-bar').remove();
+            }
         } else {
             $(this).parent('.select-control').addClass('active');
+
+            if ($(this).parent('.select-control').hasClass('bar-menu')) {
+                $('<div class="value-bar"></div>').insertBefore($(this));
+                var bar_width = $(this).siblings('.select-menu').children('.menu-item').first().outerWidth();
+                $(this).siblings('.value-bar').outerWidth(bar_width);
+            }
 
             if ($('body').hasClass('width-sm') && $(this).parent('.select-control').hasClass('default-menu')) {
                 var index = $(this).siblings('.select-menu').children('.menu-item.active').index();
@@ -187,6 +217,9 @@ function material_grid_init() {
 
     $('.select-control').on('click', '.select-overlay', function() {
         $(this).parent('.select-control').removeClass('active');
+        if ($(this).parent('.select-control').hasClass('bar-menu')) {
+            $(this).siblings('.value-bar').remove();
+        }
         $(this).siblings('.select-menu').css('margin-top', '');
     });
 
