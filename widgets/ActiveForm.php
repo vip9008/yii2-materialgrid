@@ -3,8 +3,8 @@
 namespace vip9008\materialgrid\widgets;
 
 use yii\base\InvalidCallException;
-use yii\helpers\Html;
 use yii\helpers\Json;
+use vip9008\materialgrid\helpers\Html;
 use yii\widgets\ActiveForm as BaseActiveForm;
 
 class ActiveForm extends BaseActiveForm
