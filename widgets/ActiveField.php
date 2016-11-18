@@ -5,19 +5,20 @@ namespace vip9008\materialgrid\widgets;
 use Yii;
 use yii\base\ErrorHandler;
 use yii\helpers\ArrayHelper;
-use yii\helpers\Html;
+use vip9008\materialgrid\helpers\Html;
 use yii\base\Model;
 use yii\web\JsExpression;
 use yii\widgets\ActiveField as BaseActiveField;
 
 class ActiveField extends BaseActiveField
 {
-    public $options = ['class' => 'form-input'];
+    public $options = [];
+    public $role = ['name' => '', 'type' => ''];
     public $themeColor = '';
     public $template = "{input}\n{label}\n{hint}\n{error}";
     public $inputOptions = [];
     public $errorOptions = ['class' => 'help-block'];
-    public $labelOptions = ['class' => 'label'];
+    public $labelOptions = [];
     public $hintOptions = ['class' => 'hint-block'];
 
     public function begin()
@@ -49,12 +50,19 @@ class ActiveField extends BaseActiveField
 
     public function label($label = null, $options = [])
     {
+        switch ($this->role['name']) {
+            case 'select':
+                return $this->selectLabel($label, $options);
+            break;
+        }
+
         if ($label === false) {
             $this->parts['{label}'] = '';
             return $this;
         }
 
         $options = array_merge($this->labelOptions, $options);
+        Html::addCssClass($options, 'label');
 
         if ($label === null) {
             $label = $this->model->getAttributeLabel($this->attribute);
@@ -65,9 +73,40 @@ class ActiveField extends BaseActiveField
         return $this;
     }
 
+    public function selectLabel($label = null, $options = [])
+    {
+        if ($label === false) {
+            $label = '';
+        }
+
+        $options = array_merge($this->labelOptions, $options);
+        Html::addCssClass($options, 'select-value');
+
+        if ($label === null) {
+            $label = $this->model->getAttributeLabel($this->attribute);
+        }
+
+        if (is_array($this->role['type'])) {
+            $labelHtml = '';
+            if (isset($this->role['type']['avatar'])) {
+                $labelHtml .= Html::tag('div', Html::tag('div', '', ['class' => 'img']), ['class' => 'avatar']) . "\n";
+            }
+            $labelHtml .= Html::tag('div', Html::tag('div', $label, ['class' => 'title']), ['class' => 'text one-line']) . "\n";
+            $label = "\n" . Html::tag('div', "\n" . $labelHtml, ['class' => 'list-item']) . "\n";
+        }
+
+        $selectLabel = Html::tag('div', '', ['class' => 'select-overlay']);
+        $selectLabel .= "\n" . Html::tag('div', $label, $options);
+
+        $this->parts['{label}'] = $selectLabel;
+
+        return $this;
+    }
+
     public function textInput($options = [])
     {
-        $this->inputOptions = ['class' => 'text-input'];
+        Html::addCssClass($this->options, 'form-input');
+        Html::addCssClass($this->inputOptions, 'text-input');
         $options = array_merge($this->inputOptions, $options);
         $this->parts['{input}'] = Html::activeTextInput($this->model, $this->attribute, $options);
 
@@ -76,29 +115,14 @@ class ActiveField extends BaseActiveField
     
     public function textarea($options = [])
     {
-        $this->inputOptions = ['class' => 'text-input'];
+        Html::addCssClass($this->options, 'form-input');
+        Html::addCssClass($this->inputOptions, 'text-input');
         $options = array_merge($this->inputOptions, $options);
         $this->parts['{input}'] = Html::activeTextarea($this->model, $this->attribute, $options);
 
         return $this;
     }
 
-    /**
-     * Renders a hidden input.
-     *
-     * Note that this method is provided for completeness. In most cases because you do not need
-     * to validate a hidden input, you should not need to use this method. Instead, you should
-     * use [[\yii\helpers\Html::activeHiddenInput()]].
-     *
-     * This method will generate the `name` and `value` tag attributes automatically for the model attribute
-     * unless they are explicitly specified in `$options`.
-     * @param array $options the tag options in terms of name-value pairs. These will be rendered as
-     * the attributes of the resulting tag. The values will be HTML-encoded using [[Html::encode()]].
-     *
-     * If you set a custom `id` for the input element, you may need to adjust the [[$selectors]] accordingly.
-     *
-     * @return $this the field object itself.
-     */
     public function hiddenInput($options = [])
     {
         $options = array_merge($this->inputOptions, $options);
@@ -107,17 +131,6 @@ class ActiveField extends BaseActiveField
         return $this;
     }
 
-    /**
-     * Renders a password input.
-     * This method will generate the `name` and `value` tag attributes automatically for the model attribute
-     * unless they are explicitly specified in `$options`.
-     * @param array $options the tag options in terms of name-value pairs. These will be rendered as
-     * the attributes of the resulting tag. The values will be HTML-encoded using [[Html::encode()]].
-     *
-     * If you set a custom `id` for the input element, you may need to adjust the [[$selectors]] accordingly.
-     *
-     * @return $this the field object itself.
-     */
     public function passwordInput($options = [])
     {
         $options = array_merge($this->inputOptions, $options);
@@ -126,17 +139,6 @@ class ActiveField extends BaseActiveField
         return $this;
     }
 
-    /**
-     * Renders a file input.
-     * This method will generate the `name` and `value` tag attributes automatically for the model attribute
-     * unless they are explicitly specified in `$options`.
-     * @param array $options the tag options in terms of name-value pairs. These will be rendered as
-     * the attributes of the resulting tag. The values will be HTML-encoded using [[Html::encode()]].
-     *
-     * If you set a custom `id` for the input element, you may need to adjust the [[$selectors]] accordingly.
-     *
-     * @return $this the field object itself.
-     */
     public function fileInput($options = [])
     {
         // https://github.com/yiisoft/yii2/pull/795
@@ -152,31 +154,6 @@ class ActiveField extends BaseActiveField
         return $this;
     }
 
-    /**
-     * Renders a radio button.
-     * This method will generate the `checked` tag attribute according to the model attribute value.
-     * @param array $options the tag options in terms of name-value pairs. The following options are specially handled:
-     *
-     * - `uncheck`: string, the value associated with the uncheck state of the radio button. If not set,
-     *   it will take the default value `0`. This method will render a hidden input so that if the radio button
-     *   is not checked and is submitted, the value of this attribute will still be submitted to the server
-     *   via the hidden input. If you do not want any hidden input, you should explicitly set this option as `null`.
-     * - `label`: string, a label displayed next to the radio button. It will NOT be HTML-encoded. Therefore you can pass
-     *   in HTML code such as an image tag. If this is coming from end users, you should [[Html::encode()|encode]] it to prevent XSS attacks.
-     *   When this option is specified, the radio button will be enclosed by a label tag. If you do not want any label, you should
-     *   explicitly set this option as `null`.
-     * - `labelOptions`: array, the HTML attributes for the label tag. This is only used when the `label` option is specified.
-     *
-     * The rest of the options will be rendered as the attributes of the resulting tag. The values will
-     * be HTML-encoded using [[Html::encode()]]. If a value is `null`, the corresponding attribute will not be rendered.
-     *
-     * If you set a custom `id` for the input element, you may need to adjust the [[$selectors]] accordingly.
-     *
-     * @param boolean $enclosedByLabel whether to enclose the radio within the label.
-     * If `true`, the method will still use [[template]] to layout the radio button and the error message
-     * except that the radio is enclosed by the label tag.
-     * @return $this the field object itself.
-     */
     public function radio($options = [], $enclosedByLabel = true)
     {
         if ($enclosedByLabel) {
@@ -197,31 +174,6 @@ class ActiveField extends BaseActiveField
         return $this;
     }
 
-    /**
-     * Renders a checkbox.
-     * This method will generate the `checked` tag attribute according to the model attribute value.
-     * @param array $options the tag options in terms of name-value pairs. The following options are specially handled:
-     *
-     * - `uncheck`: string, the value associated with the uncheck state of the radio button. If not set,
-     *   it will take the default value `0`. This method will render a hidden input so that if the radio button
-     *   is not checked and is submitted, the value of this attribute will still be submitted to the server
-     *   via the hidden input. If you do not want any hidden input, you should explicitly set this option as `null`.
-     * - `label`: string, a label displayed next to the checkbox. It will NOT be HTML-encoded. Therefore you can pass
-     *   in HTML code such as an image tag. If this is coming from end users, you should [[Html::encode()|encode]] it to prevent XSS attacks.
-     *   When this option is specified, the checkbox will be enclosed by a label tag. If you do not want any label, you should
-     *   explicitly set this option as `null`.
-     * - `labelOptions`: array, the HTML attributes for the label tag. This is only used when the `label` option is specified.
-     *
-     * The rest of the options will be rendered as the attributes of the resulting tag. The values will
-     * be HTML-encoded using [[Html::encode()]]. If a value is `null`, the corresponding attribute will not be rendered.
-     *
-     * If you set a custom `id` for the input element, you may need to adjust the [[$selectors]] accordingly.
-     *
-     * @param boolean $enclosedByLabel whether to enclose the checkbox within the label.
-     * If `true`, the method will still use [[template]] to layout the checkbox and the error message
-     * except that the checkbox is enclosed by the label tag.
-     * @return $this the field object itself.
-     */
     public function checkbox($options = [], $enclosedByLabel = true)
     {
         if ($enclosedByLabel) {
@@ -242,30 +194,29 @@ class ActiveField extends BaseActiveField
         return $this;
     }
 
-    /**
-     * Renders a drop-down list.
-     * The selection of the drop-down list is taken from the value of the model attribute.
-     * @param array $items the option data items. The array keys are option values, and the array values
-     * are the corresponding option labels. The array can also be nested (i.e. some array values are arrays too).
-     * For each sub-array, an option group will be generated whose label is the key associated with the sub-array.
-     * If you have a list of data models, you may convert them into the format described above using
-     * [[ArrayHelper::map()]].
-     *
-     * Note, the values and labels will be automatically HTML-encoded by this method, and the blank spaces in
-     * the labels will also be HTML-encoded.
-     * @param array $options the tag options in terms of name-value pairs.
-     *
-     * For the list of available options please refer to the `$options` parameter of [[\yii\helpers\Html::activeDropDownList()]].
-     *
-     * If you set a custom `id` for the input element, you may need to adjust the [[$selectors]] accordingly.
-     *
-     * @return $this the field object itself.
-     */
     public function dropDownList($items, $options = [])
     {
+        $this->template = "{label}\n{input}\n{hint}\n{error}";
+        $this->role['name'] = 'select';
+
+        Html::removeCssClass($this->options, $this->themeColor);
+
+        $selectControl = 'default-menu';
+        $listType = array_values($items)[0];
+        if (is_array($listType)) {
+            $selectControl = 'list-menu';
+            Html::addCssClass($this->options, $selectControl);
+            $this->role['type'] = $listType;
+        }
+
+        if (!isset($this->options['class'])) {
+            Html::addCssClass($this->options, "select-control $selectControl");
+        } else {
+            Html::addCssClass($this->options, 'select-control');
+        }
         $options = array_merge($this->inputOptions, $options);
         $this->parts['{input}'] = Html::activeDropDownList($this->model, $this->attribute, $items, $options);
-
+        
         return $this;
     }
 
