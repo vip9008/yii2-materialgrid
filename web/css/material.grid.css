@@ -124,6 +124,14 @@ a:focus {
     clear: both;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: initial !important;
+}
+
 .row.row-nested {
     margin: 0 -8px;
 }
@@ -140,6 +148,7 @@ a:focus {
     width: 100%;
 }
 
+/* X-SMALL CLASSES */
 .col.xsmall-1, .col.xsmall-2, .col.xsmall-3, .col.xsmall-4 {
     float: left;
 }
@@ -147,25 +156,41 @@ a:focus {
 .col.xsmall-1 {
     width: 25%;
 }
+.col.xsmall-pull-1 {
+    right: 25%;
+}
+.col.xsmall-push-1 {
+    left: 25%;
+}
 
 .col.xsmall-2 {
     width: 50%;
+}
+.col.xsmall-pull-2 {
+    right: 50%;
+}
+.col.xsmall-push-2 {
+    left: 50%;
 }
 
 .col.xsmall-3 {
     width: 75%;
 }
+.col.xsmall-pull-3 {
+    right: 75%;
+}
+.col.xsmall-push-3 {
+    left: 75%;
+}
 
 .col.xsmall-4 {
     width: 100%;
 }
-
-.hidden {
-    display: none !important;
+.col.xsmall-pull-4 {
+    right: 100%;
 }
-
-.visible {
-    display: initial !important;
+.col.xsmall-push-4 {
+    left: 100%;
 }
 
 /* X-SMALL-EXTENDED SCREEN SIZE */
