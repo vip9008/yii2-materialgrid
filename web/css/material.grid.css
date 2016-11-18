@@ -162,6 +162,9 @@ a:focus {
 .col.xsmall-push-1 {
     left: 25%;
 }
+.col.xsmall-offset-1 {
+    margin-left: 25%;
+}
 
 .col.xsmall-2 {
     width: 50%;
@@ -171,6 +174,9 @@ a:focus {
 }
 .col.xsmall-push-2 {
     left: 50%;
+}
+.col.xsmall-offset-2 {
+    margin-left: 50%;
 }
 
 .col.xsmall-3 {
@@ -182,6 +188,9 @@ a:focus {
 .col.xsmall-push-3 {
     left: 75%;
 }
+.col.xsmall-offset-3 {
+    margin-left: 75%;
+}
 
 .col.xsmall-4 {
     width: 100%;
@@ -191,6 +200,9 @@ a:focus {
 }
 .col.xsmall-push-4 {
     left: 100%;
+}
+.col.xsmall-offset-4 {
+    margin-left: 100%;
 }
 
 /* X-SMALL-EXTENDED SCREEN SIZE */
