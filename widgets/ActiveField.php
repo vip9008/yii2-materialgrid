@@ -202,7 +202,7 @@ class ActiveField extends BaseActiveField
         Html::removeCssClass($this->options, $this->themeColor);
 
         $selectControl = 'default-menu';
-        $listType = array_values($items)[0];
+        $listType = empty($items) ? '' : array_values($items)[0];
         if (is_array($listType)) {
             $selectControl = 'list-menu';
             Html::addCssClass($this->options, $selectControl);

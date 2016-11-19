@@ -200,7 +200,7 @@ function material_grid_init() {
 
             if ($(this).parent('.select-control').hasClass('bar-menu')) {
                 $('<div class="value-bar"></div>').insertBefore($(this));
-                var bar_width = $(this).siblings('.select-menu').children('.menu-item').first().outerWidth();
+                var bar_width = $(this).siblings('.select-menu').outerWidth();
                 $(this).siblings('.value-bar').outerWidth(bar_width);
             }
 
