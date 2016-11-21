@@ -15,7 +15,7 @@ class GridView extends BaseGridView
     public $layout = "{items}\n{pager}\n{summary}";
     public $summaryContentOptions = ['class' => 'summary-right'];
     public $dataColumnClass = 'vip9008\materialgrid\widgets\DataColumn';
-    public $caption = 'something';
+    public $caption = '';
 
     public function renderSection($name)
     {
