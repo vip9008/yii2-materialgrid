@@ -181,7 +181,7 @@ function material_grid_init() {
     });
 
     $('.select-control').each(function() {
-        if ($(this).children('input').val().length) {
+        if ($(this).children('input').val()) {
             var html = $(this).children('.select-menu').children('.menu-item.active').html();
             $(this).children('.select-value').html(html);
         }
@@ -241,7 +241,7 @@ function material_grid_init() {
     });
 
     $('.form-input').each(function() {
-        if ($(this).children('.text-input').val().length) {
+        if ($(this).children('.text-input').val()) {
             $(this).addClass('active');
         } else {
             $(this).removeClass('active');
@@ -249,7 +249,7 @@ function material_grid_init() {
     });
 
     $('.form-input .text-input').on('change', function() {
-        if($(this).val().length) {
+        if($(this).val()) {
             $(this).parent('.form-input').addClass('active');
         } else {
             $(this).parent('.form-input').removeClass('active');
