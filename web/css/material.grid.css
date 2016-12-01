@@ -1448,6 +1448,44 @@ th.visible, td.visible {
     }
 }
 
+.visible-print, .visible-print-block, .visible-print-inline, .visible-print-inline-block {
+    display: none !important;
+}
+
+@media print {
+    .hidden-print {
+        display: none !important;
+    }
+
+    .visible-print {
+        display: block !important;
+    }
+
+    table.visible-print {
+        display: table !important;
+    }
+
+    tr.visible-print {
+        display: table-row !important;
+    }
+
+    th.visible-print, td.visible-print {
+        display: table-cell !important;
+    }
+
+    .visible-print-block {
+        display: block !important;
+    }
+
+    .visible-print-inline {
+        display: inline !important;
+    }
+
+    .visible-print-inline-block {
+        display: inline-block !important;
+    }
+}
+
 /* MATERIAL GUIDELINES BREAKPOINTS */
 
 @media (min-width: 1920px) {
