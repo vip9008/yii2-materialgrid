@@ -128,14 +128,6 @@ a:focus {
     clear: both;
 }
 
-.hidden {
-    display: none !important;
-}
-
-.visible {
-    display: initial !important;
-}
-
 .row.row-nested {
     margin: 0 -8px;
 }
@@ -1156,6 +1148,303 @@ a:focus {
     }
     .col.xlarge-pull-12 {
         right: 100%;
+    }
+}
+
+/* VISIBILITY CLASSES */
+
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: block !important;
+    display: initial !important; /* for supported browsers */
+}
+
+table.visible {
+    display: table !important;
+}
+
+tr.visible {
+    display: table-row !important;
+}
+
+th.visible, td.visible {
+    display: table-cell !important;
+}
+
+.visible-block {
+    display: block !important;
+}
+
+.visible-inline {
+    display: inline !important;
+}
+
+.visible-inline-block {
+    display: inline-block !important;
+}
+
+.visible-xsmall, .visible-xsmall-block, .visible-xsmall-inline, .visible-xsmall-inline-block,
+.visible-xsmallext, .visible-xsmallext-block, .visible-xsmallext-inline, .visible-xsmallext-inline-block,
+.visible-small, .visible-small-block, .visible-small-inline, .visible-small-inline-block,
+.visible-smallext, .visible-smallext-block, .visible-smallext-inline, .visible-smallext-inline-block,
+.visible-medium, .visible-medium-block, .visible-medium-inline, .visible-medium-inline-block,
+.visible-large, .visible-large-block, .visible-large-inline, .visible-large-inline-block,
+.visible-xlarge, .visible-xlarge-block, .visible-xlarge-inline, .visible-xlarge-inline-block {
+    display: none !important;
+}
+
+/* X-SMALL */
+@media (max-width: 479px) {
+    .hidden-xsmall {
+        display: none !important;
+    }
+    
+    .visible-xsmall {
+        display: block !important;
+        display: initial !important /* for supported browsers */
+    }
+
+    table.visible-xsmall {
+        display: table !important;
+    }
+
+    tr.visible-xsmall {
+        display: table-row !important;
+    }
+
+    th.visible-xsmall, td.visible-xsmall {
+        display: table-cell !important;
+    }
+
+    .visible-xsmall-block {
+        display: block !important;
+    }
+
+    .visible-xsmall-inline {
+        display: inline !important;
+    }
+
+    .visible-xsmall-inline-block {
+        display: inline-block !important;
+    }
+}
+
+/* X-SMALL-EXT */
+@media (min-width: 480px) and (max-width: 599px) {
+    .hidden-xsmallext {
+        display: none !important;
+    }
+
+    .visible-xsmallext {
+        display: block !important;
+        display: initial !important /* for supported browsers */
+    }
+
+    table.visible-xsmallext {
+        display: table !important;
+    }
+
+    tr.visible-xsmallext {
+        display: table-row !important;
+    }
+
+    th.visible-xsmallext, td.visible-xsmallext {
+        display: table-cell !important;
+    }
+
+    .visible-xsmallext-block {
+        display: block !important;
+    }
+
+    .visible-xsmallext-inline {
+        display: inline !important;
+    }
+
+    .visible-xsmallext-inline-block {
+        display: inline-block !important;
+    }
+}
+
+/* SMALL */
+@media (min-width: 600px) and (max-width: 839px) {
+    .hidden-small {
+        display: none !important;
+    }
+
+    .visible-small {
+        display: block !important;
+        display: initial !important /* for supported browsers */
+    }
+
+    table.visible-small {
+        display: table !important;
+    }
+
+    tr.visible-small {
+        display: table-row !important;
+    }
+
+    th.visible-small, td.visible-small {
+        display: table-cell !important;
+    }
+
+    .visible-small-block {
+        display: block !important;
+    }
+
+    .visible-small-inline {
+        display: inline !important;
+    }
+
+    .visible-small-inline-block {
+        display: inline-block !important;
+    }
+}
+
+/* SMALL-EXT */
+@media (min-width: 840px) and (max-width: 959px) {
+    .hidden-smallext {
+        display: none !important;
+    }
+
+    .visible-smallext {
+        display: block !important;
+        display: initial !important /* for supported browsers */
+    }
+
+    table.visible-smallext {
+        display: table !important;
+    }
+
+    tr.visible-smallext {
+        display: table-row !important;
+    }
+
+    th.visible-smallext, td.visible-smallext {
+        display: table-cell !important;
+    }
+
+    .visible-smallext-block {
+        display: block !important;
+    }
+
+    .visible-smallext-inline {
+        display: inline !important;
+    }
+
+    .visible-smallext-inline-block {
+        display: inline-block !important;
+    }
+}
+
+/* MEDIUM */
+@media (min-width: 960px) and (max-width: 1279px) {
+    .hidden-medium {
+        display: none !important;
+    }
+
+    .visible-medium {
+        display: block !important;
+        display: initial !important /* for supported browsers */
+    }
+
+    table.visible-medium {
+        display: table !important;
+    }
+
+    tr.visible-medium {
+        display: table-row !important;
+    }
+
+    th.visible-medium, td.visible-medium {
+        display: table-cell !important;
+    }
+
+    .visible-medium-block {
+        display: block !important;
+    }
+
+    .visible-medium-inline {
+        display: inline !important;
+    }
+
+    .visible-medium-inline-block {
+        display: inline-block !important;
+    }
+}
+
+/* LARGE */
+@media (min-width: 1280px) and (max-width: 1919px) {
+    .hidden-large {
+        display: none !important;
+    }
+
+    .visible-large {
+        display: block !important;
+        display: initial !important /* for supported browsers */
+    }
+
+    table.visible-large {
+        display: table !important;
+    }
+
+    tr.visible-large {
+        display: table-row !important;
+    }
+
+    th.visible-large, td.visible-large {
+        display: table-cell !important;
+    }
+
+    .visible-large-block {
+        display: block !important;
+    }
+
+    .visible-large-inline {
+        display: inline !important;
+    }
+
+    .visible-large-inline-block {
+        display: inline-block !important;
+    }
+}
+
+/* X-LARGE */
+@media (min-width: 1920px) {
+    .hidden-xlarge {
+        display: none !important;
+    }
+
+    .visible-xlarge {
+        display: block !important;
+        display: initial !important /* for supported browsers */
+    }
+
+    table.visible-xlarge {
+        display: table !important;
+    }
+
+    tr.visible-xlarge {
+        display: table-row !important;
+    }
+
+    th.visible-xlarge, td.visible-xlarge {
+        display: table-cell !important;
+    }
+
+    .visible-xlarge-block {
+        display: block !important;
+    }
+
+    .visible-xlarge-inline {
+        display: inline !important;
+    }
+
+    .visible-xlarge-inline-block {
+        display: inline-block !important;
     }
 }
 
