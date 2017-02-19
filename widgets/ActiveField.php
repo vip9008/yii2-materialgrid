@@ -91,8 +91,8 @@ class ActiveField extends BaseActiveField
             if (isset($this->role['type']['avatar'])) {
                 $labelHtml .= Html::tag('div', Html::tag('div', '', ['class' => 'img']), ['class' => 'avatar']) . "\n";
             }
-            $labelHtml .= Html::tag('div', Html::tag('div', $label, ['class' => 'title']), ['class' => 'text one-line']) . "\n";
-            $label = "\n" . Html::tag('div', "\n" . $labelHtml, ['class' => 'list-item']) . "\n";
+            $labelHtml .= Html::tag('div', Html::tag('div', $label, ['class' => 'title']), ['class' => 'text']) . "\n";
+            $label = "\n" . Html::tag('div', "\n" . $labelHtml, ['class' => 'list-item one-line']) . "\n";
         }
 
         $selectLabel = Html::tag('div', '', ['class' => 'select-overlay']);

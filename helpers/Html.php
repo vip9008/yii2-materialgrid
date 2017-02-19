@@ -16,12 +16,13 @@ class Html extends BaseHtml
         unset($options['unselect'], $options['name']);
         $selectOptions = static::renderSelectOptions($selection, $items, $options);
 
-        $menuOptions['class'] = 'select-menu';
+        $menuOptions['class'] = 'items-container';
         if (isset($options['style'])) {
             $menuOptions['style'] = $options['style'];
             unset($options['style']);
         }
         $dropDownList = static::tag('div', "\n" . $selectOptions . "\n", $menuOptions);
+        $dropDownList = static::tag('div', "\n" . $dropDownList . "\n", ['class' => 'select-menu']);
         $dropDownList .= "\n" . static::hiddenInput($name, $selection, $options);
 
         return $dropDownList;
