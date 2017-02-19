@@ -113,6 +113,16 @@ a:focus {
     max-width: 1400px;
 }
 
+.container.align-left, .container-standard.aligned-left {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.container.align-right, .container-standard.aligned-right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
 .clearfix, .row {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;

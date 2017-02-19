@@ -10,7 +10,7 @@
          url(MaterialIcons-Regular.ttf) format('truetype');
 }
 
-.material-icons {
+.material-icons, .material-icon {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
@@ -35,4 +35,62 @@
 
     /* Support for IE. */
     font-feature-settings: 'liga';
+}
+
+a.material-icons, a.material-icon,
+button.material-icons, button.material-icon {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.54);
+    position: relative;
+}
+
+a.material-icons.disabled, a.material-icons[disabled], a.material-icons:disabled,
+a.material-icon.disabled, a.material-icon[disabled], a.material-icon:disabled,
+button.material-icons.disabled, button.material-icons[disabled], button.material-icons:disabled,
+button.material-icon.disabled, button.material-icon[disabled], button.material-icon:disabled {
+    color: rgba(0, 0, 0, 0.26);
+    cursor: default;
+}
+
+
+a.material-icons:before, a.material-icon:before,
+button.material-icons:before, button.material-icon:before {
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 0;
+    margin: 24px;
+    border-radius: 100%;
+    position: absolute;
+    top: -11px;
+    left: -11px;
+    transition: all 0.2s;
+}
+
+a.material-icons:focus:before, a.material-icon:focus:before,
+button.material-icons:focus:before, button.material-icon:focus:before {
+    height: 46px;
+    width: 46px;
+    margin: 0;
+    background-color: rgba(153, 153, 153, 0.2);
+}
+
+a.material-icons:active:before, a.material-icon:active:before,
+button.material-icons:active:before, button.material-icon:active:before {
+    height: 46px;
+    width: 46px;
+    margin: 0;
+    background-color: rgba(153, 153, 153, 0.4);
+}
+
+a.material-icons.disabled:before, a.material-icons[disabled]:before, a.material-icons:disabled:before,
+a.material-icon.disabled:before, a.material-icon[disabled]:before, a.material-icon:disabled:before,
+button.material-icons.disabled:before, button.material-icons[disabled]:before, button.material-icons:disabled:before,
+button.material-icon.disabled:before, button.material-icon[disabled]:before, button.material-icon:disabled:before {
+    display: none;
 }

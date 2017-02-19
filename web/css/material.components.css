@@ -337,7 +337,7 @@ code {
                 0 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
 
-.list.check-list .checkbox-input {
+.list.check-list .checkbox-input, .list.check-list .radiobutton-input {
     display: block;
     color: inherit;
     background-color: inherit;
@@ -367,6 +367,18 @@ button.list-item, a.list-item {
     cursor: pointer;
 }
 
+.list-item .icon {
+    float: left;
+    padding: 24px 16px;
+    height: 72px;
+    width: 72px;
+}
+
+.list-item.one-line .icon {
+    height: 56px;
+    padding: 16px;
+}
+
 .list-item .avatar {
     float: left;
     padding: 16px;
@@ -374,6 +386,7 @@ button.list-item, a.list-item {
     width: 72px;
 }
 
+.list-item .avatar > img,
 .list-item .avatar > .img {
     height: 40px;
     width: 40px;
@@ -382,13 +395,29 @@ button.list-item, a.list-item {
     background-color: rgba(0, 0, 0, 0.54);
 }
 
+.list-item .avatar + .text + .divider,
+.list-item .icon + .text + .divider,
+.list-item .avatar + .side-action + .text + .divider,
+.list-item .icon + .side-action + .text + .divider {
+    margin-left: 72px;
+}
+
+.list-item.one-line .avatar {
+    height: 56px;
+    padding: 8px 16px;
+}
+
 .list-item .text {
     padding: 16px;
     line-height: initial;
 }
 
-.list-item .text.one-line {
-    line-height: 40px;
+.list-item .text + .divider {
+    margin-top: -1px;
+}
+
+.list-item.one-line .text{
+    line-height: 1.5;
 }
 
 .list-item .text > .title {
@@ -399,8 +428,34 @@ button.list-item, a.list-item {
 
 .list-item .text > .subtitle {
     font-size: 10.5pt;
-    line-height: inherit;
+    line-height: 1.3;
     color: rgba(0, 0, 0, 0.54);
+}
+
+.list-item .side-action {
+    float: right;
+    height: 72px;
+    width: auto;
+}
+
+.list-item.one-line .side-action {
+    height: 56px;
+}
+
+.list-item .side-action.icon {
+    padding: 24px 16px;
+}
+
+.list-item.one-line .side-action.icon {
+    padding: 16px;
+}
+
+.list-item .side-action.avatar {
+    padding: 16px;
+}
+
+.list-item.one-line .side-action.avatar {
+    padding: 8px 16px;
 }
 
 .checkbox-input.disabled, .radiobutton-input.disabled {
@@ -568,38 +623,6 @@ button.list-item, a.list-item {
     transition: border-color 0.2s;
 }
 
-.select-control.list-menu .select-value {
-    line-height: 1;
-    border: none;
-    height: auto;
-    padding: 0;
-    background-color: white;
-    border-radius: 2px;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2),
-                0 1px 1px 0 rgba(0, 0, 0, 0.14),
-                0 2px 1px -1px rgba(0, 0, 0, 0.12);
-}
-
-.select-control.bar-menu .value-bar {
-    display: none;
-    width: 96px;
-    height: 65px;
-    padding: 8px 13px 8px 20px;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.12);
-    margin-bottom: 8px;
-    background-color: white;
-    position: absolute;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    left: -20px;
-    top: -14px;
-    z-index: 8001;
-}
-
-.select-control.bar-menu.active .value-bar {
-    display: block;
-}
-
 .select-control.bar-menu.active .select-value {
     z-index: 8001;
     border-color: transparent;
@@ -631,6 +654,18 @@ button.list-item, a.list-item {
     transition: all 0.2s;
 }
 
+.select-control.list-menu .select-value {
+    line-height: 1;
+    border: none;
+    height: auto;
+    padding: 0;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2),
+                0 1px 1px 0 rgba(0, 0, 0, 0.14),
+                0 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
 .select-control .select-value:hover:after {
     color: rgba(0, 0, 0, 0.87);
 }
@@ -646,18 +681,11 @@ button.list-item, a.list-item {
     display: none;
 }
 
-.select-control.bar-menu.active .select-value:after {
-    display: inline-block;
-}
-
 .select-control .select-menu {
     background-color: white;
     color: rgba(0, 0, 0, 0.87);
     border-radius: 2px;
     transition: all 0.2s;
-    padding: 8px 0;
-    overflow-x: hidden;
-    overflow-y: auto;
     position: absolute;
     top: 0;
     left: -20px;
@@ -676,8 +704,39 @@ button.list-item, a.list-item {
     right: 0;
 }
 
+.select-control .select-menu.left {
+    left: -20px;
+    right: auto;
+}
+
+.select-control .select-menu.right {
+    left: auto;
+    right: -20px;
+}
+
 .select-control.bar-menu .select-menu {
-    padding-top: 73px;
+    padding-top: 65px;
+}
+
+.select-control.bar-menu .select-menu:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.12);
+}
+
+.select-control .select-menu .items-container {
+    padding: 8px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.select-control .select-menu .items-container > .divider {
+    margin: 8px 0;
 }
 
 .select-control .select-menu .menu-item {
@@ -698,19 +757,32 @@ button.list-item, a.list-item {
     text-decoration: none;
 }
 
-.select-control .select-menu .menu-item:focus,
-.select-control .select-menu .menu-item:active,
-.select-control .select-menu .menu-item.active {
-    background-color: rgba(0, 0, 0, 0.12);
-}
-
 .select-control.list-menu .select-menu .menu-item {
     padding: 0;
     line-height: 1;
     height: auto;
 }
 
-.select-control .select-value > *, .select-control .select-menu .menu-item > * {
+.select-control .select-menu .menu-item:focus,
+.select-control .select-menu .menu-item:active,
+.select-control .select-menu .menu-item.active {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.select-control.context-menu .select-menu .menu-item.active {
+    background-color: transparent;
+}
+
+.select-control .select-menu .menu-item.disabled,
+.select-control .select-menu .menu-item[disabled],
+.select-control .select-menu .menu-item:disabled {
+    background-color: transparent;
+    cursor: default;
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.select-control .select-value > *,
+.select-control .select-menu .menu-item > * {
     line-height: inherit;
 }
 
@@ -874,18 +946,14 @@ button.list-item, a.list-item {
     margin: 1px 0 0;
 }
 
-.data-table > .table-header > .controls > .material-icons {
+.data-table > .table-header > .controls > .control-btn {
     float: left;
-    border: none;
-    background: transparent;
-    padding: 0;
+    height: 24px;
     margin: 0;
-    cursor: pointer;
-    color: rgba(0, 0, 0, 0.54);
-    text-decoration: none;
+    padding: 0;
 }
 
-.data-table > .table-header > .controls > .material-icons + .material-icons {
+.data-table > .table-header > .controls > .control-btn + .control-btn {
     margin-left: 24px;
 }
 
@@ -1135,6 +1203,278 @@ button.list-item, a.list-item {
     font-size: inherit;
 }
 
+.card {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.87);
+    display: block;
+    border-radius: 2px;
+    padding: 0;
+    margin: 0 0 24px;
+    overflow: hidden;
+    transition: all 0.2s;
+    position: relative;
+    z-index: 2000;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2),
+                0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                0 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+
+.card:before, .card:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 100%;
+    clear: both;
+}
+
+.card.color {
+    padding: 0;
+}
+
+.card .rich-media, .card .rich-media.ratio-16by9 {
+    position: relative;
+    padding-top: 56.25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card .rich-media.ratio-1by1 {
+    padding-top: 100%;
+}
+
+.card .rich-media > .content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.card .rich-media > .content.dark {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.card .rich-media > .content .actions,
+.card .rich-media > .content .title *,
+.card .rich-media > .content .text * {
+    color: inherit;
+}
+
+.card .actions {
+    margin: 0;
+    padding: 8px;
+}
+
+.card .actions:before, .card .actions:after {
+    content: '';
+    height: 0;
+    width: 100%;
+    display: block;
+    clear: both;
+}
+
+.card .actions > .btn {
+    float: left;
+    margin: 0;
+}
+
+.card .actions.left > .btn {
+    float: left;
+}
+
+.card .actions.right > .btn {
+    float: right;
+}
+
+.card .actions > .btn + .btn, .card .actions.left > .btn + .btn {
+    margin-left: 8px;
+}
+
+.card .actions.right > .btn + .btn {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.card .actions.vertical > .btn {
+    display: block;
+    float: none;
+    margin: 0;
+}
+
+.card .actions.vertical.left > .btn {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.card .actions.vertical.right > .btn {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.card .actions.vertical > .btn + .btn {
+    margin-top: 4px;
+}
+
+.card .actions .material-icons, .card .actions .material-icon {
+    padding: 6px;
+    margin: 0 6px;
+    float: left;
+    height: 36px;
+    width: 36px;
+}
+
+.card .actions .material-icons:before,
+.card .actions .material-icon:before {
+    top: -5px;
+    left: -5px;
+}
+
+.card .actions > .icons-group {
+    float: left;
+}
+
+.card .actions > .icons-group.left {
+    float: left;
+}
+
+.card .actions > .icons-group.right {
+    float: right;
+}
+
+.card .actions > .icons-group:before, .card .actions > .icons-group:after {
+    content: '';
+    height: 0;
+    width: 100%;
+    display: block;
+    clear: both;
+}
+
+.card .title {
+    padding: 0 16px;
+    margin: 16px 0;
+}
+
+.card .title:before, .card .title:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+}
+
+.card .title > .avatar {
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+.card .title > .avatar > img {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.54);
+}
+
+.card .title > h2 {
+    margin: 0;
+    padding: 8px 0 0;
+    font-size: 18pt;
+    line-height: 1;
+}
+
+.card .title > h3 {
+    margin: 0;
+    font-size: 10.5pt;
+}
+
+.card .title > .subtext {
+    margin: 8px 0 0;
+    font-size: 10.5pt;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.card .title > h3 + .subtext {
+    margin-top: 4px;
+}
+
+.card .title > .media {
+    float: right;
+    width: 80px;
+    height: 80px;
+    margin-bottom: -16px;
+}
+
+.card .title > .media.size-1 {
+    width: 80px;
+    height: 80px;
+}
+
+.card .title > .media.size-2 {
+    width: 120px;
+    height: 120px;
+}
+
+.card .title > .media.size-3 {
+    width: 160px;
+    height: 160px;
+}
+
+.card .title > .media > img {
+    width: 100%;
+    height: 100%;
+}
+
+.card .text {
+    padding: 0 16px;
+    margin: 16px 0;
+}
+
+.card .text > p {
+    margin: 0;
+    font-size: 10.5pt;
+}
+
+.card .title:last-child, .card .text:last-child {
+    margin-bottom: 24px;
+}
+
+.card .color {
+    padding: 0;
+}
+
+.card .color:before, .card .color:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+}
+
+.card .color:before {
+    margin-bottom: -1px;
+}
+
+.card .color:after {
+    margin-top: -1px;
+}
+
+.card.color .title > *, .card.color .text > *, .card .color .title > *, .card .color .text > * {
+    color: inherit;
+}
+
+@media (min-width: 1280px) {
+    .card.elevate:hover {
+        z-index: 8000;
+        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                    0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                    0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
 @media (max-width: 839px) {
     .expansion-panel > .panel > .label {
         width: auto;
@@ -1166,10 +1506,6 @@ button.list-item, a.list-item {
         margin-right: 0;
     }
 
-    .select-control.bar-menu .value-bar {
-        left: -12px;
-    }
-
     .select-control .select-value {
         padding-right: 22px;
     }
@@ -1177,6 +1513,16 @@ button.list-item, a.list-item {
     .select-control .select-menu {
         min-width: 112px;
         left: -12px;
+    }    
+
+    .select-control .select-menu.left {
+        left: -12px;
+        right: auto;
+    }
+
+    .select-control .select-menu.right {
+        left: auto;
+        right: -12px;
     }
     
     .select-control .select-menu .menu-item {

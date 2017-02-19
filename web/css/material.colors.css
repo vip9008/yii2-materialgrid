@@ -34,215 +34,260 @@
     color: rgba(0, 0, 0, 0.38);
 }
 
-.red-50, .red-50.checkbox-input.active .checkbox, .red-50.radiobutton-input.active .radio {
+.red-50, .red-50.material-icons, .red-50.material-icon,
+.red-50.checkbox-input.active .checkbox, .red-50.radiobutton-input.active .radio {
     color: #FFEBEE;
     border-color: #FFEBEE;
 }
 
-.red-100, .red-100.checkbox-input.active .checkbox, .red-100.radiobutton-input.active .radio {
+.red-100, .red-100.material-icons, .red-100.material-icon,
+.red-100.checkbox-input.active .checkbox, .red-100.radiobutton-input.active .radio {
     color: #FFCDD2;
     border-color: #FFCDD2;
 }
 
-.red-200, .red-200.checkbox-input.active .checkbox, .red-200.radiobutton-input.active .radio {
+.red-200, .red-200.material-icons, .red-200.material-icon,
+.red-200.checkbox-input.active .checkbox, .red-200.radiobutton-input.active .radio {
     color: #EF9A9A;
     border-color: #EF9A9A;
 }
 
-.red-300, .red-300.checkbox-input.active .checkbox, .red-300.radiobutton-input.active .radio {
+.red-300, .red-300.material-icons, .red-300.material-icon,
+.red-300.checkbox-input.active .checkbox, .red-300.radiobutton-input.active .radio {
     color: #E57373;
     border-color: #E57373;
 }
 
-.red-400, .red-400.checkbox-input.active .checkbox, .red-400.radiobutton-input.active .radio {
+.red-400, .red-400.material-icons, .red-400.material-icon,
+.red-400.checkbox-input.active .checkbox, .red-400.radiobutton-input.active .radio {
     color: #EF5350;
     border-color: #EF5350;
 }
 
-.red, .red.checkbox-input.active .checkbox, .red.radiobutton-input.active .radio,
-.red-500, .red-500.checkbox-input.active .checkbox, .red-500.radiobutton-input.active .radio {
+.red, .red.material-icons, .red.material-icon,
+.red.checkbox-input.active .checkbox, .red.radiobutton-input.active .radio,
+.red-500, .red-500.material-icons, .red-500.material-icon,
+.red-500.checkbox-input.active .checkbox, .red-500.radiobutton-input.active .radio {
     color: #F44336;
     border-color: #F44336;
 }
 
-.red-600, .red-600.checkbox-input.active .checkbox, .red-600.radiobutton-input.active .radio {
+.red-600, .red-600.material-icons, .red-600.material-icon,
+.red-600.checkbox-input.active .checkbox, .red-600.radiobutton-input.active .radio {
     color: #E53935;
     border-color: #E53935;
 }
 
-.red-700, .red-700.checkbox-input.active .checkbox, .red-700.radiobutton-input.active .radio {
+.red-700, .red-700.material-icons, .red-700.material-icon,
+.red-700.checkbox-input.active .checkbox, .red-700.radiobutton-input.active .radio {
     color: #D32F2F;
     border-color: #D32F2F;
 }
 
-.red-800, .red-800.checkbox-input.active .checkbox, .red-800.radiobutton-input.active .radio {
+.red-800, .red-800.material-icons, .red-800.material-icon,
+.red-800.checkbox-input.active .checkbox, .red-800.radiobutton-input.active .radio {
     color: #C62828;
     border-color: #C62828;
 }
 
-.red-900, .red-900.checkbox-input.active .checkbox, .red-900.radiobutton-input.active .radio {
+.red-900, .red-900.material-icons, .red-900.material-icon,
+.red-900.checkbox-input.active .checkbox, .red-900.radiobutton-input.active .radio {
     color: #B71C1C;
     border-color: #B71C1C;
 }
 
-.red-A100, .red-A100.checkbox-input.active .checkbox, .red-A100.radiobutton-input.active .radio {
+.red-A100, .red-A100.material-icons, .red-A100.material-icon,
+.red-A100.checkbox-input.active .checkbox, .red-A100.radiobutton-input.active .radio {
     color: #FF8A80;
     border-color: #FF8A80;
 }
 
-.red-A200, .red-A200.checkbox-input.active .checkbox, .red-A200.radiobutton-input.active .radio {
+.red-A200, .red-A200.material-icons, .red-A200.material-icon,
+.red-A200.checkbox-input.active .checkbox, .red-A200.radiobutton-input.active .radio {
     color: #FF5252;
     border-color: #FF5252;
 }
 
-.red-A400, .red-A400.checkbox-input.active .checkbox, .red-A400.radiobutton-input.active .radio {
+.red-A400, .red-A400.material-icons, .red-A400.material-icon,
+.red-A400.checkbox-input.active .checkbox, .red-A400.radiobutton-input.active .radio {
     color: #FF1744;
     border-color: #FF1744;
 }
 
-.red-A700, .red-A700.checkbox-input.active .checkbox, .red-A700.radiobutton-input.active .radio {
+.red-A700, .red-A700.material-icons, .red-A700.material-icon,
+.red-A700.checkbox-input.active .checkbox, .red-A700.radiobutton-input.active .radio {
     color: #D50000;
     border-color: #D50000;
 }
 
-.pink-50, .pink-50.checkbox-input.active .checkbox, .pink-50.radiobutton-input.active .radio {
+.pink-50, .pink-50.material-icons, .pink-50.material-icon,
+.pink-50.checkbox-input.active .checkbox, .pink-50.radiobutton-input.active .radio {
     color: #FCE4EC;
     border-color: #FCE4EC;
 }
 
-.pink-100, .pink-100.checkbox-input.active .checkbox, .pink-100.radiobutton-input.active .radio {
+.pink-100, .pink-100.material-icons, .pink-100.material-icon,
+.pink-100.checkbox-input.active .checkbox, .pink-100.radiobutton-input.active .radio {
     color: #F8BBD0;
     border-color: #F8BBD0;
 }
 
-.pink-200, .pink-200.checkbox-input.active .checkbox, .pink-200.radiobutton-input.active .radio {
+.pink-200, .pink-200.material-icons, .pink-200.material-icon,
+.pink-200.checkbox-input.active .checkbox, .pink-200.radiobutton-input.active .radio {
     color: #F48FB1;
     border-color: #F48FB1;
 }
 
-.pink-300, .pink-300.checkbox-input.active .checkbox, .pink-300.radiobutton-input.active .radio {
+.pink-300, .pink-300.material-icons, .pink-300.material-icon,
+.pink-300.checkbox-input.active .checkbox, .pink-300.radiobutton-input.active .radio {
     color: #F06292;
     border-color: #F06292;
 }
 
-.pink-400, .pink-400.checkbox-input.active .checkbox, .pink-400.radiobutton-input.active .radio {
+.pink-400, .pink-400.material-icons, .pink-400.material-icon,
+.pink-400.checkbox-input.active .checkbox, .pink-400.radiobutton-input.active .radio {
     color: #EC407A;
     border-color: #EC407A;
 }
 
-.pink, .pink.checkbox-input.active .checkbox, .pink.radiobutton-input.active .radio,
-.pink-500, .pink-500.checkbox-input.active .checkbox, .pink-500.radiobutton-input.active .radio {
+.pink, .pink.material-icons, .pink.material-icon,
+.pink.checkbox-input.active .checkbox, .pink.radiobutton-input.active .radio,
+.pink-500, .pink-500.material-icons, .pink-500.material-icon,
+.pink-500.checkbox-input.active .checkbox, .pink-500.radiobutton-input.active .radio {
     color: #E91E63;
     border-color: #E91E63;
 }
 
-.pink-600, .pink-600.checkbox-input.active .checkbox, .pink-600.radiobutton-input.active .radio {
+.pink-600, .pink-600.material-icons, .pink-600.material-icon,
+.pink-600.checkbox-input.active .checkbox, .pink-600.radiobutton-input.active .radio {
     color: #D81B60;
     border-color: #D81B60;
 }
 
-.pink-700, .pink-700.checkbox-input.active .checkbox, .pink-700.radiobutton-input.active .radio {
+.pink-700, .pink-700.material-icons, .pink-700.material-icon,
+.pink-700.checkbox-input.active .checkbox, .pink-700.radiobutton-input.active .radio {
     color: #C2185B;
     border-color: #C2185B;
 }
 
-.pink-800, .pink-800.checkbox-input.active .checkbox, .pink-800.radiobutton-input.active .radio {
+.pink-800, .pink-800.material-icons, .pink-800.material-icon,
+.pink-800.checkbox-input.active .checkbox, .pink-800.radiobutton-input.active .radio {
     color: #AD1457;
     border-color: #AD1457;
 }
 
-.pink-900, .pink-900.checkbox-input.active .checkbox, .pink-900.radiobutton-input.active .radio {
+.pink-900, .pink-900.material-icons, .pink-900.material-icon,
+.pink-900.checkbox-input.active .checkbox, .pink-900.radiobutton-input.active .radio {
     color: #880E4F;
     border-color: #880E4F;
 }
 
-.pink-A100, .pink-A100.checkbox-input.active .checkbox, .pink-A100.radiobutton-input.active .radio {
+.pink-A100, .pink-A100.material-icons, .pink-A100.material-icon,
+.pink-A100.checkbox-input.active .checkbox, .pink-A100.radiobutton-input.active .radio {
     color: #FF80AB;
     border-color: #FF80AB;
 }
 
-.pink-A200, .pink-A200.checkbox-input.active .checkbox, .pink-A200.radiobutton-input.active .radio {
+.pink-A200, .pink-A200.material-icons, .pink-A200.material-icon,
+.pink-A200.checkbox-input.active .checkbox, .pink-A200.radiobutton-input.active .radio {
     color: #FF4081;
     border-color: #FF4081;
 }
 
-.pink-A400, .pink-A400.checkbox-input.active .checkbox, .pink-A400.radiobutton-input.active .radio {
+.pink-A400, .pink-A400.material-icons, .pink-A400.material-icon,
+.pink-A400.checkbox-input.active .checkbox, .pink-A400.radiobutton-input.active .radio {
     color: #F50057;
     border-color: #F50057;
 }
 
-.pink-A700, .pink-A700.checkbox-input.active .checkbox, .pink-A700.radiobutton-input.active .radio {
+.pink-A700, .pink-A700.material-icons, .pink-A700.material-icon,
+.pink-A700.checkbox-input.active .checkbox, .pink-A700.radiobutton-input.active .radio {
     color: #C51162;
     border-color: #C51162;
 }
 
-.purple-50, .purple-50.checkbox-input.active .checkbox, .purple-50.radiobutton-input.active .radio {
+.purple-50, .purple-50.material-icons, .purple-50.material-icon,
+.purple-50.checkbox-input.active .checkbox, .purple-50.radiobutton-input.active .radio {
     color: #F3E5F5;
     border-color: #F3E5F5;
 }
 
-.purple-100, .purple-100.checkbox-input.active .checkbox, .purple-100.radiobutton-input.active .radio {
+.purple-100, .purple-100.material-icons, .purple-100.material-icon,
+.purple-100.checkbox-input.active .checkbox, .purple-100.radiobutton-input.active .radio {
     color: #E1BEE7;
     border-color: #E1BEE7;
 }
 
-.purple-200, .purple-200.checkbox-input.active .checkbox, .purple-200.radiobutton-input.active .radio {
+.purple-200, .purple-200.material-icons, .purple-200.material-icon,
+.purple-200.checkbox-input.active .checkbox, .purple-200.radiobutton-input.active .radio {
     color: #CE93D8;
     border-color: #CE93D8;
 }
 
-.purple-300, .purple-300.checkbox-input.active .checkbox, .purple-300.radiobutton-input.active .radio {
+.purple-300, .purple-300.material-icons, .purple-300.material-icon,
+.purple-300.checkbox-input.active .checkbox, .purple-300.radiobutton-input.active .radio {
     color: #BA68C8;
     border-color: #BA68C8;
 }
 
-.purple-400, .purple-400.checkbox-input.active .checkbox, .purple-400.radiobutton-input.active .radio {
+.purple-400, .purple-400.material-icons, .purple-400.material-icon,
+.purple-400.checkbox-input.active .checkbox, .purple-400.radiobutton-input.active .radio {
     color: #AB47BC;
     border-color: #AB47BC;
 }
 
-.purple, .purple.checkbox-input.active .checkbox, .purple.radiobutton-input.active .radio,
-.purple-500, .purple-500.checkbox-input.active .checkbox, .purple-500.radiobutton-input.active .radio {
+.purple, .purple.material-icons, .purple.material-icon,
+.purple.checkbox-input.active .checkbox, .purple.radiobutton-input.active .radio,
+.purple-500, .purple-500.material-icons, .purple-500.material-icon,
+.purple-500.checkbox-input.active .checkbox, .purple-500.radiobutton-input.active .radio {
     color: #9C27B0;
     border-color: #9C27B0;
 }
 
-.purple-600, .purple-600.checkbox-input.active .checkbox, .purple-600.radiobutton-input.active .radio {
+.purple-600, .purple-600.material-icons, .purple-600.material-icon,
+.purple-600.checkbox-input.active .checkbox, .purple-600.radiobutton-input.active .radio {
     color: #8E24AA;
     border-color: #8E24AA;
 }
 
-.purple-700, .purple-700.checkbox-input.active .checkbox, .purple-700.radiobutton-input.active .radio {
+.purple-700, .purple-700.material-icons, .purple-700.material-icon,
+.purple-700.checkbox-input.active .checkbox, .purple-700.radiobutton-input.active .radio {
     color: #7B1FA2;
     border-color: #7B1FA2;
 }
 
-.purple-800, .purple-800.checkbox-input.active .checkbox, .purple-800.radiobutton-input.active .radio {
+.purple-800, .purple-800.material-icons, .purple-800.material-icon,
+.purple-800.checkbox-input.active .checkbox, .purple-800.radiobutton-input.active .radio {
     color: #6A1B9A;
     border-color: #6A1B9A;
 }
 
-.purple-900, .purple-900.checkbox-input.active .checkbox, .purple-900.radiobutton-input.active .radio {
+.purple-900, .purple-900.material-icons, .purple-900.material-icon,
+.purple-900.checkbox-input.active .checkbox, .purple-900.radiobutton-input.active .radio {
     color: #4A148C;
     border-color: #4A148C;
 }
 
-.purple-A100, .purple-A100.checkbox-input.active .checkbox, .purple-A100.radiobutton-input.active .radio {
+.purple-A100, .purple-A100.material-icons, .purple-A100.material-icon,
+.purple-A100.checkbox-input.active .checkbox, .purple-A100.radiobutton-input.active .radio {
     color: #EA80FC;
     border-color: #EA80FC;
 }
 
-.purple-A200, .purple-A200.checkbox-input.active .checkbox, .purple-A200.radiobutton-input.active .radio {
+.purple-A200, .purple-A200.material-icons, .purple-A200.material-icon,
+.purple-A200.checkbox-input.active .checkbox, .purple-A200.radiobutton-input.active .radio {
     color: #E040FB;
     border-color: #E040FB;
 }
 
-.purple-A400, .purple-A400.checkbox-input.active .checkbox, .purple-A400.radiobutton-input.active .radio {
+.purple-A400, .purple-A400.material-icons, .purple-A400.material-icon,
+.purple-A400.checkbox-input.active .checkbox, .purple-A400.radiobutton-input.active .radio {
     color: #D500F9;
     border-color: #D500F9;
 }
 
-.purple-A700, .purple-A700.checkbox-input.active .checkbox, .purple-A700.radiobutton-input.active .radio {
+.purple-A700, .purple-A700.material-icons, .purple-A700.material-icon,
+.purple-A700.checkbox-input.active .checkbox, .purple-A700.radiobutton-input.active .radio {
     color: #AA00FF;
     border-color: #AA00FF;
 }
@@ -272,7 +317,8 @@
     border-color: #7E57C2;
 }
 
-.deep-purple, .deep-purple.checkbox-input.active .checkbox, .deep-purple.radiobutton-input.active .radio,
+.deep-purple, .deep-purple.material-icons, .deep-purple.material-icon,
+.deep-purple.checkbox-input.active .checkbox, .deep-purple.radiobutton-input.active .radio,
 .deep-purple-500, .deep-purple-500.checkbox-input.active .checkbox, .deep-purple-500.radiobutton-input.active .radio {
     color: #673AB7;
     border-color: #673AB7;
@@ -318,144 +364,174 @@
     border-color: #6200EA;
 }
 
-.indigo-50, .indigo-50.checkbox-input.active .checkbox, .indigo-50.radiobutton-input.active .radio {
+.indigo-50, .indigo-50.material-icons, .indigo-50.material-icon,
+.indigo-50.checkbox-input.active .checkbox, .indigo-50.radiobutton-input.active .radio {
     color: #E8EAF6;
     border-color: #E8EAF6;
 }
 
-.indigo-100, .indigo-100.checkbox-input.active .checkbox, .indigo-100.radiobutton-input.active .radio {
+.indigo-100, .indigo-100.material-icons, .indigo-100.material-icon,
+.indigo-100.checkbox-input.active .checkbox, .indigo-100.radiobutton-input.active .radio {
     color: #C5CAE9;
     border-color: #C5CAE9;
 }
 
-.indigo-200, .indigo-200.checkbox-input.active .checkbox, .indigo-200.radiobutton-input.active .radio {
+.indigo-200, .indigo-200.material-icons, .indigo-200.material-icon,
+.indigo-200.checkbox-input.active .checkbox, .indigo-200.radiobutton-input.active .radio {
     color: #9FA8DA;
     border-color: #9FA8DA;
 }
 
-.indigo-300, .indigo-300.checkbox-input.active .checkbox, .indigo-300.radiobutton-input.active .radio {
+.indigo-300, .indigo-300.material-icons, .indigo-300.material-icon,
+.indigo-300.checkbox-input.active .checkbox, .indigo-300.radiobutton-input.active .radio {
     color: #7986CB;
     border-color: #7986CB;
 }
 
-.indigo-400, .indigo-400.checkbox-input.active .checkbox, .indigo-400.radiobutton-input.active .radio {
+.indigo-400, .indigo-400.material-icons, .indigo-400.material-icon,
+.indigo-400.checkbox-input.active .checkbox, .indigo-400.radiobutton-input.active .radio {
     color: #5C6BC0;
     border-color: #5C6BC0;
 }
 
-.indigo, .indigo.checkbox-input.active .checkbox, .indigo.radiobutton-input.active .radio,
-.indigo-500, .indigo-500.checkbox-input.active .checkbox, .indigo-500.radiobutton-input.active .radio {
+.indigo, .indigo.material-icons, .indigo.material-icon,
+.indigo.checkbox-input.active .checkbox, .indigo.radiobutton-input.active .radio,
+.indigo-500, .indigo-500.material-icons, .indigo-500.material-icon,
+.indigo-500.checkbox-input.active .checkbox, .indigo-500.radiobutton-input.active .radio {
     color: #3F51B5;
     border-color: #3F51B5;
 }
 
-.indigo-600, .indigo-600.checkbox-input.active .checkbox, .indigo-600.radiobutton-input.active .radio {
+.indigo-600, .indigo-600.material-icons, .indigo-600.material-icon,
+.indigo-600.checkbox-input.active .checkbox, .indigo-600.radiobutton-input.active .radio {
     color: #3949AB;
     border-color: #3949AB;
 }
 
-.indigo-700, .indigo-700.checkbox-input.active .checkbox, .indigo-700.radiobutton-input.active .radio {
+.indigo-700, .indigo-700.material-icons, .indigo-700.material-icon,
+.indigo-700.checkbox-input.active .checkbox, .indigo-700.radiobutton-input.active .radio {
     color: #303F9F;
     border-color: #303F9F;
 }
 
-.indigo-800, .indigo-800.checkbox-input.active .checkbox, .indigo-800.radiobutton-input.active .radio {
+.indigo-800, .indigo-800.material-icons, .indigo-800.material-icon,
+.indigo-800.checkbox-input.active .checkbox, .indigo-800.radiobutton-input.active .radio {
     color: #283593;
     border-color: #283593;
 }
 
-.indigo-900, .indigo-900.checkbox-input.active .checkbox, .indigo-900.radiobutton-input.active .radio {
+.indigo-900, .indigo-900.material-icons, .indigo-900.material-icon,
+.indigo-900.checkbox-input.active .checkbox, .indigo-900.radiobutton-input.active .radio {
     color: #1A237E;
     border-color: #1A237E;
 }
 
-.indigo-A100, .indigo-A100.checkbox-input.active .checkbox, .indigo-A100.radiobutton-input.active .radio {
+.indigo-A100, .indigo-A100.material-icons, .indigo-A100.material-icon,
+.indigo-A100.checkbox-input.active .checkbox, .indigo-A100.radiobutton-input.active .radio {
     color: #8C9EFF;
     border-color: #8C9EFF;
 }
 
-.indigo-A200, .indigo-A200.checkbox-input.active .checkbox, .indigo-A200.radiobutton-input.active .radio {
+.indigo-A200, .indigo-A200.material-icons, .indigo-A200.material-icon,
+.indigo-A200.checkbox-input.active .checkbox, .indigo-A200.radiobutton-input.active .radio {
     color: #536DFE;
     border-color: #536DFE;
 }
 
-.indigo-A400, .indigo-A400.checkbox-input.active .checkbox, .indigo-A400.radiobutton-input.active .radio {
+.indigo-A400, .indigo-A400.material-icons, .indigo-A400.material-icon,
+.indigo-A400.checkbox-input.active .checkbox, .indigo-A400.radiobutton-input.active .radio {
     color: #3D5AFE;
     border-color: #3D5AFE;
 }
 
-.indigo-A700, .indigo-A700.checkbox-input.active .checkbox, .indigo-A700.radiobutton-input.active .radio {
+.indigo-A700, .indigo-A700.material-icons, .indigo-A700.material-icon,
+.indigo-A700.checkbox-input.active .checkbox, .indigo-A700.radiobutton-input.active .radio {
     color: #304FFE;
     border-color: #304FFE;
 }
 
-.blue-50, .blue-50.checkbox-input.active .checkbox, .blue-50.radiobutton-input.active .radio {
+.blue-50, .blue-50.material-icons, .blue-50.material-icon,
+.blue-50.checkbox-input.active .checkbox, .blue-50.radiobutton-input.active .radio {
     color: #E3F2FD;
     border-color: #E3F2FD;
 }
 
-.blue-100, .blue-100.checkbox-input.active .checkbox, .blue-100.radiobutton-input.active .radio {
+.blue-100, .blue-100.material-icons, .blue-100.material-icon,
+.blue-100.checkbox-input.active .checkbox, .blue-100.radiobutton-input.active .radio {
     color: #BBDEFB;
     border-color: #BBDEFB;
 }
 
-.blue-200, .blue-200.checkbox-input.active .checkbox, .blue-200.radiobutton-input.active .radio {
+.blue-200, .blue-200.material-icons, .blue-200.material-icon,
+.blue-200.checkbox-input.active .checkbox, .blue-200.radiobutton-input.active .radio {
     color: #90CAF9;
     border-color: #90CAF9;
 }
 
-.blue-300, .blue-300.checkbox-input.active .checkbox, .blue-300.radiobutton-input.active .radio {
+.blue-300, .blue-300.material-icons, .blue-300.material-icon,
+.blue-300.checkbox-input.active .checkbox, .blue-300.radiobutton-input.active .radio {
     color: #64B5F6;
     border-color: #64B5F6;
 }
 
-.blue-400, .blue-400.checkbox-input.active .checkbox, .blue-400.radiobutton-input.active .radio {
+.blue-400, .blue-400.material-icons, .blue-400.material-icon,
+.blue-400.checkbox-input.active .checkbox, .blue-400.radiobutton-input.active .radio {
     color: #42A5F5;
     border-color: #42A5F5;
 }
 
-.blue, .blue.checkbox-input.active .checkbox, .blue.radiobutton-input.active .radio,
-.blue-500, .blue-500.checkbox-input.active .checkbox, .blue-500.radiobutton-input.active .radio {
+.blue, .blue.material-icons, .blue.material-icon,
+.blue.checkbox-input.active .checkbox, .blue.radiobutton-input.active .radio,
+.blue-500, .blue-500.material-icons, .blue-500.material-icon,
+.blue-500.checkbox-input.active .checkbox, .blue-500.radiobutton-input.active .radio {
     color: #2196F3;
     border-color: #2196F3;
 }
 
-.blue-600, .blue-600.checkbox-input.active .checkbox, .blue-600.radiobutton-input.active .radio {
+.blue-600, .blue-600.material-icons, .blue-600.material-icon,
+.blue-600.checkbox-input.active .checkbox, .blue-600.radiobutton-input.active .radio {
     color: #1E88E5;
     border-color: #1E88E5;
 }
 
-.blue-700, .blue-700.checkbox-input.active .checkbox, .blue-700.radiobutton-input.active .radio {
+.blue-700, .blue-700.material-icons, .blue-700.material-icon,
+.blue-700.checkbox-input.active .checkbox, .blue-700.radiobutton-input.active .radio {
     color: #1976D2;
     border-color: #1976D2;
 }
 
-.blue-800, .blue-800.checkbox-input.active .checkbox, .blue-800.radiobutton-input.active .radio {
+.blue-800, .blue-800.material-icons, .blue-800.material-icon,
+.blue-800.checkbox-input.active .checkbox, .blue-800.radiobutton-input.active .radio {
     color: #1565C0;
     border-color: #1565C0;
 }
 
-.blue-900, .blue-900.checkbox-input.active .checkbox, .blue-900.radiobutton-input.active .radio {
+.blue-900, .blue-900.material-icons, .blue-900.material-icon,
+.blue-900.checkbox-input.active .checkbox, .blue-900.radiobutton-input.active .radio {
     color: #0D47A1;
     border-color: #0D47A1;
 }
 
-.blue-A100, .blue-A100.checkbox-input.active .checkbox, .blue-A100.radiobutton-input.active .radio {
+.blue-A100, .blue-A100.material-icons, .blue-A100.material-icon,
+.blue-A100.checkbox-input.active .checkbox, .blue-A100.radiobutton-input.active .radio {
     color: #82B1FF;
     border-color: #82B1FF;
 }
 
-.blue-A200, .blue-A200.checkbox-input.active .checkbox, .blue-A200.radiobutton-input.active .radio {
+.blue-A200, .blue-A200.material-icons, .blue-A200.material-icon,
+.blue-A200.checkbox-input.active .checkbox, .blue-A200.radiobutton-input.active .radio {
     color: #448AFF;
     border-color: #448AFF;
 }
 
-.blue-A400, .blue-A400.checkbox-input.active .checkbox, .blue-A400.radiobutton-input.active .radio {
+.blue-A400, .blue-A400.material-icons, .blue-A400.material-icon,
+.blue-A400.checkbox-input.active .checkbox, .blue-A400.radiobutton-input.active .radio {
     color: #2979FF;
     border-color: #2979FF;
 }
 
-.blue-A700, .blue-A700.checkbox-input.active .checkbox, .blue-A700.radiobutton-input.active .radio {
+.blue-A700, .blue-A700.material-icons, .blue-A700.material-icon,
+.blue-A700.checkbox-input.active .checkbox, .blue-A700.radiobutton-input.active .radio {
     color: #2962FF;
     border-color: #2962FF;
 }
@@ -485,7 +561,8 @@
     border-color: #29B6F6;
 }
 
-.light-blue, .light-blue.checkbox-input.active .checkbox, .light-blue.radiobutton-input.active .radio,
+.light-blue, .light-blue.material-icons, .light-blue.material-icon,
+.light-blue.checkbox-input.active .checkbox, .light-blue.radiobutton-input.active .radio,
 .light-blue-500, .light-blue-500.checkbox-input.active .checkbox, .light-blue-500.radiobutton-input.active .radio {
     color: #03A9F4;
     border-color: #03A9F4;
@@ -531,215 +608,260 @@
     border-color: #0091EA;
 }
 
-.cyan-50, .cyan-50.checkbox-input.active .checkbox, .cyan-50.radiobutton-input.active .radio {
+.cyan-50, .cyan-50.material-icons, .cyan-50.material-icon,
+.cyan-50.checkbox-input.active .checkbox, .cyan-50.radiobutton-input.active .radio {
     color: #E0F7FA;
     border-color: #E0F7FA;
 }
 
-.cyan-100, .cyan-100.checkbox-input.active .checkbox, .cyan-100.radiobutton-input.active .radio {
+.cyan-100, .cyan-100.material-icons, .cyan-100.material-icon,
+.cyan-100.checkbox-input.active .checkbox, .cyan-100.radiobutton-input.active .radio {
     color: #B2EBF2;
     border-color: #B2EBF2;
 }
 
-.cyan-200, .cyan-200.checkbox-input.active .checkbox, .cyan-200.radiobutton-input.active .radio {
+.cyan-200, .cyan-200.material-icons, .cyan-200.material-icon,
+.cyan-200.checkbox-input.active .checkbox, .cyan-200.radiobutton-input.active .radio {
     color: #80DEEA;
     border-color: #80DEEA;
 }
 
-.cyan-300, .cyan-300.checkbox-input.active .checkbox, .cyan-300.radiobutton-input.active .radio {
+.cyan-300, .cyan-300.material-icons, .cyan-300.material-icon,
+.cyan-300.checkbox-input.active .checkbox, .cyan-300.radiobutton-input.active .radio {
     color: #4DD0E1;
     border-color: #4DD0E1;
 }
 
-.cyan-400, .cyan-400.checkbox-input.active .checkbox, .cyan-400.radiobutton-input.active .radio {
+.cyan-400, .cyan-400.material-icons, .cyan-400.material-icon,
+.cyan-400.checkbox-input.active .checkbox, .cyan-400.radiobutton-input.active .radio {
     color: #26C6DA;
     border-color: #26C6DA;
 }
 
-.cyan, .cyan.checkbox-input.active .checkbox, .cyan.radiobutton-input.active .radio,
-.cyan-500, .cyan-500.checkbox-input.active .checkbox, .cyan-500.radiobutton-input.active .radio {
+.cyan, .cyan.material-icons, .cyan.material-icon,
+.cyan.checkbox-input.active .checkbox, .cyan.radiobutton-input.active .radio,
+.cyan-500, .cyan-500.material-icons, .cyan-500.material-icon,
+.cyan-500.checkbox-input.active .checkbox, .cyan-500.radiobutton-input.active .radio {
     color: #00BCD4;
     border-color: #00BCD4;
 }
 
-.cyan-600, .cyan-600.checkbox-input.active .checkbox, .cyan-600.radiobutton-input.active .radio {
+.cyan-600, .cyan-600.material-icons, .cyan-600.material-icon,
+.cyan-600.checkbox-input.active .checkbox, .cyan-600.radiobutton-input.active .radio {
     color: #00ACC1;
     border-color: #00ACC1;
 }
 
-.cyan-700, .cyan-700.checkbox-input.active .checkbox, .cyan-700.radiobutton-input.active .radio {
+.cyan-700, .cyan-700.material-icons, .cyan-700.material-icon,
+.cyan-700.checkbox-input.active .checkbox, .cyan-700.radiobutton-input.active .radio {
     color: #0097A7;
     border-color: #0097A7;
 }
 
-.cyan-800, .cyan-800.checkbox-input.active .checkbox, .cyan-800.radiobutton-input.active .radio {
+.cyan-800, .cyan-800.material-icons, .cyan-800.material-icon,
+.cyan-800.checkbox-input.active .checkbox, .cyan-800.radiobutton-input.active .radio {
     color: #00838F;
     border-color: #00838F;
 }
 
-.cyan-900, .cyan-900.checkbox-input.active .checkbox, .cyan-900.radiobutton-input.active .radio {
+.cyan-900, .cyan-900.material-icons, .cyan-900.material-icon,
+.cyan-900.checkbox-input.active .checkbox, .cyan-900.radiobutton-input.active .radio {
     color: #006064;
     border-color: #006064;
 }
 
-.cyan-A100, .cyan-A100.checkbox-input.active .checkbox, .cyan-A100.radiobutton-input.active .radio {
+.cyan-A100, .cyan-A100.material-icons, .cyan-A100.material-icon,
+.cyan-A100.checkbox-input.active .checkbox, .cyan-A100.radiobutton-input.active .radio {
     color: #84FFFF;
     border-color: #84FFFF;
 }
 
-.cyan-A200, .cyan-A200.checkbox-input.active .checkbox, .cyan-A200.radiobutton-input.active .radio {
+.cyan-A200, .cyan-A200.material-icons, .cyan-A200.material-icon,
+.cyan-A200.checkbox-input.active .checkbox, .cyan-A200.radiobutton-input.active .radio {
     color: #18FFFF;
     border-color: #18FFFF;
 }
 
-.cyan-A400, .cyan-A400.checkbox-input.active .checkbox, .cyan-A400.radiobutton-input.active .radio {
+.cyan-A400, .cyan-A400.material-icons, .cyan-A400.material-icon,
+.cyan-A400.checkbox-input.active .checkbox, .cyan-A400.radiobutton-input.active .radio {
     color: #00E5FF;
     border-color: #00E5FF;
 }
 
-.cyan-A700, .cyan-A700.checkbox-input.active .checkbox, .cyan-A700.radiobutton-input.active .radio {
+.cyan-A700, .cyan-A700.material-icons, .cyan-A700.material-icon,
+.cyan-A700.checkbox-input.active .checkbox, .cyan-A700.radiobutton-input.active .radio {
     color: #00B8D4;
     border-color: #00B8D4;
 }
 
-.teal-50, .teal-50.checkbox-input.active .checkbox, .teal-50.radiobutton-input.active .radio {
+.teal-50, .teal-50.material-icons, .teal-50.material-icon,
+.teal-50.checkbox-input.active .checkbox, .teal-50.radiobutton-input.active .radio {
     color: #E0F2F1;
     border-color: #E0F2F1;
 }
 
-.teal-100, .teal-100.checkbox-input.active .checkbox, .teal-100.radiobutton-input.active .radio {
+.teal-100, .teal-100.material-icons, .teal-100.material-icon,
+.teal-100.checkbox-input.active .checkbox, .teal-100.radiobutton-input.active .radio {
     color: #B2DFDB;
     border-color: #B2DFDB;
 }
 
-.teal-200, .teal-200.checkbox-input.active .checkbox, .teal-200.radiobutton-input.active .radio {
+.teal-200, .teal-200.material-icons, .teal-200.material-icon,
+.teal-200.checkbox-input.active .checkbox, .teal-200.radiobutton-input.active .radio {
     color: #80CBC4;
     border-color: #80CBC4;
 }
 
-.teal-300, .teal-300.checkbox-input.active .checkbox, .teal-300.radiobutton-input.active .radio {
+.teal-300, .teal-300.material-icons, .teal-300.material-icon,
+.teal-300.checkbox-input.active .checkbox, .teal-300.radiobutton-input.active .radio {
     color: #4DB6AC;
     border-color: #4DB6AC;
 }
 
-.teal-400, .teal-400.checkbox-input.active .checkbox, .teal-400.radiobutton-input.active .radio {
+.teal-400, .teal-400.material-icons, .teal-400.material-icon,
+.teal-400.checkbox-input.active .checkbox, .teal-400.radiobutton-input.active .radio {
     color: #26A69A;
     border-color: #26A69A;
 }
 
-.teal, .teal.checkbox-input.active .checkbox, .teal.radiobutton-input.active .radio,
-.teal-500, .teal-500.checkbox-input.active .checkbox, .teal-500.radiobutton-input.active .radio {
+.teal, .teal.material-icons, .teal.material-icon,
+.teal.checkbox-input.active .checkbox, .teal.radiobutton-input.active .radio,
+.teal-500, .teal-500.material-icons, .teal-500.material-icon,
+.teal-500.checkbox-input.active .checkbox, .teal-500.radiobutton-input.active .radio {
     color: #009688;
     border-color: #009688;
 }
 
-.teal-600, .teal-600.checkbox-input.active .checkbox, .teal-600.radiobutton-input.active .radio {
+.teal-600, .teal-600.material-icons, .teal-600.material-icon,
+.teal-600.checkbox-input.active .checkbox, .teal-600.radiobutton-input.active .radio {
     color: #00897B;
     border-color: #00897B;
 }
 
-.teal-700, .teal-700.checkbox-input.active .checkbox, .teal-700.radiobutton-input.active .radio {
+.teal-700, .teal-700.material-icons, .teal-700.material-icon,
+.teal-700.checkbox-input.active .checkbox, .teal-700.radiobutton-input.active .radio {
     color: #00796B;
     border-color: #00796B;
 }
 
-.teal-800, .teal-800.checkbox-input.active .checkbox, .teal-800.radiobutton-input.active .radio {
+.teal-800, .teal-800.material-icons, .teal-800.material-icon,
+.teal-800.checkbox-input.active .checkbox, .teal-800.radiobutton-input.active .radio {
     color: #00695C;
     border-color: #00695C;
 }
 
-.teal-900, .teal-900.checkbox-input.active .checkbox, .teal-900.radiobutton-input.active .radio {
+.teal-900, .teal-900.material-icons, .teal-900.material-icon,
+.teal-900.checkbox-input.active .checkbox, .teal-900.radiobutton-input.active .radio {
     color: #004D40;
     border-color: #004D40;
 }
 
-.teal-A100, .teal-A100.checkbox-input.active .checkbox, .teal-A100.radiobutton-input.active .radio {
+.teal-A100, .teal-A100.material-icons, .teal-A100.material-icon,
+.teal-A100.checkbox-input.active .checkbox, .teal-A100.radiobutton-input.active .radio {
     color: #A7FFEB;
     border-color: #A7FFEB;
 }
 
-.teal-A200, .teal-A200.checkbox-input.active .checkbox, .teal-A200.radiobutton-input.active .radio {
+.teal-A200, .teal-A200.material-icons, .teal-A200.material-icon,
+.teal-A200.checkbox-input.active .checkbox, .teal-A200.radiobutton-input.active .radio {
     color: #64FFDA;
     border-color: #64FFDA;
 }
 
-.teal-A400, .teal-A400.checkbox-input.active .checkbox, .teal-A400.radiobutton-input.active .radio {
+.teal-A400, .teal-A400.material-icons, .teal-A400.material-icon,
+.teal-A400.checkbox-input.active .checkbox, .teal-A400.radiobutton-input.active .radio {
     color: #1DE9B6;
     border-color: #1DE9B6;
 }
 
-.teal-A700, .teal-A700.checkbox-input.active .checkbox, .teal-A700.radiobutton-input.active .radio {
+.teal-A700, .teal-A700.material-icons, .teal-A700.material-icon,
+.teal-A700.checkbox-input.active .checkbox, .teal-A700.radiobutton-input.active .radio {
     color: #00BFA5;
     border-color: #00BFA5;
 }
 
-.green-50, .green-50.checkbox-input.active .checkbox, .green-50.radiobutton-input.active .radio {
+.green-50, .green-50.material-icons, .green-50.material-icon,
+.green-50.checkbox-input.active .checkbox, .green-50.radiobutton-input.active .radio {
     color: #E8F5E9;
     border-color: #E8F5E9;
 }
 
-.green-100, .green-100.checkbox-input.active .checkbox, .green-100.radiobutton-input.active .radio {
+.green-100, .green-100.material-icons, .green-100.material-icon,
+.green-100.checkbox-input.active .checkbox, .green-100.radiobutton-input.active .radio {
     color: #C8E6C9;
     border-color: #C8E6C9;
 }
 
-.green-200, .green-200.checkbox-input.active .checkbox, .green-200.radiobutton-input.active .radio {
+.green-200, .green-200.material-icons, .green-200.material-icon,
+.green-200.checkbox-input.active .checkbox, .green-200.radiobutton-input.active .radio {
     color: #A5D6A7;
     border-color: #A5D6A7;
 }
 
-.green-300, .green-300.checkbox-input.active .checkbox, .green-300.radiobutton-input.active .radio {
+.green-300, .green-300.material-icons, .green-300.material-icon,
+.green-300.checkbox-input.active .checkbox, .green-300.radiobutton-input.active .radio {
     color: #81C784;
     border-color: #81C784;
 }
 
-.green-400, .green-400.checkbox-input.active .checkbox, .green-400.radiobutton-input.active .radio {
+.green-400, .green-400.material-icons, .green-400.material-icon,
+.green-400.checkbox-input.active .checkbox, .green-400.radiobutton-input.active .radio {
     color: #66BB6A;
     border-color: #66BB6A;
 }
 
-.green, .green.checkbox-input.active .checkbox, .green.radiobutton-input.active .radio,
-.green-500, .green-500.checkbox-input.active .checkbox, .green-500.radiobutton-input.active .radio {
+.green, .green.material-icons, .green.material-icon,
+.green.checkbox-input.active .checkbox, .green.radiobutton-input.active .radio,
+.green-500, .green-500.material-icons, .green-500.material-icon,
+.green-500.checkbox-input.active .checkbox, .green-500.radiobutton-input.active .radio {
     color: #4CAF50;
     border-color: #4CAF50;
 }
 
-.green-600, .green-600.checkbox-input.active .checkbox, .green-600.radiobutton-input.active .radio {
+.green-600, .green-600.material-icons, .green-600.material-icon,
+.green-600.checkbox-input.active .checkbox, .green-600.radiobutton-input.active .radio {
     color: #43A047;
     border-color: #43A047;
 }
 
-.green-700, .green-700.checkbox-input.active .checkbox, .green-700.radiobutton-input.active .radio {
+.green-700, .green-700.material-icons, .green-700.material-icon,
+.green-700.checkbox-input.active .checkbox, .green-700.radiobutton-input.active .radio {
     color: #388E3C;
     border-color: #388E3C;
 }
 
-.green-800, .green-800.checkbox-input.active .checkbox, .green-800.radiobutton-input.active .radio {
+.green-800, .green-800.material-icons, .green-800.material-icon,
+.green-800.checkbox-input.active .checkbox, .green-800.radiobutton-input.active .radio {
     color: #2E7D32;
     border-color: #2E7D32;
 }
 
-.green-900, .green-900.checkbox-input.active .checkbox, .green-900.radiobutton-input.active .radio {
+.green-900, .green-900.material-icons, .green-900.material-icon,
+.green-900.checkbox-input.active .checkbox, .green-900.radiobutton-input.active .radio {
     color: #1B5E20;
     border-color: #1B5E20;
 }
 
-.green-A100, .green-A100.checkbox-input.active .checkbox, .green-A100.radiobutton-input.active .radio {
+.green-A100, .green-A100.material-icons, .green-A100.material-icon,
+.green-A100.checkbox-input.active .checkbox, .green-A100.radiobutton-input.active .radio {
     color: #B9F6CA;
     border-color: #B9F6CA;
 }
 
-.green-A200, .green-A200.checkbox-input.active .checkbox, .green-A200.radiobutton-input.active .radio {
+.green-A200, .green-A200.material-icons, .green-A200.material-icon,
+.green-A200.checkbox-input.active .checkbox, .green-A200.radiobutton-input.active .radio {
     color: #69F0AE;
     border-color: #69F0AE;
 }
 
-.green-A400, .green-A400.checkbox-input.active .checkbox, .green-A400.radiobutton-input.active .radio {
+.green-A400, .green-A400.material-icons, .green-A400.material-icon,
+.green-A400.checkbox-input.active .checkbox, .green-A400.radiobutton-input.active .radio {
     color: #00E676;
     border-color: #00E676;
 }
 
-.green-A700, .green-A700.checkbox-input.active .checkbox, .green-A700.radiobutton-input.active .radio {
+.green-A700, .green-A700.material-icons, .green-A700.material-icon,
+.green-A700.checkbox-input.active .checkbox, .green-A700.radiobutton-input.active .radio {
     color: #00C853;
     border-color: #00C853;
 }
@@ -769,7 +891,8 @@
     border-color: #9CCC65;
 }
 
-.light-green, .light-green.checkbox-input.active .checkbox, .light-green.radiobutton-input.active .radio,
+.light-green, .light-green.material-icons, .light-green.material-icon,
+.light-green.checkbox-input.active .checkbox, .light-green.radiobutton-input.active .radio,
 .light-green-500, .light-green-500.checkbox-input.active .checkbox, .light-green-500.radiobutton-input.active .radio {
     color: #8BC34A;
     border-color: #8BC34A;
@@ -815,286 +938,346 @@
     border-color: #64DD17;
 }
 
-.lime-50, .lime-50.checkbox-input.active .checkbox, .lime-50.radiobutton-input.active .radio {
+.lime-50, .lime-50.material-icons, .lime-50.material-icon,
+.lime-50.checkbox-input.active .checkbox, .lime-50.radiobutton-input.active .radio {
     color: #F9FBE7;
     border-color: #F9FBE7;
 }
 
-.lime-100, .lime-100.checkbox-input.active .checkbox, .lime-100.radiobutton-input.active .radio {
+.lime-100, .lime-100.material-icons, .lime-100.material-icon,
+.lime-100.checkbox-input.active .checkbox, .lime-100.radiobutton-input.active .radio {
     color: #F0F4C3;
     border-color: #F0F4C3;
 }
 
-.lime-200, .lime-200.checkbox-input.active .checkbox, .lime-200.radiobutton-input.active .radio {
+.lime-200, .lime-200.material-icons, .lime-200.material-icon,
+.lime-200.checkbox-input.active .checkbox, .lime-200.radiobutton-input.active .radio {
     color: #E6EE9C;
     border-color: #E6EE9C;
 }
 
-.lime-300, .lime-300.checkbox-input.active .checkbox, .lime-300.radiobutton-input.active .radio {
+.lime-300, .lime-300.material-icons, .lime-300.material-icon,
+.lime-300.checkbox-input.active .checkbox, .lime-300.radiobutton-input.active .radio {
     color: #DCE775;
     border-color: #DCE775;
 }
 
-.lime-400, .lime-400.checkbox-input.active .checkbox, .lime-400.radiobutton-input.active .radio {
+.lime-400, .lime-400.material-icons, .lime-400.material-icon,
+.lime-400.checkbox-input.active .checkbox, .lime-400.radiobutton-input.active .radio {
     color: #D4E157;
     border-color: #D4E157;
 }
 
-.lime, .lime.checkbox-input.active .checkbox, .lime.radiobutton-input.active .radio,
-.lime-500, .lime-500.checkbox-input.active .checkbox, .lime-500.radiobutton-input.active .radio {
+.lime, .lime.material-icons, .lime.material-icon,
+.lime.checkbox-input.active .checkbox, .lime.radiobutton-input.active .radio,
+.lime-500, .lime-500.material-icons, .lime-500.material-icon,
+.lime-500.checkbox-input.active .checkbox, .lime-500.radiobutton-input.active .radio {
     color: #CDDC39;
     border-color: #CDDC39;
 }
 
-.lime-600, .lime-600.checkbox-input.active .checkbox, .lime-600.radiobutton-input.active .radio {
+.lime-600, .lime-600.material-icons, .lime-600.material-icon,
+.lime-600.checkbox-input.active .checkbox, .lime-600.radiobutton-input.active .radio {
     color: #C0CA33;
     border-color: #C0CA33;
 }
 
-.lime-700, .lime-700.checkbox-input.active .checkbox, .lime-700.radiobutton-input.active .radio {
+.lime-700, .lime-700.material-icons, .lime-700.material-icon,
+.lime-700.checkbox-input.active .checkbox, .lime-700.radiobutton-input.active .radio {
     color: #AFB42B;
     border-color: #AFB42B;
 }
 
-.lime-800, .lime-800.checkbox-input.active .checkbox, .lime-800.radiobutton-input.active .radio {
+.lime-800, .lime-800.material-icons, .lime-800.material-icon,
+.lime-800.checkbox-input.active .checkbox, .lime-800.radiobutton-input.active .radio {
     color: #9E9D24;
     border-color: #9E9D24;
 }
 
-.lime-900, .lime-900.checkbox-input.active .checkbox, .lime-900.radiobutton-input.active .radio {
+.lime-900, .lime-900.material-icons, .lime-900.material-icon,
+.lime-900.checkbox-input.active .checkbox, .lime-900.radiobutton-input.active .radio {
     color: #827717;
     border-color: #827717;
 }
 
-.lime-A100, .lime-A100.checkbox-input.active .checkbox, .lime-A100.radiobutton-input.active .radio {
+.lime-A100, .lime-A100.material-icons, .lime-A100.material-icon,
+.lime-A100.checkbox-input.active .checkbox, .lime-A100.radiobutton-input.active .radio {
     color: #F4FF81;
     border-color: #F4FF81;
 }
 
-.lime-A200, .lime-A200.checkbox-input.active .checkbox, .lime-A200.radiobutton-input.active .radio {
+.lime-A200, .lime-A200.material-icons, .lime-A200.material-icon,
+.lime-A200.checkbox-input.active .checkbox, .lime-A200.radiobutton-input.active .radio {
     color: #EEFF41;
     border-color: #EEFF41;
 }
 
-.lime-A400, .lime-A400.checkbox-input.active .checkbox, .lime-A400.radiobutton-input.active .radio {
+.lime-A400, .lime-A400.material-icons, .lime-A400.material-icon,
+.lime-A400.checkbox-input.active .checkbox, .lime-A400.radiobutton-input.active .radio {
     color: #C6FF00;
     border-color: #C6FF00;
 }
 
-.lime-A700, .lime-A700.checkbox-input.active .checkbox, .lime-A700.radiobutton-input.active .radio {
+.lime-A700, .lime-A700.material-icons, .lime-A700.material-icon,
+.lime-A700.checkbox-input.active .checkbox, .lime-A700.radiobutton-input.active .radio {
     color: #AEEA00;
     border-color: #AEEA00;
 }
 
-.yellow-50, .yellow-50.checkbox-input.active .checkbox, .yellow-50.radiobutton-input.active .radio {
+.yellow-50, .yellow-50.material-icons, .yellow-50.material-icon,
+.yellow-50.checkbox-input.active .checkbox, .yellow-50.radiobutton-input.active .radio {
     color: #FFFDE7;
     border-color: #FFFDE7;
 }
 
-.yellow-100, .yellow-100.checkbox-input.active .checkbox, .yellow-100.radiobutton-input.active .radio {
+.yellow-100, .yellow-100.material-icons, .yellow-100.material-icon,
+.yellow-100.checkbox-input.active .checkbox, .yellow-100.radiobutton-input.active .radio {
     color: #FFF9C4;
     border-color: #FFF9C4;
 }
 
-.yellow-200, .yellow-200.checkbox-input.active .checkbox, .yellow-200.radiobutton-input.active .radio {
+.yellow-200, .yellow-200.material-icons, .yellow-200.material-icon,
+.yellow-200.checkbox-input.active .checkbox, .yellow-200.radiobutton-input.active .radio {
     color: #FFF59D;
     border-color: #FFF59D;
 }
 
-.yellow-300, .yellow-300.checkbox-input.active .checkbox, .yellow-300.radiobutton-input.active .radio {
+.yellow-300, .yellow-300.material-icons, .yellow-300.material-icon,
+.yellow-300.checkbox-input.active .checkbox, .yellow-300.radiobutton-input.active .radio {
     color: #FFF176;
     border-color: #FFF176;
 }
 
-.yellow-400, .yellow-400.checkbox-input.active .checkbox, .yellow-400.radiobutton-input.active .radio {
+.yellow-400, .yellow-400.material-icons, .yellow-400.material-icon,
+.yellow-400.checkbox-input.active .checkbox, .yellow-400.radiobutton-input.active .radio {
     color: #FFEE58;
     border-color: #FFEE58;
 }
 
-.yellow, .yellow.checkbox-input.active .checkbox, .yellow.radiobutton-input.active .radio,
-.yellow-500, .yellow-500.checkbox-input.active .checkbox, .yellow-500.radiobutton-input.active .radio {
+.yellow, .yellow.material-icons, .yellow.material-icon,
+.yellow.checkbox-input.active .checkbox, .yellow.radiobutton-input.active .radio,
+.yellow-500, .yellow-500.material-icons, .yellow-500.material-icon,
+.yellow-500.checkbox-input.active .checkbox, .yellow-500.radiobutton-input.active .radio {
     color: #FFEB3B;
     border-color: #FFEB3B;
 }
 
-.yellow-600, .yellow-600.checkbox-input.active .checkbox, .yellow-600.radiobutton-input.active .radio {
+.yellow-600, .yellow-600.material-icons, .yellow-600.material-icon,
+.yellow-600.checkbox-input.active .checkbox, .yellow-600.radiobutton-input.active .radio {
     color: #FDD835;
     border-color: #FDD835;
 }
 
-.yellow-700, .yellow-700.checkbox-input.active .checkbox, .yellow-700.radiobutton-input.active .radio {
+.yellow-700, .yellow-700.material-icons, .yellow-700.material-icon,
+.yellow-700.checkbox-input.active .checkbox, .yellow-700.radiobutton-input.active .radio {
     color: #FBC02D;
     border-color: #FBC02D;
 }
 
-.yellow-800, .yellow-800.checkbox-input.active .checkbox, .yellow-800.radiobutton-input.active .radio {
+.yellow-800, .yellow-800.material-icons, .yellow-800.material-icon,
+.yellow-800.checkbox-input.active .checkbox, .yellow-800.radiobutton-input.active .radio {
     color: #F9A825;
     border-color: #F9A825;
 }
 
-.yellow-900, .yellow-900.checkbox-input.active .checkbox, .yellow-900.radiobutton-input.active .radio {
+.yellow-900, .yellow-900.material-icons, .yellow-900.material-icon,
+.yellow-900.checkbox-input.active .checkbox, .yellow-900.radiobutton-input.active .radio {
     color: #F57F17;
     border-color: #F57F17;
 }
 
-.yellow-A100, .yellow-A100.checkbox-input.active .checkbox, .yellow-A100.radiobutton-input.active .radio {
+.yellow-A100, .yellow-A100.material-icons, .yellow-A100.material-icon,
+.yellow-A100.checkbox-input.active .checkbox, .yellow-A100.radiobutton-input.active .radio {
     color: #FFFF8D;
     border-color: #FFFF8D;
 }
 
-.yellow-A200, .yellow-A200.checkbox-input.active .checkbox, .yellow-A200.radiobutton-input.active .radio {
+.yellow-A200, .yellow-A200.material-icons, .yellow-A200.material-icon,
+.yellow-A200.checkbox-input.active .checkbox, .yellow-A200.radiobutton-input.active .radio {
     color: #FFFF00;
     border-color: #FFFF00;
 }
 
-.yellow-A400, .yellow-A400.checkbox-input.active .checkbox, .yellow-A400.radiobutton-input.active .radio {
+.yellow-A400, .yellow-A400.material-icons, .yellow-A400.material-icon,
+.yellow-A400.checkbox-input.active .checkbox, .yellow-A400.radiobutton-input.active .radio {
     color: #FFEA00;
     border-color: #FFEA00;
 }
 
-.yellow-A700, .yellow-A700.checkbox-input.active .checkbox, .yellow-A700.radiobutton-input.active .radio {
+.yellow-A700, .yellow-A700.material-icons, .yellow-A700.material-icon,
+.yellow-A700.checkbox-input.active .checkbox, .yellow-A700.radiobutton-input.active .radio {
     color: #FFD600;
     border-color: #FFD600;
 }
 
-.amber-50, .amber-50.checkbox-input.active .checkbox, .amber-50.radiobutton-input.active .radio {
+.amber-50, .amber-50.material-icons, .amber-50.material-icon,
+.amber-50.checkbox-input.active .checkbox, .amber-50.radiobutton-input.active .radio {
     color: #FFF8E1;
     border-color: #FFF8E1;
 }
 
-.amber-100, .amber-100.checkbox-input.active .checkbox, .amber-100.radiobutton-input.active .radio {
+.amber-100, .amber-100.material-icons, .amber-100.material-icon,
+.amber-100.checkbox-input.active .checkbox, .amber-100.radiobutton-input.active .radio {
     color: #FFECB3;
     border-color: #FFECB3;
 }
 
-.amber-200, .amber-200.checkbox-input.active .checkbox, .amber-200.radiobutton-input.active .radio {
+.amber-200, .amber-200.material-icons, .amber-200.material-icon,
+.amber-200.checkbox-input.active .checkbox, .amber-200.radiobutton-input.active .radio {
     color: #FFE082;
     border-color: #FFE082;
 }
 
-.amber-300, .amber-300.checkbox-input.active .checkbox, .amber-300.radiobutton-input.active .radio {
+.amber-300, .amber-300.material-icons, .amber-300.material-icon,
+.amber-300.checkbox-input.active .checkbox, .amber-300.radiobutton-input.active .radio {
     color: #FFD54F;
     border-color: #FFD54F;
 }
 
-.amber-400, .amber-400.checkbox-input.active .checkbox, .amber-400.radiobutton-input.active .radio {
+.amber-400, .amber-400.material-icons, .amber-400.material-icon,
+.amber-400.checkbox-input.active .checkbox, .amber-400.radiobutton-input.active .radio {
     color: #FFCA28;
     border-color: #FFCA28;
 }
 
-.amber, .amber.checkbox-input.active .checkbox, .amber.radiobutton-input.active .radio,
-.amber-500, .amber-500.checkbox-input.active .checkbox, .amber-500.radiobutton-input.active .radio {
+.amber, .amber.material-icons, .amber.material-icon,
+.amber.checkbox-input.active .checkbox, .amber.radiobutton-input.active .radio,
+.amber-500, .amber-500.material-icons, .amber-500.material-icon,
+.amber-500.checkbox-input.active .checkbox, .amber-500.radiobutton-input.active .radio {
     color: #FFC107;
     border-color: #FFC107;
 }
 
-.amber-600, .amber-600.checkbox-input.active .checkbox, .amber-600.radiobutton-input.active .radio {
+.amber-600, .amber-600.material-icons, .amber-600.material-icon,
+.amber-600.checkbox-input.active .checkbox, .amber-600.radiobutton-input.active .radio {
     color: #FFB300;
     border-color: #FFB300;
 }
 
-.amber-700, .amber-700.checkbox-input.active .checkbox, .amber-700.radiobutton-input.active .radio {
+.amber-700, .amber-700.material-icons, .amber-700.material-icon,
+.amber-700.checkbox-input.active .checkbox, .amber-700.radiobutton-input.active .radio {
     color: #FFA000;
     border-color: #FFA000;
 }
 
-.amber-800, .amber-800.checkbox-input.active .checkbox, .amber-800.radiobutton-input.active .radio {
+.amber-800, .amber-800.material-icons, .amber-800.material-icon,
+.amber-800.checkbox-input.active .checkbox, .amber-800.radiobutton-input.active .radio {
     color: #FF8F00;
     border-color: #FF8F00;
 }
 
-.amber-900, .amber-900.checkbox-input.active .checkbox, .amber-900.radiobutton-input.active .radio {
+.amber-900, .amber-900.material-icons, .amber-900.material-icon,
+.amber-900.checkbox-input.active .checkbox, .amber-900.radiobutton-input.active .radio {
     color: #FF6F00;
     border-color: #FF6F00;
 }
 
-.amber-A100, .amber-A100.checkbox-input.active .checkbox, .amber-A100.radiobutton-input.active .radio {
+.amber-A100, .amber-A100.material-icons, .amber-A100.material-icon,
+.amber-A100.checkbox-input.active .checkbox, .amber-A100.radiobutton-input.active .radio {
     color: #FFE57F;
     border-color: #FFE57F;
 }
 
-.amber-A200, .amber-A200.checkbox-input.active .checkbox, .amber-A200.radiobutton-input.active .radio {
+.amber-A200, .amber-A200.material-icons, .amber-A200.material-icon,
+.amber-A200.checkbox-input.active .checkbox, .amber-A200.radiobutton-input.active .radio {
     color: #FFD740;
     border-color: #FFD740;
 }
 
-.amber-A400, .amber-A400.checkbox-input.active .checkbox, .amber-A400.radiobutton-input.active .radio {
+.amber-A400, .amber-A400.material-icons, .amber-A400.material-icon,
+.amber-A400.checkbox-input.active .checkbox, .amber-A400.radiobutton-input.active .radio {
     color: #FFC400;
     border-color: #FFC400;
 }
 
-.amber-A700, .amber-A700.checkbox-input.active .checkbox, .amber-A700.radiobutton-input.active .radio {
+.amber-A700, .amber-A700.material-icons, .amber-A700.material-icon,
+.amber-A700.checkbox-input.active .checkbox, .amber-A700.radiobutton-input.active .radio {
     color: #FFAB00;
     border-color: #FFAB00;
 }
 
-.orange-50, .orange-50.checkbox-input.active .checkbox, .orange-50.radiobutton-input.active .radio {
+.orange-50, .orange-50.material-icons, .orange-50.material-icon,
+.orange-50.checkbox-input.active .checkbox, .orange-50.radiobutton-input.active .radio {
     color: #FFF3E0;
     border-color: #FFF3E0;
 }
 
-.orange-100, .orange-100.checkbox-input.active .checkbox, .orange-100.radiobutton-input.active .radio {
+.orange-100, .orange-100.material-icons, .orange-100.material-icon,
+.orange-100.checkbox-input.active .checkbox, .orange-100.radiobutton-input.active .radio {
     color: #FFE0B2;
     border-color: #FFE0B2;
 }
 
-.orange-200, .orange-200.checkbox-input.active .checkbox, .orange-200.radiobutton-input.active .radio {
+.orange-200, .orange-200.material-icons, .orange-200.material-icon,
+.orange-200.checkbox-input.active .checkbox, .orange-200.radiobutton-input.active .radio {
     color: #FFCC80;
     border-color: #FFCC80;
 }
 
-.orange-300, .orange-300.checkbox-input.active .checkbox, .orange-300.radiobutton-input.active .radio {
+.orange-300, .orange-300.material-icons, .orange-300.material-icon,
+.orange-300.checkbox-input.active .checkbox, .orange-300.radiobutton-input.active .radio {
     color: #FFB74D;
     border-color: #FFB74D;
 }
 
-.orange-400, .orange-400.checkbox-input.active .checkbox, .orange-400.radiobutton-input.active .radio {
+.orange-400, .orange-400.material-icons, .orange-400.material-icon,
+.orange-400.checkbox-input.active .checkbox, .orange-400.radiobutton-input.active .radio {
     color: #FFA726;
     border-color: #FFA726;
 }
 
-.orange, .orange.checkbox-input.active .checkbox, .orange.radiobutton-input.active .radio,
-.orange-500, .orange-500.checkbox-input.active .checkbox, .orange-500.radiobutton-input.active .radio {
+.orange, .orange.material-icons, .orange.material-icon,
+.orange.checkbox-input.active .checkbox, .orange.radiobutton-input.active .radio,
+.orange-500, .orange-500.material-icons, .orange-500.material-icon,
+.orange-500.checkbox-input.active .checkbox, .orange-500.radiobutton-input.active .radio {
     color: #FF9800;
     border-color: #FF9800;
 }
 
-.orange-600, .orange-600.checkbox-input.active .checkbox, .orange-600.radiobutton-input.active .radio {
+.orange-600, .orange-600.material-icons, .orange-600.material-icon,
+.orange-600.checkbox-input.active .checkbox, .orange-600.radiobutton-input.active .radio {
     color: #FB8C00;
     border-color: #FB8C00;
 }
 
-.orange-700, .orange-700.checkbox-input.active .checkbox, .orange-700.radiobutton-input.active .radio {
+.orange-700, .orange-700.material-icons, .orange-700.material-icon,
+.orange-700.checkbox-input.active .checkbox, .orange-700.radiobutton-input.active .radio {
     color: #F57C00;
     border-color: #F57C00;
 }
 
-.orange-800, .orange-800.checkbox-input.active .checkbox, .orange-800.radiobutton-input.active .radio {
+.orange-800, .orange-800.material-icons, .orange-800.material-icon,
+.orange-800.checkbox-input.active .checkbox, .orange-800.radiobutton-input.active .radio {
     color: #EF6C00;
     border-color: #EF6C00;
 }
 
-.orange-900, .orange-900.checkbox-input.active .checkbox, .orange-900.radiobutton-input.active .radio {
+.orange-900, .orange-900.material-icons, .orange-900.material-icon,
+.orange-900.checkbox-input.active .checkbox, .orange-900.radiobutton-input.active .radio {
     color: #E65100;
     border-color: #E65100;
 }
 
-.orange-A100, .orange-A100.checkbox-input.active .checkbox, .orange-A100.radiobutton-input.active .radio {
+.orange-A100, .orange-A100.material-icons, .orange-A100.material-icon,
+.orange-A100.checkbox-input.active .checkbox, .orange-A100.radiobutton-input.active .radio {
     color: #FFD180;
     border-color: #FFD180;
 }
 
-.orange-A200, .orange-A200.checkbox-input.active .checkbox, .orange-A200.radiobutton-input.active .radio {
+.orange-A200, .orange-A200.material-icons, .orange-A200.material-icon,
+.orange-A200.checkbox-input.active .checkbox, .orange-A200.radiobutton-input.active .radio {
     color: #FFAB40;
     border-color: #FFAB40;
 }
 
-.orange-A400, .orange-A400.checkbox-input.active .checkbox, .orange-A400.radiobutton-input.active .radio {
+.orange-A400, .orange-A400.material-icons, .orange-A400.material-icon,
+.orange-A400.checkbox-input.active .checkbox, .orange-A400.radiobutton-input.active .radio {
     color: #FF9100;
     border-color: #FF9100;
 }
 
-.orange-A700, .orange-A700.checkbox-input.active .checkbox, .orange-A700.radiobutton-input.active .radio {
+.orange-A700, .orange-A700.material-icons, .orange-A700.material-icon,
+.orange-A700.checkbox-input.active .checkbox, .orange-A700.radiobutton-input.active .radio {
     color: #FF6D00;
     border-color: #FF6D00;
 }
@@ -1124,7 +1307,8 @@
     border-color: #FF7043;
 }
 
-.deep-orange, .deep-orange.checkbox-input.active .checkbox, .deep-orange.radiobutton-input.active .radio,
+.deep-orange, .deep-orange.material-icons, .deep-orange.material-icon,
+.deep-orange.checkbox-input.active .checkbox, .deep-orange.radiobutton-input.active .radio,
 .deep-orange-500, .deep-orange-500.checkbox-input.active .checkbox, .deep-orange-500.radiobutton-input.active .radio {
     color: #FF5722;
     border-color: #FF5722;
@@ -1170,104 +1354,126 @@
     border-color: #DD2C00;
 }
 
-.brown-50, .brown-50.checkbox-input.active .checkbox, .brown-50.radiobutton-input.active .radio {
+.brown-50, .brown-50.material-icons, .brown-50.material-icon,
+.brown-50.checkbox-input.active .checkbox, .brown-50.radiobutton-input.active .radio {
     color: #EFEBE9;
     border-color: #EFEBE9;
 }
 
-.brown-100, .brown-100.checkbox-input.active .checkbox, .brown-100.radiobutton-input.active .radio {
+.brown-100, .brown-100.material-icons, .brown-100.material-icon,
+.brown-100.checkbox-input.active .checkbox, .brown-100.radiobutton-input.active .radio {
     color: #D7CCC8;
     border-color: #D7CCC8;
 }
 
-.brown-200, .brown-200.checkbox-input.active .checkbox, .brown-200.radiobutton-input.active .radio {
+.brown-200, .brown-200.material-icons, .brown-200.material-icon,
+.brown-200.checkbox-input.active .checkbox, .brown-200.radiobutton-input.active .radio {
     color: #BCAAA4;
     border-color: #BCAAA4;
 }
 
-.brown-300, .brown-300.checkbox-input.active .checkbox, .brown-300.radiobutton-input.active .radio {
+.brown-300, .brown-300.material-icons, .brown-300.material-icon,
+.brown-300.checkbox-input.active .checkbox, .brown-300.radiobutton-input.active .radio {
     color: #A1887F;
     border-color: #A1887F;
 }
 
-.brown-400, .brown-400.checkbox-input.active .checkbox, .brown-400.radiobutton-input.active .radio {
+.brown-400, .brown-400.material-icons, .brown-400.material-icon,
+.brown-400.checkbox-input.active .checkbox, .brown-400.radiobutton-input.active .radio {
     color: #8D6E63;
     border-color: #8D6E63;
 }
 
-.brown, .brown.checkbox-input.active .checkbox, .brown.radiobutton-input.active .radio,
-.brown-500, .brown-500.checkbox-input.active .checkbox, .brown-500.radiobutton-input.active .radio {
+.brown, .brown.material-icons, .brown.material-icon,
+.brown.checkbox-input.active .checkbox, .brown.radiobutton-input.active .radio,
+.brown-500, .brown-500.material-icons, .brown-500.material-icon,
+.brown-500.checkbox-input.active .checkbox, .brown-500.radiobutton-input.active .radio {
     color: #795548;
     border-color: #795548;
 }
 
-.brown-600, .brown-600.checkbox-input.active .checkbox, .brown-600.radiobutton-input.active .radio {
+.brown-600, .brown-600.material-icons, .brown-600.material-icon,
+.brown-600.checkbox-input.active .checkbox, .brown-600.radiobutton-input.active .radio {
     color: #6D4C41;
     border-color: #6D4C41;
 }
 
-.brown-700, .brown-700.checkbox-input.active .checkbox, .brown-700.radiobutton-input.active .radio {
+.brown-700, .brown-700.material-icons, .brown-700.material-icon,
+.brown-700.checkbox-input.active .checkbox, .brown-700.radiobutton-input.active .radio {
     color: #5D4037;
     border-color: #5D4037;
 }
 
-.brown-800, .brown-800.checkbox-input.active .checkbox, .brown-800.radiobutton-input.active .radio {
+.brown-800, .brown-800.material-icons, .brown-800.material-icon,
+.brown-800.checkbox-input.active .checkbox, .brown-800.radiobutton-input.active .radio {
     color: #4E342E;
     border-color: #4E342E;
 }
 
-.brown-900, .brown-900.checkbox-input.active .checkbox, .brown-900.radiobutton-input.active .radio {
+.brown-900, .brown-900.material-icons, .brown-900.material-icon,
+.brown-900.checkbox-input.active .checkbox, .brown-900.radiobutton-input.active .radio {
     color: #3E2723;
     border-color: #3E2723;
 }
 
-.grey-50, .grey-50.checkbox-input.active .checkbox, .grey-50.radiobutton-input.active .radio {
+.grey-50, .grey-50.material-icons, .grey-50.material-icon,
+.grey-50.checkbox-input.active .checkbox, .grey-50.radiobutton-input.active .radio {
     color: #FAFAFA;
     border-color: #FAFAFA;
 }
 
-.grey-100, .grey-100.checkbox-input.active .checkbox, .grey-100.radiobutton-input.active .radio {
+.grey-100, .grey-100.material-icons, .grey-100.material-icon,
+.grey-100.checkbox-input.active .checkbox, .grey-100.radiobutton-input.active .radio {
     color: #F5F5F5;
     border-color: #F5F5F5;
 }
 
-.grey-200, .grey-200.checkbox-input.active .checkbox, .grey-200.radiobutton-input.active .radio {
+.grey-200, .grey-200.material-icons, .grey-200.material-icon,
+.grey-200.checkbox-input.active .checkbox, .grey-200.radiobutton-input.active .radio {
     color: #EEEEEE;
     border-color: #EEEEEE;
 }
 
-.grey-300, .grey-300.checkbox-input.active .checkbox, .grey-300.radiobutton-input.active .radio {
+.grey-300, .grey-300.material-icons, .grey-300.material-icon,
+.grey-300.checkbox-input.active .checkbox, .grey-300.radiobutton-input.active .radio {
     color: #E0E0E0;
     border-color: #E0E0E0;
 }
 
-.grey-400, .grey-400.checkbox-input.active .checkbox, .grey-400.radiobutton-input.active .radio {
+.grey-400, .grey-400.material-icons, .grey-400.material-icon,
+.grey-400.checkbox-input.active .checkbox, .grey-400.radiobutton-input.active .radio {
     color: #BDBDBD;
     border-color: #BDBDBD;
 }
 
-.grey, .grey.checkbox-input.active .checkbox, .grey.radiobutton-input.active .radio,
-.grey-500, .grey-500.checkbox-input.active .checkbox, .grey-500.radiobutton-input.active .radio {
+.grey, .grey.material-icons, .grey.material-icon,
+.grey.checkbox-input.active .checkbox, .grey.radiobutton-input.active .radio,
+.grey-500, .grey-500.material-icons, .grey-500.material-icon,
+.grey-500.checkbox-input.active .checkbox, .grey-500.radiobutton-input.active .radio {
     color: #9E9E9E;
     border-color: #9E9E9E;
 }
 
-.grey-600, .grey-600.checkbox-input.active .checkbox, .grey-600.radiobutton-input.active .radio {
+.grey-600, .grey-600.material-icons, .grey-600.material-icon,
+.grey-600.checkbox-input.active .checkbox, .grey-600.radiobutton-input.active .radio {
     color: #757575;
     border-color: #757575;
 }
 
-.grey-700, .grey-700.checkbox-input.active .checkbox, .grey-700.radiobutton-input.active .radio {
+.grey-700, .grey-700.material-icons, .grey-700.material-icon,
+.grey-700.checkbox-input.active .checkbox, .grey-700.radiobutton-input.active .radio {
     color: #616161;
     border-color: #616161;
 }
 
-.grey-800, .grey-800.checkbox-input.active .checkbox, .grey-800.radiobutton-input.active .radio {
+.grey-800, .grey-800.material-icons, .grey-800.material-icon,
+.grey-800.checkbox-input.active .checkbox, .grey-800.radiobutton-input.active .radio {
     color: #424242;
     border-color: #424242;
 }
 
-.grey-900, .grey-900.checkbox-input.active .checkbox, .grey-900.radiobutton-input.active .radio {
+.grey-900, .grey-900.material-icons, .grey-900.material-icon,
+.grey-900.checkbox-input.active .checkbox, .grey-900.radiobutton-input.active .radio {
     color: #212121;
     border-color: #212121;
 }
@@ -1297,7 +1503,8 @@
     border-color: #78909C;
 }
 
-.blue-grey, .blue-grey.checkbox-input.active .checkbox, .blue-grey.radiobutton-input.active .radio,
+.blue-grey, .blue-grey.material-icons, .blue-grey.material-icon,
+.blue-grey.checkbox-input.active .checkbox, .blue-grey.radiobutton-input.active .radio,
 .blue-grey-500, .blue-grey-500.checkbox-input.active .checkbox, .blue-grey-500.radiobutton-input.active .radio {
     color: #607D8B;
     border-color: #607D8B;
@@ -1323,12 +1530,14 @@
     border-color: #263238;
 }
 
-.black, .black.checkbox-input.active .checkbox, .black.radiobutton-input.active .radio {
+.black, .black.material-icons, .black.material-icon,
+.black.checkbox-input.active .checkbox, .black.radiobutton-input.active .radio {
     color: #000000;
     border-color: #000000;
 }
 
-.white, .white.checkbox-input.active .checkbox, .white.radiobutton-input.active .radio {
+.white, .white.material-icons, .white.material-icon,
+.white.checkbox-input.active .checkbox, .white.radiobutton-input.active .radio {
     color: #FFFFFF;
     border-color: #FFFFFF;
 }

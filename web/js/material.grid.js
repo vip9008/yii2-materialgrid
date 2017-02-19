@@ -31,23 +31,17 @@ function select_menu_width() {
         if ($(this).hasClass('list-menu')) {
             return;
         }
-
+        
         var width = $(this).css('width', '').children('.select-menu').css('width', '').width();
         var label_width = $(this).css('width', '').children('.select-value').css('width', '').outerWidth();
 
         if (width > max_width) {
-            $(this).width(width);
-            width = width + margin;
-            width = Math.ceil((width / chunk).toFixed(1)) * chunk;
-            $(this).children('.select-menu').width(width);
-        } else {
-            if ((label_width + margin) > max_width) {
-                width = label_width;
+            if (!$(this).hasClass('context-menu')) {
                 $(this).width(width);
                 width = width + margin;
-                width = Math.ceil((width / chunk).toFixed(1)) * chunk;
-                $(this).children('.select-menu').width(width);
             }
+            width = Math.ceil((width / chunk).toFixed(1)) * chunk;
+            $(this).children('.select-menu').width(width);
         }
     });
 }
@@ -122,7 +116,7 @@ function material_grid_init() {
         }
     });
 
-    $('.data-table > table > tbody > tr').on('click', 'td.control > .checkbox-input', function() {
+    $('.data-table table > tbody > tr').on('click', 'td.control > .checkbox-input', function() {
         if (!$(this).hasClass('active')) {
             $(this).parent('.control').parent('tr').addClass('seleceted');
         } else {
@@ -141,7 +135,8 @@ function material_grid_init() {
         }
     });
 
-    $('.data-table > table > thead > tr').on('click', 'th.control > .checkbox-input', function() {
+    $('.data-table table > thead > tr').on('click', 'th.control > .checkbox-input', function() {
+
         if (!$(this).hasClass('active')) {
             $(this).parents('thead').siblings('tbody').children('tr').children('td.control').children('.checkbox-input').each(function() {
                 if (!$(this).hasClass('active')) {
@@ -181,8 +176,8 @@ function material_grid_init() {
     });
 
     $('.select-control').each(function() {
-        if ($(this).children('input').val()) {
-            var html = $(this).children('.select-menu').children('.menu-item.active').html();
+        if (!$(this).hasClass('context-menu') && $(this).children('input').val()) {
+            var html = $(this).children('.select-menu').children('.items-container').children('.menu-item.active').html();
             $(this).children('.select-value').html(html);
         }
     });
@@ -191,21 +186,11 @@ function material_grid_init() {
         if ($(this).parent('.select-control').hasClass('active')) {
             $(this).parent('.select-control').removeClass('active');
             $(this).siblings('.select-menu').css('margin-top', '');
-
-            if ($(this).parent('.select-control').hasClass('bar-menu')) {
-                $(this).siblings('.value-bar').remove();
-            }
         } else {
             $(this).parent('.select-control').addClass('active');
 
-            if ($(this).parent('.select-control').hasClass('bar-menu')) {
-                $('<div class="value-bar"></div>').insertBefore($(this));
-                var bar_width = $(this).siblings('.select-menu').outerWidth();
-                $(this).siblings('.value-bar').outerWidth(bar_width);
-            }
-
             if ($('body').hasClass('width-sm') && $(this).parent('.select-control').hasClass('default-menu')) {
-                var index = $(this).siblings('.select-menu').children('.menu-item.active').index();
+                var index = $(this).siblings('.select-menu').children('.items-container').children('.menu-item.active').index();
                 var position = -14;
                 if (index > 0) {
                     position = position - (index * 48);
@@ -215,20 +200,33 @@ function material_grid_init() {
         }
     });
 
+    $('.select-control').on('click', '.select-btn', function() {
+        if ($(this).parent('.select-control').hasClass('active')) {
+            $(this).parent('.select-control').removeClass('active');
+            $(this).siblings('.select-menu').css('margin-top', '');
+        } else {
+            $(this).parent('.select-control').addClass('active');
+        }
+    });
+
     $('.select-control').on('click', '.select-overlay', function() {
         $(this).parent('.select-control').removeClass('active');
-        if ($(this).parent('.select-control').hasClass('bar-menu')) {
-            $(this).siblings('.value-bar').remove();
-        }
         $(this).siblings('.select-menu').css('margin-top', '');
     });
 
-    $('.select-control .select-menu').on('click', '.menu-item', function() {
-        $(this).addClass('active');
-        $(this).siblings('.menu-item').removeClass('active');
-        $(this).parent('.select-menu').css('margin-top', '').parent('.select-control').removeClass('active');
-        $(this).parent('.select-menu').parent('.select-control').children('.select-value').html($(this).html());
-        $(this).parent('.select-menu').parent('.select-control').children('input').val($(this).attr('data-value'));
+    $('.select-control .select-menu .items-container').on('click', '.menu-item', function() {
+        if ($(this).hasClass('disabled') || $(this).is(':disabled')) {
+            return;
+        }
+
+        if (!$(this).parent('.items-container').parent('.select-menu').parent('.select-control').hasClass('context-menu')) {
+            $(this).addClass('active');
+            $(this).siblings('.menu-item').removeClass('active');
+            $(this).parent('.items-container').parent('.select-menu').parent('.select-control').children('.select-value').html($(this).html());
+            $(this).parent('.items-container').parent('.select-menu').parent('.select-control').children('input').val($(this).attr('data-value'));
+        }
+        
+        $(this).parent('.items-container').parent('.select-menu').css('margin-top', '').parent('.select-control').removeClass('active');
     });
 
     $('.expansion-panel .panel').on('click', '.icon', function() {
