@@ -183,6 +183,8 @@ html, body {
     cursor: pointer;
 }
 
+#side-nav > .side-nav-container > .nav > .nav-block > a .material-icon, 
+#side-nav > .side-nav-container > .nav > .nav-block > button .material-icon,
 #side-nav > .side-nav-container > .nav > .nav-block > a .material-icons, 
 #side-nav > .side-nav-container > .nav > .nav-block > button .material-icons {
     line-height: 42px;
@@ -217,7 +219,8 @@ html, body {
     text-decoration: none;
 }
 
-#side-nav > .side-nav-container > .nav > .nav-block > .sub-menu > a .material-icons{
+#side-nav > .side-nav-container > .nav > .nav-block > .sub-menu > a .material-icon,
+#side-nav > .side-nav-container > .nav > .nav-block > .sub-menu > a .material-icons {
     line-height: 33px;
     height: 33px;
     margin-right: 16px;
@@ -294,6 +297,10 @@ html, body {
     transition: all 0.25s;
     opacity: 0;
     display: inline-block;
+}
+
+#page-content > .top-bar .section-title.persistent {
+    opacity: 1;
 }
 
 #page-content > .top-bar > .side-nav-toggle {
@@ -410,6 +417,7 @@ html, body {
     padding: 12px 24px 12px 60px;
 }
 
+#page-content .note .material-icon,
 #page-content .note .material-icons {
     float: left;
     margin-left: -36px;
@@ -490,10 +498,6 @@ html, body {
 @media (max-width: 839px) {
     #page-content > .top-bar > .side-nav-toggle {
         margin-right: 0;
-    }
-
-    #page-content > .top-bar .section-title {
-        display: none;
     }
 
     #page-content .page-header .page-title {
