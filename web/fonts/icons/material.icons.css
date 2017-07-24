@@ -38,7 +38,9 @@
 }
 
 a.material-icons, a.material-icon,
-button.material-icons, button.material-icon {
+button.material-icons, button.material-icon,
+.light a.material-icons, .light a.material-icon,
+.light button.material-icons, .light button.material-icon {
     border: none;
     background: transparent;
     padding: 0;
@@ -52,9 +54,37 @@ button.material-icons, button.material-icon {
 a.material-icons.disabled, a.material-icons[disabled], a.material-icons:disabled,
 a.material-icon.disabled, a.material-icon[disabled], a.material-icon:disabled,
 button.material-icons.disabled, button.material-icons[disabled], button.material-icons:disabled,
-button.material-icon.disabled, button.material-icon[disabled], button.material-icon:disabled {
+button.material-icon.disabled, button.material-icon[disabled], button.material-icon:disabled,
+.light a.material-icons.disabled, .light a.material-icons[disabled], .light a.material-icons:disabled,
+.light a.material-icon.disabled, .light a.material-icon[disabled], .light a.material-icon:disabled,
+.light button.material-icons.disabled, .light button.material-icons[disabled], .light button.material-icons:disabled,
+.light button.material-icon.disabled, .light button.material-icon[disabled], .light button.material-icon:disabled {
     color: rgba(0, 0, 0, 0.26);
     cursor: default;
+}
+
+.dark a.material-icons, .dark a.material-icon,
+.dark button.material-icons, .dark button.material-icon {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.dark a.material-icons.disabled, .dark a.material-icons[disabled], .dark a.material-icons:disabled,
+.dark a.material-icon.disabled, .dark a.material-icon[disabled], .dark a.material-icon:disabled,
+.dark button.material-icons.disabled, .dark button.material-icons[disabled], .dark button.material-icons:disabled,
+.dark button.material-icon.disabled, .dark button.material-icon[disabled], .dark button.material-icon:disabled {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.color a.material-icons, .color a.material-icon,
+.color button.material-icons, .color button.material-icon {
+    color: inherit;
+}
+
+.color a.material-icons.disabled, .color a.material-icons[disabled], .color a.material-icons:disabled,
+.color a.material-icon.disabled, .color a.material-icon[disabled], .color a.material-icon:disabled,
+.color button.material-icons.disabled, .color button.material-icons[disabled], .color button.material-icons:disabled,
+.color button.material-icon.disabled, .color button.material-icon[disabled], .color button.material-icon:disabled {
+    color: inherit;
 }
 
 
@@ -62,29 +92,27 @@ a.material-icons:before, a.material-icon:before,
 button.material-icons:before, button.material-icon:before {
     content: '';
     display: inline-block;
-    height: 0;
-    width: 0;
-    margin: 24px;
     border-radius: 100%;
     position: absolute;
-    top: -11px;
-    left: -11px;
+    top: 50%;
+    left: 50%;
+    margin-top: -24px;
+    margin-left: -24px;
+    height: 48px;
+    width: 48px;
     transition: all 0.2s;
+    transform: scale(0);
 }
 
 a.material-icons:focus:before, a.material-icon:focus:before,
 button.material-icons:focus:before, button.material-icon:focus:before {
-    height: 46px;
-    width: 46px;
-    margin: 0;
+    transform: scale(1);
     background-color: rgba(153, 153, 153, 0.2);
 }
 
 a.material-icons:active:before, a.material-icon:active:before,
 button.material-icons:active:before, button.material-icon:active:before {
-    height: 46px;
-    width: 46px;
-    margin: 0;
+    transform: scale(1);
     background-color: rgba(153, 153, 153, 0.4);
 }
 

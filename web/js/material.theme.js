@@ -76,7 +76,7 @@ function top_bar_effect() {
         }
     }
 
-    section_hash_detect(scroll);
+    // section_hash_detect(scroll);
 
     return scroll;
 }
