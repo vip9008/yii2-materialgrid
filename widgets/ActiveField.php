@@ -133,6 +133,8 @@ class ActiveField extends BaseActiveField
 
     public function passwordInput($options = [])
     {
+        Html::addCssClass($this->options, 'form-input');
+        Html::addCssClass($this->inputOptions, 'text-input');
         $options = array_merge($this->inputOptions, $options);
         $this->parts['{input}'] = Html::activePasswordInput($this->model, $this->attribute, $options);
 
