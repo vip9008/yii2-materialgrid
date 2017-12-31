@@ -95,8 +95,7 @@ class ActiveField extends BaseActiveField
             $label = "\n" . Html::tag('div', "\n" . $labelHtml, ['class' => 'list-item one-line']) . "\n";
         }
 
-        $selectLabel = Html::tag('div', '', ['class' => 'select-overlay']);
-        $selectLabel .= "\n" . Html::tag('div', $label, $options);
+        $selectLabel = Html::tag('div', $label, $options);
 
         $this->parts['{label}'] = $selectLabel;
 

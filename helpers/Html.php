@@ -17,9 +17,9 @@ class Html extends BaseHtml
         $selectOptions = static::renderSelectOptions($selection, $items, $options);
 
         $menuOptions['class'] = 'items-container';
-        if (isset($options['style'])) {
-            $menuOptions['style'] = $options['style'];
-            unset($options['style']);
+        if (isset($options['listHeight'])) {
+            $menuOptions['style'] = "max-height: none; height: {$options['listHeight']}px;";
+            unset($options['listHeight']);
         }
         $dropDownList = static::tag('div', "\n" . $selectOptions . "\n", $menuOptions);
         $dropDownList = static::tag('div', "\n" . $dropDownList . "\n", ['class' => 'select-menu']);

@@ -73,6 +73,10 @@ function window_width() {
 function material_grid_init() {
     window_width();
 
+    $(window).on('click', function(e) {
+        $('.select-control.active').removeClass('active');
+    });
+
     $('a[href*="#"]:not([href="#"])').on('click', function() {
         var hash_code = $(this).attr('href');
         $('a[href="' + hash_code + '"]').each(function() {
@@ -182,6 +186,10 @@ function material_grid_init() {
         }
     });
 
+    $('.select-control').on('click', function(event) {
+        event.stopPropagation();
+    });
+
     $('.select-control').on('click', '.select-value', function() {
         if ($(this).parent('.select-control').hasClass('active')) {
             $(this).parent('.select-control').removeClass('active');
@@ -209,11 +217,6 @@ function material_grid_init() {
         }
     });
 
-    $('.select-control').on('click', '.select-overlay', function() {
-        $(this).parent('.select-control').removeClass('active');
-        $(this).siblings('.select-menu').css('margin-top', '');
-    });
-
     $('.select-control .select-menu .items-container').on('click', '.menu-item', function() {
         if ($(this).hasClass('disabled') || $(this).is(':disabled')) {
             return;
@@ -231,7 +234,7 @@ function material_grid_init() {
 
     $('.expansion-panel .panel').on('click', '.icon', function() {
         if (!$(this).parent('.panel').hasClass('active')) {
-            $(this).parent('.panel').siblings('.panel.active').removeClass('active');
+            $(this).parent('.panel').closest('.expansion-panel').find('.panel.active').removeClass('active');
             $(this).parent('.panel').addClass('active');
         } else {
             $(this).parent('.panel').removeClass('active');
@@ -259,4 +262,12 @@ function material_grid_init() {
         var max = $(this).attr('maxLength');
         $(this).siblings('.hint').children('.char-count').html(max - count);
     });
+}
+
+function open_dialog(id) {
+    $(id).addClass('active');
+}
+
+function close_dialog(id) {
+    $(id).removeClass('active');
 }
