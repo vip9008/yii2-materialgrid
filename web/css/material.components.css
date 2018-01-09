@@ -257,6 +257,7 @@ code {
     margin: 0 0 8px;
     border: none;
     border-bottom: solid 1px rgba(0, 0, 0, 0.16);
+    border-radius: 0;
     color: rgba(0, 0, 0, 0.87);
     background: transparent;
     font-size: 12pt;
@@ -769,6 +770,11 @@ button.list-item, a.list-item {
     user-select: none;           /* Non-prefixed version, currently not supported by any browser */
 }
 
+.select-control.block {
+    display: block;
+    margin-right: 0;
+}
+
 .select-control.list-menu {
     height: auto;
 }
@@ -784,7 +790,7 @@ button.list-item, a.list-item {
     line-height: 32px;
     text-align: left;
     border-bottom: solid 1px rgba(0, 0, 0, 0.16);
-    padding: 0 32px 1px 4px;
+    padding: 0 28px 1px 0;
     font-size: 12pt;
     color: rgba(0, 0, 0, 0.87);
     cursor: pointer;

@@ -16,6 +16,7 @@ class AdminNavBar extends \yii\base\Widget
     public $copyright = false;
     public $copyrightOptions = [];
     public $themeColor = 'indigo';
+    public $theme = 'light';
 
     public function init()
     {
@@ -23,7 +24,7 @@ class AdminNavBar extends \yii\base\Widget
         AdminAsset::register($this->getView());
 
         // begin side nav container
-        echo Html::beginTag("div", ["id" => "side-nav"]);
+        echo Html::beginTag("div", ["id" => "side-nav", "class" => $this->theme]);
 
         // begin nav container
         Html::addCssClass($this->containerOptions, ['side-nav-container']);

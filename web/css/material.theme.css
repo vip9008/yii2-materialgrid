@@ -127,11 +127,20 @@ html, body {
     overflow-y: auto;
 }
 
+#side-nav.dark {
+    border-right: solid 1px black;
+}
+
 #side-nav > .side-nav-container {
     position: relative;
     padding-bottom: 96px;
     min-height: 100%;
     background-color: white;
+}
+
+#side-nav.dark > .side-nav-container {
+    background-color: black;
+    color: white;
 }
 
 #side-nav > .side-nav-container > .logo {
@@ -140,10 +149,14 @@ html, body {
     border-bottom: solid 1px rgba(0, 0, 0, 0.15);
 }
 
+#side-nav.dark > .side-nav-container > .logo {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+}
+
 #side-nav > .side-nav-container > .logo > a {
     display: block;
     margin: 0;
-    padding: 0 0 0 24px;
+    padding: 0 24px;
     line-height: inherit;
     height: 100%;
     font-family: 'robotobold', sans-serif;
@@ -166,6 +179,11 @@ html, body {
     background-color: #eee;
 }
 
+#side-nav.dark > .side-nav-container > .nav > .nav-block a:focus,
+#side-nav.dark > .side-nav-container > .nav > .nav-block button:focus {
+    background-color: #111;
+}
+
 #side-nav > .side-nav-container > .nav > .nav-block > a,
 #side-nav > .side-nav-container > .nav > .nav-block > button {
     width: 100%;
@@ -182,6 +200,11 @@ html, body {
     font-family: 'robotobold';
     transition: background 0.5s;
     cursor: pointer;
+}
+
+#side-nav.dark > .side-nav-container > .nav > .nav-block > a,
+#side-nav.dark > .side-nav-container > .nav > .nav-block > button {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 #side-nav > .side-nav-container > .nav > .nav-block > a .material-icon, 
@@ -220,6 +243,10 @@ html, body {
     text-decoration: none;
 }
 
+#side-nav.dark > .side-nav-container > .nav > .nav-block > .sub-menu > a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 #side-nav > .side-nav-container > .nav > .nav-block > .sub-menu > a .material-icon,
 #side-nav > .side-nav-container > .nav > .nav-block > .sub-menu > a .material-icons {
     line-height: 33px;
@@ -245,6 +272,18 @@ html, body {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+#side-nav.dark > .side-nav-container > .copyright {
+    border-top: solid 1px rgba(255, 255, 255, 0.15);
+}
+
+#side-nav > .side-nav-container > .copyright a {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+#side-nav.dark > .side-nav-container > .copyright a {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 #page-content-overlay {
