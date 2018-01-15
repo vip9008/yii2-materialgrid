@@ -70,8 +70,24 @@ function window_width() {
     return true;
 }
 
+function activate_snackbar() {
+    var snackbar = $('#snackbars > .item').first();
+    if (snackbar.length) {
+        $(snackbar).addClass('active');
+        setTimeout(function() {
+            $('#snackbars > .item.active').removeClass('active').delay(300).queue(function(next) {
+                $(this).remove();
+                activate_snackbar();
+                next();
+            });
+        }, 3000);
+    }
+}
+
 function material_grid_init() {
     window_width();
+
+    activate_snackbar();
 
     $(window).on('click', function(e) {
         $('.select-control.active').removeClass('active');
@@ -94,6 +110,10 @@ function material_grid_init() {
                 return false;
             }
         }
+    });
+
+    $('#snackbars').on('click', '.item a.control.close', function() {
+        $(this).parent().remove();
     });
 
     $('.checkbox-input > .checkbox > input').each(function() {

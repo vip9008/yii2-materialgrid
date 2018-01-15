@@ -252,6 +252,13 @@ code {
     margin-right: 0;
 }
 
+.form-input .text-input:-webkit-autofill,
+.form-input .text-input:-webkit-autofill:hover,
+.form-input .text-input:-webkit-autofill:focus,
+.form-input .text-input:-webkit-autofill:active {
+    -webkit-transition-delay: 99999s;
+}
+
 .form-input .text-input {
     padding: 24px 0 9px;
     margin: 0 0 8px;
@@ -460,9 +467,11 @@ button.list-item, a.list-item {
 
 .list-item .avatar {
     float: left;
+    display: block;
     padding: 16px;
     height: 72px;
     width: 72px;
+    text-decoration: none;
 }
 
 .list-item .avatar > img,
@@ -493,6 +502,8 @@ button.list-item, a.list-item {
 .list-item .text {
     padding: 16px;
     line-height: initial;
+    display: block;
+    text-decoration: none;
 }
 
 .list-item .icon:not(.side-action) + .text,
@@ -1992,6 +2003,59 @@ button.list-item, a.list-item {
     animation-delay: 1.15s;
 }
 
+
+
+#snackbars {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -284px;
+    width: 100%;
+    max-width: 568px;
+    z-index: 6000;
+}
+
+#snackbars .item {
+    width: 100%;
+    margin: 0;
+    border-radius: 2px;
+    font-size: 10.5pt;
+    background-color: #323232;
+    color: white;
+    padding: 16px 24px;
+    display: table;
+    transition: transform 0.2s, opacity 0.2s;
+    -ms-transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#snackbars .item.active {
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+#snackbars .message {
+    display: table-cell;
+    text-align: left;
+}
+
+#snackbars .control {
+    padding-left: 24px;
+    display: table-cell;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-align: right;
+    color: #eeff41;
+    text-decoration: none;
+}
+
 @-webkit-keyframes indeterminate {
     0% {
         left:-35%;
@@ -2157,5 +2221,15 @@ button.list-item, a.list-item {
     
     .select-control .select-menu .menu-item {
         padding: 0 16px 4px;
+    }
+
+    #snackbars {
+        left: 0;
+        margin: 0;
+        max-width: none;
+    }
+
+    #snackbars .item {
+        border-radius: 0;
     }
 }
