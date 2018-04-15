@@ -30,22 +30,23 @@ class AdminNavBar extends \yii\base\Widget
         // begin nav container
         Html::addCssClass($this->containerOptions, ['side-nav-container']);
         echo Html::beginTag("div", $this->containerOptions);
-            if ($this->brandLabel) {
-                // begin logo container
-                echo Html::beginTag("div", ["class" => "logo"]);
-                Html::addCssClass($this->brandOptions, [$this->themeColor]);
-                echo Html::a($this->brandLabel, $this->brandUrl, $this->brandOptions);
-                // end logo container
-                echo Html::endTag('div');
-            }
+        
+        if ($this->brandLabel) {
+            // begin logo container
+            echo Html::beginTag("div", ["class" => "logo"]);
+            Html::addCssClass($this->brandOptions, [$this->themeColor]);
+            echo Html::a($this->brandLabel, $this->brandUrl, $this->brandOptions);
+            // end logo container
+            echo Html::endTag('div');
+        }
 
-            if ($this->topBlock) {
-                echo Html::beginTag("div", ["class" => "top-block"]);
-                echo $this->topBlock;
-                echo Html::endTag('div');
-            }
+        if ($this->topBlock) {
+            echo Html::beginTag("div", ["class" => "top-block"]);
+            echo $this->topBlock;
+            echo Html::endTag('div');
+        }
 
-            // begin nav list container
+        // begin nav list container
     }
 
     public function run()
