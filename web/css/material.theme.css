@@ -127,7 +127,7 @@ html, body {
 }
 
 #side-nav.dark {
-    border-right: solid 1px black;
+    border-right: solid 1px #333;
 }
 
 #side-nav > .side-nav-container {
@@ -138,7 +138,7 @@ html, body {
 }
 
 #side-nav.dark > .side-nav-container {
-    background-color: black;
+    background-color: #333;
     color: white;
 }
 
