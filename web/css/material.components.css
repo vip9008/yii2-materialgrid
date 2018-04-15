@@ -611,6 +611,12 @@ button.list-item, a.list-item {
     padding: 13px 15px;
 }
 
+.checkbox-input.block, .radiobutton-input.block {
+    display: block;
+    width: auto;
+    padding: 13px 0;
+}
+
 .checkbox-input.disabled, .radiobutton-input.disabled {
     cursor: default;
 }

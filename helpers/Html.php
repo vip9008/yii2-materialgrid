@@ -100,4 +100,27 @@ class Html extends BaseHtml
 
         return implode("\n", $lines);
     }
+
+    protected static function booleanInput($type, $name, $checked = false, $options = [])
+    {
+        $value = $checked ? 1 : 0;
+
+        $hiddenOptions = [];
+        if (isset($options['form'])) {
+            $hiddenOptions['form'] = $options['form'];
+        }
+
+        $label = '';
+        if (isset($options['label'])) {
+            $label = static::tag('span', $options['label'], ['class' => "label"]);
+        }
+
+        $input = static::tag(
+            'div',
+            static::hiddenInput($name, $value, $hiddenOptions),
+            ['class' => "checkbox"]
+        ).$label;
+
+        return $input;
+    }
 }
