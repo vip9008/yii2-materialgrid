@@ -37,19 +37,19 @@ $accentColor = ArrayHelper::getValue(Yii::$app->params, 'accentColor', 'blue');
                 <h1 class="chapter-title <?= '<?= $primaryColor ?>' ?>"><?= '<?= $this->title ?>' ?></h1>
 
                 <div class="expansion-panel">
-                <?= '<?php $form = ActiveForm::begin(["themeColor" => $accentColor]); ?>' ?>
+                <?= "<?php " ?>$form = ActiveForm::begin(['themeColor' => $accentColor]); ?>
                 <div class="panel active">
-                    <div class="label"><?= '<?= $this->title ?>' ?></div>
+                    <div class="label"><?= "<?= " ?>$this->title ?></div>
                     <div class="content"></div>
                     <div class="expansion-content">
-                        <?php foreach ($generator->getColumnNames() as $attribute) {
-                            if (in_array($attribute, $safeAttributes)) {
-                                echo "<?= " . $generator->generateActiveField($attribute) . " ?>\n\n";
-                            }
-                        } ?>
+<?php foreach ($generator->getColumnNames() as $attribute) {
+    if (in_array($attribute, $safeAttributes)) {
+        echo "                        <?= " . $generator->generateActiveField($attribute) . " ?>\n";
+    }
+} ?>
                     </div>
                     <div class="expansion-controls">
-                        <?= "<?= " ?>Html::submitButton(<?= $generator->generateString('Save') ?>, ['class' => "btn $accentColor"]) ?>
+                        <?= "<?= " ?>Html::submitButton(<?= $generator->generateString('Save') ?>, ['class' => "btn $primaryColor"]) ?>
                     </div>
                 </div>
                 <?= "<?php " ?>ActiveForm::end(); ?>

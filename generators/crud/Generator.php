@@ -44,6 +44,6 @@ class Generator extends BaseGenerator
             return "\$form->field(\$model, '$attribute')->$input()";
         }
 
-        return "\$form->field(\$model, '$attribute')->$input(['maxlength' => true])";
+        return "\$form->field(\$model, '$attribute')->$input()";
     }
 }
