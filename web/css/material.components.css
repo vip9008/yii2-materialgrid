@@ -115,6 +115,11 @@ code {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.btn.dense {
+    line-height: 32px;
+    font-size: 9.8pt;
+}
+
 .btn.raised {
     z-index: 2000;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2),
