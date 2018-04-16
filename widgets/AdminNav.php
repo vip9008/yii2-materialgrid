@@ -97,6 +97,11 @@ class AdminNav extends \yii\base\Widget
 
         $encodeLabel = isset($item['encode']) ? $item['encode'] : $this->encodeLabels;
         $label = $encodeLabel ? Html::encode($item['label']) : $item['label'];
+        $icon = ArrayHelper::getValue($item, 'icon', false);
+
+        if ($icon) {
+            $label = Html::tag('div', $icon, ['class' => 'material-icon']) . $label;
+        }
 
         $options = ArrayHelper::getValue($item, 'options', []);
         $items = ArrayHelper::getValue($item, 'items');
