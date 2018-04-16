@@ -16,7 +16,8 @@ class AdminNavBar extends \yii\base\Widget
     public $topBlock = false;
     public $copyright = false;
     public $copyrightOptions = [];
-    public $themeColor = 'indigo';
+    public $primaryColor = 'indigo';
+    public $accentColor = 'blue';
     public $theme = 'light';
 
     public function init()
@@ -34,7 +35,7 @@ class AdminNavBar extends \yii\base\Widget
         if ($this->brandLabel) {
             // begin logo container
             echo Html::beginTag("div", ["class" => "logo"]);
-            Html::addCssClass($this->brandOptions, [$this->themeColor]);
+            Html::addCssClass($this->brandOptions, [$this->primaryColor]);
             echo Html::a($this->brandLabel, $this->brandUrl, $this->brandOptions);
             // end logo container
             echo Html::endTag('div');
