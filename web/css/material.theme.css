@@ -169,6 +169,14 @@ html, body {
     padding: 16px 0;
 }
 
+#side-nav > .side-nav-container > .top-block {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+}
+
+#side-nav.dark > .side-nav-container > .top-block {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+}
+
 #side-nav > .side-nav-container > .nav {
     padding: 12px 0 10px;
 }
