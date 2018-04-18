@@ -6,74 +6,74 @@ body.dark-theme {
     color: rgba(255, 255, 255, 1);
 }
 
-.text-primary, .light-theme .text-primary {
+.text-primary, .light-theme .text-primary, .text-primary.light-theme {
     color: rgba(0, 0, 0, 0.87);
 }
 
-.text-secondary, .light-theme .text-secondary {
+.text-secondary, .light-theme .text-secondary, .text-secondary.light-theme {
     color: rgba(0, 0, 0, 0.54);
 }
 
-.text-hint, .light-theme .text-hint {
+.text-hint, .light-theme .text-hint, .text-hint.light-theme {
     color: rgba(0, 0, 0, 0.38);
 }
 
-.divider, .light-theme .divider {
+.divider, .light-theme .divider, .divider.light-theme {
     background-color: rgba(0, 0, 0, 0.12);
 }
 
-.layout-status-bar, .light-theme .layout-status-bar {
+.layout-status-bar, .light-theme .layout-status-bar, .layout-status-bar.light-theme {
     background-color: #E0E0E0;
     color: rgba(0, 0, 0, 0.87);
 }
 
-.layout-app-bar, .light-theme .layout-app-bar {
+.layout-app-bar, .light-theme .layout-app-bar, .layout-app-bar.light-theme {
     background-color: #F5F5F5;
     color: rgba(0, 0, 0, 0.87);
 }
 
-.layout-background, .light-theme .layout-background {
+.layout-background, .light-theme .layout-background, .layout-background.light-theme {
     background-color: #FAFAFA;
     color: rgba(0, 0, 0, 0.87);
 }
 
-.layout-cards, .light-theme .layout-cards {
+.layout-cards, .light-theme .layout-cards, .layout-cards.light-theme {
     background-color: #FFFFFF;
     color: rgba(0, 0, 0, 0.87);
 }
 
-.dark-theme .text-primary {
+.dark-theme .text-primary, .text-primary.dark-theme {
     color: rgba(255, 255, 255, 1);
 }
 
-.dark-theme .text-secondary {
+.dark-theme .text-secondary, .text-secondary.dark-theme {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.dark-theme .text-hint {
+.dark-theme .text-hint, .text-hint.dark-theme {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.dark-theme .divider {
+.dark-theme .divider, .divider.dark-theme {
     background-color: rgba(255, 255, 255, 0.12);
 }
 
-.dark-theme .layout-status-bar {
+.dark-theme .layout-status-bar, .layout-status-bar.light-theme {
     background-color: #000000;
     color: rgba(0, 0, 0, 0.87);
 }
 
-.dark-theme .layout-app-bar {
+.dark-theme .layout-app-bar, .layout-app-bar.light-theme {
     background-color: #212121;
     color: rgba(0, 0, 0, 0.87);
 }
 
-.dark-theme .layout-background {
+.dark-theme .layout-background, .layout-background.light-theme {
     background-color: #303030;
     color: rgba(0, 0, 0, 0.87);
 }
 
-.dark-theme .layout-cards {
+.dark-theme .layout-cards, .layout-cards.light-theme {
     background-color: #424242;
     color: rgba(0, 0, 0, 0.87);
 }
