@@ -488,13 +488,8 @@ button.list-item, a.list-item {
 }
 
 .list-item.dense .icon, .list.dense .list-item .icon {
-    padding: 20px 16px;
+    padding: 18px 16px;
     height: 60px;
-}
-
-.list-item.dense .icon .material-icon, .list.dense .list-item .icon .material-icon,
-.list-item.dense .icon .material-icons, .list.dense .list-item .icon .material-icons {
-    font-size: 20px;
 }
 
 .list-item.one-line .icon {
@@ -504,7 +499,7 @@ button.list-item, a.list-item {
 
 .list-item.one-line.dense .icon, .list.dense .list-item.one-line .icon {
     height: 40px;
-    padding: 10px 16px;
+    padding: 8px 16px;
 }
 
 .list-item.one-line .avatar + .icon {
@@ -610,7 +605,7 @@ button.list-item, a.list-item {
 .list-item .text > .title {
     font-size: 12pt;
     line-height: inherit;
-    color: rgba(0, 0, 0, 0.87);
+    /*color: rgba(0, 0, 0, 0.87);*/
 }
 
 .list-item.dense .text > .title, .list.dense .list-item .text > .title {
@@ -620,7 +615,7 @@ button.list-item, a.list-item {
 .list-item .text > .subtitle {
     font-size: 10.5pt;
     line-height: 1.3;
-    color: rgba(0, 0, 0, 0.54);
+    /*color: rgba(0, 0, 0, 0.54);*/
 }
 
 .list-item.dense .text > .subtitle, .list.dense .list-item .text > .subtitle {
