@@ -69,6 +69,9 @@ DISABLED/HINT:
 
 DIVIDERS:
 .divider
+.select-control .select-menu .menu-item:focus
+.select-control .select-menu .menu-item:active
+.select-control .select-menu .menu-item.active
 
 //////////////////////////////////////////////////////////////////
 
@@ -103,11 +106,6 @@ SPECIAL CASES:
     DIVIDER BACKGROUND IMPORTANT:
     .checkbox-input.switch.disabled .checkbox
 
-    DIVIDER BACKGROUND COLOR:
-    .select-control .select-menu .menu-item:focus
-    .select-control .select-menu .menu-item:active
-    .select-control .select-menu .menu-item.active
-
     GRAY-400 BACKGROUND for LIGHT THEME:
     GRAY-800 BACKGROUND for DARK THEME:
     .checkbox-input.switch.disabled .checkbox:after
@@ -122,3 +120,5 @@ SPECIAL CASES:
 .data-table > .table-container > table > tbody > tr:hover {
     background-color: rgba(0, 0, 0, 0.07);
 }
+
+///// All should be done
