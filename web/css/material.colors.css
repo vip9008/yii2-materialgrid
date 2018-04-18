@@ -1,11 +1,7 @@
-body, body.light-theme {
-    color: rgba(0, 0, 0, 0.87);
-}
+/* Text Coloring Depending on the Theme or Background Color */
 
-body.dark-theme {
-    color: rgba(255, 255, 255, 1);
-}
-
+/* LIGHT THEME */
+body, body.light-theme,
 .text-primary, .light-theme .text-primary, .text-primary.light-theme {
     color: rgba(0, 0, 0, 0.87);
 }
@@ -21,6 +17,26 @@ body.dark-theme {
 .divider, .light-theme .divider, .divider.light-theme {
     background-color: rgba(0, 0, 0, 0.12);
 }
+
+/* DARK THEME */
+body.dark-theme,
+.dark-theme .text-primary, .text-primary.dark-theme {
+    color: rgba(255, 255, 255, 1);
+}
+
+.dark-theme .text-secondary, .text-secondary.dark-theme {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.dark-theme .text-hint, .text-hint.dark-theme {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-theme .divider, .divider.dark-theme {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .layout-status-bar, .light-theme .layout-status-bar, .layout-status-bar.light-theme {
     background-color: #E0E0E0;
@@ -40,22 +56,6 @@ body.dark-theme {
 .layout-cards, .light-theme .layout-cards, .layout-cards.light-theme {
     background-color: #FFFFFF;
     color: rgba(0, 0, 0, 0.87);
-}
-
-.dark-theme .text-primary, .text-primary.dark-theme {
-    color: rgba(255, 255, 255, 1);
-}
-
-.dark-theme .text-secondary, .text-secondary.dark-theme {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.dark-theme .text-hint, .text-hint.dark-theme {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.dark-theme .divider, .divider.dark-theme {
-    background-color: rgba(255, 255, 255, 0.12);
 }
 
 .dark-theme .layout-status-bar, .layout-status-bar.light-theme {

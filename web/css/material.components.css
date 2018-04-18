@@ -29,7 +29,6 @@ code {
 
 .material-toc > .title {
     font-size: 11.3pt;
-    color: rgba(0, 0, 0, 0.54);
     padding-bottom: 12px;
 }
 
@@ -101,7 +100,6 @@ code {
 }
 
 .btn.disabled, .btn.disabled:focus, .btn[disabled], .btn[disabled]:focus, .btn:disabled, .btn:disabled:focus {
-    color: rgba(0, 0, 0, 0.26);
     background-color: transparent;
     cursor: default;
 }
@@ -135,7 +133,6 @@ code {
 }
 
 .btn.raised.disabled, .btn.raised.disabled:focus, .btn.raised[disabled], .btn.raised[disabled]:focus, .btn.raised:disabled, .btn.raised:disabled:focus {
-    color: rgba(0, 0, 0, 0.26);
     background-color: rgba(0, 0, 0, 0.12);
     box-shadow: none;
     cursor: default;
@@ -246,7 +243,6 @@ code {
     max-width: 100%;
     margin: 16px 0 0;
     transition: all 0.2s;
-    color: rgba(0, 0, 0, 87);
     display: inline-block;
     z-index: 1;
     margin-right: 15px;
@@ -271,7 +267,6 @@ code {
     border: none;
     border-bottom: solid 1px rgba(0, 0, 0, 0.16);
     border-radius: 0;
-    color: rgba(0, 0, 0, 0.87);
     background: transparent;
     font-size: 12pt;
     position: relative;
@@ -303,12 +298,10 @@ code {
 }
 
 .form-input .text-input[disabled], .form-input .text-input:disabled {
-    color: rgba(0, 0, 0, 0.54);
-    border-bottom: dotted 1px rgba(0, 0, 0, 0.54);
+    border-bottom: dotted 1px;
 }
 
 .form-input textarea.text-input[disabled], .form-input textarea.text-input:disabled {
-    color: rgba(0, 0, 0, 0.54);
     background-color: rgba(0, 0, 0, 0.04);
     border: solid 1px rgba(0, 0, 0, 0.06);
 }
@@ -319,7 +312,6 @@ code {
     top: 24px;
     left: 0;
     z-index: -1;
-    color: rgba(0, 0, 0, 0.54);
     padding: 0;
     cursor: default;
 
@@ -354,7 +346,6 @@ code {
 .form-input .help-block {
     font-size: 9pt;
     margin-bottom: 8px;
-    color: rgba(0, 0, 0, 0.54);
 }
 
 .form-input.box-style .text-input {
@@ -429,15 +420,7 @@ code {
 
 .list .list-group + .list-group {
     padding-top: 8px;
-    border-top: solid 1px rgba(0, 0, 0, 0.12);
-}
-
-.list .list-group + .list-group, .light-theme .list .list-group + .list-group, .list.light-theme .list-group + .list-group {
-    border-top-color: rgba(0, 0, 0, 0.12);
-}
-
-.dark-theme .list .list-group + .list-group, .list.dark-theme .list-group + .list-group {
-    border-top-color: rgba(255, 255, 255, 0.12);
+    border-top: solid 1px;
 }
 
 .list.dense .list-group + .list-group {
@@ -455,14 +438,6 @@ code {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-.subheader, .light-theme .subheader {
-    color: rgba(0, 0, 0, 0.54);
-}
-
-.dark-theme .subheader {
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .list .subheader.left-indent {
@@ -551,7 +526,6 @@ button.list-item, a.list-item {
     width: 40px;
     display: inline-block;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.54);
 }
 
 .list-item.dense .avatar > img, .list.dense .list-item .avatar > img,
@@ -639,15 +613,6 @@ button.list-item, a.list-item {
 .list-item .text > .subtitle {
     font-size: 10.5pt;
     line-height: 1.3;
-    color: rgba(0, 0, 0, 0.54);
-}
-
-.list-item .text > .subtitle, .light-theme .list-item .text > .subtitle {
-    color: rgba(0, 0, 0, 0.54);
-}
-
-.dark-theme .list-item .text > .subtitle {
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .list-item.dense .text > .subtitle, .list.dense .list-item .text > .subtitle {
@@ -738,7 +703,6 @@ button.list-item, a.list-item {
 }
 
 .checkbox-input .label, .radiobutton-input .label {
-    color: rgba(0, 0, 0, 0.54);
     margin-left: 18px;
 }
 
@@ -750,16 +714,11 @@ button.list-item, a.list-item {
     display: inline-block;
     height: 18px;
     width: 18px;
-    color: rgba(0, 0, 0, 0.54);
     position: relative;
 }
 
 .checkbox > input, .radio > input {
     display: none;
-}
-
-.checkbox-input.active .checkbox, .radiobutton-input.active .radio {
-    color: rgba(0, 0, 0, 0.87);
 }
 
 .checkbox:before, .radio:before {
@@ -812,11 +771,6 @@ button.list-item, a.list-item {
     transition: all 0.2s;
 }
 
-.checkbox-input.disabled .checkbox, .radiobutton-input.disabled .radio,
-.checkbox-input.disabled .label, .radiobutton-input.disabled .label {
-    color: rgba(0, 0, 0, 0.26) !important;
-}
-
 .checkbox-input.active.disabled .label, .radiobutton-input.active.disabled .label {
     color: inherit;
 }
@@ -842,7 +796,6 @@ button.list-item, a.list-item {
     width: 30px;
     margin-top: 4px;
     border-radius: 14px;
-    background-color: rgba(0, 0, 0, 0.38);
 }
 
 .checkbox-input.switch .checkbox:before {
@@ -872,14 +825,6 @@ button.list-item, a.list-item {
 
 .checkbox-input.switch.active .checkbox:after {
     left: 13px;
-}
-
-.checkbox-input.switch.disabled .checkbox {
-    background-color: rgba(0, 0, 0, 0.12) !important;
-}
-
-.checkbox-input.switch.disabled .checkbox:after, .checkbox-input.switch.disabled.active .checkbox:after {
-    background-color: #BDBDBD !important;
 }
 
 .select-control {
@@ -917,10 +862,9 @@ button.list-item, a.list-item {
     height: 36px;
     line-height: 32px;
     text-align: left;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.16);
+    border-bottom: solid 1px;
     padding: 0 28px 1px 0;
     font-size: 12pt;
-    color: rgba(0, 0, 0, 0.87);
     cursor: pointer;
     transition: border-color 0.2s;
 }
@@ -936,7 +880,6 @@ button.list-item, a.list-item {
     position: absolute;
     top: 4px;
     right: 0;
-    color: rgba(0, 0, 0, 0.54);
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
@@ -968,14 +911,9 @@ button.list-item, a.list-item {
                 0 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
 
-.select-control .select-value:hover:after {
-    color: rgba(0, 0, 0, 0.87);
-}
-
 .select-control.active .select-value:after {
     z-index: 8002;
     content: 'arrow_drop_up';
-    color: rgba(0, 0, 0, 0.87);
     display: none;
 }
 
@@ -985,7 +923,6 @@ button.list-item, a.list-item {
 
 .select-control .select-menu {
     background-color: white;
-    color: rgba(0, 0, 0, 0.87);
     border-radius: 2px;
     transition: all 0.2s;
     position: absolute;
@@ -1049,7 +986,7 @@ button.list-item, a.list-item {
     left: 0;
     right: 0;
     height: 64px;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.12);
+    border-bottom: solid 1px;
 }
 
 .select-control .select-menu .items-container {
@@ -1087,12 +1024,6 @@ button.list-item, a.list-item {
     height: auto;
 }
 
-.select-control .select-menu .menu-item:focus,
-.select-control .select-menu .menu-item:active,
-.select-control .select-menu .menu-item.active {
-    background-color: rgba(0, 0, 0, 0.12);
-}
-
 .select-control.context-menu .select-menu .menu-item.active {
     background-color: transparent;
 }
@@ -1102,7 +1033,6 @@ button.list-item, a.list-item {
 .select-control .select-menu .menu-item:disabled {
     background-color: transparent;
     cursor: default;
-    color: rgba(0, 0, 0, 0.26);
 }
 
 .select-control .select-value > *,
@@ -1152,7 +1082,6 @@ button.list-item, a.list-item {
     height: 24px;
     padding: 0;
     position: relative;
-    color: rgba(0, 0, 0, 0.38);
     background: transparent;
     border: none;
     float: right;
@@ -1188,12 +1117,10 @@ button.list-item, a.list-item {
     width: 224px;
     float: left;
     margin-right: 16px;
-    color: rgba(0, 0, 0, 0.87);
     font-size: 11.3pt;
 }
 
 .expansion-panel .panel > .content, .expansion-panel .panel > .expansion-content {
-    color: rgba(0, 0, 0, 0.54);
     font-size: 11.3pt;
     margin-right: 16px;
     margin-left: 240px;
@@ -1272,7 +1199,7 @@ button.list-item, a.list-item {
 }
 
 .data-table.card {
-    border: solid 1px rgba(0, 0, 0, 0.15);
+    border: solid 1px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2),
                 0 1px 1px 0 rgba(0, 0, 0, 0.14),
                 0 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -1282,7 +1209,6 @@ button.list-item, a.list-item {
     line-height: 25px;
     font-size: 15pt;
     padding: 20px 24px 20px;
-    color: rgba(0, 0, 0, 0.87);
 }
 
 .data-table > .table-header > .controls {
@@ -1350,6 +1276,7 @@ button.list-item, a.list-item {
     margin: 12px 0;
     margin-left: 24px;
 }
+
 .data-table > .table-container > table th .controls > .material-icon,
 .data-table > .table-container > table td .controls > .material-icon,
 .data-table > .table-container > table th .controls > .material-icons,
@@ -1359,7 +1286,6 @@ button.list-item, a.list-item {
     padding: 0;
     margin: 0;
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.54);
     text-decoration: none;
 }
 
@@ -1411,7 +1337,6 @@ button.list-item, a.list-item {
     border: none;
     line-height: 56px;
     font-size: 9pt;
-    color: rgba(0, 0, 0, 0.54);
     font-weight: normal;
     font-family: 'robotoregular', sans-serif;
     padding: 0;
@@ -1435,7 +1360,6 @@ button.list-item, a.list-item {
 }
 
 .data-table > .table-container > table > thead > tr > th > a:hover {
-    color: rgba(0, 0, 0, 0.87);
     padding-left: 24px;
 }
 
@@ -1466,19 +1390,9 @@ button.list-item, a.list-item {
     transition: all 0.2s;
 }
 
-.data-table > .table-container > table > thead > tr > th > a:hover:before {
-    color: rgba(0, 0, 0, 0.38);
-}
-
 .data-table > .table-container > table > thead > tr > th > a.asc,
 .data-table > .table-container > table > thead > tr > th > a.desc {
-    color: rgba(0, 0, 0, 0.87);
     padding-left: 24px;
-}
-
-.data-table > .table-container > table > thead > tr > th > a.asc:before,
-.data-table > .table-container > table > thead > tr > th > a.desc:before {
-    color: rgba(0, 0, 0, 0.87);
 }
 
 .data-table > .table-container > table > thead > tr > th > a.desc:before {
@@ -1490,21 +1404,12 @@ button.list-item, a.list-item {
     transition: background 0.2s;
 }
 
-.data-table > .table-container > table > tbody > tr.seleceted {
-    background-color: rgba(0, 0, 0, 0.04);
-}
-
-.data-table > .table-container > table > tbody > tr:hover {
-    background-color: rgba(0, 0, 0, 0.07);
-}
-
 .data-table > .table-container > table > tbody > tr > td {
     border: none;
-    border-top: solid 1px rgba(0, 0, 0, 0.15);
+    border-top: solid 1px;
     line-height: 1;
     font-size: 9.8pt;
     vertical-align: middle;
-    color: rgba(0, 0, 0, 0.87);
     font-weight: normal;
     font-family: 'robotoregular', sans-serif;
     padding: 0;
@@ -1512,10 +1417,9 @@ button.list-item, a.list-item {
 }
 
 .data-table > .summary {
-    border-top: solid 1px rgba(0, 0, 0, 0.15);
+    border-top: solid 1px;
     line-height: 56px;
     font-size: 9pt;
-    color: rgba(0, 0, 0, 0.54);
     padding: 0 14px 0 24px;
 }
 
@@ -1551,7 +1455,6 @@ button.list-item, a.list-item {
 
 .data-table > .summary > .summary-right .controls .material-icon.disabled,
 .data-table > .summary > .summary-right .controls .material-icons.disabled {
-    color: rgba(0, 0, 0, 0.15);
     cursor: default;
 }
 
@@ -1580,7 +1483,6 @@ button.list-item, a.list-item {
 
 .card {
     background-color: white;
-    color: rgba(0, 0, 0, 0.87);
     display: block;
     border-radius: 2px;
     padding: 0;
@@ -1748,7 +1650,6 @@ button.list-item, a.list-item {
     width: 40px;
     display: inline-block;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.54);
 }
 
 .card .title > h2 {
@@ -1767,7 +1668,6 @@ button.list-item, a.list-item {
     margin: 8px 0 0;
     font-size: 10.5pt;
     line-height: 1;
-    color: rgba(0, 0, 0, 0.54);
 }
 
 .card .title > h3 + .subtext {
@@ -1946,7 +1846,6 @@ button.list-item, a.list-item {
 .dialog-background > .dialog-container > .dialog > .content {
     padding: 0 24px 24px;
     font-size: 12pt;
-    color: rgba(0, 0, 0, 0.54);
 }
 
 .dialog-background > .dialog-container > .dialog > .content.list {
