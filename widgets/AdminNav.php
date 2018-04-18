@@ -63,7 +63,7 @@ class AdminNav extends \yii\base\Widget
             $this->params = Yii::$app->request->getQueryParams();
         }
 
-        Html::addCssClass($this->options, ['nav', $this->themeColor]);
+        Html::addCssClass($this->options, ['list', $this->themeColor]);
     }
 
     public function run()
@@ -75,12 +75,23 @@ class AdminNav extends \yii\base\Widget
     public function renderItems()
     {
         $items = [];
+
+        $items[] = Html::beginTag('div', ['class' => 'list-group']);
+
         foreach ($this->items as $i => $item) {
             if (isset($item['visible']) && !$item['visible']) {
                 continue;
             }
+
+            if (ArrayHelper::getValue($item, 'subheader', false)) {
+                $items[] = Html::endTag('div');
+                $items[] = Html::beginTag('div', ['class' => 'list-group']);
+            }
+
             $items[] = $this->renderItem($item);
         }
+
+        $items[] = Html::endTag('div');
 
         return Html::tag('div', implode("\n", $items), $this->options);
     }
@@ -91,16 +102,31 @@ class AdminNav extends \yii\base\Widget
             return $item;
         }
 
-        if (!isset($item['label'])) {
-            throw new InvalidConfigException("The 'label' option is required.");
+        if (ArrayHelper::getValue($item, 'subheader', false)) {
+            $class = ArrayHelper::getValue($item, 'class', '');
+            return Html::tag('div', $item['subheader'], ['class' => "subheader $class"]);
+        }
+
+        if (!ArrayHelper::getValue($item, 'label', false) && !ArrayHelper::getValue($item, 'subheader', false)) {
+            throw new InvalidConfigException("No 'label' or 'subheader' option could be found.");
         }
 
         $encodeLabel = isset($item['encode']) ? $item['encode'] : $this->encodeLabels;
         $label = $encodeLabel ? Html::encode($item['label']) : $item['label'];
-        $icon = ArrayHelper::getValue($item, 'icon', false);
+        $label = Html::tag(
+            'div',
+            Html::tag('div', $label, ['class' => 'title']),
+            ['class' => 'text']
+        );
 
-        if ($icon) {
-            $label = Html::tag('div', $icon, ['class' => 'material-icon']) . $label;
+        $icon = ArrayHelper::getValue($item, 'icon', '');
+
+        if (!empty($icon)) {
+            $label = Html::tag(
+                'div',
+                Html::tag('div', $icon, ['class' => 'material-icon']),
+                ['class' => 'icon']
+            ) . $label;
         }
 
         $options = ArrayHelper::getValue($item, 'options', []);
@@ -126,10 +152,12 @@ class AdminNav extends \yii\base\Widget
             }
         }
 
-        Html::addCssClass($options, ['nav-block']);
+        Html::addCssClass($options, ['list-item', 'one-line']);
         if ($this->activateItems && $active) {
             Html::addCssClass($options, 'current');
         }
+
+        Html::addCssClass($linkOptions, ['text-primary']);
 
         return Html::tag('div', Html::a($label, $url, $linkOptions) . $items, $options);
     }

@@ -13,12 +13,12 @@ class AdminNavBar extends \yii\base\Widget
     public $brandLabel = false;
     public $brandUrl = '#';
     public $brandOptions = [];
-    public $topBlock = false;
     public $copyright = false;
     public $copyrightOptions = [];
     public $primaryColor = 'indigo';
     public $accentColor = 'blue';
-    public $theme = 'light';
+    public $themeColor = false;
+    public $theme = 'light-theme';
 
     public function init()
     {
@@ -29,21 +29,15 @@ class AdminNavBar extends \yii\base\Widget
         echo Html::beginTag("div", ["id" => "side-nav", "class" => $this->theme]);
 
         // begin nav container
-        Html::addCssClass($this->containerOptions, ['side-nav-container']);
+        $class = $this->themeColor ? " color $this->themeColor" : "";
+        Html::addCssClass($this->containerOptions, ['side-nav-container layout-app-bar'.$class]);
         echo Html::beginTag("div", $this->containerOptions);
         
         if ($this->brandLabel) {
             // begin logo container
             echo Html::beginTag("div", ["class" => "logo"]);
-            Html::addCssClass($this->brandOptions, [$this->primaryColor]);
             echo Html::a($this->brandLabel, $this->brandUrl, $this->brandOptions);
             // end logo container
-            echo Html::endTag('div');
-        }
-
-        if ($this->topBlock) {
-            echo Html::beginTag("div", ["class" => "top-block"]);
-            echo $this->topBlock;
             echo Html::endTag('div');
         }
 

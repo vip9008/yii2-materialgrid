@@ -1,33 +1,81 @@
-.color.light {
-    color: rgba(255, 255, 255, 1);
-}
-
-.light.text-primary {
-    color: rgba(255, 255, 255, 1);
-}
-
-.light.text-secondary {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.light.text-hint {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.color.dark {
+body, body.light-theme {
     color: rgba(0, 0, 0, 0.87);
 }
 
-.dark.text-primary {
+body.dark-theme {
+    color: rgba(255, 255, 255, 1);
+}
+
+.text-primary, .light-theme .text-primary {
     color: rgba(0, 0, 0, 0.87);
 }
 
-.dark.text-secondary {
+.text-secondary, .light-theme .text-secondary {
     color: rgba(0, 0, 0, 0.54);
 }
 
-.dark.text-hint {
+.text-hint, .light-theme .text-hint {
     color: rgba(0, 0, 0, 0.38);
+}
+
+.divider, .light-theme .divider {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.layout-status-bar, .light-theme .layout-status-bar {
+    background-color: #E0E0E0;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.layout-app-bar, .light-theme .layout-app-bar {
+    background-color: #F5F5F5;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.layout-background, .light-theme .layout-background {
+    background-color: #FAFAFA;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.layout-cards, .light-theme .layout-cards {
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.dark-theme .text-primary {
+    color: rgba(255, 255, 255, 1);
+}
+
+.dark-theme .text-secondary {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.dark-theme .text-hint {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-theme .divider {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark-theme .layout-status-bar {
+    background-color: #000000;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.dark-theme .layout-app-bar {
+    background-color: #212121;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.dark-theme .layout-background {
+    background-color: #303030;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.dark-theme .layout-cards {
+    background-color: #424242;
+    color: rgba(0, 0, 0, 0.87);
 }
 
 .red-50, .red-50.material-icons, .red-50.material-icon,
@@ -5431,6 +5479,13 @@
 .progress.color.grey-900 > .bar, .progress.buffer.color.grey-900 > .buffered {
     background-color: #212121;
     border-color: #212121;
+    color: rgba(255, 255, 255, 1);
+}
+
+.color.grey-BG, .progress.color.grey-BG:before,
+.progress.color.grey-BG > .bar, .progress.buffer.color.grey-BG > .buffered {
+    background-color: #303030;
+    border-color: #303030;
     color: rgba(255, 255, 255, 1);
 }
 
