@@ -119,7 +119,7 @@ html, body {
     top: 0;
     left: 0;
     height: 100%;
-    width: 240px;
+    width: 256px;
     z-index: 16000;
     border-right: solid 1px rgba(0, 0, 0, 0.15);
     transition: left 0.3s;
@@ -309,7 +309,7 @@ html, body {
 #page-content {
     padding-top: 64px;
     padding-bottom: 100px;
-    margin-left: 240px;
+    margin-left: 256px;
     transition: margin 0.5s;
     background: #fafafa;
     min-height: 100%;
@@ -321,7 +321,7 @@ html, body {
     left: 0;
     right: 0;
     height: 64px;
-    margin-left: 240px;
+    margin-left: 256px;
     transition: margin 0.5s;
     padding: 0 24px;
     z-index: 4000;
@@ -472,7 +472,7 @@ html, body {
 
 @media (max-width: 1439px) {
     #side-nav {
-        left: -240px;
+        left: -256px;
     }
 
     #page-content, #page-content > .top-bar {
