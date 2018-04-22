@@ -1,30 +1,23 @@
 @import '../fonts/icons/material.icons.css';
 
-pre {
-    margin: 16px 0;
-    overflow-x: auto;
-    padding: 16px 8px 8px;
-    background: #f7f7f7;
-    color: rgba(0, 0, 0, 0.87);
-    border: solid 1px rgba(0, 0, 0, 0.15);
-}
-
-code {
-    padding: 0 4px;
-    background: #f7f7f7;
-    color: inherit;
-    border: solid 1px rgba(0, 0, 0, 0.15);
-}
-
 .divider {
     display: block;
     height: 1px;
     width: auto;
 }
 
-.material-toc {
-    border-left: solid 5px;
+.material-toc, html[dir="ltr"] .material-toc, html[dir] .material-toc[dir="ltr"] {
+    border-left-style: solid;
+    border-left-width: 5px;
     padding-left: 20px;
+}
+
+html[dir="rtl"] .material-toc, html[dir] .material-toc[dir="rtl"] {
+    border-left: none;
+    border-right-style: solid;
+    border-right-width: 5px;
+    padding-left: 0;
+    padding-right: 20px;
 }
 
 .material-toc > .title {
@@ -49,7 +42,7 @@ code {
     line-height: 36px;
     padding: 0 8px;
     margin: 8px;
-    font-family: robotobold;
+    font-family: 'roboto_bold', sans-serif;
     font-size: 10.5pt;
     text-decoration: none;
     text-transform: uppercase;
@@ -58,7 +51,6 @@ code {
     border-radius: 2px;
     background-color: transparent;
     transition: all 0.2s;
-    color: rgba(0, 0, 0, 0.87);
     cursor: pointer;
     white-space: nowrap;
     position: relative;
@@ -72,6 +64,16 @@ code {
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+}
+
+html:lang(en-US) .btn,
+html[lang] .btn:lang(en-US) {
+    font-family: 'roboto_bold', sans-serif;
+}
+
+html:lang(ar-BH) .btn,
+html[lang] .btn:lang(ar-BH) {
+    font-family: 'arabic_notosans_bold', 'roboto_bold', sans-serif;
 }
 
 .btn:before {
@@ -179,15 +181,9 @@ code {
                 0 5px 22px 4px rgba(0, 0, 0, 0.12);
 }
 
-.btn.raised.floating.disabled, .btn.raised.floating.disabled:focus,
-.btn.raised.floating[disabled], .btn.raised.floating[disabled]:focus,
-.btn.raised.floating:disabled, .btn.raised.floating:disabled:focus {
-    background-color: white;
-}
-
 .btn.raised.floating.disabled:before, .btn.raised.floating[disabled]:before, .btn.raised.floating:disabled:before,
 .btn.raised.floating.disabled:hover:before, .btn.raised.floating[disabled]:hover:before, .btn.raised.floating:disabled:hover:before {
-    background-color: rgba(0, 0, 0, 0.12);
+    display: none;
 }
 
 .btn.raised.floating.mini {
@@ -204,10 +200,6 @@ code {
     margin-right: 4px;
 }
 
-.color .btn, .light-theme .btn, .dark-theme .btn {
-    color: inherit;
-}
-
 .btn-group:before, .btn-group:after {
     content: '';
     display: block;
@@ -215,43 +207,84 @@ code {
 }
 
 .btn-group > .btn {
-    margin-left: 0;
+    margin: 8px 0;
     float: left;
+}
+html[dir="ltr"] .btn-group > .btn, html[dir] .btn-group[dir="ltr"] > .btn {
+    float: left;
+}
+html[dir="rtl"] .btn-group > .btn, html[dir] .btn-group[dir="rtl"] > .btn {
+    float: right;
 }
 
 .btn-group.btn-align-left > .btn {
     float: left;
 }
+html[dir="ltr"] .btn-group.btn-align-left > .btn, html[dir] .btn-group.btn-align-left[dir="ltr"] > .btn {
+    float: left;
+}
+html[dir="rtl"] .btn-group.btn-align-left > .btn, html[dir] .btn-group.btn-align-left[dir="rtl"] > .btn {
+    float: right;
+}
 
-.btn-group > .btn:last-child {
+.btn-group > .btn + .btn, .btn-group.btn-align-left > .btn + .btn {
+    margin-left: 8px;
+}
+html[dir="ltr"] .btn-group > .btn + .btn, html[dir] .btn-group[dir="ltr"] > .btn + .btn,
+html[dir="ltr"] .btn-group.btn-align-left > .btn + .btn, html[dir] .btn-group.btn-align-left[dir="ltr"] > .btn + .btn {
+    margin-left: 8px;
     margin-right: 0;
+}
+html[dir="rtl"] .btn-group > .btn + .btn, html[dir] .btn-group[dir="rtl"] > .btn + .btn,
+html[dir="rtl"] .btn-group.btn-align-left > .btn + .btn, html[dir] .btn-group.btn-align-left[dir="rtl"] > .btn + .btn {
+    margin-left: 0;
+    margin-right: 8px;
 }
 
 .btn-group.btn-align-right > .btn {
     float: right;
-    margin-left: 8px;
-    margin-right: 0;
+}
+html[dir="ltr"] .btn-group.btn-align-right > .btn, html[dir] .btn-group.btn-align-right[dir="ltr"] > .btn {
+    float: right;
+}
+html[dir="rtl"] .btn-group.btn-align-right > .btn, html[dir] .btn-group.btn-align-right[dir="rtl"] > .btn {
+    float: left;
 }
 
-.btn-group.btn-align-right > .btn:last-child {
+.btn-group.btn-align-right > .btn + .btn {
     margin-left: 0;
+    margin-right: 8px;
+}
+html[dir="ltr"] .btn-group.btn-align-right > .btn + .btn, html[dir] .btn-group.btn-align-right[dir="ltr"] > .btn + .btn {
+    margin-left: 0;
+    margin-right: 8px;
+}
+html[dir="rtl"] .btn-group.btn-align-right > .btn + .btn, html[dir] .btn-group.btn-align-right[dir="rtl"] > .btn + .btn {
+    margin-left: 8px;
+    margin-right: 0;
 }
 
 .form-input {
     position: relative;
     width: 345px;
     max-width: 100%;
-    margin: 16px 0 0;
+    margin: 16px 15px 0 0;
     transition: all 0.2s;
     display: inline-block;
     z-index: 1;
-    margin-right: 15px;
+}
+
+html[dir="ltr"] .form-input, html[dir] .form-input[dir="ltr"] {
+    margin: 16px 15px 0 0;
+}
+html[dir="rtl"] .form-input, html[dir] .form-input[dir="rtl"] {
+    margin: 16px 0 0 15px;
 }
 
 .form-input.block {
     display: block;
     width: auto;
-    margin-right: 0;
+    margin: 16px 0;
 }
 
 .form-input .text-input:-webkit-autofill,
@@ -265,14 +298,24 @@ code {
     padding: 24px 0 9px;
     margin: 0 0 8px;
     border: none;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.16);
+    border-bottom: solid 1px;
     border-radius: 0;
     background: transparent;
     font-size: 12pt;
     position: relative;
     width: 100%;
-    font-family: 'robotoregular', sans-serif;
+    font-family: 'roboto_regular', sans-serif;
     transition: all 0.2s;
+}
+
+html:lang(en-US) .form-input .text-input,
+html[lang] .form-input .text-input:lang(en-US) {
+    font-family: 'roboto_regular', sans-serif;
+}
+
+html:lang(ar-BH) .form-input .text-input,
+html[lang] .form-input .text-input:lang(ar-BH) {
+    font-family: 'arabic_notosans_regular', 'roboto_regular', sans-serif;
 }
 
 .form-input textarea.text-input {
@@ -281,29 +324,35 @@ code {
     min-height: 130px;
     transition: none;
     padding: 33px 15px 9px;
-    border: solid 1px rgba(0, 0, 0, 0.16);
+    border-style: solid;
+    border-width: 1px;
     border-radius: 4px;
 }
 
+.form-input .text-input:hover,
 .form-input .text-input:focus {
-    border-bottom-color: inherit;
-    border-bottom-width: 2px;
     padding-bottom: 8px;
+    border-bottom-width: 2px;
 }
 
+.form-input textarea.text-input:hover,
 .form-input textarea.text-input:focus {
-    border-color: inherit;
-    border-width: 2px;
     padding: 32px 14px 8px;
+    border-width: 2px;
 }
 
-.form-input .text-input[disabled], .form-input .text-input:disabled {
-    border-bottom: dotted 1px;
+.form-input .text-input[disabled], .form-input .text-input:disabled,
+.form-input .text-input[disabled]:hover, .form-input .text-input:disabled:hover {
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    padding-bottom: 9px;
 }
 
-.form-input textarea.text-input[disabled], .form-input textarea.text-input:disabled {
-    background-color: rgba(0, 0, 0, 0.04);
-    border: solid 1px rgba(0, 0, 0, 0.06);
+.form-input textarea.text-input[disabled], .form-input textarea.text-input:disabled,
+.form-input textarea.text-input[disabled]:hover, .form-input textarea.text-input:disabled:hover {
+    border-style: solid;
+    border-width: 1px;
+    padding: 33px 15px 9px;
 }
 
 .form-input .label {
@@ -323,6 +372,15 @@ code {
     user-select: none;           /* Non-prefixed version, currently not supported by any browser */
 }
 
+html[dir="ltr"] .form-input .label, html[dir] .form-input .label[dir="ltr"] {
+    left: 0;
+    right: auto;
+}
+html[dir="rtl"] .form-input .label, html[dir] .form-input .label[dir="rtl"] {
+    left: auto;
+    right: 0;
+}
+
 .form-input.active .label {
     font-size: 9pt;
     top: 0;
@@ -331,7 +389,6 @@ code {
 .form-input .text-input:focus + .label {
     font-size: 9pt;
     top: 0;
-    color: inherit;
 }
 
 .form-input textarea.text-input + .label {
@@ -348,20 +405,24 @@ code {
     margin-bottom: 8px;
 }
 
-.form-input.box-style .text-input {
+.form-input.box-style .text-input,
+.form-input.box-style textarea.text-input {
     margin-top: 8px;
-    padding: 24px 16px 9px;
-    background-color: rgba(0, 0, 0, 0.06);
+    padding: 24px 16px 6px;
+    border: none;
     border-radius: 4px;
+    border-bottom: solid 2px;
 }
 
-.form-input.box-style .text-input:focus {
-    padding-bottom: 8px;
-}
-
-.form-input.box-style .text-input[disabled], .form-input.box-style .text-input:disabled {
-    background-color: rgba(0, 0, 0, 0.04);
-    border-bottom: solid 2px transparent;
+.form-input.box-style .text-input[disabled], .form-input.box-style .text-input:disabled,
+.form-input.box-style .text-input[disabled]:hover, .form-input.box-style .text-input:disabled:hover,
+.form-input.box-style textarea.text-input[disabled], .form-input.box-style textarea.text-input:disabled,
+.form-input.box-style textarea.text-input[disabled]:hover, .form-input.box-style textarea.text-input:disabled:hover {
+    padding: 24px 16px 6px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 2px;
 }
 
 .form-input.box-style .label {
@@ -370,6 +431,8 @@ code {
 }
 
 .form-input.box-style .text-input:focus + .label,
+.form-input.box-style textarea.text-input:focus + .label,
+.form-input.box-style.active textarea.text-input + .label,
 .form-input.box-style.active .label {
     top: 14px;
 }
@@ -404,7 +467,6 @@ code {
 
 .list.list-card {
     border-radius: 2px;
-    background-color: white;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2),
                 0 1px 1px 0 rgba(0, 0, 0, 0.14),
                 0 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -443,9 +505,25 @@ code {
 .list .subheader.left-indent {
     padding-left: 72px;
 }
+html[dir="ltr"] .list .subheader.left-indent, html[dir] .list[dir="ltr"] .subheader.left-indent {
+    padding-left: 72px;
+    padding-right: 16px;
+}
+html[dir="rtl"] .list .subheader.left-indent, html[dir] .list[dir="rtl"] .subheader.left-indent {
+    padding-left: 16px;
+    padding-right: 72px;
+}
 
 .list .divider.left-indent {
     margin-left: 72px;
+}
+html[dir="ltr"] .list .divider.left-indent, html[dir] .list[dir="ltr"] .divider.left-indent {
+    margin-left: 72px;
+    margin-right: 0;
+}
+html[dir="rtl"] .list .divider.left-indent, html[dir] .list[dir="rtl"] .divider.left-indent {
+    margin-left: 0;
+    margin-right: 72px;
 }
 
 .list-item {
@@ -454,7 +532,6 @@ code {
     display: block;
     white-space: nowrap;
     width: 100%;
-    text-align: left;
     text-decoration: none;
     border: none;
     background: transparent;
@@ -484,6 +561,13 @@ button.list-item, a.list-item {
     padding: 24px 16px;
     height: 72px;
     width: 72px;
+    position: relative;
+}
+html[dir="ltr"] .list-item .icon, html[dir] .list-item[dir="ltr"] .icon {
+    float: left;
+}
+html[dir="rtl"] .list-item .icon, html[dir] .list-item[dir="rtl"] .icon {
+    float: right;
 }
 
 .list-item.dense .icon, .list.dense .list-item .icon {
@@ -513,6 +597,12 @@ button.list-item, a.list-item {
     height: 72px;
     width: 72px;
     text-decoration: none;
+}
+html[dir="ltr"] .list-item .avatar, html[dir] .list-item[dir="ltr"] .avatar {
+    float: left;
+}
+html[dir="rtl"] .list-item .avatar, html[dir] .list-item[dir="rtl"] .avatar {
+    float: right;
 }
 
 .list-item.dense .avatar, .list.dense .list-item .avatar {
@@ -557,7 +647,7 @@ button.list-item, a.list-item {
 
 .list-item .text {
     padding: 16px;
-    line-height: initial;
+    line-height: 1.5;
     display: block;
     text-decoration: none;
 }
@@ -567,22 +657,68 @@ button.list-item, a.list-item {
 }
 
 .list-item .icon:not(.side-action) + .text,
-.list-item .avatar:not(.side-action) + .text,
+.list-item .avatar:not(.side-action) + .text {
+    margin-left: 56px;
+    margin-right: 0;
+}
 .list-item .avatar:not(.side-action) + .icon + .text {
     margin-left: 56px;
+}
+html[dir="ltr"] .list-item .icon:not(.side-action) + .text,
+html[dir] .list-item[dir="ltr"] .icon:not(.side-action) + .text,
+html[dir="ltr"] .list-item .avatar:not(.side-action) + .text,
+html[dir] .list-item[dir="ltr"] .avatar:not(.side-action) + .text {
+    margin-left: 56px;
+    margin-right: 0;
+}
+html[dir="ltr"] .list-item .avatar:not(.side-action) + .icon + .text,
+html[dir] .list-item[dir="ltr"] .avatar:not(.side-action) + .icon + .text {
+    margin-left: 56px;
+}
+html[dir="rtl"] .list-item .icon:not(.side-action) + .text,
+html[dir] .list-item[dir="rtl"] .icon:not(.side-action) + .text,
+html[dir="rtl"] .list-item .avatar:not(.side-action) + .text,
+html[dir] .list-item[dir="rtl"] .avatar:not(.side-action) + .text {
+    margin-left: 0;
+    margin-right: 56px;
+
+}
+html[dir="rtl"] .list-item .avatar:not(.side-action) + .icon + .text,
+html[dir] .list-item[dir="rtl"] .avatar:not(.side-action) + .icon + .text {
+    margin-right: 56px;
 }
 
 .list-item .side-action.icon + .text {
     margin-right: 40px;
 }
+html[dir="ltr"] .list-item .side-action.icon + .text,
+html[dir] .list-item[dir="ltr"] .side-action.icon + .text {
+    margin-right: 40px;
+}
+html[dir="rtl"] .list-item .side-action.icon + .text,
+html[dir] .list-item[dir="rtl"] .side-action.icon + .text {
+    margin-left: 40px;
+}
+
 
 .list-item .side-action.avatar + .text,
 .list-item .side-action.avatar + .icon + .text {
     margin-right: 56px;
 }
+html[dir="ltr"] .list-item .side-action.avatar + .text,
+html[dir] .list-item[dir="ltr"] .side-action.avatar + .text,
+html[dir="ltr"] .list-item .side-action.avatar + .icon + .text,
+html[dir] .list-item[dir="ltr"] .side-action.avatar + .icon + .text {
+    margin-right: 56px;
+}
+html[dir="rtl"] .list-item .side-action.avatar + .text,
+html[dir] .list-item[dir="rtl"] .side-action.avatar + .text,
+html[dir="rtl"] .list-item .side-action.avatar + .icon + .text,
+html[dir] .list-item[dir="rtl"] .side-action.avatar + .icon + .text {
+    margin-left: 56px;
+}
 
 .list-item.one-line .text {
-    line-height: 1.5;
     padding: 12px 16px;
 }
 
@@ -622,6 +758,12 @@ button.list-item, a.list-item {
 .list-item .side-action {
     float: right;
     height: 72px;
+}
+html[dir="ltr"] .list-item .side-action, html[dir] .list-item[dir="ltr"] .side-action {
+    float: right;
+}
+html[dir="rtl"] .list-item .side-action, html[dir] .list-item[dir="rtl"] .side-action {
+    float: left;
 }
 
 .list-item.one-line .side-action {
@@ -669,6 +811,20 @@ button.list-item, a.list-item {
     top: 24px;
     left: 16px;
 }
+html[dir="ltr"] .list-item.checkbox-input .checkbox:after,
+html[dir] .list-item.checkbox-input[dir="ltr"] .checkbox:after,
+html[dir="ltr"] .list-item.radiobutton-input .radio:after,
+html[dir] .list-item.radiobutton-input[dir="ltr"] .radio:after {
+    left: 16px;
+    right: auto;
+}
+html[dir="rtl"] .list-item.checkbox-input .checkbox:after,
+html[dir] .list-item.checkbox-input[dir="rtl"] .checkbox:after,
+html[dir="rtl"] .list-item.radiobutton-input .radio:after,
+html[dir] .list-item.radiobutton-input[dir="rtl"] .radio:after {
+    left: auto;
+    right: 16px;
+}
 
 .list-item.one-line.checkbox-input .checkbox:after,
 .list-item.one-line.radiobutton-input .radio:after {
@@ -677,6 +833,7 @@ button.list-item, a.list-item {
 
 .checkbox-input, .radiobutton-input {
     cursor: pointer;
+    position: relative;
     display: inline-block;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -699,22 +856,39 @@ button.list-item, a.list-item {
 
 .checkbox-input .checkbox, .radiobutton-input .radio {
     float: left;
-    margin-top: 2px;
+}
+
+html[dir="ltr"] .checkbox-input .checkbox, html[dir="ltr"] .radiobutton-input .radio,
+html[dir] .checkbox-input[dir="ltr"] .checkbox, html[dir] .radiobutton-input[dir="ltr"] .radio {
+    float: left;
+}
+html[dir="rtl"] .checkbox-input .checkbox, html[dir="rtl"] .radiobutton-input .radio,
+html[dir] .checkbox-input[dir="rtl"] .checkbox, html[dir] .radiobutton-input[dir="rtl"] .radio {
+    float: right;
 }
 
 .checkbox-input .label, .radiobutton-input .label {
-    margin-left: 18px;
+    margin-left: 36px;
 }
 
-.checkbox-input.active .label, .radiobutton-input.active .label {
-    color: inherit;
+html[dir="ltr"] .checkbox-input .label, html[dir="ltr"] .radiobutton-input .label,
+html[dir] .checkbox-input[dir="ltr"] .label, html[dir] .radiobutton-input[dir="ltr"] .label {
+    margin-left: 36px;
+    margin-right: 0;
+}
+html[dir="rtl"] .checkbox-input .label, html[dir="rtl"] .radiobutton-input .label,
+html[dir] .checkbox-input[dir="rtl"] .label, html[dir] .radiobutton-input[dir="rtl"] .label {
+    margin-left: 0;
+    margin-right: 36px;
 }
 
 .checkbox, .radio {
     display: inline-block;
     height: 18px;
     width: 18px;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
 }
 
 .checkbox > input, .radio > input {
@@ -791,19 +965,49 @@ button.list-item, a.list-item {
     content: 'radio_button_checked';
 }
 
+.checkbox-input.switch .label {
+    margin-left: 48px;
+}
+
+html[dir="ltr"] .checkbox-input.switch .label,
+html[dir] .checkbox-input.switch[dir="ltr"] .label {
+    margin-left: 48px;
+    margin-right: 0;
+}
+html[dir="rtl"] .checkbox-input.switch .label,
+html[dir] .checkbox-input.switch[dir="rtl"] .label {
+    margin-left: 0;
+    margin-right: 48px;
+}
+
 .checkbox-input.switch .checkbox {
     height: 14px;
     width: 30px;
-    margin-top: 4px;
     border-radius: 14px;
 }
 
 .checkbox-input.switch .checkbox:before {
     left: 7px;
 }
+html[dir="ltr"] .checkbox-input.switch .checkbox:before,
+html[dir] .checkbox-input.switch[dir="ltr"] .checkbox:before {
+    left: 7px;
+}
+html[dir="rtl"] .checkbox-input.switch .checkbox:before,
+html[dir] .checkbox-input.switch[dir="rtl"] .checkbox:before {
+    left: 23px;
+}
 
 .checkbox-input.switch.active .checkbox:before {
     left: 23px;
+}
+html[dir="ltr"] .checkbox-input.switch.active .checkbox:before,
+html[dir] .checkbox-input.switch.active[dir="ltr"] .checkbox:before {
+    left: 23px;
+}
+html[dir="rtl"] .checkbox-input.switch.active .checkbox:before,
+html[dir] .checkbox-input.switch.active[dir="rtl"] .checkbox:before {
+    left: 7px;
 }
 
 .checkbox-input.switch:focus .checkbox:before {
@@ -822,9 +1026,25 @@ button.list-item, a.list-item {
                 0 1px 1px 0 rgba(0, 0, 0, 0.14),
                 0 3px 1px 0px rgba(0, 0, 0, 0.12);
 }
+html[dir="ltr"] .checkbox-input.switch .checkbox:after,
+html[dir] .checkbox-input.switch[dir="ltr"] .checkbox:after {
+    left: 0;
+}
+html[dir="rtl"] .checkbox-input.switch .checkbox:after,
+html[dir] .checkbox-input.switch[dir="rtl"] .checkbox:after {
+    left: 13px;
+}
 
 .checkbox-input.switch.active .checkbox:after {
     left: 13px;
+}
+html[dir="ltr"] .checkbox-input.switch.active .checkbox:after,
+html[dir] .checkbox-input.switch.active[dir="ltr"] .checkbox:after {
+    left: 13px;
+}
+html[dir="rtl"] .checkbox-input.switch.active .checkbox:after,
+html[dir] .checkbox-input.switch.active[dir="rtl"] .checkbox:after {
+    left: 0;
 }
 
 .select-control {
@@ -841,6 +1061,12 @@ button.list-item, a.list-item {
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+}
+html[dir="ltr"] .select-control, html[dir] .select-control[dir="ltr"] {
+    margin: 16px 15px 0 0;
+}
+html[dir="rtl"] .select-control, html[dir] .select-control[dir="rtl"] {
+    margin: 16px 0 0 15px;
 }
 
 .select-control.block {
@@ -861,17 +1087,22 @@ button.list-item, a.list-item {
     position: relative;
     height: 36px;
     line-height: 32px;
-    text-align: left;
-    border-bottom: solid 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
     padding: 0 28px 1px 0;
     font-size: 12pt;
     cursor: pointer;
     transition: border-color 0.2s;
 }
+html[dir="ltr"] .select-control .select-value, html[dir] .select-control[dir="ltr"] .select-value {
+    padding: 0 28px 1px 0;
+}
+html[dir="rtl"] .select-control .select-value, html[dir] .select-control[dir="rtl"] .select-value {
+    padding: 0 0 1px 28px;
+}
 
 .select-control.bar-menu.active .select-value {
     z-index: 8001;
-    border-color: transparent;
 }
 
 .select-control .select-value:after {
@@ -898,6 +1129,14 @@ button.list-item, a.list-item {
     font-feature-settings: 'liga';
     transition: all 0.2s;
 }
+html[dir="ltr"] .select-control .select-value:after, html[dir] .select-control[dir="ltr"] .select-value:after {
+    left: auto;
+    right: 0;
+}
+html[dir="rtl"] .select-control .select-value:after, html[dir] .select-control[dir="rtl"] .select-value:after {
+    left: 0;
+    right: auto;
+}
 
 .select-control.list-menu .select-value {
     line-height: 1;
@@ -922,7 +1161,6 @@ button.list-item, a.list-item {
 }
 
 .select-control .select-menu {
-    background-color: white;
     border-radius: 2px;
     transition: all 0.2s;
     position: absolute;
@@ -944,8 +1182,18 @@ button.list-item, a.list-item {
                 0 9px 12px 1px rgba(0, 0, 0, 0.14),
                 0 3px 16px 2px rgba(0, 0, 0, 0.12);
 }
+html[dir="ltr"] .select-control .select-menu, html[dir] .select-control[dir="ltr"] .select-menu {
+    left: -20px;
+    right: auto;
+}
+html[dir="rtl"] .select-control .select-menu, html[dir] .select-control[dir="rtl"] .select-menu {
+    left: auto;
+    right: -20px;
+}
 
-.select-control.list-menu .select-menu {
+.select-control.list-menu .select-menu,
+html[dir="ltr"] .select-control.list-menu .select-menu, html[dir] .select-control.list-menu[dir="ltr"] .select-menu,
+html[dir="rtl"] .select-control.list-menu .select-menu, html[dir] .select-control.list-menu[dir="rtl"] .select-menu {
     left: 0;
     right: 0;
 }
@@ -961,6 +1209,20 @@ button.list-item, a.list-item {
     -webkit-transform-origin: top left;
     transform-origin: top left;
 }
+html[dir="ltr"] .select-control .select-menu.left, html[dir] .select-control[dir="ltr"] .select-menu.left {
+    left: -20px;
+    right: auto;
+    -ms-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+html[dir="rtl"] .select-control .select-menu.left, html[dir] .select-control[dir="rtl"] .select-menu.left {
+    left: auto;
+    right: -20px;
+    -ms-transform-origin: top right;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+}
 
 .select-control .select-menu.right {
     margin-top: -14px;
@@ -972,6 +1234,20 @@ button.list-item, a.list-item {
     -ms-transform-origin: top right;
     -webkit-transform-origin: top right;
     transform-origin: top right;
+}
+html[dir="ltr"] .select-control .select-menu.right, html[dir] .select-control[dir="ltr"] .select-menu.right {
+    left: auto;
+    right: -20px;
+    -ms-transform-origin: top right;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+}
+html[dir="rtl"] .select-control .select-menu.right, html[dir] .select-control[dir="rtl"] .select-menu.right {
+    left: -20px;
+    right: auto;
+    -ms-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
 }
 
 .select-control.bar-menu .select-menu {
@@ -1017,6 +1293,12 @@ button.list-item, a.list-item {
     color: inherit;
     text-decoration: none;
 }
+html[dir="ltr"] .select-control .select-menu .menu-item, html[dir] .select-control[dir="ltr"] .select-menu .menu-item {
+    text-align: left;
+}
+html[dir="rtl"] .select-control .select-menu .menu-item, html[dir] .select-control[dir="rtl"] .select-menu .menu-item {
+    text-align: right;
+}
 
 .select-control.list-menu .select-menu .menu-item {
     padding: 0;
@@ -1052,18 +1334,32 @@ button.list-item, a.list-item {
 .expansion-panel {
     max-width: 840px;
     margin: 0 0 8px;
-}
-
-.expansion-panel .panel {
-    background-color: white;
-    padding: 14px 24px;
-    position: relative;
-    border-bottom: solid 1px #e0e0e0;
-    transition: all 0.2s;
-    z-index: 2000;
+    transition: box-shadow 0s;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2),
                 0 2px 2px 0 rgba(0, 0, 0, 0.14),
                 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+
+.expansion-panel.active {
+    box-shadow: none;
+}
+
+.expansion-panel .panel {
+    padding: 14px 24px;
+    position: relative;
+    transition: all 0.2s, box-shadow 0s;
+    z-index: 2000;
+}
+
+.expansion-panel.active .panel {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2),
+                0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                0 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+
+.expansion-panel .panel + .panel {
+    border-top-style: solid;
+    border-top-width: 1px;
 }
 
 .expansion-panel .panel:first-child {
@@ -1074,7 +1370,6 @@ button.list-item, a.list-item {
 .expansion-panel .panel:last-child {
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-    border-bottom: none;
 }
 
 .expansion-panel .panel > .icon {
@@ -1102,6 +1397,12 @@ button.list-item, a.list-item {
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: 'liga';
 }
+html[dir="ltr"] .expansion-panel .panel > .icon, html[dir] .expansion-panel[dir="ltr"] .panel > .icon {
+    float: right;
+}
+html[dir="rtl"] .expansion-panel .panel > .icon, html[dir] .expansion-panel[dir="rtl"] .panel > .icon {
+    float: left;
+}
 
 .expansion-panel .panel > .icon:before {
     content: 'keyboard_arrow_down';
@@ -1119,11 +1420,31 @@ button.list-item, a.list-item {
     margin-right: 16px;
     font-size: 11.3pt;
 }
+html[dir="ltr"] .expansion-panel .panel > .label, html[dir] .expansion-panel[dir="ltr"] .panel > .label {
+    float: left;
+    margin-left: 0;
+    margin-right: 16px;
+}
+html[dir="rtl"] .expansion-panel .panel > .label, html[dir] .expansion-panel[dir="rtl"] .panel > .label {
+    float: right;
+    margin-left: 16px;
+    margin-right: 0;
+}
 
 .expansion-panel .panel > .content, .expansion-panel .panel > .expansion-content {
     font-size: 11.3pt;
     margin-right: 16px;
     margin-left: 240px;
+}
+html[dir="ltr"] .expansion-panel .panel > .content, html[dir] .expansion-panel[dir="ltr"] .panel > .content,
+html[dir="ltr"] .expansion-panel .panel > .expansion-content, html[dir] .expansion-panel[dir="ltr"] .panel > .expansion-content {
+    margin-right: 16px;
+    margin-left: 240px;
+}
+html[dir="rtl"] .expansion-panel .panel > .content, html[dir] .expansion-panel[dir="rtl"] .panel > .content,
+html[dir="rtl"] .expansion-panel .panel > .expansion-content, html[dir] .expansion-panel[dir="rtl"] .panel > .expansion-content {
+    margin-right: 240px;
+    margin-left: 16px;
 }
 
 .expansion-panel .panel > .content:after, .expansion-panel .panel > .expansion-content:after {
@@ -1149,21 +1470,44 @@ button.list-item, a.list-item {
     height: 0;
     opacity: 0;
     transition: all 0.2s;
-    border-top: solid 1px #e0e0e0;
+    border-top-style: solid;
+    border-top-width: 1px;
     text-align: right;
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
+html[dir="ltr"] .expansion-panel .panel > .expansion-controls, html[dir] .expansion-panel[dir="ltr"] .panel > .expansion-controls {
+    text-align: right;
+}
+html[dir="rtl"] .expansion-panel .panel > .expansion-controls, html[dir] .expansion-panel[dir="rtl"] .panel > .expansion-controls {
+    text-align: left;
+}
 
 .expansion-panel .panel > .expansion-controls > .btn {
-    margin: 0 0 0 8px;
+    margin: 0;
+}
+
+.expansion-panel .panel > .expansion-controls > .btn + .btn {
+    margin-left: 8px;
+}
+html[dir="ltr"] .expansion-panel .panel > .expansion-controls > .btn + .btn, html[dir] .expansion-panel[dir="ltr"] .panel > .expansion-controls > .btn + .btn {
+    margin-left: 8px;
+    margin-right: 0;
+}
+html[dir="rtl"] .expansion-panel .panel > .expansion-controls > .btn + .btn, html[dir] .expansion-panel[dir="rtl"] .panel > .expansion-controls > .btn + .btn {
+    margin-left: 0;
+    margin-right: 8px;
 }
 
 .expansion-panel .panel.active {
     padding: 20px 24px;
     margin: 16px 0;
-    border-bottom: none;
+    border-top: none;
+}
+
+.expansion-panel .panel.active + .panel {
+    border-top: none;
 }
 
 .expansion-panel .panel.active > .icon:before {
@@ -1190,16 +1534,22 @@ button.list-item, a.list-item {
     margin: 0 -24px -20px;
     padding: 16px 8px 16px 0;
 }
+html[dir="ltr"] .expansion-panel .panel.active > .expansion-controls, html[dir] .expansion-panel[dir="ltr"] .panel.active > .expansion-controls {
+    padding: 16px 8px 16px 0;
+}
+html[dir="rtl"] .expansion-panel .panel.active > .expansion-controls, html[dir] .expansion-panel[dir="rtl"] .panel.active > .expansion-controls {
+    padding: 16px 0 16px 8px;
+}
 
 .data-table {
     margin: 0 0 24px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-    background-color: white;
     border-radius: 2px;
 }
 
 .data-table.card {
-    border: solid 1px;
+    border-style: solid;
+    border-width: 1px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2),
                 0 1px 1px 0 rgba(0, 0, 0, 0.14),
                 0 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -1214,11 +1564,16 @@ button.list-item, a.list-item {
 .data-table > .table-header > .controls {
     float: right;
     height: 24px;
-    margin: 1px 0 0;
+    margin: 0;
+}
+html[dir="ltr"] .data-table > .table-header > .controls, html[dir] .data-table[dir="ltr"] > .table-header > .controls {
+    float: right;
+}
+html[dir="rtl"] .data-table > .table-header > .controls, html[dir] .data-table[dir="rtl"] > .table-header > .controls {
+    float: left;
 }
 
 .data-table > .table-header > .controls .btn-group {
-    float: right;
     margin: 0;
     padding: 0;
 }
@@ -1235,9 +1590,25 @@ button.list-item, a.list-item {
     margin: 0;
     padding: 0;
 }
+html[dir="ltr"] .data-table > .table-header > .controls .control-btn, html[dir] .data-table[dir="ltr"] > .table-header > .controls .control-btn {
+    float: left;
+}
+html[dir="rtl"] .data-table > .table-header > .controls .control-btn, html[dir] .data-table[dir="rtl"] > .table-header > .controls .control-btn {
+    float: right;
+}
 
 .data-table > .table-header > .controls .control-btn + .control-btn {
     margin-left: 24px;
+}
+html[dir="ltr"] .data-table > .table-header > .controls .control-btn + .control-btn,
+html[dir] .data-table[dir="ltr"] > .table-header > .controls .control-btn + .control-btn {
+    margin-left: 24px;
+    margin-right: 0;
+}
+html[dir="rtl"] .data-table > .table-header > .controls .control-btn + .control-btn,
+html[dir] .data-table[dir="rtl"] > .table-header > .controls .control-btn + .control-btn {
+    margin-left: 0;
+    margin-right: 24px;
 }
 
 .data-table > .table-container {
@@ -1268,6 +1639,14 @@ button.list-item, a.list-item {
 
 .data-table > .table-container > table th:last-child, .data-table > .table-container > table td:last-child {
     padding-right: 24px;
+}
+html[dir="ltr"] .data-table > .table-container > table th:last-child, html[dir="ltr"] .data-table > .table-container > table td:last-child,
+html[dir] .data-table[dir="ltr"] > .table-container > table th:last-child, html[dir] .data-table[dir="ltr"] > .table-container > table td:last-child {
+    padding-right: 24px !important;
+}
+html[dir="rtl"] .data-table > .table-container > table th:last-child, html[dir="rtl"] .data-table > .table-container > table td:last-child,
+html[dir] .data-table[dir="rtl"] > .table-container > table th:last-child, html[dir] .data-table[dir="rtl"] > .table-container > table td:last-child {
+    padding-left: 24px !important;
 }
 
 .data-table > .table-container > table th .controls, .data-table > .table-container > table td .controls {
@@ -1310,6 +1689,18 @@ button.list-item, a.list-item {
     padding: 0;
     float: left;
 }
+html[dir="ltr"] .data-table > .table-container > table th.control > .checkbox-input,
+html[dir] .data-table[dir="ltr"] > .table-container > table th.control > .checkbox-input,
+html[dir="ltr"] .data-table > .table-container > table td.control > .checkbox-input,
+html[dir] .data-table[dir="ltr"] > .table-container > table td.control > .checkbox-input {
+    float: left;
+}
+html[dir="rtl"] .data-table > .table-container > table th.control > .checkbox-input,
+html[dir] .data-table[dir="rtl"] > .table-container > table th.control > .checkbox-input,
+html[dir="rtl"] .data-table > .table-container > table td.control > .checkbox-input,
+html[dir] .data-table[dir="rtl"] > .table-container > table td.control > .checkbox-input {
+    float: right;
+}
 
 .data-table > .table-container > table .control > .checkbox-input > .checkbox:before {
     display: none;
@@ -1319,18 +1710,61 @@ button.list-item, a.list-item {
     text-align: left;
     padding-right: 24px;
 }
+html[dir="ltr"] .data-table > .table-container > table th.text,
+html[dir="ltr"] .data-table > .table-container > table td.text,
+html[dir] .data-table[dir="ltr"] > .table-container > table th.text,
+html[dir] .data-table[dir="ltr"] > .table-container > table td.text {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 24px;
+}
+html[dir="rtl"] .data-table > .table-container > table th.text,
+html[dir="rtl"] .data-table > .table-container > table td.text,
+html[dir] .data-table[dir="rtl"] > .table-container > table th.text,
+html[dir] .data-table[dir="rtl"] > .table-container > table td.text {
+    text-align: right;
+    padding-left: 24px;
+    padding-right: 0;
+}
 
 .data-table > .table-container > table th.number, .data-table > .table-container > table td.number {
     text-align: right;
     width: 1%;
 }
+html[dir="ltr"] .data-table > .table-container > table th.number,
+html[dir="ltr"] .data-table > .table-container > table td.number,
+html[dir] .data-table[dir="ltr"] > .table-container > table th.number,
+html[dir] .data-table[dir="ltr"] > .table-container > table td.number {
+    text-align: right;
+}
+html[dir="rtl"] .data-table > .table-container > table th.number,
+html[dir="rtl"] .data-table > .table-container > table td.number,
+html[dir] .data-table[dir="rtl"] > .table-container > table th.number,
+html[dir] .data-table[dir="rtl"] > .table-container > table td.number {
+    text-align: left;
+}
 
 .data-table > .table-container > table th.number + th.text, .data-table > .table-container > table td.number + td.text {
     padding-left: 24px;
+    padding-right: 24px;
 }
 
 .data-table > .table-container > table th.number + th.number, .data-table > .table-container > table td.number + td.number {
     padding-left: 56px;
+}
+html[dir="ltr"] .data-table > .table-container > table th.number + th.number,
+html[dir="ltr"] .data-table > .table-container > table td.number + td.number,
+html[dir] .data-table[dir="ltr"] > .table-container > table th.number + th.number,
+html[dir] .data-table[dir="ltr"] > .table-container > table td.number + td.number {
+    padding-left: 56px;
+    padding-right: 0;
+}
+html[dir="rtl"] .data-table > .table-container > table th.number + th.number,
+html[dir="rtl"] .data-table > .table-container > table td.number + td.number,
+html[dir] .data-table[dir="rtl"] > .table-container > table th.number + th.number,
+html[dir] .data-table[dir="rtl"] > .table-container > table td.number + td.number {
+    padding-left: 0;
+    padding-right: 56px;
 }
 
 .data-table > .table-container > table > thead > tr > th {
@@ -1338,10 +1772,20 @@ button.list-item, a.list-item {
     line-height: 56px;
     font-size: 9pt;
     font-weight: normal;
-    font-family: 'robotoregular', sans-serif;
+    font-family: 'roboto_regular', sans-serif;
     padding: 0;
     white-space: nowrap;
     background-color: transparent;
+}
+
+html:lang(en-US) .data-table > .table-container > table > thead > tr > th,
+html[lang] .data-table > .table-container > table > thead > tr > th:lang(en-US) {
+    font-family: 'roboto_regular', sans-serif;
+}
+
+html:lang(ar-BH) .data-table > .table-container > table > thead > tr > th,
+html[lang] .data-table > .table-container > table > thead > tr > th:lang(ar-BH) {
+    font-family: 'arabic_notosans_regular', 'roboto_regular', sans-serif;
 }
 
 .data-table > .table-container > table > thead > tr > th > a {
@@ -1411,9 +1855,19 @@ button.list-item, a.list-item {
     font-size: 9.8pt;
     vertical-align: middle;
     font-weight: normal;
-    font-family: 'robotoregular', sans-serif;
+    font-family: 'roboto_regular', sans-serif;
     padding: 0;
     white-space: nowrap;
+}
+
+html:lang(en-US) .data-table > .table-container > table > tbody > tr > td,
+html[lang] .data-table > .table-container > table > tbody > tr > td:lang(en-US) {
+    font-family: 'roboto_regular', sans-serif;
+}
+
+html:lang(ar-BH) .data-table > .table-container > table > tbody > tr > td,
+html[lang] .data-table > .table-container > table > tbody > tr > td:lang(ar-BH) {
+    font-family: 'arabic_notosans_regular', 'roboto_regular', sans-serif;
 }
 
 .data-table > .summary {
@@ -1434,11 +1888,25 @@ button.list-item, a.list-item {
 .data-table > .summary > .summary-right {
     float: right;
 }
+html[dir="ltr"] .data-table > .summary > .summary-right, html[dir] .data-table[dir="ltr"] > .summary > .summary-right {
+    float: right;
+}
+html[dir="rtl"] .data-table > .summary > .summary-right, html[dir] .data-table[dir="rtl"] > .summary > .summary-right {
+    float: left;
+}
 
 .data-table > .summary > .summary-right .controls {
     float: right;
     margin: 16px 0 0 32px;
     height: 24px;
+}
+html[dir="ltr"] .data-table > .summary > .summary-right .controls, html[dir] .data-table[dir="ltr"] > .summary > .summary-right .controls {
+    float: right;
+    margin: 16px 0 0 32px;
+}
+html[dir="rtl"] .data-table > .summary > .summary-right .controls, html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls {
+    float: left;
+    margin: 16px 32px 0 0;
 }
 
 .data-table > .summary > .summary-right .controls .material-icon,
@@ -1452,6 +1920,18 @@ button.list-item, a.list-item {
     color: inherit;
     float: left;
 }
+html[dir="ltr"] .data-table > .summary > .summary-right .controls .material-icon,
+html[dir] .data-table[dir="ltr"] > .summary > .summary-right .controls .material-icon,
+html[dir="ltr"] .data-table > .summary > .summary-right .controls .material-icons,
+html[dir] .data-table[dir="ltr"] > .summary > .summary-right .controls .material-icons {
+    float: left;
+}
+html[dir="rtl"] .data-table > .summary > .summary-right .controls .material-icon,
+html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material-icon,
+html[dir="rtl"] .data-table > .summary > .summary-right .controls .material-icons,
+html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material-icons {
+    float: right;
+}
 
 .data-table > .summary > .summary-right .controls .material-icon.disabled,
 .data-table > .summary > .summary-right .controls .material-icons.disabled {
@@ -1463,6 +1943,28 @@ button.list-item, a.list-item {
 .data-table > .summary > .summary-right .controls .material-icons + .material-icon,
 .data-table > .summary > .summary-right .controls .material-icons + .material-icons {
     margin-left: 24px;
+}
+html[dir="ltr"] .data-table > .summary > .summary-right .controls .material-icon + .material-icon,
+html[dir="ltr"] .data-table > .summary > .summary-right .controls .material-icon + .material-icons,
+html[dir="ltr"] .data-table > .summary > .summary-right .controls .material-icons + .material-icon,
+html[dir="ltr"] .data-table > .summary > .summary-right .controls .material-icons + .material-icons,
+html[dir] .data-table[dir="ltr"] > .summary > .summary-right .controls .material-icon + .material-icon,
+html[dir] .data-table[dir="ltr"] > .summary > .summary-right .controls .material-icon + .material-icons,
+html[dir] .data-table[dir="ltr"] > .summary > .summary-right .controls .material-icons + .material-icon,
+html[dir] .data-table[dir="ltr"] > .summary > .summary-right .controls .material-icons + .material-icons {
+    margin-left: 24px;
+    margin-right: 0;
+}
+html[dir="rtl"] .data-table > .summary > .summary-right .controls .material-icon + .material-icon,
+html[dir="rtl"] .data-table > .summary > .summary-right .controls .material-icon + .material-icons,
+html[dir="rtl"] .data-table > .summary > .summary-right .controls .material-icons + .material-icon,
+html[dir="rtl"] .data-table > .summary > .summary-right .controls .material-icons + .material-icons,
+html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material-icon + .material-icon,
+html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material-icon + .material-icons,
+html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material-icons + .material-icon,
+html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material-icons + .material-icons {
+    margin-left: 0;
+    margin-right: 24px;
 }
 
 .data-table > .summary .select-control {
@@ -1476,13 +1978,18 @@ button.list-item, a.list-item {
     text-align: center;
     font-size: inherit;
 }
+html[dir="ltr"] .data-table > .summary .select-control .select-value, html[dir] .data-table[dir="ltr"] > .summary .select-control .select-value {
+    padding: 0 24px 0 0;
+}
+html[dir="rtl"] .data-table > .summary .select-control .select-value, html[dir] .data-table[dir="rtl"] > .summary .select-control .select-value {
+    padding: 0 0 0 24px;
+}
 
 .data-table > .summary .select-control .select-menu .menu-item {
     font-size: inherit;
 }
 
 .card {
-    background-color: white;
     display: block;
     border-radius: 2px;
     padding: 0;
@@ -1531,8 +2038,7 @@ button.list-item, a.list-item {
 }
 
 .card .rich-media > .content.dark-theme {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.54);
 }
 
 .card .rich-media > .content .actions,
@@ -1783,8 +2289,7 @@ button.list-item, a.list-item {
     width: 280px;
     display: inline-block;
     margin: auto;
-    background-color: white;
-    text-align: left;
+    text-align: initial;
     border-radius: 2px;
     transition: transform 0.2s;
     -ms-transform: scale(1.12);
@@ -1860,6 +2365,20 @@ button.list-item, a.list-item {
     padding-left: 24px;
     margin-right: 8px;
 }
+html[dir="ltr"] .dialog-background > .dialog-container > .dialog > .actions,
+html[dir] .dialog-background[dir="ltr"] > .dialog-container > .dialog > .actions {
+    padding-left: 24px;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 8px;
+}
+html[dir="rtl"] .dialog-background > .dialog-container > .dialog > .actions,
+html[dir] .dialog-background[dir="rtl"] > .dialog-container > .dialog > .actions {
+    padding-left: 0;
+    padding-right: 24px;
+    margin-left: 8px;
+    margin-right: 0;
+}
 
 .dialog-background > .dialog-container > .dialog > .actions:before,
 .dialog-background > .dialog-container > .dialog > .actions:after {
@@ -1873,9 +2392,25 @@ button.list-item, a.list-item {
     float: right;
     margin: 0;
 }
+html[dir="ltr"] .dialog-background > .dialog-container > .dialog > .actions > .btn-group,
+html[dir] .dialog-background[dir="ltr"] > .dialog-container > .dialog > .actions > .btn-group {
+    float: right;
+}
+html[dir="rtl"] .dialog-background > .dialog-container > .dialog > .actions > .btn-group,
+html[dir] .dialog-background[dir="rtl"] > .dialog-container > .dialog > .actions > .btn-group {
+    float: left;
+}
 
 .dialog-background > .dialog-container > .dialog > .actions .btn {
     float: left;
+}
+html[dir="ltr"] .dialog-background > .dialog-container > .dialog > .actions .btn,
+html[dir] .dialog-background[dir="ltr"] > .dialog-container > .dialog > .actions .btn {
+    float: left;
+}
+html[dir="rtl"] .dialog-background > .dialog-container > .dialog > .actions .btn,
+html[dir] .dialog-background[dir="rtl"] > .dialog-container > .dialog > .actions .btn {
+    float: right;
 }
 
 /* Custom breakpoint for dialogs only!! */
@@ -1959,6 +2494,12 @@ button.list-item, a.list-item {
     transition: width 0.2s;
     opacity: 0.32;
 }
+html[dir="ltr"] .progress.buffer > .buffered, html[dir] .progress.buffer[dir="ltr"] > .buffered {
+    float: left;
+}
+html[dir="rtl"] .progress.buffer > .buffered, html[dir] .progress.buffer[dir="rtl"] > .buffered {
+    float: right;
+}
 
 .progress.buffer > .buffer-bar {
     float: left;
@@ -1967,6 +2508,16 @@ button.list-item, a.list-item {
     transition: width 0.2s;
     -webkit-animation: buffer 3s infinite linear;
     animation: buffer 3s infinite linear;
+}
+html[dir="ltr"] .progress.buffer > .buffer-bar, html[dir] .progress.buffer[dir="ltr"] > .buffer-bar {
+    float: left;
+    -webkit-animation: buffer 3s infinite linear;
+    animation: buffer 3s infinite linear;
+}
+html[dir="rtl"] .progress.buffer > .buffer-bar, html[dir] .progress.buffer[dir="rtl"] > .buffer-bar {
+    float: right;
+    -webkit-animation: buffer-rtl 3s infinite linear;
+    animation: buffer-rtl 3s infinite linear;
 }
 
 .progress > .bar {
@@ -1982,6 +2533,14 @@ button.list-item, a.list-item {
     width: 0;
     height: auto;
     transition: width 0.2s;
+}
+html[dir="ltr"] .progress.buffer > .bar, html[dir] .progress.buffer[dir="ltr"] > .bar {
+    left: 0;
+    right: auto;
+}
+html[dir="rtl"] .progress.buffer > .bar, html[dir] .progress.buffer[dir="rtl"] > .bar {
+    left: auto;
+    right: 0;
 }
 
 .progress > .determinate {
@@ -2004,6 +2563,18 @@ button.list-item, a.list-item {
     -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
     animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 }
+html[dir="ltr"] .progress > .indeterminate:before, html[dir] .progress[dir="ltr"] > .indeterminate:before {
+    left: 0;
+    right: auto;
+    -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+    animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+html[dir="rtl"] .progress > .indeterminate:before, html[dir] .progress[dir="rtl"] > .indeterminate:before {
+    left: auto;
+    right: 0;
+    -webkit-animation: indeterminate-rtl 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+    animation: indeterminate-rtl 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
 
 .progress > .indeterminate:after {
     content: '';
@@ -2018,8 +2589,198 @@ button.list-item, a.list-item {
     -webkit-animation-delay: 1.15s;
     animation-delay: 1.15s;
 }
+html[dir="ltr"] .progress > .indeterminate:after, html[dir] .progress[dir="ltr"] > .indeterminate:after {
+    left: 0;
+    right: auto;
+    -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    -webkit-animation-delay: 1.15s;
+    animation-delay: 1.15s;
+}
+html[dir="rtl"] .progress > .indeterminate:after, html[dir] .progress[dir="rtl"] > .indeterminate:after {
+    left: auto;
+    right: 0;
+    -webkit-animation: indeterminate-short-rtl 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    animation: indeterminate-short-rtl 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    -webkit-animation-delay: 1.15s;
+    animation-delay: 1.15s;
+}
 
+@-webkit-keyframes indeterminate {
+    0% {
+        left:-35%;
+        right:100%
+    }
+    60% {
+        left:100%;
+        right:-90%
+    }
+    100% {
+        left:100%;
+        right:-90%
+    }
+}
 
+@-webkit-keyframes indeterminate-rtl {
+    0% {
+        right:-35%;
+        left:100%
+    }
+    60% {
+        right:100%;
+        left:-90%
+    }
+    100% {
+        right:100%;
+        left:-90%
+    }
+}
+
+@keyframes indeterminate {
+    0% {
+        left:-35%;
+        right:100%
+    }
+    60% {
+        left:100%;
+        right:-90%
+    }
+    100% {
+        left:100%;
+        right:-90%
+    }
+}
+
+@keyframes indeterminate-rtl {
+    0% {
+        right:-35%;
+        left:100%
+    }
+    60% {
+        right:100%;
+        left:-90%
+    }
+    100% {
+        right:100%;
+        left:-90%
+    }
+}
+
+@-webkit-keyframes indeterminate-short {
+    0% {
+        left:-200%;
+        right:100%
+    }
+    60% {
+        left:107%;
+        right:-8%
+    }
+    100% {
+        left:107%;
+        right:-8%
+    }
+}
+
+@-webkit-keyframes indeterminate-short-rtl {
+    0% {
+        right:-200%;
+        left:100%
+    }
+    60% {
+        right:107%;
+        left:-8%
+    }
+    100% {
+        right:107%;
+        left:-8%
+    }
+}
+
+@keyframes indeterminate-short {
+    0% {
+        left:-200%;
+        right:100%
+    }
+    60% {
+        left:107%;
+        right:-8%
+    }
+    100% {
+        left:107%;
+        right:-8%
+    }
+}
+
+@keyframes indeterminate-short-rtl {
+    0% {
+        right:-200%;
+        left:100%
+    }
+    60% {
+        right:107%;
+        left:-8%
+    }
+    100% {
+        right:107%;
+        left:-8%
+    }
+}
+
+@-webkit-keyframes buffer {
+    0% {
+        opacity: 0.32;
+        background-position: 0 -23px;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.32;
+        background-position: -200px -23px;
+    }
+}
+
+@-webkit-keyframes buffer-rtl {
+    0% {
+        opacity: 0.32;
+        background-position: -200px -23px;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.32;
+        background-position: 0 -23px;
+    }
+}
+
+@keyframes buffer {
+    0% {
+        opacity: 0.32;
+        background-position: 0 -23px;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.32;
+        background-position: -200px -23px;
+    }
+}
+
+@keyframes buffer-rtl {
+    0% {
+        opacity: 0.32;
+        background-position: -200px -23px;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.32;
+        background-position: 0 -23px;
+    }
+}
 
 #snackbars {
     position: fixed;
@@ -2070,94 +2831,6 @@ button.list-item, a.list-item {
     text-align: right;
     color: #eeff41;
     text-decoration: none;
-}
-
-@-webkit-keyframes indeterminate {
-    0% {
-        left:-35%;
-        right:100%
-    }
-    60% {
-        left:100%;
-        right:-90%
-    }
-    100% {
-        left:100%;
-        right:-90%
-    }
-}
-
-@keyframes indeterminate {
-    0% {
-        left:-35%;
-        right:100%
-    }
-    60% {
-        left:100%;
-        right:-90%
-    }
-    100% {
-        left:100%;
-        right:-90%
-    }
-}
-
-@-webkit-keyframes indeterminate-short {
-    0% {
-        left:-200%;
-        right:100%
-    }
-    60% {
-        left:107%;
-        right:-8%
-    }
-    100% {
-        left:107%;
-        right:-8%
-    }
-}
-
-@keyframes indeterminate-short {
-    0% {
-        left:-200%;
-        right:100%
-    }
-    60% {
-        left:107%;
-        right:-8%
-    }
-    100% {
-        left:107%;
-        right:-8%
-    }
-}
-
-@-webkit-keyframes buffer {
-    0% {
-        opacity: 0.32;
-        background-position: 0 -23px;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0.32;
-        background-position: -200px -23px;
-    }
-}
-
-@keyframes buffer {
-    0% {
-        opacity: 0.32;
-        background-position: 0 -23px;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0.32;
-        background-position: -200px -23px;
-    }
 }
 
 @media (min-width: 1280px) {

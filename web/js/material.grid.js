@@ -254,10 +254,10 @@ function material_grid_init() {
 
     $('.expansion-panel .panel').on('click', '.icon', function() {
         if (!$(this).parent('.panel').hasClass('active')) {
-            $(this).parent('.panel').closest('.expansion-panel').find('.panel.active').removeClass('active');
-            $(this).parent('.panel').addClass('active');
+            $(this).parent('.panel').siblings('.panel.active').removeClass('active');
+            $(this).parent('.panel').addClass('active').closest('.expansion-panel').addClass('active');
         } else {
-            $(this).parent('.panel').removeClass('active');
+            $(this).parent('.panel').removeClass('active').closest('.expansion-panel').removeClass('active');
         }
     });
 

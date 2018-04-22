@@ -25,7 +25,7 @@ function init() {
         side_nav_close();
     });
 
-    $('#side-nav > .side-nav-container > .nav > .nav-block > a.dropdown').click(function() {
+    $('#side-nav > .side-nav-container .list .list-item a.dropdown').click(function() {
         if ($(this).parent().hasClass('active')) {
             $(this).siblings('.sub-menu').slideUp('fast', function() {
                 $(this).parent().removeClass('active');
