@@ -1300,6 +1300,12 @@ html[dir="rtl"] .select-control .select-menu .menu-item, html[dir] .select-contr
     text-align: right;
 }
 
+.select-control .select-menu .menu-item.list-item {
+    height: auto;
+    line-height: 1.5;
+    padding: 0 8px 4px;
+}
+
 .select-control.list-menu .select-menu .menu-item {
     padding: 0;
     line-height: 1;

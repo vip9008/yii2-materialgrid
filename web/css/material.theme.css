@@ -382,13 +382,18 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
     background: none;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
-#page-content > .top-bar .user-wrapper .select-btn .img {
+#page-content > .top-bar .user-wrapper.select-control .select-btn .img {
     height: 40px;
     width: 40px;
     display: inline-block;
     border-radius: 100%;
+}
+
+#page-content > .top-bar .user-wrapper.select-control .select-menu {
+    margin: 42px 20px 0;
 }
 
 #page-content > .page-header {
