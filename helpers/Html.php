@@ -16,7 +16,7 @@ class Html extends BaseHtml
         unset($options['unselect'], $options['name']);
         $selectOptions = static::renderSelectOptions($selection, $items, $options);
 
-        $menuOptions['class'] = 'items-container';
+        $menuOptions['class'] = 'items-container list';
         if (isset($options['listHeight'])) {
             $menuOptions['style'] = "max-height: none; height: {$options['listHeight']}px;";
             unset($options['listHeight']);
@@ -38,7 +38,8 @@ class Html extends BaseHtml
             if ($encodeSpaces) {
                 $prompt = str_replace(' ', '&nbsp;', $prompt);
             }
-            $lines[] = static::tag('div', $prompt, ['class' => 'menu-item', 'data-value' => '']);
+            $prompt = static::tag('div', static::tag('div', $prompt, ['class' => 'title']), ['class' => 'text']);
+            $lines[] = static::tag('div', $prompt, ['class' => 'list-item one-line', 'data-value' => '']);
         }
 
         $options = isset($tagOptions['options']) ? $tagOptions['options'] : [];
@@ -61,6 +62,7 @@ class Html extends BaseHtml
             }
 
             if (is_array($value)) {
+                $list_item_class = "list-item one-line";
                 $text = '';
                 if (isset($value['avatar'])) {
                     $text .= static::tag('div', Html::img($value['avatar'], ['class' => 'img']), ['class' => 'avatar']) . "\n";
@@ -78,27 +80,31 @@ class Html extends BaseHtml
                     if ($encodeSpaces) {
                         $listLine = str_replace(' ', '&nbsp;', $listLine);
                     }
+                    $list_item_class .= "list-item";
                     $textDivs .= static::tag('div', $listLine, ['class' => 'subtitle']) . "\n";
+                    static::addCssClass($attrs, 'list-item');
+                } else {
+                    static::addCssClass($attrs, 'list-item one-line');
                 }
                 if (!empty($textDivs)) {
                     $textDivs = static::tag('div', "\n" . $textDivs, ['class' => 'text']);
                 }
-                $text = static::tag('div', "\n" . $text . $textDivs, ['class' => 'list-item']);
+                $text .= $textDivs;
             } else {
+                static::addCssClass($attrs, 'list-item one-line');
                 $text = $encode ? static::encode($value) : $value;
                 if ($encodeSpaces) {
                     $text = str_replace(' ', '&nbsp;', $text);
                 }
+                $text = static::tag('div', static::tag('div', $text, ['class' => 'title']), ['class' => 'text']);
             }
-
-            static::addCssClass($attrs, 'menu-item');
             $attrs['data-value'] = $attrs['value'];
             unset($attrs['value']);
-
-            $lines[] = static::tag('div', $text, $attrs);
+            $attrs['href'] = 'javascript: ;';
+            $lines[] = static::tag('a', $text, $attrs);
         }
 
-        return implode("\n", $lines);
+        return static::tag('div', implode("\n", $lines), ['class' => 'list-group']);
     }
 
     protected static function booleanInput($type, $name, $checked = false, $options = [])
@@ -122,5 +128,48 @@ class Html extends BaseHtml
         ).$label;
 
         return $input;
+    }
+
+    public static function errorSummary($models, $options = [])
+    {
+        $icon = static::tag('div', 'error', ['class' => 'material-icon']);
+        $header = "<p>" . ArrayHelper::remove($options, 'header', \Yii::t('yii', 'Correct the following errors:')) . "</p>";
+        $footer = ArrayHelper::remove($options, 'footer', '');
+        $encode = ArrayHelper::remove($options, 'encode', true);
+        $showAllErrors = ArrayHelper::remove($options, 'showAllErrors', false);
+        $lines = self::collectErrors($models, $encode, $showAllErrors);
+        if (empty($lines)) {
+            // still render the placeholder for client-side validation use
+            $content = '<ul></ul>';
+            $options['style'] = isset($options['style']) ? rtrim($options['style'], ';') . '; display:none' : 'display:none';
+        } else {
+            $content = '<ul><li>' . implode("</li>\n<li>", $lines) . '</li></ul>';
+        }
+        static::addCssClass($options, ['note', 'bg-red']);
+        return static::tag('div', $icon . $header . $content . $footer, $options);
+    }
+
+    private static function collectErrors($models, $encode, $showAllErrors)
+    {
+        $lines = [];
+        if (!is_array($models)) {
+            $models = [$models];
+        }
+
+        foreach ($models as $model) {
+            $lines = array_unique(array_merge($lines, $model->getErrorSummary($showAllErrors)));
+        }
+
+        // If there are the same error messages for different attributes, array_unique will leave gaps
+        // between sequential keys. Applying array_values to reorder array keys.
+        $lines = array_values($lines);
+
+        if ($encode) {
+            foreach ($lines as &$line) {
+                $line = Html::encode($line);
+            }
+        }
+
+        return $lines;
     }
 }

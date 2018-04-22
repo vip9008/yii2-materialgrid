@@ -260,21 +260,33 @@ button.material-icons, button.material-icon,
 }
 
 .divider,
-.select-control .select-menu .list-item:focus,
-.select-control .select-menu .list-item:active,
-.select-control .select-menu .list-item.active,
+.select-control .select-menu button.list-item:focus,
+.select-control .select-menu button.list-item:active,
+.select-control .select-menu button.list-item.active,
+.select-control .select-menu a.list-item:focus,
+.select-control .select-menu a.list-item:active,
+.select-control .select-menu a.list-item.active,
 .light-theme .divider,
-.light-theme .select-control .select-menu .list-item:focus,
-.light-theme .select-control .select-menu .list-item:active,
-.light-theme .select-control .select-menu .list-item.active,
+.light-theme .select-control .select-menu button.list-item:focus,
+.light-theme .select-control .select-menu button.list-item:active,
+.light-theme .select-control .select-menu button.list-item.active,
+.light-theme .select-control .select-menu a.list-item:focus,
+.light-theme .select-control .select-menu a.list-item:active,
+.light-theme .select-control .select-menu a.list-item.active,
 .dark-theme .light-theme .divider,
-.dark-theme .light-theme .select-control .select-menu .list-item:focus,
-.dark-theme .light-theme .select-control .select-menu .list-item:active,
-.dark-theme .light-theme .select-control .select-menu .list-item.active,
+.dark-theme .light-theme .select-control .select-menu button.list-item:focus,
+.dark-theme .light-theme .select-control .select-menu button.list-item:active,
+.dark-theme .light-theme .select-control .select-menu button.list-item.active,
+.dark-theme .light-theme .select-control .select-menu a.list-item:focus,
+.dark-theme .light-theme .select-control .select-menu a.list-item:active,
+.dark-theme .light-theme .select-control .select-menu a.list-item.active,
 .dark-theme .light-theme.divider,
-.dark-theme .light-theme.select-control .select-menu .list-item:focus,
-.dark-theme .light-theme.select-control .select-menu .list-item:active,
-.dark-theme .light-theme.select-control .select-menu .list-item.active {
+.dark-theme .light-theme.select-control .select-menu button.list-item:focus,
+.dark-theme .light-theme.select-control .select-menu button.list-item:active,
+.dark-theme .light-theme.select-control .select-menu button.list-item.active,
+.dark-theme .light-theme.select-control .select-menu a.list-item:focus,
+.dark-theme .light-theme.select-control .select-menu a.list-item:active,
+.dark-theme .light-theme.select-control .select-menu a.list-item.active {
     background-color: rgba(0, 0, 0, 0.12);
 }
 
@@ -444,13 +456,19 @@ button.material-icon.dark-theme.disabled, button.material-icon.dark-theme[disabl
 }
 
 .dark-theme .divider,
-.dark-theme .select-control .select-menu .list-item:focus,
-.dark-theme .select-control .select-menu .list-item:active,
-.dark-theme .select-control .select-menu .list-item.active,
+.dark-theme .select-control .select-menu button.list-item:focus,
+.dark-theme .select-control .select-menu button.list-item:active,
+.dark-theme .select-control .select-menu button.list-item.active,
+.dark-theme .select-control .select-menu a.list-item:focus,
+.dark-theme .select-control .select-menu a.list-item:active,
+.dark-theme .select-control .select-menu a.list-item.active,
 .dark-theme.divider,
-.dark-theme.select-control .select-menu .list-item:focus,
-.dark-theme.select-control .select-menu .list-item:active,
-.dark-theme.select-control .select-menu .list-item.active {
+.dark-theme.select-control .select-menu button.list-item:focus,
+.dark-theme.select-control .select-menu button.list-item:active,
+.dark-theme.select-control .select-menu button.list-item.active,
+.dark-theme.select-control .select-menu a.list-item:focus,
+.dark-theme.select-control .select-menu a.list-item:active,
+.dark-theme.select-control .select-menu a.list-item.active {
     background-color: rgba(255, 255, 255, 0.12);
 }
 

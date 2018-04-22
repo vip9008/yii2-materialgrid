@@ -1,0 +1,8 @@
+!.gitignore
+/css/highlight.theme.css
+/img/*
+!/img/google.png
+!/img/user.svg
+colors_pallette.css
+menu.html
+*.php

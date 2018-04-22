@@ -238,7 +238,7 @@ function material_grid_init() {
         }
     });
 
-    $('.select-control .select-menu').on('click', '.list-item', function() {
+    $('.select-control .select-menu').on('click', 'button.list-item, a.list-item', function() {
         if ($(this).hasClass('disabled') || $(this).is(':disabled')) {
             return;
         }

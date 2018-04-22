@@ -53,4 +53,11 @@ class ActiveForm extends BaseActiveForm
         
         return parent::field($model, $attribute, $options);
     }
+    
+    public function errorSummary($models, $options = [])
+    {
+        Html::addCssClass($options, $this->errorSummaryCssClass);
+        $options['encode'] = $this->encodeErrorSummary;
+        return Html::errorSummary($models, $options);
+    }
 }
