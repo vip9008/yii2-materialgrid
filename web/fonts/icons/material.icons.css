@@ -11,7 +11,7 @@
 }
 
 .material-icons, .material-icon {
-    font-family: 'Material Icons';
+    font-family: 'Material Icons' !important;
     font-weight: normal;
     font-style: normal;
     font-size: 24px;  /* Preferred icon size */
@@ -38,41 +38,21 @@
 }
 
 a.material-icons, a.material-icon,
-button.material-icons, button.material-icon,
-.light a.material-icons, .light a.material-icon,
-.light button.material-icons, .light button.material-icon {
+button.material-icons, button.material-icon {
     border: none;
     background: transparent;
     padding: 0;
     margin: 0;
     cursor: pointer;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.54);
     position: relative;
 }
 
 a.material-icons.disabled, a.material-icons[disabled], a.material-icons:disabled,
 a.material-icon.disabled, a.material-icon[disabled], a.material-icon:disabled,
 button.material-icons.disabled, button.material-icons[disabled], button.material-icons:disabled,
-button.material-icon.disabled, button.material-icon[disabled], button.material-icon:disabled,
-.light a.material-icons.disabled, .light a.material-icons[disabled], .light a.material-icons:disabled,
-.light a.material-icon.disabled, .light a.material-icon[disabled], .light a.material-icon:disabled,
-.light button.material-icons.disabled, .light button.material-icons[disabled], .light button.material-icons:disabled,
-.light button.material-icon.disabled, .light button.material-icon[disabled], .light button.material-icon:disabled {
-    color: rgba(0, 0, 0, 0.26);
+button.material-icon.disabled, button.material-icon[disabled], button.material-icon:disabled {
     cursor: default;
-}
-
-.dark a.material-icons, .dark a.material-icon,
-.dark button.material-icons, .dark button.material-icon {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.dark a.material-icons.disabled, .dark a.material-icons[disabled], .dark a.material-icons:disabled,
-.dark a.material-icon.disabled, .dark a.material-icon[disabled], .dark a.material-icon:disabled,
-.dark button.material-icons.disabled, .dark button.material-icons[disabled], .dark button.material-icons:disabled,
-.dark button.material-icon.disabled, .dark button.material-icon[disabled], .dark button.material-icon:disabled {
-    color: rgba(255, 255, 255, 0.5);
 }
 
 .color a.material-icons, .color a.material-icon,
