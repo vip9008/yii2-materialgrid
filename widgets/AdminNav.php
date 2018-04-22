@@ -125,7 +125,7 @@ class AdminNav extends \yii\base\Widget
             $label = Html::tag(
                 'div',
                 Html::tag('div', $icon, ['class' => 'material-icon']),
-                ['class' => 'icon']
+                ['class' => 'icon text-secondary']
             ) . $label;
         }
 
