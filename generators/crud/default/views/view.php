@@ -51,14 +51,14 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
 
                 <div class="btn-group">
                     <?= "<?= " ?>Html::a(<?= $generator->generateString('Delete') ?>, ['delete', <?= $urlParams ?>], [
-                        'class' => "btn raised color $accentColor",
+                        'class' => "btn raised bg-$accentColor",
                         'data' => [
                             'confirm' => <?= $generator->generateString('Are you sure you want to delete this item?') ?>,
                             'method' => 'post',
                         ],
                     ]) ?>
                     <?= "<?= " ?>Html::a(<?= $generator->generateString('Update') ?>, ['update', <?= $urlParams ?>], [
-                        'class' => "btn raised color $primaryColor",
+                        'class' => "btn raised bg-$primaryColor",
                         ]) ?>
                 </div>
 

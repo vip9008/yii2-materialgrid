@@ -33,7 +33,7 @@ $accentColor = ArrayHelper::getValue(Yii::$app->params, 'accentColor', 'blue');
             <section class="chapter <?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-index">
             <div class="chapter-intro">
                 <div class="btn-group">
-                <?= "<?= " ?>Html::a(<?= $generator->generateString('Create ' . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>, ['create'], ['class' => "btn raised color $accentColor"]) ?>
+                <?= "<?= " ?>Html::a(<?= $generator->generateString('Create ' . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>, ['create'], ['class' => "btn raised bg-$accentColor"]) ?>
                 </div>
             </div>
 
