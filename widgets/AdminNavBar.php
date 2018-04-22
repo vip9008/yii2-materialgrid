@@ -15,8 +15,8 @@ class AdminNavBar extends \yii\base\Widget
     public $brandOptions = [];
     public $copyright = false;
     public $copyrightOptions = [];
-    public $primaryColor = 'indigo';
-    public $accentColor = 'blue';
+    public $primaryColor = false;
+    public $accentColor = false;
     public $themeColor = false;
     public $theme = 'light-theme';
 
@@ -29,11 +29,14 @@ class AdminNavBar extends \yii\base\Widget
         echo Html::beginTag("div", ["id" => "side-nav", "class" => $this->theme]);
 
         // begin nav container
-        $class = $this->themeColor ? " color $this->themeColor" : "";
+        $class = $this->themeColor ? " bg-$this->themeColor" : "";
         Html::addCssClass($this->containerOptions, ['side-nav-container layout-app-bar'.$class]);
         echo Html::beginTag("div", $this->containerOptions);
         
         if ($this->brandLabel) {
+            if ($this->accentColor) {
+                Html::addCssClass($this->brandOptions, $this->accentColor);
+            }
             // begin logo container
             echo Html::beginTag("div", ["class" => "logo"]);
             echo Html::a($this->brandLabel, $this->brandUrl, $this->brandOptions);
