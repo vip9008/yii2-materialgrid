@@ -234,6 +234,7 @@ function material_grid_init() {
             $(this).parent('.select-control').removeClass('active');
             $(this).siblings('.select-menu').css('margin-top', '');
         } else {
+            $('.select-control.active').not($(this).parent('.select-control')).removeClass('active');
             $(this).parent('.select-control').addClass('active');
         }
     });
