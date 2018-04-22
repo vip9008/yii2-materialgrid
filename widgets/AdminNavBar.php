@@ -26,11 +26,10 @@ class AdminNavBar extends \yii\base\Widget
         AdminAsset::register($this->getView());
 
         // begin side nav container
-        echo Html::beginTag("div", ["id" => "side-nav", "class" => $this->theme]);
+        echo Html::beginTag("div", ["id" => "side-nav", "class" => $this->theme.($this->themeColor ? " bg-$this->themeColor" : "")]);
 
         // begin nav container
-        $class = $this->themeColor ? " bg-$this->themeColor" : "";
-        Html::addCssClass($this->containerOptions, ['side-nav-container layout-app-bar'.$class]);
+        Html::addCssClass($this->containerOptions, ['side-nav-container layout-app-bar']);
         echo Html::beginTag("div", $this->containerOptions);
         
         if ($this->brandLabel) {
