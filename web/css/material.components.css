@@ -548,6 +548,8 @@ html[dir="rtl"] .list .divider.left-indent, html[dir] .list[dir="rtl"] .divider.
 button.list-item, a.list-item {
     cursor: pointer;
     text-decoration: none;
+    color: inherit;
+    text-align: inherit;
 }
 
 .list-item > button, .list-item > a {
@@ -1083,6 +1085,10 @@ html[dir="rtl"] .select-control, html[dir] .select-control[dir="rtl"] {
     max-width: 100%;
 }
 
+.select-control.list-menu .select-menu .list-item {
+    padding: 0;
+}
+
 .select-control .select-value {
     position: relative;
     height: 36px;
@@ -1165,7 +1171,7 @@ html[dir="rtl"] .select-control .select-value:after, html[dir] .select-control[d
     transition: all 0.2s;
     position: absolute;
     top: 0;
-    left: -20px;
+    left: -24px;
     z-index: 8000;
     opacity: 0;
     visibility: hidden;
@@ -1183,12 +1189,12 @@ html[dir="rtl"] .select-control .select-value:after, html[dir] .select-control[d
                 0 3px 16px 2px rgba(0, 0, 0, 0.12);
 }
 html[dir="ltr"] .select-control .select-menu, html[dir] .select-control[dir="ltr"] .select-menu {
-    left: -20px;
+    left: -24px;
     right: auto;
 }
 html[dir="rtl"] .select-control .select-menu, html[dir] .select-control[dir="rtl"] .select-menu {
     left: auto;
-    right: -20px;
+    right: -24px;
 }
 
 .select-control.list-menu .select-menu,
@@ -1196,11 +1202,12 @@ html[dir="ltr"] .select-control.list-menu .select-menu, html[dir] .select-contro
 html[dir="rtl"] .select-control.list-menu .select-menu, html[dir] .select-control.list-menu[dir="rtl"] .select-menu {
     left: 0;
     right: 0;
+    margin-top: -8px;
 }
 
 .select-control .select-menu.left {
     margin-top: -14px;
-    left: -20px;
+    left: -24px;
     right: auto;
     -ms-transform: scale(0);
     -webkit-transform: scale(0);
@@ -1210,7 +1217,7 @@ html[dir="rtl"] .select-control.list-menu .select-menu, html[dir] .select-contro
     transform-origin: top left;
 }
 html[dir="ltr"] .select-control .select-menu.left, html[dir] .select-control[dir="ltr"] .select-menu.left {
-    left: -20px;
+    left: -24px;
     right: auto;
     -ms-transform-origin: top left;
     -webkit-transform-origin: top left;
@@ -1218,7 +1225,7 @@ html[dir="ltr"] .select-control .select-menu.left, html[dir] .select-control[dir
 }
 html[dir="rtl"] .select-control .select-menu.left, html[dir] .select-control[dir="rtl"] .select-menu.left {
     left: auto;
-    right: -20px;
+    right: -24px;
     -ms-transform-origin: top right;
     -webkit-transform-origin: top right;
     transform-origin: top right;
@@ -1227,7 +1234,7 @@ html[dir="rtl"] .select-control .select-menu.left, html[dir] .select-control[dir
 .select-control .select-menu.right {
     margin-top: -14px;
     left: auto;
-    right: -20px;
+    right: -24px;
     -ms-transform: scale(0);
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -1237,13 +1244,13 @@ html[dir="rtl"] .select-control .select-menu.left, html[dir] .select-control[dir
 }
 html[dir="ltr"] .select-control .select-menu.right, html[dir] .select-control[dir="ltr"] .select-menu.right {
     left: auto;
-    right: -20px;
+    right: -24px;
     -ms-transform-origin: top right;
     -webkit-transform-origin: top right;
     transform-origin: top right;
 }
 html[dir="rtl"] .select-control .select-menu.right, html[dir] .select-control[dir="rtl"] .select-menu.right {
-    left: -20px;
+    left: -24px;
     right: auto;
     -ms-transform-origin: top left;
     -webkit-transform-origin: top left;
@@ -1266,66 +1273,9 @@ html[dir="rtl"] .select-control .select-menu.right, html[dir] .select-control[di
 }
 
 .select-control .select-menu .items-container {
-    padding: 8px 0;
     max-height: 248px;
     overflow-x: hidden;
     overflow-y: auto;
-}
-
-.select-control .select-menu .items-container > .divider {
-    margin: 8px 0;
-}
-
-.select-control .select-menu .menu-item {
-    background: transparent;
-    border-radius: 0;
-    border: none;
-    cursor: pointer;
-    display: block;
-    font-size: 12pt;
-    line-height: 44px;
-    height: 48px;
-    width: 100%;
-    text-align: left;
-    margin: 0;
-    padding: 0 24px 4px;
-    white-space: nowrap;
-    color: inherit;
-    text-decoration: none;
-}
-html[dir="ltr"] .select-control .select-menu .menu-item, html[dir] .select-control[dir="ltr"] .select-menu .menu-item {
-    text-align: left;
-}
-html[dir="rtl"] .select-control .select-menu .menu-item, html[dir] .select-control[dir="rtl"] .select-menu .menu-item {
-    text-align: right;
-}
-
-.select-control .select-menu .menu-item.list-item {
-    height: auto;
-    line-height: 1.5;
-    padding: 0 8px 4px;
-}
-
-.select-control.list-menu .select-menu .menu-item {
-    padding: 0;
-    line-height: 1;
-    height: auto;
-}
-
-.select-control.context-menu .select-menu .menu-item.active {
-    background-color: transparent;
-}
-
-.select-control .select-menu .menu-item.disabled,
-.select-control .select-menu .menu-item[disabled],
-.select-control .select-menu .menu-item:disabled {
-    background-color: transparent;
-    cursor: default;
-}
-
-.select-control .select-value > *,
-.select-control .select-menu .menu-item > * {
-    line-height: inherit;
 }
 
 .select-control.active .select-menu {
@@ -1334,7 +1284,10 @@ html[dir="rtl"] .select-control .select-menu .menu-item, html[dir] .select-contr
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
-    margin-top: -14px;
+}
+
+.select-control .select-menu .list-item {
+    padding: 0 8px;
 }
 
 .expansion-panel {
@@ -1688,6 +1641,7 @@ html[dir] .data-table[dir="rtl"] > .table-container > table th:last-child, html[
 .data-table > .table-container > table th.control, .data-table > .table-container > table td.control {
     padding: 0 24px;
     width: 66px;
+    min-width: 66px;
     text-align: center;
 }
 
@@ -1989,10 +1943,6 @@ html[dir="ltr"] .data-table > .summary .select-control .select-value, html[dir] 
 }
 html[dir="rtl"] .data-table > .summary .select-control .select-value, html[dir] .data-table[dir="rtl"] > .summary .select-control .select-value {
     padding: 0 0 0 24px;
-}
-
-.data-table > .summary .select-control .select-menu .menu-item {
-    font-size: inherit;
 }
 
 .card {
@@ -2869,53 +2819,110 @@ html[dir="rtl"] .progress > .indeterminate:after, html[dir] .progress[dir="rtl"]
         float: none;
         margin-right: 40px;
     }
+    html[dir="ltr"] .expansion-panel .panel > .label, html[dir] .expansion-panel[dir="ltr"] .panel > .label {
+        float: none;
+        margin-left: 0;
+        margin-right: 40px;
+    }
+    html[dir="rtl"] .expansion-panel .panel > .label, html[dir] .expansion-panel[dir="rtl"] .panel > .label {
+        float: none;
+        margin-left: 40px;
+        margin-right: 0;
+    }
 
-    .expansion-panel .panel > .content {
+    .expansion-panel .panel > .content,
+    html[dir="ltr"] .expansion-panel .panel > .content, html[dir] .expansion-panel[dir="ltr"] .panel > .content,
+    html[dir="rtl"] .expansion-panel .panel > .content, html[dir] .expansion-panel[dir="rtl"] .panel > .content {
         margin: 0;
     }
 
-    .expansion-panel .panel > .expansion-content {
-        margin: 16px 0 0;
+    .expansion-panel .panel.active > .expansion-content,
+    html[dir="ltr"] .expansion-panel .panel.active > .expansion-content, html[dir] .expansion-panel[dir="ltr"] .panel.active > .expansion-content,
+    html[dir="rtl"] .expansion-panel .panel.active > .expansion-content, html[dir] .expansion-panel[dir="rtl"] .panel.active > .expansion-content {
+        margin: 16px 0;
     }
 
-    .data-table > .table-header > .controls {
+    .data-table > .table-header > .controls,
+    html[dir="ltr"] .data-table > .table-header > .controls, html[dir] .data-table[dir="ltr"] > .table-header > .controls,
+    html[dir="rtl"] .data-table > .table-header > .controls, html[dir] .data-table[dir="rtl"] > .table-header > .controls {
         float: none;
         margin-top: 16px;
-        text-align: right;
     }
 
-    .data-table > .table-header > .controls > .material-icon
-    .data-table > .table-header > .controls > .material-icons {
+    .data-table > .table-header > .controls > .material-icon,
+    .data-table > .table-header > .controls > .material-icons,
+    html[dir="ltr"] .data-table > .table-header > .controls > .material-icon,
+    html[dir="ltr"] .data-table > .table-header > .controls > .material-icons,
+    html[dir] .data-table[dir="ltr"] > .table-header > .controls > .material-icon,
+    html[dir] .data-table[dir="ltr"] > .table-header > .controls > .material-icons,
+    html[dir="rtl"] .data-table > .table-header > .controls > .material-icon,
+    html[dir="rtl"] .data-table > .table-header > .controls > .material-icons,
+    html[dir] .data-table[dir="rtl"] > .table-header > .controls > .material-icon,
+    html[dir] .data-table[dir="rtl"] > .table-header > .controls > .material-icons {
         float: none;
     }
 }
 
 @media (max-width: 599px) {
-    .select-control, .form-input {
+    .select-control, .form-input,
+    html[dir="ltr"] .select-control, html[dir="ltr"] .form-input,
+    html[dir] .select-control[dir="ltr"], html[dir] .form-input[dir="ltr"],
+    html[dir="rtl"] .select-control, html[dir="rtl"] .form-input,
+    html[dir] .select-control[dir="rtl"], html[dir] .form-input[dir="rtl"] {
+        margin-left: 0;
         margin-right: 0;
     }
 
-    .select-control .select-value {
+    .select-control .select-value,
+    html[dir="ltr"] .select-control .select-value,
+    html[dir] .select-control[dir="ltr"] .select-value {
+        padding-left: 0;
         padding-right: 22px;
     }
+    html[dir="rtl"] .select-control .select-value,
+    html[dir] .select-control[dir="rtl"] .select-value {
+        padding-left: 22px;
+        padding-right: 0;
+    }
     
-    .select-control .select-menu {
+    .select-control .select-menu,
+    html[dir="ltr"] .select-control .select-menu,
+    html[dir] .select-control[dir="ltr"] .select-menu {
         min-width: 112px;
-        left: -12px;
-    }    
+        left: -16px;
+        right: auto;
+    }
+    html[dir="rtl"] .select-control .select-menu,
+    html[dir] .select-control[dir="rtl"] .select-menu {
+        min-width: 112px;
+        left: auto;
+        right: -16px;
+    }
 
-    .select-control .select-menu.left {
-        left: -12px;
+    .select-control .select-menu.left,
+    html[dir="ltr"] .select-control .select-menu.left,
+    html[dir] .select-control[dir="ltr"] .select-menu.left
+    html[dir="rtl"] .select-control .select-menu.right,
+    html[dir] .select-control[dir="rtl"] .select-menu.right {
+        left: -16px;
         right: auto;
     }
 
-    .select-control .select-menu.right {
+    .select-control .select-menu.right,
+    html[dir="ltr"] .select-control .select-menu.right,
+    html[dir] .select-control[dir="ltr"] .select-menu.right
+    html[dir="rtl"] .select-control .select-menu.left,
+    html[dir] .select-control[dir="rtl"] .select-menu.left {
         left: auto;
-        right: -12px;
+        right: -16px;
     }
     
-    .select-control .select-menu .menu-item {
-        padding: 0 16px 4px;
+    .select-control .select-menu .list-item,
+    html[dir="ltr"] .select-control .select-menu .list-item,
+    html[dir="rtl"] .select-control .select-menu .list-item,
+    html[dir] .select-control[dir="ltr"] .select-menu .list-item,
+    html[dir] .select-control[dir="rtl"] .select-menu .list-item {
+        padding: 0;
     }
 
     #snackbars {

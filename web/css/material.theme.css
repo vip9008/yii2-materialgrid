@@ -368,32 +368,64 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
 }
 
 #page-content > .top-bar .user-wrapper {
-    height: 40px;
+    height: 32px;
     float: right;
-    margin: 12px 0 0;
-    position: relative;
+    margin: 16px 0 0;
 }
 
-#page-content > .top-bar .user-wrapper .select-btn {
+#page-content > .top-bar .user-wrapper .info {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    height: 32px;
+    line-height: 16px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: right;
+    margin-right: 16px;
+}
+
+#page-content > .top-bar .user-wrapper .info a {
+    color: white;
+    opacity: 0.7;
+    transition: all 0.5s;
+    font-size: 9.75pt;
+}
+
+#page-content > .top-bar .user-wrapper .info button {
+    font-family: 'roboto_regular', sans-serif;
+    color: white;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 9.75pt;
+    outline: 0;
+    opacity: 0.7;
+    transition: all 0.5s;
+    background: transparent;
     border: none;
-    background: none;
-    margin: 0;
     padding: 0;
     cursor: pointer;
 }
 
-#page-content > .top-bar .user-wrapper.select-control .select-btn .img {
-    height: 40px;
-    width: 40px;
-    display: inline-block;
-    border-radius: 100%;
+html:lang(en-US) #page-content > .top-bar .user-wrapper .info button,
+html[lang] #page-content > .top-bar .user-wrapper .info button:lang(en-US) {
+    font-family: 'roboto_regular', sans-serif;
 }
 
-#page-content > .top-bar .user-wrapper.select-control .select-menu {
-    margin: 42px 20px 0;
+html:lang(ar-BH) #page-content > .top-bar .user-wrapper .info button,
+html[lang] #page-content > .top-bar .user-wrapper .info button:lang(ar-BH) {
+    font-family: 'arabic_notosans_regular', 'roboto_regular', sans-serif;
+}
+
+#page-content > .top-bar .user-wrapper .info a:hover,
+#page-content > .top-bar .user-wrapper .info button:hover {
+    opacity: 1;
+}
+
+#page-content > .top-bar .user-wrapper .img {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    border-radius: 50%;
+    float: right;
 }
 
 #page-content > .page-header {
