@@ -131,11 +131,11 @@ function material_grid_init() {
 
         if (!$(this).hasClass('active')) {
             $(this).addClass('active');
-            $(this).children('.checkbox').children('input').val(1);
+            $(this).children('.checkbox').children('input').val(1).trigger('change');
             return true;
         } else {
             $(this).removeClass('active');
-            $(this).children('.checkbox').children('input').val(0);
+            $(this).children('.checkbox').children('input').val(0).trigger('change');
             return true;
         }
     });
@@ -152,10 +152,10 @@ function material_grid_init() {
         var checkbox = $(this).parents('tbody').siblings('thead').children('tr').children('th.control').children('.checkbox-input');
         if (rows == seleceted) {
             $(checkbox).addClass('active');
-            $(checkbox).children('.checkbox').children('input').val(1);
+            $(checkbox).children('.checkbox').children('input').val(1).trigger('change');
         } else {
             $(checkbox).removeClass('active');
-            $(checkbox).children('.checkbox').children('input').val(0);
+            $(checkbox).children('.checkbox').children('input').val(0).trigger('change');
         }
     });
 
@@ -165,14 +165,14 @@ function material_grid_init() {
             $(this).parents('thead').siblings('tbody').children('tr').children('td.control').children('.checkbox-input').each(function() {
                 if (!$(this).hasClass('active')) {
                     $(this).addClass('active').parent('.control').parent('tr').addClass('seleceted');
-                    $(this).children('.checkbox').children('input').val(1);
+                    $(this).children('.checkbox').children('input').val(1).trigger('change');
                 }
             });
         } else {
             $(this).parents('thead').siblings('tbody').children('tr').children('td.control').children('.checkbox-input').each(function() {
                 if ($(this).hasClass('active')) {
                     $(this).removeClass('active').parent('.control').parent('tr').removeClass('seleceted');
-                    $(this).children('.checkbox').children('input').val(0);
+                    $(this).children('.checkbox').children('input').val(0).trigger('change');
                 }
             });
         }
@@ -247,7 +247,7 @@ function material_grid_init() {
         if (!$(this).parent('.items-container').parent('.select-menu').parent('.select-control').hasClass('context-menu')) {
             $(this).closest('.select-menu').find('.list-item.active').removeClass('active');
             $(this).closest('.select-control').children('.select-value').html($(this).html());
-            $(this).closest('.select-control').children('input').val($(this).attr('data-value'));
+            $(this).closest('.select-control').children('input').val($(this).attr('data-value')).trigger('change');
             $(this).addClass('active');
         }
         
@@ -271,7 +271,7 @@ function material_grid_init() {
         }
     });
 
-    $('.form-input .text-input').on('change', function() {
+    $('body').on('change', '.form-input .text-input', function() {
         if($(this).val()) {
             $(this).parent('.form-input').addClass('active');
         } else {

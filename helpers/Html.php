@@ -7,6 +7,53 @@ use yii\helpers\Html as BaseHtml;
 
 class Html extends BaseHtml
 {
+    public static function inputBlock($type, $name = null, $value = null, $inputOptions = [], $options = [])
+    {
+        if (!isset($inputOptions['type'])) {
+            $inputOptions['type'] = $type;
+        }
+        $inputOptions['name'] = $name;
+        $inputOptions['value'] = $value === null ? null : (string) $value;
+        $label = ArrayHelper::remove($inputOptions, 'placeholder', ArrayHelper::remove($inputOptions, 'label', $inputOptions['name']));
+        static::addCssClass($options, "form-input");
+        static::addCssClass($inputOptions, "text-input");
+        return static::tag('div', static::tag('input', '', $inputOptions)."\n".static::tag('div', $label, ['class' => 'label']), $options);
+    }
+
+    public static function listItem($options) {
+        $avatar = ArrayHelper::remove($options, 'avatar', false);
+        $icon = ArrayHelper::remove($options, 'icon', false);
+        $text = ArrayHelper::remove($options, 'text', false);
+
+        $html = "";
+
+        if ($avatar) {
+            $class = "avatar";
+            if (empty(ArrayHelper::getValue($avatar, 'sideAction', false))) {
+                $class = "avatar side-action";
+            }
+            $html .= static::tag('div', ArrayHelper::getValue($avatar, 'content', ""), ['class' => $class])."\n";
+        }
+        if ($icon) {
+            $class = "icon";
+            if (!empty(ArrayHelper::getValue($avatar, 'sideAction', false))) {
+                $class = "icon side-action";
+            }
+            $html .= static::tag('div', $icon, ['class' => $class])."\n";
+        }
+
+        $title = static::tag('div', $text['title'], ['class' => 'title'])."\n";
+        if (empty(ArrayHelper::getValue($text, 'subtitle', false))) {
+            static::addCssClass($options, "list-item one-line");
+        } else {
+            $title .= static::tag('div', $text['subtitle'], ['class' => 'subtitle'])."\n";
+            static::addCssClass($options, "list-item");
+        }
+        $html .= static::tag('div', $title, ['class' => "text"])."\n";
+
+        return Html::tag('div', $html, $options);
+    }
+
     public static function dropDownList($name, $selection = null, $items = [], $options = [])
     {
         if (!empty($options['multiple'])) {
