@@ -930,6 +930,8 @@ table, .light-theme table,
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .red-50, .text-primary.red-50, .text-secondary.red-50, .text-hint.red-50, .text-divider.red-50,
+.light-theme .red-50, .light-theme .text-primary.red-50, .light-theme .text-secondary.red-50, .text-hint.red-50, .light-theme .text-divider.red-50,
+.dark-theme .red-50, .dark-theme .text-primary.red-50, .dark-theme .text-secondary.red-50, .text-hint.red-50, .dark-theme .text-divider.red-50,
 .red-50.material-icons, .red-50.material-icon,
 .red-50.checkbox-input.active .checkbox, .red-50.radiobutton-input.active .radio {
     color: #FFEBEE;
@@ -937,6 +939,8 @@ table, .light-theme table,
 }
 
 .red-100, .text-primary.red-100, .text-secondary.red-100, .text-hint.red-100, .text-divider.red-100,
+.light-theme .red-100, .light-theme .text-primary.red-100, .light-theme .text-secondary.red-100, .text-hint.red-100, .light-theme .text-divider.red-100,
+.dark-theme .red-100, .dark-theme .text-primary.red-100, .dark-theme .text-secondary.red-100, .text-hint.red-100, .dark-theme .text-divider.red-100,
 .red-100.material-icons, .red-100.material-icon,
 .red-100.checkbox-input.active .checkbox, .red-100.radiobutton-input.active .radio {
     color: #FFCDD2;
@@ -944,6 +948,8 @@ table, .light-theme table,
 }
 
 .red-200, .text-primary.red-200, .text-secondary.red-200, .text-hint.red-200, .text-divider.red-200,
+.light-theme .red-200, .light-theme .text-primary.red-200, .light-theme .text-secondary.red-200, .text-hint.red-200, .light-theme .text-divider.red-200,
+.dark-theme .red-200, .dark-theme .text-primary.red-200, .dark-theme .text-secondary.red-200, .text-hint.red-200, .dark-theme .text-divider.red-200,
 .red-200.material-icons, .red-200.material-icon,
 .red-200.checkbox-input.active .checkbox, .red-200.radiobutton-input.active .radio {
     color: #EF9A9A;
@@ -951,6 +957,8 @@ table, .light-theme table,
 }
 
 .red-300, .text-primary.red-300, .text-secondary.red-300, .text-hint.red-300, .text-divider.red-300,
+.light-theme .red-300, .light-theme .text-primary.red-300, .light-theme .text-secondary.red-300, .text-hint.red-300, .light-theme .text-divider.red-300,
+.dark-theme .red-300, .dark-theme .text-primary.red-300, .dark-theme .text-secondary.red-300, .text-hint.red-300, .dark-theme .text-divider.red-300,
 .red-300.material-icons, .red-300.material-icon,
 .red-300.checkbox-input.active .checkbox, .red-300.radiobutton-input.active .radio {
     color: #E57373;
@@ -958,6 +966,8 @@ table, .light-theme table,
 }
 
 .red-400, .text-primary.red-400, .text-secondary.red-400, .text-hint.red-400, .text-divider.red-400,
+.light-theme .red-400, .light-theme .text-primary.red-400, .light-theme .text-secondary.red-400, .text-hint.red-400, .light-theme .text-divider.red-400,
+.dark-theme .red-400, .dark-theme .text-primary.red-400, .dark-theme .text-secondary.red-400, .text-hint.red-400, .dark-theme .text-divider.red-400,
 .red-400.material-icons, .red-400.material-icon,
 .red-400.checkbox-input.active .checkbox, .red-400.radiobutton-input.active .radio {
     color: #EF5350;
@@ -965,9 +975,13 @@ table, .light-theme table,
 }
 
 .red, .text-primary.red, .text-secondary.red, .text-hint.red, .text-divider.red,
+.light-theme .red, .light-theme .text-primary.red, .light-theme .text-secondary.red, .text-hint.red, .light-theme .text-divider.red,
+.dark-theme .red, .dark-theme .text-primary.red, .dark-theme .text-secondary.red, .text-hint.red, .dark-theme .text-divider.red,
 .red.material-icons, .red.material-icon,
 .red.checkbox-input.active .checkbox, .red.radiobutton-input.active .radio,
 .red-500, .text-primary.red-500, .text-secondary.red-500, .text-hint.red-500, .text-divider.red-500,
+.light-theme .red-500, .light-theme .text-primary.red-500, .light-theme .text-secondary.red-500, .text-hint.red-500, .light-theme .text-divider.red-500,
+.dark-theme .red-500, .dark-theme .text-primary.red-500, .dark-theme .text-secondary.red-500, .text-hint.red-500, .dark-theme .text-divider.red-500,
 .red-500.material-icons, .red-500.material-icon,
 .red-500.checkbox-input.active .checkbox, .red-500.radiobutton-input.active .radio {
     color: #F44336;
@@ -975,6 +989,8 @@ table, .light-theme table,
 }
 
 .red-600, .text-primary.red-600, .text-secondary.red-600, .text-hint.red-600, .text-divider.red-600,
+.light-theme .red-600, .light-theme .text-primary.red-600, .light-theme .text-secondary.red-600, .text-hint.red-600, .light-theme .text-divider.red-600,
+.dark-theme .red-600, .dark-theme .text-primary.red-600, .dark-theme .text-secondary.red-600, .text-hint.red-600, .dark-theme .text-divider.red-600,
 .red-600.material-icons, .red-600.material-icon,
 .red-600.checkbox-input.active .checkbox, .red-600.radiobutton-input.active .radio {
     color: #E53935;
@@ -982,6 +998,8 @@ table, .light-theme table,
 }
 
 .red-700, .text-primary.red-700, .text-secondary.red-700, .text-hint.red-700, .text-divider.red-700,
+.light-theme .red-700, .light-theme .text-primary.red-700, .light-theme .text-secondary.red-700, .text-hint.red-700, .light-theme .text-divider.red-700,
+.dark-theme .red-700, .dark-theme .text-primary.red-700, .dark-theme .text-secondary.red-700, .text-hint.red-700, .dark-theme .text-divider.red-700,
 .red-700.material-icons, .red-700.material-icon,
 .red-700.checkbox-input.active .checkbox, .red-700.radiobutton-input.active .radio {
     color: #D32F2F;
@@ -989,6 +1007,8 @@ table, .light-theme table,
 }
 
 .red-800, .text-primary.red-800, .text-secondary.red-800, .text-hint.red-800, .text-divider.red-800,
+.light-theme .red-800, .light-theme .text-primary.red-800, .light-theme .text-secondary.red-800, .text-hint.red-800, .light-theme .text-divider.red-800,
+.dark-theme .red-800, .dark-theme .text-primary.red-800, .dark-theme .text-secondary.red-800, .text-hint.red-800, .dark-theme .text-divider.red-800,
 .red-800.material-icons, .red-800.material-icon,
 .red-800.checkbox-input.active .checkbox, .red-800.radiobutton-input.active .radio {
     color: #C62828;
@@ -996,6 +1016,8 @@ table, .light-theme table,
 }
 
 .red-900, .text-primary.red-900, .text-secondary.red-900, .text-hint.red-900, .text-divider.red-900,
+.light-theme .red-900, .light-theme .text-primary.red-900, .light-theme .text-secondary.red-900, .text-hint.red-900, .light-theme .text-divider.red-900,
+.dark-theme .red-900, .dark-theme .text-primary.red-900, .dark-theme .text-secondary.red-900, .text-hint.red-900, .dark-theme .text-divider.red-900,
 .red-900.material-icons, .red-900.material-icon,
 .red-900.checkbox-input.active .checkbox, .red-900.radiobutton-input.active .radio {
     color: #B71C1C;
@@ -1003,6 +1025,8 @@ table, .light-theme table,
 }
 
 .red-A100, .text-primary.red-A100, .text-secondary.red-A100, .text-hint.red-A100, .text-divider.red-A100,
+.light-theme .red-A100, .light-theme .text-primary.red-A100, .light-theme .text-secondary.red-A100, .text-hint.red-A100, .light-theme .text-divider.red-A100,
+.dark-theme .red-A100, .dark-theme .text-primary.red-A100, .dark-theme .text-secondary.red-A100, .text-hint.red-A100, .dark-theme .text-divider.red-A100,
 .red-A100.material-icons, .red-A100.material-icon,
 .red-A100.checkbox-input.active .checkbox, .red-A100.radiobutton-input.active .radio {
     color: #FF8A80;
@@ -1010,6 +1034,8 @@ table, .light-theme table,
 }
 
 .red-A200, .text-primary.red-A200, .text-secondary.red-A200, .text-hint.red-A200, .text-divider.red-A200,
+.light-theme .red-A200, .light-theme .text-primary.red-A200, .light-theme .text-secondary.red-A200, .text-hint.red-A200, .light-theme .text-divider.red-A200,
+.dark-theme .red-A200, .dark-theme .text-primary.red-A200, .dark-theme .text-secondary.red-A200, .text-hint.red-A200, .dark-theme .text-divider.red-A200,
 .red-A200.material-icons, .red-A200.material-icon,
 .red-A200.checkbox-input.active .checkbox, .red-A200.radiobutton-input.active .radio {
     color: #FF5252;
@@ -1017,6 +1043,8 @@ table, .light-theme table,
 }
 
 .red-A400, .text-primary.red-A400, .text-secondary.red-A400, .text-hint.red-A400, .text-divider.red-A400,
+.light-theme .red-A400, .light-theme .text-primary.red-A400, .light-theme .text-secondary.red-A400, .text-hint.red-A400, .light-theme .text-divider.red-A400,
+.dark-theme .red-A400, .dark-theme .text-primary.red-A400, .dark-theme .text-secondary.red-A400, .text-hint.red-A400, .dark-theme .text-divider.red-A400,
 .red-A400.material-icons, .red-A400.material-icon,
 .red-A400.checkbox-input.active .checkbox, .red-A400.radiobutton-input.active .radio {
     color: #FF1744;
@@ -1024,6 +1052,8 @@ table, .light-theme table,
 }
 
 .red-A700, .text-primary.red-A700, .text-secondary.red-A700, .text-hint.red-A700, .text-divider.red-A700,
+.light-theme .red-A700, .light-theme .text-primary.red-A700, .light-theme .text-secondary.red-A700, .text-hint.red-A700, .light-theme .text-divider.red-A700,
+.dark-theme .red-A700, .dark-theme .text-primary.red-A700, .dark-theme .text-secondary.red-A700, .text-hint.red-A700, .dark-theme .text-divider.red-A700,
 .red-A700.material-icons, .red-A700.material-icon,
 .red-A700.checkbox-input.active .checkbox, .red-A700.radiobutton-input.active .radio {
     color: #D50000;
@@ -1031,6 +1061,8 @@ table, .light-theme table,
 }
 
 .pink-50, .text-primary.pink-50, .text-secondary.pink-50, .text-hint.pink-50, .text-divider.pink-50,
+.light-theme .pink-50, .light-theme .text-primary.pink-50, .light-theme .text-secondary.pink-50, .text-hint.pink-50, .light-theme .text-divider.pink-50,
+.dark-theme .pink-50, .dark-theme .text-primary.pink-50, .dark-theme .text-secondary.pink-50, .text-hint.pink-50, .dark-theme .text-divider.pink-50,
 .pink-50.material-icons, .pink-50.material-icon,
 .pink-50.checkbox-input.active .checkbox, .pink-50.radiobutton-input.active .radio {
     color: #FCE4EC;
@@ -1038,6 +1070,8 @@ table, .light-theme table,
 }
 
 .pink-100, .text-primary.pink-100, .text-secondary.pink-100, .text-hint.pink-100, .text-divider.pink-100,
+.light-theme .pink-100, .light-theme .text-primary.pink-100, .light-theme .text-secondary.pink-100, .text-hint.pink-100, .light-theme .text-divider.pink-100,
+.dark-theme .pink-100, .dark-theme .text-primary.pink-100, .dark-theme .text-secondary.pink-100, .text-hint.pink-100, .dark-theme .text-divider.pink-100,
 .pink-100.material-icons, .pink-100.material-icon,
 .pink-100.checkbox-input.active .checkbox, .pink-100.radiobutton-input.active .radio {
     color: #F8BBD0;
@@ -1045,6 +1079,8 @@ table, .light-theme table,
 }
 
 .pink-200, .text-primary.pink-200, .text-secondary.pink-200, .text-hint.pink-200, .text-divider.pink-200,
+.light-theme .pink-200, .light-theme .text-primary.pink-200, .light-theme .text-secondary.pink-200, .text-hint.pink-200, .light-theme .text-divider.pink-200,
+.dark-theme .pink-200, .dark-theme .text-primary.pink-200, .dark-theme .text-secondary.pink-200, .text-hint.pink-200, .dark-theme .text-divider.pink-200,
 .pink-200.material-icons, .pink-200.material-icon,
 .pink-200.checkbox-input.active .checkbox, .pink-200.radiobutton-input.active .radio {
     color: #F48FB1;
@@ -1052,6 +1088,8 @@ table, .light-theme table,
 }
 
 .pink-300, .text-primary.pink-300, .text-secondary.pink-300, .text-hint.pink-300, .text-divider.pink-300,
+.light-theme .pink-300, .light-theme .text-primary.pink-300, .light-theme .text-secondary.pink-300, .text-hint.pink-300, .light-theme .text-divider.pink-300,
+.dark-theme .pink-300, .dark-theme .text-primary.pink-300, .dark-theme .text-secondary.pink-300, .text-hint.pink-300, .dark-theme .text-divider.pink-300,
 .pink-300.material-icons, .pink-300.material-icon,
 .pink-300.checkbox-input.active .checkbox, .pink-300.radiobutton-input.active .radio {
     color: #F06292;
@@ -1059,6 +1097,8 @@ table, .light-theme table,
 }
 
 .pink-400, .text-primary.pink-400, .text-secondary.pink-400, .text-hint.pink-400, .text-divider.pink-400,
+.light-theme .pink-400, .light-theme .text-primary.pink-400, .light-theme .text-secondary.pink-400, .text-hint.pink-400, .light-theme .text-divider.pink-400,
+.dark-theme .pink-400, .dark-theme .text-primary.pink-400, .dark-theme .text-secondary.pink-400, .text-hint.pink-400, .dark-theme .text-divider.pink-400,
 .pink-400.material-icons, .pink-400.material-icon,
 .pink-400.checkbox-input.active .checkbox, .pink-400.radiobutton-input.active .radio {
     color: #EC407A;
@@ -1066,9 +1106,13 @@ table, .light-theme table,
 }
 
 .pink, .text-primary.pink, .text-secondary.pink, .text-hint.pink, .text-divider.pink,
+.light-theme .pink, .light-theme .text-primary.pink, .light-theme .text-secondary.pink, .text-hint.pink, .light-theme .text-divider.pink,
+.dark-theme .pink, .dark-theme .text-primary.pink, .dark-theme .text-secondary.pink, .text-hint.pink, .dark-theme .text-divider.pink,
 .pink.material-icons, .pink.material-icon,
 .pink.checkbox-input.active .checkbox, .pink.radiobutton-input.active .radio,
 .pink-500, .text-primary.pink-500, .text-secondary.pink-500, .text-hint.pink-500, .text-divider.pink-500,
+.light-theme .pink-500, .light-theme .text-primary.pink-500, .light-theme .text-secondary.pink-500, .text-hint.pink-500, .light-theme .text-divider.pink-500,
+.dark-theme .pink-500, .dark-theme .text-primary.pink-500, .dark-theme .text-secondary.pink-500, .text-hint.pink-500, .dark-theme .text-divider.pink-500,
 .pink-500.material-icons, .pink-500.material-icon,
 .pink-500.checkbox-input.active .checkbox, .pink-500.radiobutton-input.active .radio {
     color: #E91E63;
@@ -1076,6 +1120,8 @@ table, .light-theme table,
 }
 
 .pink-600, .text-primary.pink-600, .text-secondary.pink-600, .text-hint.pink-600, .text-divider.pink-600,
+.light-theme .pink-600, .light-theme .text-primary.pink-600, .light-theme .text-secondary.pink-600, .text-hint.pink-600, .light-theme .text-divider.pink-600,
+.dark-theme .pink-600, .dark-theme .text-primary.pink-600, .dark-theme .text-secondary.pink-600, .text-hint.pink-600, .dark-theme .text-divider.pink-600,
 .pink-600.material-icons, .pink-600.material-icon,
 .pink-600.checkbox-input.active .checkbox, .pink-600.radiobutton-input.active .radio {
     color: #D81B60;
@@ -1083,6 +1129,8 @@ table, .light-theme table,
 }
 
 .pink-700, .text-primary.pink-700, .text-secondary.pink-700, .text-hint.pink-700, .text-divider.pink-700,
+.light-theme .pink-700, .light-theme .text-primary.pink-700, .light-theme .text-secondary.pink-700, .text-hint.pink-700, .light-theme .text-divider.pink-700,
+.dark-theme .pink-700, .dark-theme .text-primary.pink-700, .dark-theme .text-secondary.pink-700, .text-hint.pink-700, .dark-theme .text-divider.pink-700,
 .pink-700.material-icons, .pink-700.material-icon,
 .pink-700.checkbox-input.active .checkbox, .pink-700.radiobutton-input.active .radio {
     color: #C2185B;
@@ -1090,6 +1138,8 @@ table, .light-theme table,
 }
 
 .pink-800, .text-primary.pink-800, .text-secondary.pink-800, .text-hint.pink-800, .text-divider.pink-800,
+.light-theme .pink-800, .light-theme .text-primary.pink-800, .light-theme .text-secondary.pink-800, .text-hint.pink-800, .light-theme .text-divider.pink-800,
+.dark-theme .pink-800, .dark-theme .text-primary.pink-800, .dark-theme .text-secondary.pink-800, .text-hint.pink-800, .dark-theme .text-divider.pink-800,
 .pink-800.material-icons, .pink-800.material-icon,
 .pink-800.checkbox-input.active .checkbox, .pink-800.radiobutton-input.active .radio {
     color: #AD1457;
@@ -1097,6 +1147,8 @@ table, .light-theme table,
 }
 
 .pink-900, .text-primary.pink-900, .text-secondary.pink-900, .text-hint.pink-900, .text-divider.pink-900,
+.light-theme .pink-900, .light-theme .text-primary.pink-900, .light-theme .text-secondary.pink-900, .text-hint.pink-900, .light-theme .text-divider.pink-900,
+.dark-theme .pink-900, .dark-theme .text-primary.pink-900, .dark-theme .text-secondary.pink-900, .text-hint.pink-900, .dark-theme .text-divider.pink-900,
 .pink-900.material-icons, .pink-900.material-icon,
 .pink-900.checkbox-input.active .checkbox, .pink-900.radiobutton-input.active .radio {
     color: #880E4F;
@@ -1104,6 +1156,8 @@ table, .light-theme table,
 }
 
 .pink-A100, .text-primary.pink-A100, .text-secondary.pink-A100, .text-hint.pink-A100, .text-divider.pink-A100,
+.light-theme .pink-A100, .light-theme .text-primary.pink-A100, .light-theme .text-secondary.pink-A100, .text-hint.pink-A100, .light-theme .text-divider.pink-A100,
+.dark-theme .pink-A100, .dark-theme .text-primary.pink-A100, .dark-theme .text-secondary.pink-A100, .text-hint.pink-A100, .dark-theme .text-divider.pink-A100,
 .pink-A100.material-icons, .pink-A100.material-icon,
 .pink-A100.checkbox-input.active .checkbox, .pink-A100.radiobutton-input.active .radio {
     color: #FF80AB;
@@ -1111,6 +1165,8 @@ table, .light-theme table,
 }
 
 .pink-A200, .text-primary.pink-A200, .text-secondary.pink-A200, .text-hint.pink-A200, .text-divider.pink-A200,
+.light-theme .pink-A200, .light-theme .text-primary.pink-A200, .light-theme .text-secondary.pink-A200, .text-hint.pink-A200, .light-theme .text-divider.pink-A200,
+.dark-theme .pink-A200, .dark-theme .text-primary.pink-A200, .dark-theme .text-secondary.pink-A200, .text-hint.pink-A200, .dark-theme .text-divider.pink-A200,
 .pink-A200.material-icons, .pink-A200.material-icon,
 .pink-A200.checkbox-input.active .checkbox, .pink-A200.radiobutton-input.active .radio {
     color: #FF4081;
@@ -1118,6 +1174,8 @@ table, .light-theme table,
 }
 
 .pink-A400, .text-primary.pink-A400, .text-secondary.pink-A400, .text-hint.pink-A400, .text-divider.pink-A400,
+.light-theme .pink-A400, .light-theme .text-primary.pink-A400, .light-theme .text-secondary.pink-A400, .text-hint.pink-A400, .light-theme .text-divider.pink-A400,
+.dark-theme .pink-A400, .dark-theme .text-primary.pink-A400, .dark-theme .text-secondary.pink-A400, .text-hint.pink-A400, .dark-theme .text-divider.pink-A400,
 .pink-A400.material-icons, .pink-A400.material-icon,
 .pink-A400.checkbox-input.active .checkbox, .pink-A400.radiobutton-input.active .radio {
     color: #F50057;
@@ -1125,6 +1183,8 @@ table, .light-theme table,
 }
 
 .pink-A700, .text-primary.pink-A700, .text-secondary.pink-A700, .text-hint.pink-A700, .text-divider.pink-A700,
+.light-theme .pink-A700, .light-theme .text-primary.pink-A700, .light-theme .text-secondary.pink-A700, .text-hint.pink-A700, .light-theme .text-divider.pink-A700,
+.dark-theme .pink-A700, .dark-theme .text-primary.pink-A700, .dark-theme .text-secondary.pink-A700, .text-hint.pink-A700, .dark-theme .text-divider.pink-A700,
 .pink-A700.material-icons, .pink-A700.material-icon,
 .pink-A700.checkbox-input.active .checkbox, .pink-A700.radiobutton-input.active .radio {
     color: #C51162;
@@ -1132,6 +1192,8 @@ table, .light-theme table,
 }
 
 .purple-50, .text-primary.purple-50, .text-secondary.purple-50, .text-hint.purple-50, .text-divider.purple-50,
+.light-theme .purple-50, .light-theme .text-primary.purple-50, .light-theme .text-secondary.purple-50, .text-hint.purple-50, .light-theme .text-divider.purple-50,
+.dark-theme .purple-50, .dark-theme .text-primary.purple-50, .dark-theme .text-secondary.purple-50, .text-hint.purple-50, .dark-theme .text-divider.purple-50,
 .purple-50.material-icons, .purple-50.material-icon,
 .purple-50.checkbox-input.active .checkbox, .purple-50.radiobutton-input.active .radio {
     color: #F3E5F5;
@@ -1139,6 +1201,8 @@ table, .light-theme table,
 }
 
 .purple-100, .text-primary.purple-100, .text-secondary.purple-100, .text-hint.purple-100, .text-divider.purple-100,
+.light-theme .purple-100, .light-theme .text-primary.purple-100, .light-theme .text-secondary.purple-100, .text-hint.purple-100, .light-theme .text-divider.purple-100,
+.dark-theme .purple-100, .dark-theme .text-primary.purple-100, .dark-theme .text-secondary.purple-100, .text-hint.purple-100, .dark-theme .text-divider.purple-100,
 .purple-100.material-icons, .purple-100.material-icon,
 .purple-100.checkbox-input.active .checkbox, .purple-100.radiobutton-input.active .radio {
     color: #E1BEE7;
@@ -1146,6 +1210,8 @@ table, .light-theme table,
 }
 
 .purple-200, .text-primary.purple-200, .text-secondary.purple-200, .text-hint.purple-200, .text-divider.purple-200,
+.light-theme .purple-200, .light-theme .text-primary.purple-200, .light-theme .text-secondary.purple-200, .text-hint.purple-200, .light-theme .text-divider.purple-200,
+.dark-theme .purple-200, .dark-theme .text-primary.purple-200, .dark-theme .text-secondary.purple-200, .text-hint.purple-200, .dark-theme .text-divider.purple-200,
 .purple-200.material-icons, .purple-200.material-icon,
 .purple-200.checkbox-input.active .checkbox, .purple-200.radiobutton-input.active .radio {
     color: #CE93D8;
@@ -1153,6 +1219,8 @@ table, .light-theme table,
 }
 
 .purple-300, .text-primary.purple-300, .text-secondary.purple-300, .text-hint.purple-300, .text-divider.purple-300,
+.light-theme .purple-300, .light-theme .text-primary.purple-300, .light-theme .text-secondary.purple-300, .text-hint.purple-300, .light-theme .text-divider.purple-300,
+.dark-theme .purple-300, .dark-theme .text-primary.purple-300, .dark-theme .text-secondary.purple-300, .text-hint.purple-300, .dark-theme .text-divider.purple-300,
 .purple-300.material-icons, .purple-300.material-icon,
 .purple-300.checkbox-input.active .checkbox, .purple-300.radiobutton-input.active .radio {
     color: #BA68C8;
@@ -1160,6 +1228,8 @@ table, .light-theme table,
 }
 
 .purple-400, .text-primary.purple-400, .text-secondary.purple-400, .text-hint.purple-400, .text-divider.purple-400,
+.light-theme .purple-400, .light-theme .text-primary.purple-400, .light-theme .text-secondary.purple-400, .text-hint.purple-400, .light-theme .text-divider.purple-400,
+.dark-theme .purple-400, .dark-theme .text-primary.purple-400, .dark-theme .text-secondary.purple-400, .text-hint.purple-400, .dark-theme .text-divider.purple-400,
 .purple-400.material-icons, .purple-400.material-icon,
 .purple-400.checkbox-input.active .checkbox, .purple-400.radiobutton-input.active .radio {
     color: #AB47BC;
@@ -1167,9 +1237,13 @@ table, .light-theme table,
 }
 
 .purple, .text-primary.purple, .text-secondary.purple, .text-hint.purple, .text-divider.purple,
+.light-theme .purple, .light-theme .text-primary.purple, .light-theme .text-secondary.purple, .text-hint.purple, .light-theme .text-divider.purple,
+.dark-theme .purple, .dark-theme .text-primary.purple, .dark-theme .text-secondary.purple, .text-hint.purple, .dark-theme .text-divider.purple,
 .purple.material-icons, .purple.material-icon,
 .purple.checkbox-input.active .checkbox, .purple.radiobutton-input.active .radio,
 .purple-500, .text-primary.purple-500, .text-secondary.purple-500, .text-hint.purple-500, .text-divider.purple-500,
+.light-theme .purple-500, .light-theme .text-primary.purple-500, .light-theme .text-secondary.purple-500, .text-hint.purple-500, .light-theme .text-divider.purple-500,
+.dark-theme .purple-500, .dark-theme .text-primary.purple-500, .dark-theme .text-secondary.purple-500, .text-hint.purple-500, .dark-theme .text-divider.purple-500,
 .purple-500.material-icons, .purple-500.material-icon,
 .purple-500.checkbox-input.active .checkbox, .purple-500.radiobutton-input.active .radio {
     color: #9C27B0;
@@ -1177,6 +1251,8 @@ table, .light-theme table,
 }
 
 .purple-600, .text-primary.purple-600, .text-secondary.purple-600, .text-hint.purple-600, .text-divider.purple-600,
+.light-theme .purple-600, .light-theme .text-primary.purple-600, .light-theme .text-secondary.purple-600, .text-hint.purple-600, .light-theme .text-divider.purple-600,
+.dark-theme .purple-600, .dark-theme .text-primary.purple-600, .dark-theme .text-secondary.purple-600, .text-hint.purple-600, .dark-theme .text-divider.purple-600,
 .purple-600.material-icons, .purple-600.material-icon,
 .purple-600.checkbox-input.active .checkbox, .purple-600.radiobutton-input.active .radio {
     color: #8E24AA;
@@ -1184,6 +1260,8 @@ table, .light-theme table,
 }
 
 .purple-700, .text-primary.purple-700, .text-secondary.purple-700, .text-hint.purple-700, .text-divider.purple-700,
+.light-theme .purple-700, .light-theme .text-primary.purple-700, .light-theme .text-secondary.purple-700, .text-hint.purple-700, .light-theme .text-divider.purple-700,
+.dark-theme .purple-700, .dark-theme .text-primary.purple-700, .dark-theme .text-secondary.purple-700, .text-hint.purple-700, .dark-theme .text-divider.purple-700,
 .purple-700.material-icons, .purple-700.material-icon,
 .purple-700.checkbox-input.active .checkbox, .purple-700.radiobutton-input.active .radio {
     color: #7B1FA2;
@@ -1191,6 +1269,8 @@ table, .light-theme table,
 }
 
 .purple-800, .text-primary.purple-800, .text-secondary.purple-800, .text-hint.purple-800, .text-divider.purple-800,
+.light-theme .purple-800, .light-theme .text-primary.purple-800, .light-theme .text-secondary.purple-800, .text-hint.purple-800, .light-theme .text-divider.purple-800,
+.dark-theme .purple-800, .dark-theme .text-primary.purple-800, .dark-theme .text-secondary.purple-800, .text-hint.purple-800, .dark-theme .text-divider.purple-800,
 .purple-800.material-icons, .purple-800.material-icon,
 .purple-800.checkbox-input.active .checkbox, .purple-800.radiobutton-input.active .radio {
     color: #6A1B9A;
@@ -1198,6 +1278,8 @@ table, .light-theme table,
 }
 
 .purple-900, .text-primary.purple-900, .text-secondary.purple-900, .text-hint.purple-900, .text-divider.purple-900,
+.light-theme .purple-900, .light-theme .text-primary.purple-900, .light-theme .text-secondary.purple-900, .text-hint.purple-900, .light-theme .text-divider.purple-900,
+.dark-theme .purple-900, .dark-theme .text-primary.purple-900, .dark-theme .text-secondary.purple-900, .text-hint.purple-900, .dark-theme .text-divider.purple-900,
 .purple-900.material-icons, .purple-900.material-icon,
 .purple-900.checkbox-input.active .checkbox, .purple-900.radiobutton-input.active .radio {
     color: #4A148C;
@@ -1205,6 +1287,8 @@ table, .light-theme table,
 }
 
 .purple-A100, .text-primary.purple-A100, .text-secondary.purple-A100, .text-hint.purple-A100, .text-divider.purple-A100,
+.light-theme .purple-A100, .light-theme .text-primary.purple-A100, .light-theme .text-secondary.purple-A100, .text-hint.purple-A100, .light-theme .text-divider.purple-A100,
+.dark-theme .purple-A100, .dark-theme .text-primary.purple-A100, .dark-theme .text-secondary.purple-A100, .text-hint.purple-A100, .dark-theme .text-divider.purple-A100,
 .purple-A100.material-icons, .purple-A100.material-icon,
 .purple-A100.checkbox-input.active .checkbox, .purple-A100.radiobutton-input.active .radio {
     color: #EA80FC;
@@ -1212,6 +1296,8 @@ table, .light-theme table,
 }
 
 .purple-A200, .text-primary.purple-A200, .text-secondary.purple-A200, .text-hint.purple-A200, .text-divider.purple-A200,
+.light-theme .purple-A200, .light-theme .text-primary.purple-A200, .light-theme .text-secondary.purple-A200, .text-hint.purple-A200, .light-theme .text-divider.purple-A200,
+.dark-theme .purple-A200, .dark-theme .text-primary.purple-A200, .dark-theme .text-secondary.purple-A200, .text-hint.purple-A200, .dark-theme .text-divider.purple-A200,
 .purple-A200.material-icons, .purple-A200.material-icon,
 .purple-A200.checkbox-input.active .checkbox, .purple-A200.radiobutton-input.active .radio {
     color: #E040FB;
@@ -1219,6 +1305,8 @@ table, .light-theme table,
 }
 
 .purple-A400, .text-primary.purple-A400, .text-secondary.purple-A400, .text-hint.purple-A400, .text-divider.purple-A400,
+.light-theme .purple-A400, .light-theme .text-primary.purple-A400, .light-theme .text-secondary.purple-A400, .text-hint.purple-A400, .light-theme .text-divider.purple-A400,
+.dark-theme .purple-A400, .dark-theme .text-primary.purple-A400, .dark-theme .text-secondary.purple-A400, .text-hint.purple-A400, .dark-theme .text-divider.purple-A400,
 .purple-A400.material-icons, .purple-A400.material-icon,
 .purple-A400.checkbox-input.active .checkbox, .purple-A400.radiobutton-input.active .radio {
     color: #D500F9;
@@ -1226,6 +1314,8 @@ table, .light-theme table,
 }
 
 .purple-A700, .text-primary.purple-A700, .text-secondary.purple-A700, .text-hint.purple-A700, .text-divider.purple-A700,
+.light-theme .purple-A700, .light-theme .text-primary.purple-A700, .light-theme .text-secondary.purple-A700, .text-hint.purple-A700, .light-theme .text-divider.purple-A700,
+.dark-theme .purple-A700, .dark-theme .text-primary.purple-A700, .dark-theme .text-secondary.purple-A700, .text-hint.purple-A700, .dark-theme .text-divider.purple-A700,
 .purple-A700.material-icons, .purple-A700.material-icon,
 .purple-A700.checkbox-input.active .checkbox, .purple-A700.radiobutton-input.active .radio {
     color: #AA00FF;
@@ -1233,6 +1323,8 @@ table, .light-theme table,
 }
 
 .deep-purple-50, .text-primary.deep-purple-50, .text-secondary.deep-purple-50, .text-hint.deep-purple-50, .text-divider.deep-purple-50,
+.light-theme .deep-purple-50, .light-theme .text-primary.deep-purple-50, .light-theme .text-secondary.deep-purple-50, .text-hint.deep-purple-50, .light-theme .text-divider.deep-purple-50,
+.dark-theme .deep-purple-50, .dark-theme .text-primary.deep-purple-50, .dark-theme .text-secondary.deep-purple-50, .text-hint.deep-purple-50, .dark-theme .text-divider.deep-purple-50,
 .deep-purple-50.material-icons, .deep-purple-50.material-icon,
 .deep-purple-50.checkbox-input.active .checkbox, .deep-purple-50.radiobutton-input.active .radio {
     color: #EDE7F6;
@@ -1240,6 +1332,8 @@ table, .light-theme table,
 }
 
 .deep-purple-100, .text-primary.deep-purple-100, .text-secondary.deep-purple-100, .text-hint.deep-purple-100, .text-divider.deep-purple-100,
+.light-theme .deep-purple-100, .light-theme .text-primary.deep-purple-100, .light-theme .text-secondary.deep-purple-100, .text-hint.deep-purple-100, .light-theme .text-divider.deep-purple-100,
+.dark-theme .deep-purple-100, .dark-theme .text-primary.deep-purple-100, .dark-theme .text-secondary.deep-purple-100, .text-hint.deep-purple-100, .dark-theme .text-divider.deep-purple-100,
 .deep-purple-100.material-icons, .deep-purple-100.material-icon,
 .deep-purple-100.checkbox-input.active .checkbox, .deep-purple-100.radiobutton-input.active .radio {
     color: #D1C4E9;
@@ -1247,6 +1341,8 @@ table, .light-theme table,
 }
 
 .deep-purple-200, .text-primary.deep-purple-200, .text-secondary.deep-purple-200, .text-hint.deep-purple-200, .text-divider.deep-purple-200,
+.light-theme .deep-purple-200, .light-theme .text-primary.deep-purple-200, .light-theme .text-secondary.deep-purple-200, .text-hint.deep-purple-200, .light-theme .text-divider.deep-purple-200,
+.dark-theme .deep-purple-200, .dark-theme .text-primary.deep-purple-200, .dark-theme .text-secondary.deep-purple-200, .text-hint.deep-purple-200, .dark-theme .text-divider.deep-purple-200,
 .deep-purple-200.material-icons, .deep-purple-200.material-icon,
 .deep-purple-200.checkbox-input.active .checkbox, .deep-purple-200.radiobutton-input.active .radio {
     color: #B39DDB;
@@ -1254,6 +1350,8 @@ table, .light-theme table,
 }
 
 .deep-purple-300, .text-primary.deep-purple-300, .text-secondary.deep-purple-300, .text-hint.deep-purple-300, .text-divider.deep-purple-300,
+.light-theme .deep-purple-300, .light-theme .text-primary.deep-purple-300, .light-theme .text-secondary.deep-purple-300, .text-hint.deep-purple-300, .light-theme .text-divider.deep-purple-300,
+.dark-theme .deep-purple-300, .dark-theme .text-primary.deep-purple-300, .dark-theme .text-secondary.deep-purple-300, .text-hint.deep-purple-300, .dark-theme .text-divider.deep-purple-300,
 .deep-purple-300.material-icons, .deep-purple-300.material-icon,
 .deep-purple-300.checkbox-input.active .checkbox, .deep-purple-300.radiobutton-input.active .radio {
     color: #9575CD;
@@ -1261,6 +1359,8 @@ table, .light-theme table,
 }
 
 .deep-purple-400, .text-primary.deep-purple-400, .text-secondary.deep-purple-400, .text-hint.deep-purple-400, .text-divider.deep-purple-400,
+.light-theme .deep-purple-400, .light-theme .text-primary.deep-purple-400, .light-theme .text-secondary.deep-purple-400, .text-hint.deep-purple-400, .light-theme .text-divider.deep-purple-400,
+.dark-theme .deep-purple-400, .dark-theme .text-primary.deep-purple-400, .dark-theme .text-secondary.deep-purple-400, .text-hint.deep-purple-400, .dark-theme .text-divider.deep-purple-400,
 .deep-purple-400.material-icons, .deep-purple-400.material-icon,
 .deep-purple-400.checkbox-input.active .checkbox, .deep-purple-400.radiobutton-input.active .radio {
     color: #7E57C2;
@@ -1268,9 +1368,13 @@ table, .light-theme table,
 }
 
 .deep-purple, .text-primary.deep-purple, .text-secondary.deep-purple, .text-hint.deep-purple, .text-divider.deep-purple,
+.light-theme .deep-purple, .light-theme .text-primary.deep-purple, .light-theme .text-secondary.deep-purple, .text-hint.deep-purple, .light-theme .text-divider.deep-purple,
+.dark-theme .deep-purple, .dark-theme .text-primary.deep-purple, .dark-theme .text-secondary.deep-purple, .text-hint.deep-purple, .dark-theme .text-divider.deep-purple,
 .deep-purple.material-icons, .deep-purple.material-icon,
 .deep-purple.checkbox-input.active .checkbox, .deep-purple.radiobutton-input.active .radio,
 .deep-purple-500, .text-primary.deep-purple-500, .text-secondary.deep-purple-500, .text-hint.deep-purple-500, .text-divider.deep-purple-500,
+.light-theme .deep-purple-500, .light-theme .text-primary.deep-purple-500, .light-theme .text-secondary.deep-purple-500, .text-hint.deep-purple-500, .light-theme .text-divider.deep-purple-500,
+.dark-theme .deep-purple-500, .dark-theme .text-primary.deep-purple-500, .dark-theme .text-secondary.deep-purple-500, .text-hint.deep-purple-500, .dark-theme .text-divider.deep-purple-500,
 .deep-purple-500.material-icons, .deep-purple-500.material-icon,
 .deep-purple-500.checkbox-input.active .checkbox, .deep-purple-500.radiobutton-input.active .radio {
     color: #673AB7;
@@ -1278,6 +1382,8 @@ table, .light-theme table,
 }
 
 .deep-purple-600, .text-primary.deep-purple-600, .text-secondary.deep-purple-600, .text-hint.deep-purple-600, .text-divider.deep-purple-600,
+.light-theme .deep-purple-600, .light-theme .text-primary.deep-purple-600, .light-theme .text-secondary.deep-purple-600, .text-hint.deep-purple-600, .light-theme .text-divider.deep-purple-600,
+.dark-theme .deep-purple-600, .dark-theme .text-primary.deep-purple-600, .dark-theme .text-secondary.deep-purple-600, .text-hint.deep-purple-600, .dark-theme .text-divider.deep-purple-600,
 .deep-purple-600.material-icons, .deep-purple-600.material-icon,
 .deep-purple-600.checkbox-input.active .checkbox, .deep-purple-600.radiobutton-input.active .radio {
     color: #5E35B1;
@@ -1285,6 +1391,8 @@ table, .light-theme table,
 }
 
 .deep-purple-700, .text-primary.deep-purple-700, .text-secondary.deep-purple-700, .text-hint.deep-purple-700, .text-divider.deep-purple-700,
+.light-theme .deep-purple-700, .light-theme .text-primary.deep-purple-700, .light-theme .text-secondary.deep-purple-700, .text-hint.deep-purple-700, .light-theme .text-divider.deep-purple-700,
+.dark-theme .deep-purple-700, .dark-theme .text-primary.deep-purple-700, .dark-theme .text-secondary.deep-purple-700, .text-hint.deep-purple-700, .dark-theme .text-divider.deep-purple-700,
 .deep-purple-700.material-icons, .deep-purple-700.material-icon,
 .deep-purple-700.checkbox-input.active .checkbox, .deep-purple-700.radiobutton-input.active .radio {
     color: #512DA8;
@@ -1292,6 +1400,8 @@ table, .light-theme table,
 }
 
 .deep-purple-800, .text-primary.deep-purple-800, .text-secondary.deep-purple-800, .text-hint.deep-purple-800, .text-divider.deep-purple-800,
+.light-theme .deep-purple-800, .light-theme .text-primary.deep-purple-800, .light-theme .text-secondary.deep-purple-800, .text-hint.deep-purple-800, .light-theme .text-divider.deep-purple-800,
+.dark-theme .deep-purple-800, .dark-theme .text-primary.deep-purple-800, .dark-theme .text-secondary.deep-purple-800, .text-hint.deep-purple-800, .dark-theme .text-divider.deep-purple-800,
 .deep-purple-800.material-icons, .deep-purple-800.material-icon,
 .deep-purple-800.checkbox-input.active .checkbox, .deep-purple-800.radiobutton-input.active .radio {
     color: #4527A0;
@@ -1299,6 +1409,8 @@ table, .light-theme table,
 }
 
 .deep-purple-900, .text-primary.deep-purple-900, .text-secondary.deep-purple-900, .text-hint.deep-purple-900, .text-divider.deep-purple-900,
+.light-theme .deep-purple-900, .light-theme .text-primary.deep-purple-900, .light-theme .text-secondary.deep-purple-900, .text-hint.deep-purple-900, .light-theme .text-divider.deep-purple-900,
+.dark-theme .deep-purple-900, .dark-theme .text-primary.deep-purple-900, .dark-theme .text-secondary.deep-purple-900, .text-hint.deep-purple-900, .dark-theme .text-divider.deep-purple-900,
 .deep-purple-900.material-icons, .deep-purple-900.material-icon,
 .deep-purple-900.checkbox-input.active .checkbox, .deep-purple-900.radiobutton-input.active .radio {
     color: #311B92;
@@ -1306,6 +1418,8 @@ table, .light-theme table,
 }
 
 .deep-purple-A100, .text-primary.deep-purple-A100, .text-secondary.deep-purple-A100, .text-hint.deep-purple-A100, .text-divider.deep-purple-A100,
+.light-theme .deep-purple-A100, .light-theme .text-primary.deep-purple-A100, .light-theme .text-secondary.deep-purple-A100, .text-hint.deep-purple-A100, .light-theme .text-divider.deep-purple-A100,
+.dark-theme .deep-purple-A100, .dark-theme .text-primary.deep-purple-A100, .dark-theme .text-secondary.deep-purple-A100, .text-hint.deep-purple-A100, .dark-theme .text-divider.deep-purple-A100,
 .deep-purple-A100.material-icons, .deep-purple-A100.material-icon,
 .deep-purple-A100.checkbox-input.active .checkbox, .deep-purple-A100.radiobutton-input.active .radio {
     color: #B388FF;
@@ -1313,6 +1427,8 @@ table, .light-theme table,
 }
 
 .deep-purple-A200, .text-primary.deep-purple-A200, .text-secondary.deep-purple-A200, .text-hint.deep-purple-A200, .text-divider.deep-purple-A200,
+.light-theme .deep-purple-A200, .light-theme .text-primary.deep-purple-A200, .light-theme .text-secondary.deep-purple-A200, .text-hint.deep-purple-A200, .light-theme .text-divider.deep-purple-A200,
+.dark-theme .deep-purple-A200, .dark-theme .text-primary.deep-purple-A200, .dark-theme .text-secondary.deep-purple-A200, .text-hint.deep-purple-A200, .dark-theme .text-divider.deep-purple-A200,
 .deep-purple-A200.material-icons, .deep-purple-A200.material-icon,
 .deep-purple-A200.checkbox-input.active .checkbox, .deep-purple-A200.radiobutton-input.active .radio {
     color: #7C4DFF;
@@ -1320,6 +1436,8 @@ table, .light-theme table,
 }
 
 .deep-purple-A400, .text-primary.deep-purple-A400, .text-secondary.deep-purple-A400, .text-hint.deep-purple-A400, .text-divider.deep-purple-A400,
+.light-theme .deep-purple-A400, .light-theme .text-primary.deep-purple-A400, .light-theme .text-secondary.deep-purple-A400, .text-hint.deep-purple-A400, .light-theme .text-divider.deep-purple-A400,
+.dark-theme .deep-purple-A400, .dark-theme .text-primary.deep-purple-A400, .dark-theme .text-secondary.deep-purple-A400, .text-hint.deep-purple-A400, .dark-theme .text-divider.deep-purple-A400,
 .deep-purple-A400.material-icons, .deep-purple-A400.material-icon,
 .deep-purple-A400.checkbox-input.active .checkbox, .deep-purple-A400.radiobutton-input.active .radio {
     color: #651FFF;
@@ -1327,6 +1445,8 @@ table, .light-theme table,
 }
 
 .deep-purple-A700, .text-primary.deep-purple-A700, .text-secondary.deep-purple-A700, .text-hint.deep-purple-A700, .text-divider.deep-purple-A700,
+.light-theme .deep-purple-A700, .light-theme .text-primary.deep-purple-A700, .light-theme .text-secondary.deep-purple-A700, .text-hint.deep-purple-A700, .light-theme .text-divider.deep-purple-A700,
+.dark-theme .deep-purple-A700, .dark-theme .text-primary.deep-purple-A700, .dark-theme .text-secondary.deep-purple-A700, .text-hint.deep-purple-A700, .dark-theme .text-divider.deep-purple-A700,
 .deep-purple-A700.material-icons, .deep-purple-A700.material-icon,
 .deep-purple-A700.checkbox-input.active .checkbox, .deep-purple-A700.radiobutton-input.active .radio {
     color: #6200EA;
@@ -1334,6 +1454,8 @@ table, .light-theme table,
 }
 
 .indigo-50, .text-primary.indigo-50, .text-secondary.indigo-50, .text-hint.indigo-50, .text-divider.indigo-50,
+.light-theme .indigo-50, .light-theme .text-primary.indigo-50, .light-theme .text-secondary.indigo-50, .text-hint.indigo-50, .light-theme .text-divider.indigo-50,
+.dark-theme .indigo-50, .dark-theme .text-primary.indigo-50, .dark-theme .text-secondary.indigo-50, .text-hint.indigo-50, .dark-theme .text-divider.indigo-50,
 .indigo-50.material-icons, .indigo-50.material-icon,
 .indigo-50.checkbox-input.active .checkbox, .indigo-50.radiobutton-input.active .radio {
     color: #E8EAF6;
@@ -1341,6 +1463,8 @@ table, .light-theme table,
 }
 
 .indigo-100, .text-primary.indigo-100, .text-secondary.indigo-100, .text-hint.indigo-100, .text-divider.indigo-100,
+.light-theme .indigo-100, .light-theme .text-primary.indigo-100, .light-theme .text-secondary.indigo-100, .text-hint.indigo-100, .light-theme .text-divider.indigo-100,
+.dark-theme .indigo-100, .dark-theme .text-primary.indigo-100, .dark-theme .text-secondary.indigo-100, .text-hint.indigo-100, .dark-theme .text-divider.indigo-100,
 .indigo-100.material-icons, .indigo-100.material-icon,
 .indigo-100.checkbox-input.active .checkbox, .indigo-100.radiobutton-input.active .radio {
     color: #C5CAE9;
@@ -1348,6 +1472,8 @@ table, .light-theme table,
 }
 
 .indigo-200, .text-primary.indigo-200, .text-secondary.indigo-200, .text-hint.indigo-200, .text-divider.indigo-200,
+.light-theme .indigo-200, .light-theme .text-primary.indigo-200, .light-theme .text-secondary.indigo-200, .text-hint.indigo-200, .light-theme .text-divider.indigo-200,
+.dark-theme .indigo-200, .dark-theme .text-primary.indigo-200, .dark-theme .text-secondary.indigo-200, .text-hint.indigo-200, .dark-theme .text-divider.indigo-200,
 .indigo-200.material-icons, .indigo-200.material-icon,
 .indigo-200.checkbox-input.active .checkbox, .indigo-200.radiobutton-input.active .radio {
     color: #9FA8DA;
@@ -1355,6 +1481,8 @@ table, .light-theme table,
 }
 
 .indigo-300, .text-primary.indigo-300, .text-secondary.indigo-300, .text-hint.indigo-300, .text-divider.indigo-300,
+.light-theme .indigo-300, .light-theme .text-primary.indigo-300, .light-theme .text-secondary.indigo-300, .text-hint.indigo-300, .light-theme .text-divider.indigo-300,
+.dark-theme .indigo-300, .dark-theme .text-primary.indigo-300, .dark-theme .text-secondary.indigo-300, .text-hint.indigo-300, .dark-theme .text-divider.indigo-300,
 .indigo-300.material-icons, .indigo-300.material-icon,
 .indigo-300.checkbox-input.active .checkbox, .indigo-300.radiobutton-input.active .radio {
     color: #7986CB;
@@ -1362,6 +1490,8 @@ table, .light-theme table,
 }
 
 .indigo-400, .text-primary.indigo-400, .text-secondary.indigo-400, .text-hint.indigo-400, .text-divider.indigo-400,
+.light-theme .indigo-400, .light-theme .text-primary.indigo-400, .light-theme .text-secondary.indigo-400, .text-hint.indigo-400, .light-theme .text-divider.indigo-400,
+.dark-theme .indigo-400, .dark-theme .text-primary.indigo-400, .dark-theme .text-secondary.indigo-400, .text-hint.indigo-400, .dark-theme .text-divider.indigo-400,
 .indigo-400.material-icons, .indigo-400.material-icon,
 .indigo-400.checkbox-input.active .checkbox, .indigo-400.radiobutton-input.active .radio {
     color: #5C6BC0;
@@ -1369,9 +1499,13 @@ table, .light-theme table,
 }
 
 .indigo, .text-primary.indigo, .text-secondary.indigo, .text-hint.indigo, .text-divider.indigo,
+.light-theme .indigo, .light-theme .text-primary.indigo, .light-theme .text-secondary.indigo, .text-hint.indigo, .light-theme .text-divider.indigo,
+.dark-theme .indigo, .dark-theme .text-primary.indigo, .dark-theme .text-secondary.indigo, .text-hint.indigo, .dark-theme .text-divider.indigo,
 .indigo.material-icons, .indigo.material-icon,
 .indigo.checkbox-input.active .checkbox, .indigo.radiobutton-input.active .radio,
 .indigo-500, .text-primary.indigo-500, .text-secondary.indigo-500, .text-hint.indigo-500, .text-divider.indigo-500,
+.light-theme .indigo-500, .light-theme .text-primary.indigo-500, .light-theme .text-secondary.indigo-500, .text-hint.indigo-500, .light-theme .text-divider.indigo-500,
+.dark-theme .indigo-500, .dark-theme .text-primary.indigo-500, .dark-theme .text-secondary.indigo-500, .text-hint.indigo-500, .dark-theme .text-divider.indigo-500,
 .indigo-500.material-icons, .indigo-500.material-icon,
 .indigo-500.checkbox-input.active .checkbox, .indigo-500.radiobutton-input.active .radio {
     color: #3F51B5;
@@ -1379,6 +1513,8 @@ table, .light-theme table,
 }
 
 .indigo-600, .text-primary.indigo-600, .text-secondary.indigo-600, .text-hint.indigo-600, .text-divider.indigo-600,
+.light-theme .indigo-600, .light-theme .text-primary.indigo-600, .light-theme .text-secondary.indigo-600, .text-hint.indigo-600, .light-theme .text-divider.indigo-600,
+.dark-theme .indigo-600, .dark-theme .text-primary.indigo-600, .dark-theme .text-secondary.indigo-600, .text-hint.indigo-600, .dark-theme .text-divider.indigo-600,
 .indigo-600.material-icons, .indigo-600.material-icon,
 .indigo-600.checkbox-input.active .checkbox, .indigo-600.radiobutton-input.active .radio {
     color: #3949AB;
@@ -1386,6 +1522,8 @@ table, .light-theme table,
 }
 
 .indigo-700, .text-primary.indigo-700, .text-secondary.indigo-700, .text-hint.indigo-700, .text-divider.indigo-700,
+.light-theme .indigo-700, .light-theme .text-primary.indigo-700, .light-theme .text-secondary.indigo-700, .text-hint.indigo-700, .light-theme .text-divider.indigo-700,
+.dark-theme .indigo-700, .dark-theme .text-primary.indigo-700, .dark-theme .text-secondary.indigo-700, .text-hint.indigo-700, .dark-theme .text-divider.indigo-700,
 .indigo-700.material-icons, .indigo-700.material-icon,
 .indigo-700.checkbox-input.active .checkbox, .indigo-700.radiobutton-input.active .radio {
     color: #303F9F;
@@ -1393,6 +1531,8 @@ table, .light-theme table,
 }
 
 .indigo-800, .text-primary.indigo-800, .text-secondary.indigo-800, .text-hint.indigo-800, .text-divider.indigo-800,
+.light-theme .indigo-800, .light-theme .text-primary.indigo-800, .light-theme .text-secondary.indigo-800, .text-hint.indigo-800, .light-theme .text-divider.indigo-800,
+.dark-theme .indigo-800, .dark-theme .text-primary.indigo-800, .dark-theme .text-secondary.indigo-800, .text-hint.indigo-800, .dark-theme .text-divider.indigo-800,
 .indigo-800.material-icons, .indigo-800.material-icon,
 .indigo-800.checkbox-input.active .checkbox, .indigo-800.radiobutton-input.active .radio {
     color: #283593;
@@ -1400,6 +1540,8 @@ table, .light-theme table,
 }
 
 .indigo-900, .text-primary.indigo-900, .text-secondary.indigo-900, .text-hint.indigo-900, .text-divider.indigo-900,
+.light-theme .indigo-900, .light-theme .text-primary.indigo-900, .light-theme .text-secondary.indigo-900, .text-hint.indigo-900, .light-theme .text-divider.indigo-900,
+.dark-theme .indigo-900, .dark-theme .text-primary.indigo-900, .dark-theme .text-secondary.indigo-900, .text-hint.indigo-900, .dark-theme .text-divider.indigo-900,
 .indigo-900.material-icons, .indigo-900.material-icon,
 .indigo-900.checkbox-input.active .checkbox, .indigo-900.radiobutton-input.active .radio {
     color: #1A237E;
@@ -1407,6 +1549,8 @@ table, .light-theme table,
 }
 
 .indigo-A100, .text-primary.indigo-A100, .text-secondary.indigo-A100, .text-hint.indigo-A100, .text-divider.indigo-A100,
+.light-theme .indigo-A100, .light-theme .text-primary.indigo-A100, .light-theme .text-secondary.indigo-A100, .text-hint.indigo-A100, .light-theme .text-divider.indigo-A100,
+.dark-theme .indigo-A100, .dark-theme .text-primary.indigo-A100, .dark-theme .text-secondary.indigo-A100, .text-hint.indigo-A100, .dark-theme .text-divider.indigo-A100,
 .indigo-A100.material-icons, .indigo-A100.material-icon,
 .indigo-A100.checkbox-input.active .checkbox, .indigo-A100.radiobutton-input.active .radio {
     color: #8C9EFF;
@@ -1414,6 +1558,8 @@ table, .light-theme table,
 }
 
 .indigo-A200, .text-primary.indigo-A200, .text-secondary.indigo-A200, .text-hint.indigo-A200, .text-divider.indigo-A200,
+.light-theme .indigo-A200, .light-theme .text-primary.indigo-A200, .light-theme .text-secondary.indigo-A200, .text-hint.indigo-A200, .light-theme .text-divider.indigo-A200,
+.dark-theme .indigo-A200, .dark-theme .text-primary.indigo-A200, .dark-theme .text-secondary.indigo-A200, .text-hint.indigo-A200, .dark-theme .text-divider.indigo-A200,
 .indigo-A200.material-icons, .indigo-A200.material-icon,
 .indigo-A200.checkbox-input.active .checkbox, .indigo-A200.radiobutton-input.active .radio {
     color: #536DFE;
@@ -1421,6 +1567,8 @@ table, .light-theme table,
 }
 
 .indigo-A400, .text-primary.indigo-A400, .text-secondary.indigo-A400, .text-hint.indigo-A400, .text-divider.indigo-A400,
+.light-theme .indigo-A400, .light-theme .text-primary.indigo-A400, .light-theme .text-secondary.indigo-A400, .text-hint.indigo-A400, .light-theme .text-divider.indigo-A400,
+.dark-theme .indigo-A400, .dark-theme .text-primary.indigo-A400, .dark-theme .text-secondary.indigo-A400, .text-hint.indigo-A400, .dark-theme .text-divider.indigo-A400,
 .indigo-A400.material-icons, .indigo-A400.material-icon,
 .indigo-A400.checkbox-input.active .checkbox, .indigo-A400.radiobutton-input.active .radio {
     color: #3D5AFE;
@@ -1428,6 +1576,8 @@ table, .light-theme table,
 }
 
 .indigo-A700, .text-primary.indigo-A700, .text-secondary.indigo-A700, .text-hint.indigo-A700, .text-divider.indigo-A700,
+.light-theme .indigo-A700, .light-theme .text-primary.indigo-A700, .light-theme .text-secondary.indigo-A700, .text-hint.indigo-A700, .light-theme .text-divider.indigo-A700,
+.dark-theme .indigo-A700, .dark-theme .text-primary.indigo-A700, .dark-theme .text-secondary.indigo-A700, .text-hint.indigo-A700, .dark-theme .text-divider.indigo-A700,
 .indigo-A700.material-icons, .indigo-A700.material-icon,
 .indigo-A700.checkbox-input.active .checkbox, .indigo-A700.radiobutton-input.active .radio {
     color: #304FFE;
@@ -1435,6 +1585,8 @@ table, .light-theme table,
 }
 
 .blue-50, .text-primary.blue-50, .text-secondary.blue-50, .text-hint.blue-50, .text-divider.blue-50,
+.light-theme .blue-50, .light-theme .text-primary.blue-50, .light-theme .text-secondary.blue-50, .text-hint.blue-50, .light-theme .text-divider.blue-50,
+.dark-theme .blue-50, .dark-theme .text-primary.blue-50, .dark-theme .text-secondary.blue-50, .text-hint.blue-50, .dark-theme .text-divider.blue-50,
 .blue-50.material-icons, .blue-50.material-icon,
 .blue-50.checkbox-input.active .checkbox, .blue-50.radiobutton-input.active .radio {
     color: #E3F2FD;
@@ -1442,6 +1594,8 @@ table, .light-theme table,
 }
 
 .blue-100, .text-primary.blue-100, .text-secondary.blue-100, .text-hint.blue-100, .text-divider.blue-100,
+.light-theme .blue-100, .light-theme .text-primary.blue-100, .light-theme .text-secondary.blue-100, .text-hint.blue-100, .light-theme .text-divider.blue-100,
+.dark-theme .blue-100, .dark-theme .text-primary.blue-100, .dark-theme .text-secondary.blue-100, .text-hint.blue-100, .dark-theme .text-divider.blue-100,
 .blue-100.material-icons, .blue-100.material-icon,
 .blue-100.checkbox-input.active .checkbox, .blue-100.radiobutton-input.active .radio {
     color: #BBDEFB;
@@ -1449,6 +1603,8 @@ table, .light-theme table,
 }
 
 .blue-200, .text-primary.blue-200, .text-secondary.blue-200, .text-hint.blue-200, .text-divider.blue-200,
+.light-theme .blue-200, .light-theme .text-primary.blue-200, .light-theme .text-secondary.blue-200, .text-hint.blue-200, .light-theme .text-divider.blue-200,
+.dark-theme .blue-200, .dark-theme .text-primary.blue-200, .dark-theme .text-secondary.blue-200, .text-hint.blue-200, .dark-theme .text-divider.blue-200,
 .blue-200.material-icons, .blue-200.material-icon,
 .blue-200.checkbox-input.active .checkbox, .blue-200.radiobutton-input.active .radio {
     color: #90CAF9;
@@ -1456,6 +1612,8 @@ table, .light-theme table,
 }
 
 .blue-300, .text-primary.blue-300, .text-secondary.blue-300, .text-hint.blue-300, .text-divider.blue-300,
+.light-theme .blue-300, .light-theme .text-primary.blue-300, .light-theme .text-secondary.blue-300, .text-hint.blue-300, .light-theme .text-divider.blue-300,
+.dark-theme .blue-300, .dark-theme .text-primary.blue-300, .dark-theme .text-secondary.blue-300, .text-hint.blue-300, .dark-theme .text-divider.blue-300,
 .blue-300.material-icons, .blue-300.material-icon,
 .blue-300.checkbox-input.active .checkbox, .blue-300.radiobutton-input.active .radio {
     color: #64B5F6;
@@ -1463,6 +1621,8 @@ table, .light-theme table,
 }
 
 .blue-400, .text-primary.blue-400, .text-secondary.blue-400, .text-hint.blue-400, .text-divider.blue-400,
+.light-theme .blue-400, .light-theme .text-primary.blue-400, .light-theme .text-secondary.blue-400, .text-hint.blue-400, .light-theme .text-divider.blue-400,
+.dark-theme .blue-400, .dark-theme .text-primary.blue-400, .dark-theme .text-secondary.blue-400, .text-hint.blue-400, .dark-theme .text-divider.blue-400,
 .blue-400.material-icons, .blue-400.material-icon,
 .blue-400.checkbox-input.active .checkbox, .blue-400.radiobutton-input.active .radio {
     color: #42A5F5;
@@ -1470,9 +1630,13 @@ table, .light-theme table,
 }
 
 .blue, .text-primary.blue, .text-secondary.blue, .text-hint.blue, .text-divider.blue,
+.light-theme .blue, .light-theme .text-primary.blue, .light-theme .text-secondary.blue, .text-hint.blue, .light-theme .text-divider.blue,
+.dark-theme .blue, .dark-theme .text-primary.blue, .dark-theme .text-secondary.blue, .text-hint.blue, .dark-theme .text-divider.blue,
 .blue.material-icons, .blue.material-icon,
 .blue.checkbox-input.active .checkbox, .blue.radiobutton-input.active .radio,
 .blue-500, .text-primary.blue-500, .text-secondary.blue-500, .text-hint.blue-500, .text-divider.blue-500,
+.light-theme .blue-500, .light-theme .text-primary.blue-500, .light-theme .text-secondary.blue-500, .text-hint.blue-500, .light-theme .text-divider.blue-500,
+.dark-theme .blue-500, .dark-theme .text-primary.blue-500, .dark-theme .text-secondary.blue-500, .text-hint.blue-500, .dark-theme .text-divider.blue-500,
 .blue-500.material-icons, .blue-500.material-icon,
 .blue-500.checkbox-input.active .checkbox, .blue-500.radiobutton-input.active .radio {
     color: #2196F3;
@@ -1480,6 +1644,8 @@ table, .light-theme table,
 }
 
 .blue-600, .text-primary.blue-600, .text-secondary.blue-600, .text-hint.blue-600, .text-divider.blue-600,
+.light-theme .blue-600, .light-theme .text-primary.blue-600, .light-theme .text-secondary.blue-600, .text-hint.blue-600, .light-theme .text-divider.blue-600,
+.dark-theme .blue-600, .dark-theme .text-primary.blue-600, .dark-theme .text-secondary.blue-600, .text-hint.blue-600, .dark-theme .text-divider.blue-600,
 .blue-600.material-icons, .blue-600.material-icon,
 .blue-600.checkbox-input.active .checkbox, .blue-600.radiobutton-input.active .radio {
     color: #1E88E5;
@@ -1487,6 +1653,8 @@ table, .light-theme table,
 }
 
 .blue-700, .text-primary.blue-700, .text-secondary.blue-700, .text-hint.blue-700, .text-divider.blue-700,
+.light-theme .blue-700, .light-theme .text-primary.blue-700, .light-theme .text-secondary.blue-700, .text-hint.blue-700, .light-theme .text-divider.blue-700,
+.dark-theme .blue-700, .dark-theme .text-primary.blue-700, .dark-theme .text-secondary.blue-700, .text-hint.blue-700, .dark-theme .text-divider.blue-700,
 .blue-700.material-icons, .blue-700.material-icon,
 .blue-700.checkbox-input.active .checkbox, .blue-700.radiobutton-input.active .radio {
     color: #1976D2;
@@ -1494,6 +1662,8 @@ table, .light-theme table,
 }
 
 .blue-800, .text-primary.blue-800, .text-secondary.blue-800, .text-hint.blue-800, .text-divider.blue-800,
+.light-theme .blue-800, .light-theme .text-primary.blue-800, .light-theme .text-secondary.blue-800, .text-hint.blue-800, .light-theme .text-divider.blue-800,
+.dark-theme .blue-800, .dark-theme .text-primary.blue-800, .dark-theme .text-secondary.blue-800, .text-hint.blue-800, .dark-theme .text-divider.blue-800,
 .blue-800.material-icons, .blue-800.material-icon,
 .blue-800.checkbox-input.active .checkbox, .blue-800.radiobutton-input.active .radio {
     color: #1565C0;
@@ -1501,6 +1671,8 @@ table, .light-theme table,
 }
 
 .blue-900, .text-primary.blue-900, .text-secondary.blue-900, .text-hint.blue-900, .text-divider.blue-900,
+.light-theme .blue-900, .light-theme .text-primary.blue-900, .light-theme .text-secondary.blue-900, .text-hint.blue-900, .light-theme .text-divider.blue-900,
+.dark-theme .blue-900, .dark-theme .text-primary.blue-900, .dark-theme .text-secondary.blue-900, .text-hint.blue-900, .dark-theme .text-divider.blue-900,
 .blue-900.material-icons, .blue-900.material-icon,
 .blue-900.checkbox-input.active .checkbox, .blue-900.radiobutton-input.active .radio {
     color: #0D47A1;
@@ -1508,6 +1680,8 @@ table, .light-theme table,
 }
 
 .blue-A100, .text-primary.blue-A100, .text-secondary.blue-A100, .text-hint.blue-A100, .text-divider.blue-A100,
+.light-theme .blue-A100, .light-theme .text-primary.blue-A100, .light-theme .text-secondary.blue-A100, .text-hint.blue-A100, .light-theme .text-divider.blue-A100,
+.dark-theme .blue-A100, .dark-theme .text-primary.blue-A100, .dark-theme .text-secondary.blue-A100, .text-hint.blue-A100, .dark-theme .text-divider.blue-A100,
 .blue-A100.material-icons, .blue-A100.material-icon,
 .blue-A100.checkbox-input.active .checkbox, .blue-A100.radiobutton-input.active .radio {
     color: #82B1FF;
@@ -1515,6 +1689,8 @@ table, .light-theme table,
 }
 
 .blue-A200, .text-primary.blue-A200, .text-secondary.blue-A200, .text-hint.blue-A200, .text-divider.blue-A200,
+.light-theme .blue-A200, .light-theme .text-primary.blue-A200, .light-theme .text-secondary.blue-A200, .text-hint.blue-A200, .light-theme .text-divider.blue-A200,
+.dark-theme .blue-A200, .dark-theme .text-primary.blue-A200, .dark-theme .text-secondary.blue-A200, .text-hint.blue-A200, .dark-theme .text-divider.blue-A200,
 .blue-A200.material-icons, .blue-A200.material-icon,
 .blue-A200.checkbox-input.active .checkbox, .blue-A200.radiobutton-input.active .radio {
     color: #448AFF;
@@ -1522,6 +1698,8 @@ table, .light-theme table,
 }
 
 .blue-A400, .text-primary.blue-A400, .text-secondary.blue-A400, .text-hint.blue-A400, .text-divider.blue-A400,
+.light-theme .blue-A400, .light-theme .text-primary.blue-A400, .light-theme .text-secondary.blue-A400, .text-hint.blue-A400, .light-theme .text-divider.blue-A400,
+.dark-theme .blue-A400, .dark-theme .text-primary.blue-A400, .dark-theme .text-secondary.blue-A400, .text-hint.blue-A400, .dark-theme .text-divider.blue-A400,
 .blue-A400.material-icons, .blue-A400.material-icon,
 .blue-A400.checkbox-input.active .checkbox, .blue-A400.radiobutton-input.active .radio {
     color: #2979FF;
@@ -1529,6 +1707,8 @@ table, .light-theme table,
 }
 
 .blue-A700, .text-primary.blue-A700, .text-secondary.blue-A700, .text-hint.blue-A700, .text-divider.blue-A700,
+.light-theme .blue-A700, .light-theme .text-primary.blue-A700, .light-theme .text-secondary.blue-A700, .text-hint.blue-A700, .light-theme .text-divider.blue-A700,
+.dark-theme .blue-A700, .dark-theme .text-primary.blue-A700, .dark-theme .text-secondary.blue-A700, .text-hint.blue-A700, .dark-theme .text-divider.blue-A700,
 .blue-A700.material-icons, .blue-A700.material-icon,
 .blue-A700.checkbox-input.active .checkbox, .blue-A700.radiobutton-input.active .radio {
     color: #2962FF;
@@ -1536,6 +1716,8 @@ table, .light-theme table,
 }
 
 .light-blue-50, .text-primary.light-blue-50, .text-secondary.light-blue-50, .text-hint.light-blue-50, .text-divider.light-blue-50,
+.light-theme .light-blue-50, .light-theme .text-primary.light-blue-50, .light-theme .text-secondary.light-blue-50, .text-hint.light-blue-50, .light-theme .text-divider.light-blue-50,
+.dark-theme .light-blue-50, .dark-theme .text-primary.light-blue-50, .dark-theme .text-secondary.light-blue-50, .text-hint.light-blue-50, .dark-theme .text-divider.light-blue-50,
 .light-blue-50.material-icons, .light-blue-50.material-icon,
 .light-blue-50.checkbox-input.active .checkbox, .light-blue-50.radiobutton-input.active .radio {
     color: #E1F5FE;
@@ -1543,6 +1725,8 @@ table, .light-theme table,
 }
 
 .light-blue-100, .text-primary.light-blue-100, .text-secondary.light-blue-100, .text-hint.light-blue-100, .text-divider.light-blue-100,
+.light-theme .light-blue-100, .light-theme .text-primary.light-blue-100, .light-theme .text-secondary.light-blue-100, .text-hint.light-blue-100, .light-theme .text-divider.light-blue-100,
+.dark-theme .light-blue-100, .dark-theme .text-primary.light-blue-100, .dark-theme .text-secondary.light-blue-100, .text-hint.light-blue-100, .dark-theme .text-divider.light-blue-100,
 .light-blue-100.material-icons, .light-blue-100.material-icon,
 .light-blue-100.checkbox-input.active .checkbox, .light-blue-100.radiobutton-input.active .radio {
     color: #B3E5FC;
@@ -1550,6 +1734,8 @@ table, .light-theme table,
 }
 
 .light-blue-200, .text-primary.light-blue-200, .text-secondary.light-blue-200, .text-hint.light-blue-200, .text-divider.light-blue-200,
+.light-theme .light-blue-200, .light-theme .text-primary.light-blue-200, .light-theme .text-secondary.light-blue-200, .text-hint.light-blue-200, .light-theme .text-divider.light-blue-200,
+.dark-theme .light-blue-200, .dark-theme .text-primary.light-blue-200, .dark-theme .text-secondary.light-blue-200, .text-hint.light-blue-200, .dark-theme .text-divider.light-blue-200,
 .light-blue-200.material-icons, .light-blue-200.material-icon,
 .light-blue-200.checkbox-input.active .checkbox, .light-blue-200.radiobutton-input.active .radio {
     color: #81D4FA;
@@ -1557,6 +1743,8 @@ table, .light-theme table,
 }
 
 .light-blue-300, .text-primary.light-blue-300, .text-secondary.light-blue-300, .text-hint.light-blue-300, .text-divider.light-blue-300,
+.light-theme .light-blue-300, .light-theme .text-primary.light-blue-300, .light-theme .text-secondary.light-blue-300, .text-hint.light-blue-300, .light-theme .text-divider.light-blue-300,
+.dark-theme .light-blue-300, .dark-theme .text-primary.light-blue-300, .dark-theme .text-secondary.light-blue-300, .text-hint.light-blue-300, .dark-theme .text-divider.light-blue-300,
 .light-blue-300.material-icons, .light-blue-300.material-icon,
 .light-blue-300.checkbox-input.active .checkbox, .light-blue-300.radiobutton-input.active .radio {
     color: #4FC3F7;
@@ -1564,6 +1752,8 @@ table, .light-theme table,
 }
 
 .light-blue-400, .text-primary.light-blue-400, .text-secondary.light-blue-400, .text-hint.light-blue-400, .text-divider.light-blue-400,
+.light-theme .light-blue-400, .light-theme .text-primary.light-blue-400, .light-theme .text-secondary.light-blue-400, .text-hint.light-blue-400, .light-theme .text-divider.light-blue-400,
+.dark-theme .light-blue-400, .dark-theme .text-primary.light-blue-400, .dark-theme .text-secondary.light-blue-400, .text-hint.light-blue-400, .dark-theme .text-divider.light-blue-400,
 .light-blue-400.material-icons, .light-blue-400.material-icon,
 .light-blue-400.checkbox-input.active .checkbox, .light-blue-400.radiobutton-input.active .radio {
     color: #29B6F6;
@@ -1571,9 +1761,13 @@ table, .light-theme table,
 }
 
 .light-blue, .text-primary.light-blue, .text-secondary.light-blue, .text-hint.light-blue, .text-divider.light-blue,
+.light-theme .light-blue, .light-theme .text-primary.light-blue, .light-theme .text-secondary.light-blue, .text-hint.light-blue, .light-theme .text-divider.light-blue,
+.dark-theme .light-blue, .dark-theme .text-primary.light-blue, .dark-theme .text-secondary.light-blue, .text-hint.light-blue, .dark-theme .text-divider.light-blue,
 .light-blue.material-icons, .light-blue.material-icon,
 .light-blue.checkbox-input.active .checkbox, .light-blue.radiobutton-input.active .radio,
 .light-blue-500, .text-primary.light-blue-500, .text-secondary.light-blue-500, .text-hint.light-blue-500, .text-divider.light-blue-500,
+.light-theme .light-blue-500, .light-theme .text-primary.light-blue-500, .light-theme .text-secondary.light-blue-500, .text-hint.light-blue-500, .light-theme .text-divider.light-blue-500,
+.dark-theme .light-blue-500, .dark-theme .text-primary.light-blue-500, .dark-theme .text-secondary.light-blue-500, .text-hint.light-blue-500, .dark-theme .text-divider.light-blue-500,
 .light-blue-500.material-icons, .light-blue-500.material-icon,
 .light-blue-500.checkbox-input.active .checkbox, .light-blue-500.radiobutton-input.active .radio {
     color: #03A9F4;
@@ -1581,6 +1775,8 @@ table, .light-theme table,
 }
 
 .light-blue-600, .text-primary.light-blue-600, .text-secondary.light-blue-600, .text-hint.light-blue-600, .text-divider.light-blue-600,
+.light-theme .light-blue-600, .light-theme .text-primary.light-blue-600, .light-theme .text-secondary.light-blue-600, .text-hint.light-blue-600, .light-theme .text-divider.light-blue-600,
+.dark-theme .light-blue-600, .dark-theme .text-primary.light-blue-600, .dark-theme .text-secondary.light-blue-600, .text-hint.light-blue-600, .dark-theme .text-divider.light-blue-600,
 .light-blue-600.material-icons, .light-blue-600.material-icon,
 .light-blue-600.checkbox-input.active .checkbox, .light-blue-600.radiobutton-input.active .radio {
     color: #039BE5;
@@ -1588,6 +1784,8 @@ table, .light-theme table,
 }
 
 .light-blue-700, .text-primary.light-blue-700, .text-secondary.light-blue-700, .text-hint.light-blue-700, .text-divider.light-blue-700,
+.light-theme .light-blue-700, .light-theme .text-primary.light-blue-700, .light-theme .text-secondary.light-blue-700, .text-hint.light-blue-700, .light-theme .text-divider.light-blue-700,
+.dark-theme .light-blue-700, .dark-theme .text-primary.light-blue-700, .dark-theme .text-secondary.light-blue-700, .text-hint.light-blue-700, .dark-theme .text-divider.light-blue-700,
 .light-blue-700.material-icons, .light-blue-700.material-icon,
 .light-blue-700.checkbox-input.active .checkbox, .light-blue-700.radiobutton-input.active .radio {
     color: #0288D1;
@@ -1595,6 +1793,8 @@ table, .light-theme table,
 }
 
 .light-blue-800, .text-primary.light-blue-800, .text-secondary.light-blue-800, .text-hint.light-blue-800, .text-divider.light-blue-800,
+.light-theme .light-blue-800, .light-theme .text-primary.light-blue-800, .light-theme .text-secondary.light-blue-800, .text-hint.light-blue-800, .light-theme .text-divider.light-blue-800,
+.dark-theme .light-blue-800, .dark-theme .text-primary.light-blue-800, .dark-theme .text-secondary.light-blue-800, .text-hint.light-blue-800, .dark-theme .text-divider.light-blue-800,
 .light-blue-800.material-icons, .light-blue-800.material-icon,
 .light-blue-800.checkbox-input.active .checkbox, .light-blue-800.radiobutton-input.active .radio {
     color: #0277BD;
@@ -1602,6 +1802,8 @@ table, .light-theme table,
 }
 
 .light-blue-900, .text-primary.light-blue-900, .text-secondary.light-blue-900, .text-hint.light-blue-900, .text-divider.light-blue-900,
+.light-theme .light-blue-900, .light-theme .text-primary.light-blue-900, .light-theme .text-secondary.light-blue-900, .text-hint.light-blue-900, .light-theme .text-divider.light-blue-900,
+.dark-theme .light-blue-900, .dark-theme .text-primary.light-blue-900, .dark-theme .text-secondary.light-blue-900, .text-hint.light-blue-900, .dark-theme .text-divider.light-blue-900,
 .light-blue-900.material-icons, .light-blue-900.material-icon,
 .light-blue-900.checkbox-input.active .checkbox, .light-blue-900.radiobutton-input.active .radio {
     color: #01579B;
@@ -1609,6 +1811,8 @@ table, .light-theme table,
 }
 
 .light-blue-A100, .text-primary.light-blue-A100, .text-secondary.light-blue-A100, .text-hint.light-blue-A100, .text-divider.light-blue-A100,
+.light-theme .light-blue-A100, .light-theme .text-primary.light-blue-A100, .light-theme .text-secondary.light-blue-A100, .text-hint.light-blue-A100, .light-theme .text-divider.light-blue-A100,
+.dark-theme .light-blue-A100, .dark-theme .text-primary.light-blue-A100, .dark-theme .text-secondary.light-blue-A100, .text-hint.light-blue-A100, .dark-theme .text-divider.light-blue-A100,
 .light-blue-A100.material-icons, .light-blue-A100.material-icon,
 .light-blue-A100.checkbox-input.active .checkbox, .light-blue-A100.radiobutton-input.active .radio {
     color: #80D8FF;
@@ -1616,6 +1820,8 @@ table, .light-theme table,
 }
 
 .light-blue-A200, .text-primary.light-blue-A200, .text-secondary.light-blue-A200, .text-hint.light-blue-A200, .text-divider.light-blue-A200,
+.light-theme .light-blue-A200, .light-theme .text-primary.light-blue-A200, .light-theme .text-secondary.light-blue-A200, .text-hint.light-blue-A200, .light-theme .text-divider.light-blue-A200,
+.dark-theme .light-blue-A200, .dark-theme .text-primary.light-blue-A200, .dark-theme .text-secondary.light-blue-A200, .text-hint.light-blue-A200, .dark-theme .text-divider.light-blue-A200,
 .light-blue-A200.material-icons, .light-blue-A200.material-icon,
 .light-blue-A200.checkbox-input.active .checkbox, .light-blue-A200.radiobutton-input.active .radio {
     color: #40C4FF;
@@ -1623,6 +1829,8 @@ table, .light-theme table,
 }
 
 .light-blue-A400, .text-primary.light-blue-A400, .text-secondary.light-blue-A400, .text-hint.light-blue-A400, .text-divider.light-blue-A400,
+.light-theme .light-blue-A400, .light-theme .text-primary.light-blue-A400, .light-theme .text-secondary.light-blue-A400, .text-hint.light-blue-A400, .light-theme .text-divider.light-blue-A400,
+.dark-theme .light-blue-A400, .dark-theme .text-primary.light-blue-A400, .dark-theme .text-secondary.light-blue-A400, .text-hint.light-blue-A400, .dark-theme .text-divider.light-blue-A400,
 .light-blue-A400.material-icons, .light-blue-A400.material-icon,
 .light-blue-A400.checkbox-input.active .checkbox, .light-blue-A400.radiobutton-input.active .radio {
     color: #00B0FF;
@@ -1630,6 +1838,8 @@ table, .light-theme table,
 }
 
 .light-blue-A700, .text-primary.light-blue-A700, .text-secondary.light-blue-A700, .text-hint.light-blue-A700, .text-divider.light-blue-A700,
+.light-theme .light-blue-A700, .light-theme .text-primary.light-blue-A700, .light-theme .text-secondary.light-blue-A700, .text-hint.light-blue-A700, .light-theme .text-divider.light-blue-A700,
+.dark-theme .light-blue-A700, .dark-theme .text-primary.light-blue-A700, .dark-theme .text-secondary.light-blue-A700, .text-hint.light-blue-A700, .dark-theme .text-divider.light-blue-A700,
 .light-blue-A700.material-icons, .light-blue-A700.material-icon,
 .light-blue-A700.checkbox-input.active .checkbox, .light-blue-A700.radiobutton-input.active .radio {
     color: #0091EA;
@@ -1637,6 +1847,8 @@ table, .light-theme table,
 }
 
 .cyan-50, .text-primary.cyan-50, .text-secondary.cyan-50, .text-hint.cyan-50, .text-divider.cyan-50,
+.light-theme .cyan-50, .light-theme .text-primary.cyan-50, .light-theme .text-secondary.cyan-50, .text-hint.cyan-50, .light-theme .text-divider.cyan-50,
+.dark-theme .cyan-50, .dark-theme .text-primary.cyan-50, .dark-theme .text-secondary.cyan-50, .text-hint.cyan-50, .dark-theme .text-divider.cyan-50,
 .cyan-50.material-icons, .cyan-50.material-icon,
 .cyan-50.checkbox-input.active .checkbox, .cyan-50.radiobutton-input.active .radio {
     color: #E0F7FA;
@@ -1644,6 +1856,8 @@ table, .light-theme table,
 }
 
 .cyan-100, .text-primary.cyan-100, .text-secondary.cyan-100, .text-hint.cyan-100, .text-divider.cyan-100,
+.light-theme .cyan-100, .light-theme .text-primary.cyan-100, .light-theme .text-secondary.cyan-100, .text-hint.cyan-100, .light-theme .text-divider.cyan-100,
+.dark-theme .cyan-100, .dark-theme .text-primary.cyan-100, .dark-theme .text-secondary.cyan-100, .text-hint.cyan-100, .dark-theme .text-divider.cyan-100,
 .cyan-100.material-icons, .cyan-100.material-icon,
 .cyan-100.checkbox-input.active .checkbox, .cyan-100.radiobutton-input.active .radio {
     color: #B2EBF2;
@@ -1651,6 +1865,8 @@ table, .light-theme table,
 }
 
 .cyan-200, .text-primary.cyan-200, .text-secondary.cyan-200, .text-hint.cyan-200, .text-divider.cyan-200,
+.light-theme .cyan-200, .light-theme .text-primary.cyan-200, .light-theme .text-secondary.cyan-200, .text-hint.cyan-200, .light-theme .text-divider.cyan-200,
+.dark-theme .cyan-200, .dark-theme .text-primary.cyan-200, .dark-theme .text-secondary.cyan-200, .text-hint.cyan-200, .dark-theme .text-divider.cyan-200,
 .cyan-200.material-icons, .cyan-200.material-icon,
 .cyan-200.checkbox-input.active .checkbox, .cyan-200.radiobutton-input.active .radio {
     color: #80DEEA;
@@ -1658,6 +1874,8 @@ table, .light-theme table,
 }
 
 .cyan-300, .text-primary.cyan-300, .text-secondary.cyan-300, .text-hint.cyan-300, .text-divider.cyan-300,
+.light-theme .cyan-300, .light-theme .text-primary.cyan-300, .light-theme .text-secondary.cyan-300, .text-hint.cyan-300, .light-theme .text-divider.cyan-300,
+.dark-theme .cyan-300, .dark-theme .text-primary.cyan-300, .dark-theme .text-secondary.cyan-300, .text-hint.cyan-300, .dark-theme .text-divider.cyan-300,
 .cyan-300.material-icons, .cyan-300.material-icon,
 .cyan-300.checkbox-input.active .checkbox, .cyan-300.radiobutton-input.active .radio {
     color: #4DD0E1;
@@ -1665,6 +1883,8 @@ table, .light-theme table,
 }
 
 .cyan-400, .text-primary.cyan-400, .text-secondary.cyan-400, .text-hint.cyan-400, .text-divider.cyan-400,
+.light-theme .cyan-400, .light-theme .text-primary.cyan-400, .light-theme .text-secondary.cyan-400, .text-hint.cyan-400, .light-theme .text-divider.cyan-400,
+.dark-theme .cyan-400, .dark-theme .text-primary.cyan-400, .dark-theme .text-secondary.cyan-400, .text-hint.cyan-400, .dark-theme .text-divider.cyan-400,
 .cyan-400.material-icons, .cyan-400.material-icon,
 .cyan-400.checkbox-input.active .checkbox, .cyan-400.radiobutton-input.active .radio {
     color: #26C6DA;
@@ -1672,9 +1892,13 @@ table, .light-theme table,
 }
 
 .cyan, .text-primary.cyan, .text-secondary.cyan, .text-hint.cyan, .text-divider.cyan,
+.light-theme .cyan, .light-theme .text-primary.cyan, .light-theme .text-secondary.cyan, .text-hint.cyan, .light-theme .text-divider.cyan,
+.dark-theme .cyan, .dark-theme .text-primary.cyan, .dark-theme .text-secondary.cyan, .text-hint.cyan, .dark-theme .text-divider.cyan,
 .cyan.material-icons, .cyan.material-icon,
 .cyan.checkbox-input.active .checkbox, .cyan.radiobutton-input.active .radio,
 .cyan-500, .text-primary.cyan-500, .text-secondary.cyan-500, .text-hint.cyan-500, .text-divider.cyan-500,
+.light-theme .cyan-500, .light-theme .text-primary.cyan-500, .light-theme .text-secondary.cyan-500, .text-hint.cyan-500, .light-theme .text-divider.cyan-500,
+.dark-theme .cyan-500, .dark-theme .text-primary.cyan-500, .dark-theme .text-secondary.cyan-500, .text-hint.cyan-500, .dark-theme .text-divider.cyan-500,
 .cyan-500.material-icons, .cyan-500.material-icon,
 .cyan-500.checkbox-input.active .checkbox, .cyan-500.radiobutton-input.active .radio {
     color: #00BCD4;
@@ -1682,6 +1906,8 @@ table, .light-theme table,
 }
 
 .cyan-600, .text-primary.cyan-600, .text-secondary.cyan-600, .text-hint.cyan-600, .text-divider.cyan-600,
+.light-theme .cyan-600, .light-theme .text-primary.cyan-600, .light-theme .text-secondary.cyan-600, .text-hint.cyan-600, .light-theme .text-divider.cyan-600,
+.dark-theme .cyan-600, .dark-theme .text-primary.cyan-600, .dark-theme .text-secondary.cyan-600, .text-hint.cyan-600, .dark-theme .text-divider.cyan-600,
 .cyan-600.material-icons, .cyan-600.material-icon,
 .cyan-600.checkbox-input.active .checkbox, .cyan-600.radiobutton-input.active .radio {
     color: #00ACC1;
@@ -1689,6 +1915,8 @@ table, .light-theme table,
 }
 
 .cyan-700, .text-primary.cyan-700, .text-secondary.cyan-700, .text-hint.cyan-700, .text-divider.cyan-700,
+.light-theme .cyan-700, .light-theme .text-primary.cyan-700, .light-theme .text-secondary.cyan-700, .text-hint.cyan-700, .light-theme .text-divider.cyan-700,
+.dark-theme .cyan-700, .dark-theme .text-primary.cyan-700, .dark-theme .text-secondary.cyan-700, .text-hint.cyan-700, .dark-theme .text-divider.cyan-700,
 .cyan-700.material-icons, .cyan-700.material-icon,
 .cyan-700.checkbox-input.active .checkbox, .cyan-700.radiobutton-input.active .radio {
     color: #0097A7;
@@ -1696,6 +1924,8 @@ table, .light-theme table,
 }
 
 .cyan-800, .text-primary.cyan-800, .text-secondary.cyan-800, .text-hint.cyan-800, .text-divider.cyan-800,
+.light-theme .cyan-800, .light-theme .text-primary.cyan-800, .light-theme .text-secondary.cyan-800, .text-hint.cyan-800, .light-theme .text-divider.cyan-800,
+.dark-theme .cyan-800, .dark-theme .text-primary.cyan-800, .dark-theme .text-secondary.cyan-800, .text-hint.cyan-800, .dark-theme .text-divider.cyan-800,
 .cyan-800.material-icons, .cyan-800.material-icon,
 .cyan-800.checkbox-input.active .checkbox, .cyan-800.radiobutton-input.active .radio {
     color: #00838F;
@@ -1703,6 +1933,8 @@ table, .light-theme table,
 }
 
 .cyan-900, .text-primary.cyan-900, .text-secondary.cyan-900, .text-hint.cyan-900, .text-divider.cyan-900,
+.light-theme .cyan-900, .light-theme .text-primary.cyan-900, .light-theme .text-secondary.cyan-900, .text-hint.cyan-900, .light-theme .text-divider.cyan-900,
+.dark-theme .cyan-900, .dark-theme .text-primary.cyan-900, .dark-theme .text-secondary.cyan-900, .text-hint.cyan-900, .dark-theme .text-divider.cyan-900,
 .cyan-900.material-icons, .cyan-900.material-icon,
 .cyan-900.checkbox-input.active .checkbox, .cyan-900.radiobutton-input.active .radio {
     color: #006064;
@@ -1710,6 +1942,8 @@ table, .light-theme table,
 }
 
 .cyan-A100, .text-primary.cyan-A100, .text-secondary.cyan-A100, .text-hint.cyan-A100, .text-divider.cyan-A100,
+.light-theme .cyan-A100, .light-theme .text-primary.cyan-A100, .light-theme .text-secondary.cyan-A100, .text-hint.cyan-A100, .light-theme .text-divider.cyan-A100,
+.dark-theme .cyan-A100, .dark-theme .text-primary.cyan-A100, .dark-theme .text-secondary.cyan-A100, .text-hint.cyan-A100, .dark-theme .text-divider.cyan-A100,
 .cyan-A100.material-icons, .cyan-A100.material-icon,
 .cyan-A100.checkbox-input.active .checkbox, .cyan-A100.radiobutton-input.active .radio {
     color: #84FFFF;
@@ -1717,6 +1951,8 @@ table, .light-theme table,
 }
 
 .cyan-A200, .text-primary.cyan-A200, .text-secondary.cyan-A200, .text-hint.cyan-A200, .text-divider.cyan-A200,
+.light-theme .cyan-A200, .light-theme .text-primary.cyan-A200, .light-theme .text-secondary.cyan-A200, .text-hint.cyan-A200, .light-theme .text-divider.cyan-A200,
+.dark-theme .cyan-A200, .dark-theme .text-primary.cyan-A200, .dark-theme .text-secondary.cyan-A200, .text-hint.cyan-A200, .dark-theme .text-divider.cyan-A200,
 .cyan-A200.material-icons, .cyan-A200.material-icon,
 .cyan-A200.checkbox-input.active .checkbox, .cyan-A200.radiobutton-input.active .radio {
     color: #18FFFF;
@@ -1724,6 +1960,8 @@ table, .light-theme table,
 }
 
 .cyan-A400, .text-primary.cyan-A400, .text-secondary.cyan-A400, .text-hint.cyan-A400, .text-divider.cyan-A400,
+.light-theme .cyan-A400, .light-theme .text-primary.cyan-A400, .light-theme .text-secondary.cyan-A400, .text-hint.cyan-A400, .light-theme .text-divider.cyan-A400,
+.dark-theme .cyan-A400, .dark-theme .text-primary.cyan-A400, .dark-theme .text-secondary.cyan-A400, .text-hint.cyan-A400, .dark-theme .text-divider.cyan-A400,
 .cyan-A400.material-icons, .cyan-A400.material-icon,
 .cyan-A400.checkbox-input.active .checkbox, .cyan-A400.radiobutton-input.active .radio {
     color: #00E5FF;
@@ -1731,6 +1969,8 @@ table, .light-theme table,
 }
 
 .cyan-A700, .text-primary.cyan-A700, .text-secondary.cyan-A700, .text-hint.cyan-A700, .text-divider.cyan-A700,
+.light-theme .cyan-A700, .light-theme .text-primary.cyan-A700, .light-theme .text-secondary.cyan-A700, .text-hint.cyan-A700, .light-theme .text-divider.cyan-A700,
+.dark-theme .cyan-A700, .dark-theme .text-primary.cyan-A700, .dark-theme .text-secondary.cyan-A700, .text-hint.cyan-A700, .dark-theme .text-divider.cyan-A700,
 .cyan-A700.material-icons, .cyan-A700.material-icon,
 .cyan-A700.checkbox-input.active .checkbox, .cyan-A700.radiobutton-input.active .radio {
     color: #00B8D4;
@@ -1738,6 +1978,8 @@ table, .light-theme table,
 }
 
 .teal-50, .text-primary.teal-50, .text-secondary.teal-50, .text-hint.teal-50, .text-divider.teal-50,
+.light-theme .teal-50, .light-theme .text-primary.teal-50, .light-theme .text-secondary.teal-50, .text-hint.teal-50, .light-theme .text-divider.teal-50,
+.dark-theme .teal-50, .dark-theme .text-primary.teal-50, .dark-theme .text-secondary.teal-50, .text-hint.teal-50, .dark-theme .text-divider.teal-50,
 .teal-50.material-icons, .teal-50.material-icon,
 .teal-50.checkbox-input.active .checkbox, .teal-50.radiobutton-input.active .radio {
     color: #E0F2F1;
@@ -1745,6 +1987,8 @@ table, .light-theme table,
 }
 
 .teal-100, .text-primary.teal-100, .text-secondary.teal-100, .text-hint.teal-100, .text-divider.teal-100,
+.light-theme .teal-100, .light-theme .text-primary.teal-100, .light-theme .text-secondary.teal-100, .text-hint.teal-100, .light-theme .text-divider.teal-100,
+.dark-theme .teal-100, .dark-theme .text-primary.teal-100, .dark-theme .text-secondary.teal-100, .text-hint.teal-100, .dark-theme .text-divider.teal-100,
 .teal-100.material-icons, .teal-100.material-icon,
 .teal-100.checkbox-input.active .checkbox, .teal-100.radiobutton-input.active .radio {
     color: #B2DFDB;
@@ -1752,6 +1996,8 @@ table, .light-theme table,
 }
 
 .teal-200, .text-primary.teal-200, .text-secondary.teal-200, .text-hint.teal-200, .text-divider.teal-200,
+.light-theme .teal-200, .light-theme .text-primary.teal-200, .light-theme .text-secondary.teal-200, .text-hint.teal-200, .light-theme .text-divider.teal-200,
+.dark-theme .teal-200, .dark-theme .text-primary.teal-200, .dark-theme .text-secondary.teal-200, .text-hint.teal-200, .dark-theme .text-divider.teal-200,
 .teal-200.material-icons, .teal-200.material-icon,
 .teal-200.checkbox-input.active .checkbox, .teal-200.radiobutton-input.active .radio {
     color: #80CBC4;
@@ -1759,6 +2005,8 @@ table, .light-theme table,
 }
 
 .teal-300, .text-primary.teal-300, .text-secondary.teal-300, .text-hint.teal-300, .text-divider.teal-300,
+.light-theme .teal-300, .light-theme .text-primary.teal-300, .light-theme .text-secondary.teal-300, .text-hint.teal-300, .light-theme .text-divider.teal-300,
+.dark-theme .teal-300, .dark-theme .text-primary.teal-300, .dark-theme .text-secondary.teal-300, .text-hint.teal-300, .dark-theme .text-divider.teal-300,
 .teal-300.material-icons, .teal-300.material-icon,
 .teal-300.checkbox-input.active .checkbox, .teal-300.radiobutton-input.active .radio {
     color: #4DB6AC;
@@ -1766,6 +2014,8 @@ table, .light-theme table,
 }
 
 .teal-400, .text-primary.teal-400, .text-secondary.teal-400, .text-hint.teal-400, .text-divider.teal-400,
+.light-theme .teal-400, .light-theme .text-primary.teal-400, .light-theme .text-secondary.teal-400, .text-hint.teal-400, .light-theme .text-divider.teal-400,
+.dark-theme .teal-400, .dark-theme .text-primary.teal-400, .dark-theme .text-secondary.teal-400, .text-hint.teal-400, .dark-theme .text-divider.teal-400,
 .teal-400.material-icons, .teal-400.material-icon,
 .teal-400.checkbox-input.active .checkbox, .teal-400.radiobutton-input.active .radio {
     color: #26A69A;
@@ -1773,9 +2023,13 @@ table, .light-theme table,
 }
 
 .teal, .text-primary.teal, .text-secondary.teal, .text-hint.teal, .text-divider.teal,
+.light-theme .teal, .light-theme .text-primary.teal, .light-theme .text-secondary.teal, .text-hint.teal, .light-theme .text-divider.teal,
+.dark-theme .teal, .dark-theme .text-primary.teal, .dark-theme .text-secondary.teal, .text-hint.teal, .dark-theme .text-divider.teal,
 .teal.material-icons, .teal.material-icon,
 .teal.checkbox-input.active .checkbox, .teal.radiobutton-input.active .radio,
 .teal-500, .text-primary.teal-500, .text-secondary.teal-500, .text-hint.teal-500, .text-divider.teal-500,
+.light-theme .teal-500, .light-theme .text-primary.teal-500, .light-theme .text-secondary.teal-500, .text-hint.teal-500, .light-theme .text-divider.teal-500,
+.dark-theme .teal-500, .dark-theme .text-primary.teal-500, .dark-theme .text-secondary.teal-500, .text-hint.teal-500, .dark-theme .text-divider.teal-500,
 .teal-500.material-icons, .teal-500.material-icon,
 .teal-500.checkbox-input.active .checkbox, .teal-500.radiobutton-input.active .radio {
     color: #009688;
@@ -1783,6 +2037,8 @@ table, .light-theme table,
 }
 
 .teal-600, .text-primary.teal-600, .text-secondary.teal-600, .text-hint.teal-600, .text-divider.teal-600,
+.light-theme .teal-600, .light-theme .text-primary.teal-600, .light-theme .text-secondary.teal-600, .text-hint.teal-600, .light-theme .text-divider.teal-600,
+.dark-theme .teal-600, .dark-theme .text-primary.teal-600, .dark-theme .text-secondary.teal-600, .text-hint.teal-600, .dark-theme .text-divider.teal-600,
 .teal-600.material-icons, .teal-600.material-icon,
 .teal-600.checkbox-input.active .checkbox, .teal-600.radiobutton-input.active .radio {
     color: #00897B;
@@ -1790,6 +2046,8 @@ table, .light-theme table,
 }
 
 .teal-700, .text-primary.teal-700, .text-secondary.teal-700, .text-hint.teal-700, .text-divider.teal-700,
+.light-theme .teal-700, .light-theme .text-primary.teal-700, .light-theme .text-secondary.teal-700, .text-hint.teal-700, .light-theme .text-divider.teal-700,
+.dark-theme .teal-700, .dark-theme .text-primary.teal-700, .dark-theme .text-secondary.teal-700, .text-hint.teal-700, .dark-theme .text-divider.teal-700,
 .teal-700.material-icons, .teal-700.material-icon,
 .teal-700.checkbox-input.active .checkbox, .teal-700.radiobutton-input.active .radio {
     color: #00796B;
@@ -1797,6 +2055,8 @@ table, .light-theme table,
 }
 
 .teal-800, .text-primary.teal-800, .text-secondary.teal-800, .text-hint.teal-800, .text-divider.teal-800,
+.light-theme .teal-800, .light-theme .text-primary.teal-800, .light-theme .text-secondary.teal-800, .text-hint.teal-800, .light-theme .text-divider.teal-800,
+.dark-theme .teal-800, .dark-theme .text-primary.teal-800, .dark-theme .text-secondary.teal-800, .text-hint.teal-800, .dark-theme .text-divider.teal-800,
 .teal-800.material-icons, .teal-800.material-icon,
 .teal-800.checkbox-input.active .checkbox, .teal-800.radiobutton-input.active .radio {
     color: #00695C;
@@ -1804,6 +2064,8 @@ table, .light-theme table,
 }
 
 .teal-900, .text-primary.teal-900, .text-secondary.teal-900, .text-hint.teal-900, .text-divider.teal-900,
+.light-theme .teal-900, .light-theme .text-primary.teal-900, .light-theme .text-secondary.teal-900, .text-hint.teal-900, .light-theme .text-divider.teal-900,
+.dark-theme .teal-900, .dark-theme .text-primary.teal-900, .dark-theme .text-secondary.teal-900, .text-hint.teal-900, .dark-theme .text-divider.teal-900,
 .teal-900.material-icons, .teal-900.material-icon,
 .teal-900.checkbox-input.active .checkbox, .teal-900.radiobutton-input.active .radio {
     color: #004D40;
@@ -1811,6 +2073,8 @@ table, .light-theme table,
 }
 
 .teal-A100, .text-primary.teal-A100, .text-secondary.teal-A100, .text-hint.teal-A100, .text-divider.teal-A100,
+.light-theme .teal-A100, .light-theme .text-primary.teal-A100, .light-theme .text-secondary.teal-A100, .text-hint.teal-A100, .light-theme .text-divider.teal-A100,
+.dark-theme .teal-A100, .dark-theme .text-primary.teal-A100, .dark-theme .text-secondary.teal-A100, .text-hint.teal-A100, .dark-theme .text-divider.teal-A100,
 .teal-A100.material-icons, .teal-A100.material-icon,
 .teal-A100.checkbox-input.active .checkbox, .teal-A100.radiobutton-input.active .radio {
     color: #A7FFEB;
@@ -1818,6 +2082,8 @@ table, .light-theme table,
 }
 
 .teal-A200, .text-primary.teal-A200, .text-secondary.teal-A200, .text-hint.teal-A200, .text-divider.teal-A200,
+.light-theme .teal-A200, .light-theme .text-primary.teal-A200, .light-theme .text-secondary.teal-A200, .text-hint.teal-A200, .light-theme .text-divider.teal-A200,
+.dark-theme .teal-A200, .dark-theme .text-primary.teal-A200, .dark-theme .text-secondary.teal-A200, .text-hint.teal-A200, .dark-theme .text-divider.teal-A200,
 .teal-A200.material-icons, .teal-A200.material-icon,
 .teal-A200.checkbox-input.active .checkbox, .teal-A200.radiobutton-input.active .radio {
     color: #64FFDA;
@@ -1825,6 +2091,8 @@ table, .light-theme table,
 }
 
 .teal-A400, .text-primary.teal-A400, .text-secondary.teal-A400, .text-hint.teal-A400, .text-divider.teal-A400,
+.light-theme .teal-A400, .light-theme .text-primary.teal-A400, .light-theme .text-secondary.teal-A400, .text-hint.teal-A400, .light-theme .text-divider.teal-A400,
+.dark-theme .teal-A400, .dark-theme .text-primary.teal-A400, .dark-theme .text-secondary.teal-A400, .text-hint.teal-A400, .dark-theme .text-divider.teal-A400,
 .teal-A400.material-icons, .teal-A400.material-icon,
 .teal-A400.checkbox-input.active .checkbox, .teal-A400.radiobutton-input.active .radio {
     color: #1DE9B6;
@@ -1832,6 +2100,8 @@ table, .light-theme table,
 }
 
 .teal-A700, .text-primary.teal-A700, .text-secondary.teal-A700, .text-hint.teal-A700, .text-divider.teal-A700,
+.light-theme .teal-A700, .light-theme .text-primary.teal-A700, .light-theme .text-secondary.teal-A700, .text-hint.teal-A700, .light-theme .text-divider.teal-A700,
+.dark-theme .teal-A700, .dark-theme .text-primary.teal-A700, .dark-theme .text-secondary.teal-A700, .text-hint.teal-A700, .dark-theme .text-divider.teal-A700,
 .teal-A700.material-icons, .teal-A700.material-icon,
 .teal-A700.checkbox-input.active .checkbox, .teal-A700.radiobutton-input.active .radio {
     color: #00BFA5;
@@ -1839,6 +2109,8 @@ table, .light-theme table,
 }
 
 .green-50, .text-primary.green-50, .text-secondary.green-50, .text-hint.green-50, .text-divider.green-50,
+.light-theme .green-50, .light-theme .text-primary.green-50, .light-theme .text-secondary.green-50, .text-hint.green-50, .light-theme .text-divider.green-50,
+.dark-theme .green-50, .dark-theme .text-primary.green-50, .dark-theme .text-secondary.green-50, .text-hint.green-50, .dark-theme .text-divider.green-50,
 .green-50.material-icons, .green-50.material-icon,
 .green-50.checkbox-input.active .checkbox, .green-50.radiobutton-input.active .radio {
     color: #E8F5E9;
@@ -1846,6 +2118,8 @@ table, .light-theme table,
 }
 
 .green-100, .text-primary.green-100, .text-secondary.green-100, .text-hint.green-100, .text-divider.green-100,
+.light-theme .green-100, .light-theme .text-primary.green-100, .light-theme .text-secondary.green-100, .text-hint.green-100, .light-theme .text-divider.green-100,
+.dark-theme .green-100, .dark-theme .text-primary.green-100, .dark-theme .text-secondary.green-100, .text-hint.green-100, .dark-theme .text-divider.green-100,
 .green-100.material-icons, .green-100.material-icon,
 .green-100.checkbox-input.active .checkbox, .green-100.radiobutton-input.active .radio {
     color: #C8E6C9;
@@ -1853,6 +2127,8 @@ table, .light-theme table,
 }
 
 .green-200, .text-primary.green-200, .text-secondary.green-200, .text-hint.green-200, .text-divider.green-200,
+.light-theme .green-200, .light-theme .text-primary.green-200, .light-theme .text-secondary.green-200, .text-hint.green-200, .light-theme .text-divider.green-200,
+.dark-theme .green-200, .dark-theme .text-primary.green-200, .dark-theme .text-secondary.green-200, .text-hint.green-200, .dark-theme .text-divider.green-200,
 .green-200.material-icons, .green-200.material-icon,
 .green-200.checkbox-input.active .checkbox, .green-200.radiobutton-input.active .radio {
     color: #A5D6A7;
@@ -1860,6 +2136,8 @@ table, .light-theme table,
 }
 
 .green-300, .text-primary.green-300, .text-secondary.green-300, .text-hint.green-300, .text-divider.green-300,
+.light-theme .green-300, .light-theme .text-primary.green-300, .light-theme .text-secondary.green-300, .text-hint.green-300, .light-theme .text-divider.green-300,
+.dark-theme .green-300, .dark-theme .text-primary.green-300, .dark-theme .text-secondary.green-300, .text-hint.green-300, .dark-theme .text-divider.green-300,
 .green-300.material-icons, .green-300.material-icon,
 .green-300.checkbox-input.active .checkbox, .green-300.radiobutton-input.active .radio {
     color: #81C784;
@@ -1867,6 +2145,8 @@ table, .light-theme table,
 }
 
 .green-400, .text-primary.green-400, .text-secondary.green-400, .text-hint.green-400, .text-divider.green-400,
+.light-theme .green-400, .light-theme .text-primary.green-400, .light-theme .text-secondary.green-400, .text-hint.green-400, .light-theme .text-divider.green-400,
+.dark-theme .green-400, .dark-theme .text-primary.green-400, .dark-theme .text-secondary.green-400, .text-hint.green-400, .dark-theme .text-divider.green-400,
 .green-400.material-icons, .green-400.material-icon,
 .green-400.checkbox-input.active .checkbox, .green-400.radiobutton-input.active .radio {
     color: #66BB6A;
@@ -1874,9 +2154,13 @@ table, .light-theme table,
 }
 
 .green, .text-primary.green, .text-secondary.green, .text-hint.green, .text-divider.green,
+.light-theme .green, .light-theme .text-primary.green, .light-theme .text-secondary.green, .text-hint.green, .light-theme .text-divider.green,
+.dark-theme .green, .dark-theme .text-primary.green, .dark-theme .text-secondary.green, .text-hint.green, .dark-theme .text-divider.green,
 .green.material-icons, .green.material-icon,
 .green.checkbox-input.active .checkbox, .green.radiobutton-input.active .radio,
 .green-500, .text-primary.green-500, .text-secondary.green-500, .text-hint.green-500, .text-divider.green-500,
+.light-theme .green-500, .light-theme .text-primary.green-500, .light-theme .text-secondary.green-500, .text-hint.green-500, .light-theme .text-divider.green-500,
+.dark-theme .green-500, .dark-theme .text-primary.green-500, .dark-theme .text-secondary.green-500, .text-hint.green-500, .dark-theme .text-divider.green-500,
 .green-500.material-icons, .green-500.material-icon,
 .green-500.checkbox-input.active .checkbox, .green-500.radiobutton-input.active .radio {
     color: #4CAF50;
@@ -1884,6 +2168,8 @@ table, .light-theme table,
 }
 
 .green-600, .text-primary.green-600, .text-secondary.green-600, .text-hint.green-600, .text-divider.green-600,
+.light-theme .green-600, .light-theme .text-primary.green-600, .light-theme .text-secondary.green-600, .text-hint.green-600, .light-theme .text-divider.green-600,
+.dark-theme .green-600, .dark-theme .text-primary.green-600, .dark-theme .text-secondary.green-600, .text-hint.green-600, .dark-theme .text-divider.green-600,
 .green-600.material-icons, .green-600.material-icon,
 .green-600.checkbox-input.active .checkbox, .green-600.radiobutton-input.active .radio {
     color: #43A047;
@@ -1891,6 +2177,8 @@ table, .light-theme table,
 }
 
 .green-700, .text-primary.green-700, .text-secondary.green-700, .text-hint.green-700, .text-divider.green-700,
+.light-theme .green-700, .light-theme .text-primary.green-700, .light-theme .text-secondary.green-700, .text-hint.green-700, .light-theme .text-divider.green-700,
+.dark-theme .green-700, .dark-theme .text-primary.green-700, .dark-theme .text-secondary.green-700, .text-hint.green-700, .dark-theme .text-divider.green-700,
 .green-700.material-icons, .green-700.material-icon,
 .green-700.checkbox-input.active .checkbox, .green-700.radiobutton-input.active .radio {
     color: #388E3C;
@@ -1898,6 +2186,8 @@ table, .light-theme table,
 }
 
 .green-800, .text-primary.green-800, .text-secondary.green-800, .text-hint.green-800, .text-divider.green-800,
+.light-theme .green-800, .light-theme .text-primary.green-800, .light-theme .text-secondary.green-800, .text-hint.green-800, .light-theme .text-divider.green-800,
+.dark-theme .green-800, .dark-theme .text-primary.green-800, .dark-theme .text-secondary.green-800, .text-hint.green-800, .dark-theme .text-divider.green-800,
 .green-800.material-icons, .green-800.material-icon,
 .green-800.checkbox-input.active .checkbox, .green-800.radiobutton-input.active .radio {
     color: #2E7D32;
@@ -1905,6 +2195,8 @@ table, .light-theme table,
 }
 
 .green-900, .text-primary.green-900, .text-secondary.green-900, .text-hint.green-900, .text-divider.green-900,
+.light-theme .green-900, .light-theme .text-primary.green-900, .light-theme .text-secondary.green-900, .text-hint.green-900, .light-theme .text-divider.green-900,
+.dark-theme .green-900, .dark-theme .text-primary.green-900, .dark-theme .text-secondary.green-900, .text-hint.green-900, .dark-theme .text-divider.green-900,
 .green-900.material-icons, .green-900.material-icon,
 .green-900.checkbox-input.active .checkbox, .green-900.radiobutton-input.active .radio {
     color: #1B5E20;
@@ -1912,6 +2204,8 @@ table, .light-theme table,
 }
 
 .green-A100, .text-primary.green-A100, .text-secondary.green-A100, .text-hint.green-A100, .text-divider.green-A100,
+.light-theme .green-A100, .light-theme .text-primary.green-A100, .light-theme .text-secondary.green-A100, .text-hint.green-A100, .light-theme .text-divider.green-A100,
+.dark-theme .green-A100, .dark-theme .text-primary.green-A100, .dark-theme .text-secondary.green-A100, .text-hint.green-A100, .dark-theme .text-divider.green-A100,
 .green-A100.material-icons, .green-A100.material-icon,
 .green-A100.checkbox-input.active .checkbox, .green-A100.radiobutton-input.active .radio {
     color: #B9F6CA;
@@ -1919,6 +2213,8 @@ table, .light-theme table,
 }
 
 .green-A200, .text-primary.green-A200, .text-secondary.green-A200, .text-hint.green-A200, .text-divider.green-A200,
+.light-theme .green-A200, .light-theme .text-primary.green-A200, .light-theme .text-secondary.green-A200, .text-hint.green-A200, .light-theme .text-divider.green-A200,
+.dark-theme .green-A200, .dark-theme .text-primary.green-A200, .dark-theme .text-secondary.green-A200, .text-hint.green-A200, .dark-theme .text-divider.green-A200,
 .green-A200.material-icons, .green-A200.material-icon,
 .green-A200.checkbox-input.active .checkbox, .green-A200.radiobutton-input.active .radio {
     color: #69F0AE;
@@ -1926,6 +2222,8 @@ table, .light-theme table,
 }
 
 .green-A400, .text-primary.green-A400, .text-secondary.green-A400, .text-hint.green-A400, .text-divider.green-A400,
+.light-theme .green-A400, .light-theme .text-primary.green-A400, .light-theme .text-secondary.green-A400, .text-hint.green-A400, .light-theme .text-divider.green-A400,
+.dark-theme .green-A400, .dark-theme .text-primary.green-A400, .dark-theme .text-secondary.green-A400, .text-hint.green-A400, .dark-theme .text-divider.green-A400,
 .green-A400.material-icons, .green-A400.material-icon,
 .green-A400.checkbox-input.active .checkbox, .green-A400.radiobutton-input.active .radio {
     color: #00E676;
@@ -1933,6 +2231,8 @@ table, .light-theme table,
 }
 
 .green-A700, .text-primary.green-A700, .text-secondary.green-A700, .text-hint.green-A700, .text-divider.green-A700,
+.light-theme .green-A700, .light-theme .text-primary.green-A700, .light-theme .text-secondary.green-A700, .text-hint.green-A700, .light-theme .text-divider.green-A700,
+.dark-theme .green-A700, .dark-theme .text-primary.green-A700, .dark-theme .text-secondary.green-A700, .text-hint.green-A700, .dark-theme .text-divider.green-A700,
 .green-A700.material-icons, .green-A700.material-icon,
 .green-A700.checkbox-input.active .checkbox, .green-A700.radiobutton-input.active .radio {
     color: #00C853;
@@ -1940,6 +2240,8 @@ table, .light-theme table,
 }
 
 .light-green-50, .text-primary.light-green-50, .text-secondary.light-green-50, .text-hint.light-green-50, .text-divider.light-green-50,
+.light-theme .light-green-50, .light-theme .text-primary.light-green-50, .light-theme .text-secondary.light-green-50, .text-hint.light-green-50, .light-theme .text-divider.light-green-50,
+.dark-theme .light-green-50, .dark-theme .text-primary.light-green-50, .dark-theme .text-secondary.light-green-50, .text-hint.light-green-50, .dark-theme .text-divider.light-green-50,
 .light-green-50.material-icons, .light-green-50.material-icon,
 .light-green-50.checkbox-input.active .checkbox, .light-green-50.radiobutton-input.active .radio {
     color: #F1F8E9;
@@ -1947,6 +2249,8 @@ table, .light-theme table,
 }
 
 .light-green-100, .text-primary.light-green-100, .text-secondary.light-green-100, .text-hint.light-green-100, .text-divider.light-green-100,
+.light-theme .light-green-100, .light-theme .text-primary.light-green-100, .light-theme .text-secondary.light-green-100, .text-hint.light-green-100, .light-theme .text-divider.light-green-100,
+.dark-theme .light-green-100, .dark-theme .text-primary.light-green-100, .dark-theme .text-secondary.light-green-100, .text-hint.light-green-100, .dark-theme .text-divider.light-green-100,
 .light-green-100.material-icons, .light-green-100.material-icon,
 .light-green-100.checkbox-input.active .checkbox, .light-green-100.radiobutton-input.active .radio {
     color: #DCEDC8;
@@ -1954,6 +2258,8 @@ table, .light-theme table,
 }
 
 .light-green-200, .text-primary.light-green-200, .text-secondary.light-green-200, .text-hint.light-green-200, .text-divider.light-green-200,
+.light-theme .light-green-200, .light-theme .text-primary.light-green-200, .light-theme .text-secondary.light-green-200, .text-hint.light-green-200, .light-theme .text-divider.light-green-200,
+.dark-theme .light-green-200, .dark-theme .text-primary.light-green-200, .dark-theme .text-secondary.light-green-200, .text-hint.light-green-200, .dark-theme .text-divider.light-green-200,
 .light-green-200.material-icons, .light-green-200.material-icon,
 .light-green-200.checkbox-input.active .checkbox, .light-green-200.radiobutton-input.active .radio {
     color: #C5E1A5;
@@ -1961,6 +2267,8 @@ table, .light-theme table,
 }
 
 .light-green-300, .text-primary.light-green-300, .text-secondary.light-green-300, .text-hint.light-green-300, .text-divider.light-green-300,
+.light-theme .light-green-300, .light-theme .text-primary.light-green-300, .light-theme .text-secondary.light-green-300, .text-hint.light-green-300, .light-theme .text-divider.light-green-300,
+.dark-theme .light-green-300, .dark-theme .text-primary.light-green-300, .dark-theme .text-secondary.light-green-300, .text-hint.light-green-300, .dark-theme .text-divider.light-green-300,
 .light-green-300.material-icons, .light-green-300.material-icon,
 .light-green-300.checkbox-input.active .checkbox, .light-green-300.radiobutton-input.active .radio {
     color: #AED581;
@@ -1968,6 +2276,8 @@ table, .light-theme table,
 }
 
 .light-green-400, .text-primary.light-green-400, .text-secondary.light-green-400, .text-hint.light-green-400, .text-divider.light-green-400,
+.light-theme .light-green-400, .light-theme .text-primary.light-green-400, .light-theme .text-secondary.light-green-400, .text-hint.light-green-400, .light-theme .text-divider.light-green-400,
+.dark-theme .light-green-400, .dark-theme .text-primary.light-green-400, .dark-theme .text-secondary.light-green-400, .text-hint.light-green-400, .dark-theme .text-divider.light-green-400,
 .light-green-400.material-icons, .light-green-400.material-icon,
 .light-green-400.checkbox-input.active .checkbox, .light-green-400.radiobutton-input.active .radio {
     color: #9CCC65;
@@ -1975,9 +2285,13 @@ table, .light-theme table,
 }
 
 .light-green, .text-primary.light-green, .text-secondary.light-green, .text-hint.light-green, .text-divider.light-green,
+.light-theme .light-green, .light-theme .text-primary.light-green, .light-theme .text-secondary.light-green, .text-hint.light-green, .light-theme .text-divider.light-green,
+.dark-theme .light-green, .dark-theme .text-primary.light-green, .dark-theme .text-secondary.light-green, .text-hint.light-green, .dark-theme .text-divider.light-green,
 .light-green.material-icons, .light-green.material-icon,
 .light-green.checkbox-input.active .checkbox, .light-green.radiobutton-input.active .radio,
 .light-green-500, .text-primary.light-green-500, .text-secondary.light-green-500, .text-hint.light-green-500, .text-divider.light-green-500,
+.light-theme .light-green-500, .light-theme .text-primary.light-green-500, .light-theme .text-secondary.light-green-500, .text-hint.light-green-500, .light-theme .text-divider.light-green-500,
+.dark-theme .light-green-500, .dark-theme .text-primary.light-green-500, .dark-theme .text-secondary.light-green-500, .text-hint.light-green-500, .dark-theme .text-divider.light-green-500,
 .light-green-500.material-icons, .light-green-500.material-icon,
 .light-green-500.checkbox-input.active .checkbox, .light-green-500.radiobutton-input.active .radio {
     color: #8BC34A;
@@ -1985,6 +2299,8 @@ table, .light-theme table,
 }
 
 .light-green-600, .text-primary.light-green-600, .text-secondary.light-green-600, .text-hint.light-green-600, .text-divider.light-green-600,
+.light-theme .light-green-600, .light-theme .text-primary.light-green-600, .light-theme .text-secondary.light-green-600, .text-hint.light-green-600, .light-theme .text-divider.light-green-600,
+.dark-theme .light-green-600, .dark-theme .text-primary.light-green-600, .dark-theme .text-secondary.light-green-600, .text-hint.light-green-600, .dark-theme .text-divider.light-green-600,
 .light-green-600.material-icons, .light-green-600.material-icon,
 .light-green-600.checkbox-input.active .checkbox, .light-green-600.radiobutton-input.active .radio {
     color: #7CB342;
@@ -1992,6 +2308,8 @@ table, .light-theme table,
 }
 
 .light-green-700, .text-primary.light-green-700, .text-secondary.light-green-700, .text-hint.light-green-700, .text-divider.light-green-700,
+.light-theme .light-green-700, .light-theme .text-primary.light-green-700, .light-theme .text-secondary.light-green-700, .text-hint.light-green-700, .light-theme .text-divider.light-green-700,
+.dark-theme .light-green-700, .dark-theme .text-primary.light-green-700, .dark-theme .text-secondary.light-green-700, .text-hint.light-green-700, .dark-theme .text-divider.light-green-700,
 .light-green-700.material-icons, .light-green-700.material-icon,
 .light-green-700.checkbox-input.active .checkbox, .light-green-700.radiobutton-input.active .radio {
     color: #689F38;
@@ -1999,6 +2317,8 @@ table, .light-theme table,
 }
 
 .light-green-800, .text-primary.light-green-800, .text-secondary.light-green-800, .text-hint.light-green-800, .text-divider.light-green-800,
+.light-theme .light-green-800, .light-theme .text-primary.light-green-800, .light-theme .text-secondary.light-green-800, .text-hint.light-green-800, .light-theme .text-divider.light-green-800,
+.dark-theme .light-green-800, .dark-theme .text-primary.light-green-800, .dark-theme .text-secondary.light-green-800, .text-hint.light-green-800, .dark-theme .text-divider.light-green-800,
 .light-green-800.material-icons, .light-green-800.material-icon,
 .light-green-800.checkbox-input.active .checkbox, .light-green-800.radiobutton-input.active .radio {
     color: #558B2F;
@@ -2006,6 +2326,8 @@ table, .light-theme table,
 }
 
 .light-green-900, .text-primary.light-green-900, .text-secondary.light-green-900, .text-hint.light-green-900, .text-divider.light-green-900,
+.light-theme .light-green-900, .light-theme .text-primary.light-green-900, .light-theme .text-secondary.light-green-900, .text-hint.light-green-900, .light-theme .text-divider.light-green-900,
+.dark-theme .light-green-900, .dark-theme .text-primary.light-green-900, .dark-theme .text-secondary.light-green-900, .text-hint.light-green-900, .dark-theme .text-divider.light-green-900,
 .light-green-900.material-icons, .light-green-900.material-icon,
 .light-green-900.checkbox-input.active .checkbox, .light-green-900.radiobutton-input.active .radio {
     color: #33691E;
@@ -2013,6 +2335,8 @@ table, .light-theme table,
 }
 
 .light-green-A100, .text-primary.light-green-A100, .text-secondary.light-green-A100, .text-hint.light-green-A100, .text-divider.light-green-A100,
+.light-theme .light-green-A100, .light-theme .text-primary.light-green-A100, .light-theme .text-secondary.light-green-A100, .text-hint.light-green-A100, .light-theme .text-divider.light-green-A100,
+.dark-theme .light-green-A100, .dark-theme .text-primary.light-green-A100, .dark-theme .text-secondary.light-green-A100, .text-hint.light-green-A100, .dark-theme .text-divider.light-green-A100,
 .light-green-A100.material-icons, .light-green-A100.material-icon,
 .light-green-A100.checkbox-input.active .checkbox, .light-green-A100.radiobutton-input.active .radio {
     color: #CCFF90;
@@ -2020,6 +2344,8 @@ table, .light-theme table,
 }
 
 .light-green-A200, .text-primary.light-green-A200, .text-secondary.light-green-A200, .text-hint.light-green-A200, .text-divider.light-green-A200,
+.light-theme .light-green-A200, .light-theme .text-primary.light-green-A200, .light-theme .text-secondary.light-green-A200, .text-hint.light-green-A200, .light-theme .text-divider.light-green-A200,
+.dark-theme .light-green-A200, .dark-theme .text-primary.light-green-A200, .dark-theme .text-secondary.light-green-A200, .text-hint.light-green-A200, .dark-theme .text-divider.light-green-A200,
 .light-green-A200.material-icons, .light-green-A200.material-icon,
 .light-green-A200.checkbox-input.active .checkbox, .light-green-A200.radiobutton-input.active .radio {
     color: #B2FF59;
@@ -2027,6 +2353,8 @@ table, .light-theme table,
 }
 
 .light-green-A400, .text-primary.light-green-A400, .text-secondary.light-green-A400, .text-hint.light-green-A400, .text-divider.light-green-A400,
+.light-theme .light-green-A400, .light-theme .text-primary.light-green-A400, .light-theme .text-secondary.light-green-A400, .text-hint.light-green-A400, .light-theme .text-divider.light-green-A400,
+.dark-theme .light-green-A400, .dark-theme .text-primary.light-green-A400, .dark-theme .text-secondary.light-green-A400, .text-hint.light-green-A400, .dark-theme .text-divider.light-green-A400,
 .light-green-A400.material-icons, .light-green-A400.material-icon,
 .light-green-A400.checkbox-input.active .checkbox, .light-green-A400.radiobutton-input.active .radio {
     color: #76FF03;
@@ -2034,6 +2362,8 @@ table, .light-theme table,
 }
 
 .light-green-A700, .text-primary.light-green-A700, .text-secondary.light-green-A700, .text-hint.light-green-A700, .text-divider.light-green-A700,
+.light-theme .light-green-A700, .light-theme .text-primary.light-green-A700, .light-theme .text-secondary.light-green-A700, .text-hint.light-green-A700, .light-theme .text-divider.light-green-A700,
+.dark-theme .light-green-A700, .dark-theme .text-primary.light-green-A700, .dark-theme .text-secondary.light-green-A700, .text-hint.light-green-A700, .dark-theme .text-divider.light-green-A700,
 .light-green-A700.material-icons, .light-green-A700.material-icon,
 .light-green-A700.checkbox-input.active .checkbox, .light-green-A700.radiobutton-input.active .radio {
     color: #64DD17;
@@ -2041,6 +2371,8 @@ table, .light-theme table,
 }
 
 .lime-50, .text-primary.lime-50, .text-secondary.lime-50, .text-hint.lime-50, .text-divider.lime-50,
+.light-theme .lime-50, .light-theme .text-primary.lime-50, .light-theme .text-secondary.lime-50, .text-hint.lime-50, .light-theme .text-divider.lime-50,
+.dark-theme .lime-50, .dark-theme .text-primary.lime-50, .dark-theme .text-secondary.lime-50, .text-hint.lime-50, .dark-theme .text-divider.lime-50,
 .lime-50.material-icons, .lime-50.material-icon,
 .lime-50.checkbox-input.active .checkbox, .lime-50.radiobutton-input.active .radio {
     color: #F9FBE7;
@@ -2048,6 +2380,8 @@ table, .light-theme table,
 }
 
 .lime-100, .text-primary.lime-100, .text-secondary.lime-100, .text-hint.lime-100, .text-divider.lime-100,
+.light-theme .lime-100, .light-theme .text-primary.lime-100, .light-theme .text-secondary.lime-100, .text-hint.lime-100, .light-theme .text-divider.lime-100,
+.dark-theme .lime-100, .dark-theme .text-primary.lime-100, .dark-theme .text-secondary.lime-100, .text-hint.lime-100, .dark-theme .text-divider.lime-100,
 .lime-100.material-icons, .lime-100.material-icon,
 .lime-100.checkbox-input.active .checkbox, .lime-100.radiobutton-input.active .radio {
     color: #F0F4C3;
@@ -2055,6 +2389,8 @@ table, .light-theme table,
 }
 
 .lime-200, .text-primary.lime-200, .text-secondary.lime-200, .text-hint.lime-200, .text-divider.lime-200,
+.light-theme .lime-200, .light-theme .text-primary.lime-200, .light-theme .text-secondary.lime-200, .text-hint.lime-200, .light-theme .text-divider.lime-200,
+.dark-theme .lime-200, .dark-theme .text-primary.lime-200, .dark-theme .text-secondary.lime-200, .text-hint.lime-200, .dark-theme .text-divider.lime-200,
 .lime-200.material-icons, .lime-200.material-icon,
 .lime-200.checkbox-input.active .checkbox, .lime-200.radiobutton-input.active .radio {
     color: #E6EE9C;
@@ -2062,6 +2398,8 @@ table, .light-theme table,
 }
 
 .lime-300, .text-primary.lime-300, .text-secondary.lime-300, .text-hint.lime-300, .text-divider.lime-300,
+.light-theme .lime-300, .light-theme .text-primary.lime-300, .light-theme .text-secondary.lime-300, .text-hint.lime-300, .light-theme .text-divider.lime-300,
+.dark-theme .lime-300, .dark-theme .text-primary.lime-300, .dark-theme .text-secondary.lime-300, .text-hint.lime-300, .dark-theme .text-divider.lime-300,
 .lime-300.material-icons, .lime-300.material-icon,
 .lime-300.checkbox-input.active .checkbox, .lime-300.radiobutton-input.active .radio {
     color: #DCE775;
@@ -2069,6 +2407,8 @@ table, .light-theme table,
 }
 
 .lime-400, .text-primary.lime-400, .text-secondary.lime-400, .text-hint.lime-400, .text-divider.lime-400,
+.light-theme .lime-400, .light-theme .text-primary.lime-400, .light-theme .text-secondary.lime-400, .text-hint.lime-400, .light-theme .text-divider.lime-400,
+.dark-theme .lime-400, .dark-theme .text-primary.lime-400, .dark-theme .text-secondary.lime-400, .text-hint.lime-400, .dark-theme .text-divider.lime-400,
 .lime-400.material-icons, .lime-400.material-icon,
 .lime-400.checkbox-input.active .checkbox, .lime-400.radiobutton-input.active .radio {
     color: #D4E157;
@@ -2076,9 +2416,13 @@ table, .light-theme table,
 }
 
 .lime, .text-primary.lime, .text-secondary.lime, .text-hint.lime, .text-divider.lime,
+.light-theme .lime, .light-theme .text-primary.lime, .light-theme .text-secondary.lime, .text-hint.lime, .light-theme .text-divider.lime,
+.dark-theme .lime, .dark-theme .text-primary.lime, .dark-theme .text-secondary.lime, .text-hint.lime, .dark-theme .text-divider.lime,
 .lime.material-icons, .lime.material-icon,
 .lime.checkbox-input.active .checkbox, .lime.radiobutton-input.active .radio,
 .lime-500, .text-primary.lime-500, .text-secondary.lime-500, .text-hint.lime-500, .text-divider.lime-500,
+.light-theme .lime-500, .light-theme .text-primary.lime-500, .light-theme .text-secondary.lime-500, .text-hint.lime-500, .light-theme .text-divider.lime-500,
+.dark-theme .lime-500, .dark-theme .text-primary.lime-500, .dark-theme .text-secondary.lime-500, .text-hint.lime-500, .dark-theme .text-divider.lime-500,
 .lime-500.material-icons, .lime-500.material-icon,
 .lime-500.checkbox-input.active .checkbox, .lime-500.radiobutton-input.active .radio {
     color: #CDDC39;
@@ -2086,6 +2430,8 @@ table, .light-theme table,
 }
 
 .lime-600, .text-primary.lime-600, .text-secondary.lime-600, .text-hint.lime-600, .text-divider.lime-600,
+.light-theme .lime-600, .light-theme .text-primary.lime-600, .light-theme .text-secondary.lime-600, .text-hint.lime-600, .light-theme .text-divider.lime-600,
+.dark-theme .lime-600, .dark-theme .text-primary.lime-600, .dark-theme .text-secondary.lime-600, .text-hint.lime-600, .dark-theme .text-divider.lime-600,
 .lime-600.material-icons, .lime-600.material-icon,
 .lime-600.checkbox-input.active .checkbox, .lime-600.radiobutton-input.active .radio {
     color: #C0CA33;
@@ -2093,6 +2439,8 @@ table, .light-theme table,
 }
 
 .lime-700, .text-primary.lime-700, .text-secondary.lime-700, .text-hint.lime-700, .text-divider.lime-700,
+.light-theme .lime-700, .light-theme .text-primary.lime-700, .light-theme .text-secondary.lime-700, .text-hint.lime-700, .light-theme .text-divider.lime-700,
+.dark-theme .lime-700, .dark-theme .text-primary.lime-700, .dark-theme .text-secondary.lime-700, .text-hint.lime-700, .dark-theme .text-divider.lime-700,
 .lime-700.material-icons, .lime-700.material-icon,
 .lime-700.checkbox-input.active .checkbox, .lime-700.radiobutton-input.active .radio {
     color: #AFB42B;
@@ -2100,6 +2448,8 @@ table, .light-theme table,
 }
 
 .lime-800, .text-primary.lime-800, .text-secondary.lime-800, .text-hint.lime-800, .text-divider.lime-800,
+.light-theme .lime-800, .light-theme .text-primary.lime-800, .light-theme .text-secondary.lime-800, .text-hint.lime-800, .light-theme .text-divider.lime-800,
+.dark-theme .lime-800, .dark-theme .text-primary.lime-800, .dark-theme .text-secondary.lime-800, .text-hint.lime-800, .dark-theme .text-divider.lime-800,
 .lime-800.material-icons, .lime-800.material-icon,
 .lime-800.checkbox-input.active .checkbox, .lime-800.radiobutton-input.active .radio {
     color: #9E9D24;
@@ -2107,6 +2457,8 @@ table, .light-theme table,
 }
 
 .lime-900, .text-primary.lime-900, .text-secondary.lime-900, .text-hint.lime-900, .text-divider.lime-900,
+.light-theme .lime-900, .light-theme .text-primary.lime-900, .light-theme .text-secondary.lime-900, .text-hint.lime-900, .light-theme .text-divider.lime-900,
+.dark-theme .lime-900, .dark-theme .text-primary.lime-900, .dark-theme .text-secondary.lime-900, .text-hint.lime-900, .dark-theme .text-divider.lime-900,
 .lime-900.material-icons, .lime-900.material-icon,
 .lime-900.checkbox-input.active .checkbox, .lime-900.radiobutton-input.active .radio {
     color: #827717;
@@ -2114,6 +2466,8 @@ table, .light-theme table,
 }
 
 .lime-A100, .text-primary.lime-A100, .text-secondary.lime-A100, .text-hint.lime-A100, .text-divider.lime-A100,
+.light-theme .lime-A100, .light-theme .text-primary.lime-A100, .light-theme .text-secondary.lime-A100, .text-hint.lime-A100, .light-theme .text-divider.lime-A100,
+.dark-theme .lime-A100, .dark-theme .text-primary.lime-A100, .dark-theme .text-secondary.lime-A100, .text-hint.lime-A100, .dark-theme .text-divider.lime-A100,
 .lime-A100.material-icons, .lime-A100.material-icon,
 .lime-A100.checkbox-input.active .checkbox, .lime-A100.radiobutton-input.active .radio {
     color: #F4FF81;
@@ -2121,6 +2475,8 @@ table, .light-theme table,
 }
 
 .lime-A200, .text-primary.lime-A200, .text-secondary.lime-A200, .text-hint.lime-A200, .text-divider.lime-A200,
+.light-theme .lime-A200, .light-theme .text-primary.lime-A200, .light-theme .text-secondary.lime-A200, .text-hint.lime-A200, .light-theme .text-divider.lime-A200,
+.dark-theme .lime-A200, .dark-theme .text-primary.lime-A200, .dark-theme .text-secondary.lime-A200, .text-hint.lime-A200, .dark-theme .text-divider.lime-A200,
 .lime-A200.material-icons, .lime-A200.material-icon,
 .lime-A200.checkbox-input.active .checkbox, .lime-A200.radiobutton-input.active .radio {
     color: #EEFF41;
@@ -2128,6 +2484,8 @@ table, .light-theme table,
 }
 
 .lime-A400, .text-primary.lime-A400, .text-secondary.lime-A400, .text-hint.lime-A400, .text-divider.lime-A400,
+.light-theme .lime-A400, .light-theme .text-primary.lime-A400, .light-theme .text-secondary.lime-A400, .text-hint.lime-A400, .light-theme .text-divider.lime-A400,
+.dark-theme .lime-A400, .dark-theme .text-primary.lime-A400, .dark-theme .text-secondary.lime-A400, .text-hint.lime-A400, .dark-theme .text-divider.lime-A400,
 .lime-A400.material-icons, .lime-A400.material-icon,
 .lime-A400.checkbox-input.active .checkbox, .lime-A400.radiobutton-input.active .radio {
     color: #C6FF00;
@@ -2135,6 +2493,8 @@ table, .light-theme table,
 }
 
 .lime-A700, .text-primary.lime-A700, .text-secondary.lime-A700, .text-hint.lime-A700, .text-divider.lime-A700,
+.light-theme .lime-A700, .light-theme .text-primary.lime-A700, .light-theme .text-secondary.lime-A700, .text-hint.lime-A700, .light-theme .text-divider.lime-A700,
+.dark-theme .lime-A700, .dark-theme .text-primary.lime-A700, .dark-theme .text-secondary.lime-A700, .text-hint.lime-A700, .dark-theme .text-divider.lime-A700,
 .lime-A700.material-icons, .lime-A700.material-icon,
 .lime-A700.checkbox-input.active .checkbox, .lime-A700.radiobutton-input.active .radio {
     color: #AEEA00;
@@ -2142,6 +2502,8 @@ table, .light-theme table,
 }
 
 .yellow-50, .text-primary.yellow-50, .text-secondary.yellow-50, .text-hint.yellow-50, .text-divider.yellow-50,
+.light-theme .yellow-50, .light-theme .text-primary.yellow-50, .light-theme .text-secondary.yellow-50, .text-hint.yellow-50, .light-theme .text-divider.yellow-50,
+.dark-theme .yellow-50, .dark-theme .text-primary.yellow-50, .dark-theme .text-secondary.yellow-50, .text-hint.yellow-50, .dark-theme .text-divider.yellow-50,
 .yellow-50.material-icons, .yellow-50.material-icon,
 .yellow-50.checkbox-input.active .checkbox, .yellow-50.radiobutton-input.active .radio {
     color: #FFFDE7;
@@ -2149,6 +2511,8 @@ table, .light-theme table,
 }
 
 .yellow-100, .text-primary.yellow-100, .text-secondary.yellow-100, .text-hint.yellow-100, .text-divider.yellow-100,
+.light-theme .yellow-100, .light-theme .text-primary.yellow-100, .light-theme .text-secondary.yellow-100, .text-hint.yellow-100, .light-theme .text-divider.yellow-100,
+.dark-theme .yellow-100, .dark-theme .text-primary.yellow-100, .dark-theme .text-secondary.yellow-100, .text-hint.yellow-100, .dark-theme .text-divider.yellow-100,
 .yellow-100.material-icons, .yellow-100.material-icon,
 .yellow-100.checkbox-input.active .checkbox, .yellow-100.radiobutton-input.active .radio {
     color: #FFF9C4;
@@ -2156,6 +2520,8 @@ table, .light-theme table,
 }
 
 .yellow-200, .text-primary.yellow-200, .text-secondary.yellow-200, .text-hint.yellow-200, .text-divider.yellow-200,
+.light-theme .yellow-200, .light-theme .text-primary.yellow-200, .light-theme .text-secondary.yellow-200, .text-hint.yellow-200, .light-theme .text-divider.yellow-200,
+.dark-theme .yellow-200, .dark-theme .text-primary.yellow-200, .dark-theme .text-secondary.yellow-200, .text-hint.yellow-200, .dark-theme .text-divider.yellow-200,
 .yellow-200.material-icons, .yellow-200.material-icon,
 .yellow-200.checkbox-input.active .checkbox, .yellow-200.radiobutton-input.active .radio {
     color: #FFF59D;
@@ -2163,6 +2529,8 @@ table, .light-theme table,
 }
 
 .yellow-300, .text-primary.yellow-300, .text-secondary.yellow-300, .text-hint.yellow-300, .text-divider.yellow-300,
+.light-theme .yellow-300, .light-theme .text-primary.yellow-300, .light-theme .text-secondary.yellow-300, .text-hint.yellow-300, .light-theme .text-divider.yellow-300,
+.dark-theme .yellow-300, .dark-theme .text-primary.yellow-300, .dark-theme .text-secondary.yellow-300, .text-hint.yellow-300, .dark-theme .text-divider.yellow-300,
 .yellow-300.material-icons, .yellow-300.material-icon,
 .yellow-300.checkbox-input.active .checkbox, .yellow-300.radiobutton-input.active .radio {
     color: #FFF176;
@@ -2170,6 +2538,8 @@ table, .light-theme table,
 }
 
 .yellow-400, .text-primary.yellow-400, .text-secondary.yellow-400, .text-hint.yellow-400, .text-divider.yellow-400,
+.light-theme .yellow-400, .light-theme .text-primary.yellow-400, .light-theme .text-secondary.yellow-400, .text-hint.yellow-400, .light-theme .text-divider.yellow-400,
+.dark-theme .yellow-400, .dark-theme .text-primary.yellow-400, .dark-theme .text-secondary.yellow-400, .text-hint.yellow-400, .dark-theme .text-divider.yellow-400,
 .yellow-400.material-icons, .yellow-400.material-icon,
 .yellow-400.checkbox-input.active .checkbox, .yellow-400.radiobutton-input.active .radio {
     color: #FFEE58;
@@ -2177,9 +2547,13 @@ table, .light-theme table,
 }
 
 .yellow, .text-primary.yellow, .text-secondary.yellow, .text-hint.yellow, .text-divider.yellow,
+.light-theme .yellow, .light-theme .text-primary.yellow, .light-theme .text-secondary.yellow, .text-hint.yellow, .light-theme .text-divider.yellow,
+.dark-theme .yellow, .dark-theme .text-primary.yellow, .dark-theme .text-secondary.yellow, .text-hint.yellow, .dark-theme .text-divider.yellow,
 .yellow.material-icons, .yellow.material-icon,
 .yellow.checkbox-input.active .checkbox, .yellow.radiobutton-input.active .radio,
 .yellow-500, .text-primary.yellow-500, .text-secondary.yellow-500, .text-hint.yellow-500, .text-divider.yellow-500,
+.light-theme .yellow-500, .light-theme .text-primary.yellow-500, .light-theme .text-secondary.yellow-500, .text-hint.yellow-500, .light-theme .text-divider.yellow-500,
+.dark-theme .yellow-500, .dark-theme .text-primary.yellow-500, .dark-theme .text-secondary.yellow-500, .text-hint.yellow-500, .dark-theme .text-divider.yellow-500,
 .yellow-500.material-icons, .yellow-500.material-icon,
 .yellow-500.checkbox-input.active .checkbox, .yellow-500.radiobutton-input.active .radio {
     color: #FFEB3B;
@@ -2187,6 +2561,8 @@ table, .light-theme table,
 }
 
 .yellow-600, .text-primary.yellow-600, .text-secondary.yellow-600, .text-hint.yellow-600, .text-divider.yellow-600,
+.light-theme .yellow-600, .light-theme .text-primary.yellow-600, .light-theme .text-secondary.yellow-600, .text-hint.yellow-600, .light-theme .text-divider.yellow-600,
+.dark-theme .yellow-600, .dark-theme .text-primary.yellow-600, .dark-theme .text-secondary.yellow-600, .text-hint.yellow-600, .dark-theme .text-divider.yellow-600,
 .yellow-600.material-icons, .yellow-600.material-icon,
 .yellow-600.checkbox-input.active .checkbox, .yellow-600.radiobutton-input.active .radio {
     color: #FDD835;
@@ -2194,6 +2570,8 @@ table, .light-theme table,
 }
 
 .yellow-700, .text-primary.yellow-700, .text-secondary.yellow-700, .text-hint.yellow-700, .text-divider.yellow-700,
+.light-theme .yellow-700, .light-theme .text-primary.yellow-700, .light-theme .text-secondary.yellow-700, .text-hint.yellow-700, .light-theme .text-divider.yellow-700,
+.dark-theme .yellow-700, .dark-theme .text-primary.yellow-700, .dark-theme .text-secondary.yellow-700, .text-hint.yellow-700, .dark-theme .text-divider.yellow-700,
 .yellow-700.material-icons, .yellow-700.material-icon,
 .yellow-700.checkbox-input.active .checkbox, .yellow-700.radiobutton-input.active .radio {
     color: #FBC02D;
@@ -2201,6 +2579,8 @@ table, .light-theme table,
 }
 
 .yellow-800, .text-primary.yellow-800, .text-secondary.yellow-800, .text-hint.yellow-800, .text-divider.yellow-800,
+.light-theme .yellow-800, .light-theme .text-primary.yellow-800, .light-theme .text-secondary.yellow-800, .text-hint.yellow-800, .light-theme .text-divider.yellow-800,
+.dark-theme .yellow-800, .dark-theme .text-primary.yellow-800, .dark-theme .text-secondary.yellow-800, .text-hint.yellow-800, .dark-theme .text-divider.yellow-800,
 .yellow-800.material-icons, .yellow-800.material-icon,
 .yellow-800.checkbox-input.active .checkbox, .yellow-800.radiobutton-input.active .radio {
     color: #F9A825;
@@ -2208,6 +2588,8 @@ table, .light-theme table,
 }
 
 .yellow-900, .text-primary.yellow-900, .text-secondary.yellow-900, .text-hint.yellow-900, .text-divider.yellow-900,
+.light-theme .yellow-900, .light-theme .text-primary.yellow-900, .light-theme .text-secondary.yellow-900, .text-hint.yellow-900, .light-theme .text-divider.yellow-900,
+.dark-theme .yellow-900, .dark-theme .text-primary.yellow-900, .dark-theme .text-secondary.yellow-900, .text-hint.yellow-900, .dark-theme .text-divider.yellow-900,
 .yellow-900.material-icons, .yellow-900.material-icon,
 .yellow-900.checkbox-input.active .checkbox, .yellow-900.radiobutton-input.active .radio {
     color: #F57F17;
@@ -2215,6 +2597,8 @@ table, .light-theme table,
 }
 
 .yellow-A100, .text-primary.yellow-A100, .text-secondary.yellow-A100, .text-hint.yellow-A100, .text-divider.yellow-A100,
+.light-theme .yellow-A100, .light-theme .text-primary.yellow-A100, .light-theme .text-secondary.yellow-A100, .text-hint.yellow-A100, .light-theme .text-divider.yellow-A100,
+.dark-theme .yellow-A100, .dark-theme .text-primary.yellow-A100, .dark-theme .text-secondary.yellow-A100, .text-hint.yellow-A100, .dark-theme .text-divider.yellow-A100,
 .yellow-A100.material-icons, .yellow-A100.material-icon,
 .yellow-A100.checkbox-input.active .checkbox, .yellow-A100.radiobutton-input.active .radio {
     color: #FFFF8D;
@@ -2222,6 +2606,8 @@ table, .light-theme table,
 }
 
 .yellow-A200, .text-primary.yellow-A200, .text-secondary.yellow-A200, .text-hint.yellow-A200, .text-divider.yellow-A200,
+.light-theme .yellow-A200, .light-theme .text-primary.yellow-A200, .light-theme .text-secondary.yellow-A200, .text-hint.yellow-A200, .light-theme .text-divider.yellow-A200,
+.dark-theme .yellow-A200, .dark-theme .text-primary.yellow-A200, .dark-theme .text-secondary.yellow-A200, .text-hint.yellow-A200, .dark-theme .text-divider.yellow-A200,
 .yellow-A200.material-icons, .yellow-A200.material-icon,
 .yellow-A200.checkbox-input.active .checkbox, .yellow-A200.radiobutton-input.active .radio {
     color: #FFFF00;
@@ -2229,6 +2615,8 @@ table, .light-theme table,
 }
 
 .yellow-A400, .text-primary.yellow-A400, .text-secondary.yellow-A400, .text-hint.yellow-A400, .text-divider.yellow-A400,
+.light-theme .yellow-A400, .light-theme .text-primary.yellow-A400, .light-theme .text-secondary.yellow-A400, .text-hint.yellow-A400, .light-theme .text-divider.yellow-A400,
+.dark-theme .yellow-A400, .dark-theme .text-primary.yellow-A400, .dark-theme .text-secondary.yellow-A400, .text-hint.yellow-A400, .dark-theme .text-divider.yellow-A400,
 .yellow-A400.material-icons, .yellow-A400.material-icon,
 .yellow-A400.checkbox-input.active .checkbox, .yellow-A400.radiobutton-input.active .radio {
     color: #FFEA00;
@@ -2236,6 +2624,8 @@ table, .light-theme table,
 }
 
 .yellow-A700, .text-primary.yellow-A700, .text-secondary.yellow-A700, .text-hint.yellow-A700, .text-divider.yellow-A700,
+.light-theme .yellow-A700, .light-theme .text-primary.yellow-A700, .light-theme .text-secondary.yellow-A700, .text-hint.yellow-A700, .light-theme .text-divider.yellow-A700,
+.dark-theme .yellow-A700, .dark-theme .text-primary.yellow-A700, .dark-theme .text-secondary.yellow-A700, .text-hint.yellow-A700, .dark-theme .text-divider.yellow-A700,
 .yellow-A700.material-icons, .yellow-A700.material-icon,
 .yellow-A700.checkbox-input.active .checkbox, .yellow-A700.radiobutton-input.active .radio {
     color: #FFD600;
@@ -2243,6 +2633,8 @@ table, .light-theme table,
 }
 
 .amber-50, .text-primary.amber-50, .text-secondary.amber-50, .text-hint.amber-50, .text-divider.amber-50,
+.light-theme .amber-50, .light-theme .text-primary.amber-50, .light-theme .text-secondary.amber-50, .text-hint.amber-50, .light-theme .text-divider.amber-50,
+.dark-theme .amber-50, .dark-theme .text-primary.amber-50, .dark-theme .text-secondary.amber-50, .text-hint.amber-50, .dark-theme .text-divider.amber-50,
 .amber-50.material-icons, .amber-50.material-icon,
 .amber-50.checkbox-input.active .checkbox, .amber-50.radiobutton-input.active .radio {
     color: #FFF8E1;
@@ -2250,6 +2642,8 @@ table, .light-theme table,
 }
 
 .amber-100, .text-primary.amber-100, .text-secondary.amber-100, .text-hint.amber-100, .text-divider.amber-100,
+.light-theme .amber-100, .light-theme .text-primary.amber-100, .light-theme .text-secondary.amber-100, .text-hint.amber-100, .light-theme .text-divider.amber-100,
+.dark-theme .amber-100, .dark-theme .text-primary.amber-100, .dark-theme .text-secondary.amber-100, .text-hint.amber-100, .dark-theme .text-divider.amber-100,
 .amber-100.material-icons, .amber-100.material-icon,
 .amber-100.checkbox-input.active .checkbox, .amber-100.radiobutton-input.active .radio {
     color: #FFECB3;
@@ -2257,6 +2651,8 @@ table, .light-theme table,
 }
 
 .amber-200, .text-primary.amber-200, .text-secondary.amber-200, .text-hint.amber-200, .text-divider.amber-200,
+.light-theme .amber-200, .light-theme .text-primary.amber-200, .light-theme .text-secondary.amber-200, .text-hint.amber-200, .light-theme .text-divider.amber-200,
+.dark-theme .amber-200, .dark-theme .text-primary.amber-200, .dark-theme .text-secondary.amber-200, .text-hint.amber-200, .dark-theme .text-divider.amber-200,
 .amber-200.material-icons, .amber-200.material-icon,
 .amber-200.checkbox-input.active .checkbox, .amber-200.radiobutton-input.active .radio {
     color: #FFE082;
@@ -2264,6 +2660,8 @@ table, .light-theme table,
 }
 
 .amber-300, .text-primary.amber-300, .text-secondary.amber-300, .text-hint.amber-300, .text-divider.amber-300,
+.light-theme .amber-300, .light-theme .text-primary.amber-300, .light-theme .text-secondary.amber-300, .text-hint.amber-300, .light-theme .text-divider.amber-300,
+.dark-theme .amber-300, .dark-theme .text-primary.amber-300, .dark-theme .text-secondary.amber-300, .text-hint.amber-300, .dark-theme .text-divider.amber-300,
 .amber-300.material-icons, .amber-300.material-icon,
 .amber-300.checkbox-input.active .checkbox, .amber-300.radiobutton-input.active .radio {
     color: #FFD54F;
@@ -2271,6 +2669,8 @@ table, .light-theme table,
 }
 
 .amber-400, .text-primary.amber-400, .text-secondary.amber-400, .text-hint.amber-400, .text-divider.amber-400,
+.light-theme .amber-400, .light-theme .text-primary.amber-400, .light-theme .text-secondary.amber-400, .text-hint.amber-400, .light-theme .text-divider.amber-400,
+.dark-theme .amber-400, .dark-theme .text-primary.amber-400, .dark-theme .text-secondary.amber-400, .text-hint.amber-400, .dark-theme .text-divider.amber-400,
 .amber-400.material-icons, .amber-400.material-icon,
 .amber-400.checkbox-input.active .checkbox, .amber-400.radiobutton-input.active .radio {
     color: #FFCA28;
@@ -2278,9 +2678,13 @@ table, .light-theme table,
 }
 
 .amber, .text-primary.amber, .text-secondary.amber, .text-hint.amber, .text-divider.amber,
+.light-theme .amber, .light-theme .text-primary.amber, .light-theme .text-secondary.amber, .text-hint.amber, .light-theme .text-divider.amber,
+.dark-theme .amber, .dark-theme .text-primary.amber, .dark-theme .text-secondary.amber, .text-hint.amber, .dark-theme .text-divider.amber,
 .amber.material-icons, .amber.material-icon,
 .amber.checkbox-input.active .checkbox, .amber.radiobutton-input.active .radio,
 .amber-500, .text-primary.amber-500, .text-secondary.amber-500, .text-hint.amber-500, .text-divider.amber-500,
+.light-theme .amber-500, .light-theme .text-primary.amber-500, .light-theme .text-secondary.amber-500, .text-hint.amber-500, .light-theme .text-divider.amber-500,
+.dark-theme .amber-500, .dark-theme .text-primary.amber-500, .dark-theme .text-secondary.amber-500, .text-hint.amber-500, .dark-theme .text-divider.amber-500,
 .amber-500.material-icons, .amber-500.material-icon,
 .amber-500.checkbox-input.active .checkbox, .amber-500.radiobutton-input.active .radio {
     color: #FFC107;
@@ -2288,6 +2692,8 @@ table, .light-theme table,
 }
 
 .amber-600, .text-primary.amber-600, .text-secondary.amber-600, .text-hint.amber-600, .text-divider.amber-600,
+.light-theme .amber-600, .light-theme .text-primary.amber-600, .light-theme .text-secondary.amber-600, .text-hint.amber-600, .light-theme .text-divider.amber-600,
+.dark-theme .amber-600, .dark-theme .text-primary.amber-600, .dark-theme .text-secondary.amber-600, .text-hint.amber-600, .dark-theme .text-divider.amber-600,
 .amber-600.material-icons, .amber-600.material-icon,
 .amber-600.checkbox-input.active .checkbox, .amber-600.radiobutton-input.active .radio {
     color: #FFB300;
@@ -2295,6 +2701,8 @@ table, .light-theme table,
 }
 
 .amber-700, .text-primary.amber-700, .text-secondary.amber-700, .text-hint.amber-700, .text-divider.amber-700,
+.light-theme .amber-700, .light-theme .text-primary.amber-700, .light-theme .text-secondary.amber-700, .text-hint.amber-700, .light-theme .text-divider.amber-700,
+.dark-theme .amber-700, .dark-theme .text-primary.amber-700, .dark-theme .text-secondary.amber-700, .text-hint.amber-700, .dark-theme .text-divider.amber-700,
 .amber-700.material-icons, .amber-700.material-icon,
 .amber-700.checkbox-input.active .checkbox, .amber-700.radiobutton-input.active .radio {
     color: #FFA000;
@@ -2302,6 +2710,8 @@ table, .light-theme table,
 }
 
 .amber-800, .text-primary.amber-800, .text-secondary.amber-800, .text-hint.amber-800, .text-divider.amber-800,
+.light-theme .amber-800, .light-theme .text-primary.amber-800, .light-theme .text-secondary.amber-800, .text-hint.amber-800, .light-theme .text-divider.amber-800,
+.dark-theme .amber-800, .dark-theme .text-primary.amber-800, .dark-theme .text-secondary.amber-800, .text-hint.amber-800, .dark-theme .text-divider.amber-800,
 .amber-800.material-icons, .amber-800.material-icon,
 .amber-800.checkbox-input.active .checkbox, .amber-800.radiobutton-input.active .radio {
     color: #FF8F00;
@@ -2309,6 +2719,8 @@ table, .light-theme table,
 }
 
 .amber-900, .text-primary.amber-900, .text-secondary.amber-900, .text-hint.amber-900, .text-divider.amber-900,
+.light-theme .amber-900, .light-theme .text-primary.amber-900, .light-theme .text-secondary.amber-900, .text-hint.amber-900, .light-theme .text-divider.amber-900,
+.dark-theme .amber-900, .dark-theme .text-primary.amber-900, .dark-theme .text-secondary.amber-900, .text-hint.amber-900, .dark-theme .text-divider.amber-900,
 .amber-900.material-icons, .amber-900.material-icon,
 .amber-900.checkbox-input.active .checkbox, .amber-900.radiobutton-input.active .radio {
     color: #FF6F00;
@@ -2316,6 +2728,8 @@ table, .light-theme table,
 }
 
 .amber-A100, .text-primary.amber-A100, .text-secondary.amber-A100, .text-hint.amber-A100, .text-divider.amber-A100,
+.light-theme .amber-A100, .light-theme .text-primary.amber-A100, .light-theme .text-secondary.amber-A100, .text-hint.amber-A100, .light-theme .text-divider.amber-A100,
+.dark-theme .amber-A100, .dark-theme .text-primary.amber-A100, .dark-theme .text-secondary.amber-A100, .text-hint.amber-A100, .dark-theme .text-divider.amber-A100,
 .amber-A100.material-icons, .amber-A100.material-icon,
 .amber-A100.checkbox-input.active .checkbox, .amber-A100.radiobutton-input.active .radio {
     color: #FFE57F;
@@ -2323,6 +2737,8 @@ table, .light-theme table,
 }
 
 .amber-A200, .text-primary.amber-A200, .text-secondary.amber-A200, .text-hint.amber-A200, .text-divider.amber-A200,
+.light-theme .amber-A200, .light-theme .text-primary.amber-A200, .light-theme .text-secondary.amber-A200, .text-hint.amber-A200, .light-theme .text-divider.amber-A200,
+.dark-theme .amber-A200, .dark-theme .text-primary.amber-A200, .dark-theme .text-secondary.amber-A200, .text-hint.amber-A200, .dark-theme .text-divider.amber-A200,
 .amber-A200.material-icons, .amber-A200.material-icon,
 .amber-A200.checkbox-input.active .checkbox, .amber-A200.radiobutton-input.active .radio {
     color: #FFD740;
@@ -2330,6 +2746,8 @@ table, .light-theme table,
 }
 
 .amber-A400, .text-primary.amber-A400, .text-secondary.amber-A400, .text-hint.amber-A400, .text-divider.amber-A400,
+.light-theme .amber-A400, .light-theme .text-primary.amber-A400, .light-theme .text-secondary.amber-A400, .text-hint.amber-A400, .light-theme .text-divider.amber-A400,
+.dark-theme .amber-A400, .dark-theme .text-primary.amber-A400, .dark-theme .text-secondary.amber-A400, .text-hint.amber-A400, .dark-theme .text-divider.amber-A400,
 .amber-A400.material-icons, .amber-A400.material-icon,
 .amber-A400.checkbox-input.active .checkbox, .amber-A400.radiobutton-input.active .radio {
     color: #FFC400;
@@ -2337,6 +2755,8 @@ table, .light-theme table,
 }
 
 .amber-A700, .text-primary.amber-A700, .text-secondary.amber-A700, .text-hint.amber-A700, .text-divider.amber-A700,
+.light-theme .amber-A700, .light-theme .text-primary.amber-A700, .light-theme .text-secondary.amber-A700, .text-hint.amber-A700, .light-theme .text-divider.amber-A700,
+.dark-theme .amber-A700, .dark-theme .text-primary.amber-A700, .dark-theme .text-secondary.amber-A700, .text-hint.amber-A700, .dark-theme .text-divider.amber-A700,
 .amber-A700.material-icons, .amber-A700.material-icon,
 .amber-A700.checkbox-input.active .checkbox, .amber-A700.radiobutton-input.active .radio {
     color: #FFAB00;
@@ -2344,6 +2764,8 @@ table, .light-theme table,
 }
 
 .orange-50, .text-primary.orange-50, .text-secondary.orange-50, .text-hint.orange-50, .text-divider.orange-50,
+.light-theme .orange-50, .light-theme .text-primary.orange-50, .light-theme .text-secondary.orange-50, .text-hint.orange-50, .light-theme .text-divider.orange-50,
+.dark-theme .orange-50, .dark-theme .text-primary.orange-50, .dark-theme .text-secondary.orange-50, .text-hint.orange-50, .dark-theme .text-divider.orange-50,
 .orange-50.material-icons, .orange-50.material-icon,
 .orange-50.checkbox-input.active .checkbox, .orange-50.radiobutton-input.active .radio {
     color: #FFF3E0;
@@ -2351,6 +2773,8 @@ table, .light-theme table,
 }
 
 .orange-100, .text-primary.orange-100, .text-secondary.orange-100, .text-hint.orange-100, .text-divider.orange-100,
+.light-theme .orange-100, .light-theme .text-primary.orange-100, .light-theme .text-secondary.orange-100, .text-hint.orange-100, .light-theme .text-divider.orange-100,
+.dark-theme .orange-100, .dark-theme .text-primary.orange-100, .dark-theme .text-secondary.orange-100, .text-hint.orange-100, .dark-theme .text-divider.orange-100,
 .orange-100.material-icons, .orange-100.material-icon,
 .orange-100.checkbox-input.active .checkbox, .orange-100.radiobutton-input.active .radio {
     color: #FFE0B2;
@@ -2358,6 +2782,8 @@ table, .light-theme table,
 }
 
 .orange-200, .text-primary.orange-200, .text-secondary.orange-200, .text-hint.orange-200, .text-divider.orange-200,
+.light-theme .orange-200, .light-theme .text-primary.orange-200, .light-theme .text-secondary.orange-200, .text-hint.orange-200, .light-theme .text-divider.orange-200,
+.dark-theme .orange-200, .dark-theme .text-primary.orange-200, .dark-theme .text-secondary.orange-200, .text-hint.orange-200, .dark-theme .text-divider.orange-200,
 .orange-200.material-icons, .orange-200.material-icon,
 .orange-200.checkbox-input.active .checkbox, .orange-200.radiobutton-input.active .radio {
     color: #FFCC80;
@@ -2365,6 +2791,8 @@ table, .light-theme table,
 }
 
 .orange-300, .text-primary.orange-300, .text-secondary.orange-300, .text-hint.orange-300, .text-divider.orange-300,
+.light-theme .orange-300, .light-theme .text-primary.orange-300, .light-theme .text-secondary.orange-300, .text-hint.orange-300, .light-theme .text-divider.orange-300,
+.dark-theme .orange-300, .dark-theme .text-primary.orange-300, .dark-theme .text-secondary.orange-300, .text-hint.orange-300, .dark-theme .text-divider.orange-300,
 .orange-300.material-icons, .orange-300.material-icon,
 .orange-300.checkbox-input.active .checkbox, .orange-300.radiobutton-input.active .radio {
     color: #FFB74D;
@@ -2372,6 +2800,8 @@ table, .light-theme table,
 }
 
 .orange-400, .text-primary.orange-400, .text-secondary.orange-400, .text-hint.orange-400, .text-divider.orange-400,
+.light-theme .orange-400, .light-theme .text-primary.orange-400, .light-theme .text-secondary.orange-400, .text-hint.orange-400, .light-theme .text-divider.orange-400,
+.dark-theme .orange-400, .dark-theme .text-primary.orange-400, .dark-theme .text-secondary.orange-400, .text-hint.orange-400, .dark-theme .text-divider.orange-400,
 .orange-400.material-icons, .orange-400.material-icon,
 .orange-400.checkbox-input.active .checkbox, .orange-400.radiobutton-input.active .radio {
     color: #FFA726;
@@ -2379,9 +2809,13 @@ table, .light-theme table,
 }
 
 .orange, .text-primary.orange, .text-secondary.orange, .text-hint.orange, .text-divider.orange,
+.light-theme .orange, .light-theme .text-primary.orange, .light-theme .text-secondary.orange, .text-hint.orange, .light-theme .text-divider.orange,
+.dark-theme .orange, .dark-theme .text-primary.orange, .dark-theme .text-secondary.orange, .text-hint.orange, .dark-theme .text-divider.orange,
 .orange.material-icons, .orange.material-icon,
 .orange.checkbox-input.active .checkbox, .orange.radiobutton-input.active .radio,
 .orange-500, .text-primary.orange-500, .text-secondary.orange-500, .text-hint.orange-500, .text-divider.orange-500,
+.light-theme .orange-500, .light-theme .text-primary.orange-500, .light-theme .text-secondary.orange-500, .text-hint.orange-500, .light-theme .text-divider.orange-500,
+.dark-theme .orange-500, .dark-theme .text-primary.orange-500, .dark-theme .text-secondary.orange-500, .text-hint.orange-500, .dark-theme .text-divider.orange-500,
 .orange-500.material-icons, .orange-500.material-icon,
 .orange-500.checkbox-input.active .checkbox, .orange-500.radiobutton-input.active .radio {
     color: #FF9800;
@@ -2389,6 +2823,8 @@ table, .light-theme table,
 }
 
 .orange-600, .text-primary.orange-600, .text-secondary.orange-600, .text-hint.orange-600, .text-divider.orange-600,
+.light-theme .orange-600, .light-theme .text-primary.orange-600, .light-theme .text-secondary.orange-600, .text-hint.orange-600, .light-theme .text-divider.orange-600,
+.dark-theme .orange-600, .dark-theme .text-primary.orange-600, .dark-theme .text-secondary.orange-600, .text-hint.orange-600, .dark-theme .text-divider.orange-600,
 .orange-600.material-icons, .orange-600.material-icon,
 .orange-600.checkbox-input.active .checkbox, .orange-600.radiobutton-input.active .radio {
     color: #FB8C00;
@@ -2396,6 +2832,8 @@ table, .light-theme table,
 }
 
 .orange-700, .text-primary.orange-700, .text-secondary.orange-700, .text-hint.orange-700, .text-divider.orange-700,
+.light-theme .orange-700, .light-theme .text-primary.orange-700, .light-theme .text-secondary.orange-700, .text-hint.orange-700, .light-theme .text-divider.orange-700,
+.dark-theme .orange-700, .dark-theme .text-primary.orange-700, .dark-theme .text-secondary.orange-700, .text-hint.orange-700, .dark-theme .text-divider.orange-700,
 .orange-700.material-icons, .orange-700.material-icon,
 .orange-700.checkbox-input.active .checkbox, .orange-700.radiobutton-input.active .radio {
     color: #F57C00;
@@ -2403,6 +2841,8 @@ table, .light-theme table,
 }
 
 .orange-800, .text-primary.orange-800, .text-secondary.orange-800, .text-hint.orange-800, .text-divider.orange-800,
+.light-theme .orange-800, .light-theme .text-primary.orange-800, .light-theme .text-secondary.orange-800, .text-hint.orange-800, .light-theme .text-divider.orange-800,
+.dark-theme .orange-800, .dark-theme .text-primary.orange-800, .dark-theme .text-secondary.orange-800, .text-hint.orange-800, .dark-theme .text-divider.orange-800,
 .orange-800.material-icons, .orange-800.material-icon,
 .orange-800.checkbox-input.active .checkbox, .orange-800.radiobutton-input.active .radio {
     color: #EF6C00;
@@ -2410,6 +2850,8 @@ table, .light-theme table,
 }
 
 .orange-900, .text-primary.orange-900, .text-secondary.orange-900, .text-hint.orange-900, .text-divider.orange-900,
+.light-theme .orange-900, .light-theme .text-primary.orange-900, .light-theme .text-secondary.orange-900, .text-hint.orange-900, .light-theme .text-divider.orange-900,
+.dark-theme .orange-900, .dark-theme .text-primary.orange-900, .dark-theme .text-secondary.orange-900, .text-hint.orange-900, .dark-theme .text-divider.orange-900,
 .orange-900.material-icons, .orange-900.material-icon,
 .orange-900.checkbox-input.active .checkbox, .orange-900.radiobutton-input.active .radio {
     color: #E65100;
@@ -2417,6 +2859,8 @@ table, .light-theme table,
 }
 
 .orange-A100, .text-primary.orange-A100, .text-secondary.orange-A100, .text-hint.orange-A100, .text-divider.orange-A100,
+.light-theme .orange-A100, .light-theme .text-primary.orange-A100, .light-theme .text-secondary.orange-A100, .text-hint.orange-A100, .light-theme .text-divider.orange-A100,
+.dark-theme .orange-A100, .dark-theme .text-primary.orange-A100, .dark-theme .text-secondary.orange-A100, .text-hint.orange-A100, .dark-theme .text-divider.orange-A100,
 .orange-A100.material-icons, .orange-A100.material-icon,
 .orange-A100.checkbox-input.active .checkbox, .orange-A100.radiobutton-input.active .radio {
     color: #FFD180;
@@ -2424,6 +2868,8 @@ table, .light-theme table,
 }
 
 .orange-A200, .text-primary.orange-A200, .text-secondary.orange-A200, .text-hint.orange-A200, .text-divider.orange-A200,
+.light-theme .orange-A200, .light-theme .text-primary.orange-A200, .light-theme .text-secondary.orange-A200, .text-hint.orange-A200, .light-theme .text-divider.orange-A200,
+.dark-theme .orange-A200, .dark-theme .text-primary.orange-A200, .dark-theme .text-secondary.orange-A200, .text-hint.orange-A200, .dark-theme .text-divider.orange-A200,
 .orange-A200.material-icons, .orange-A200.material-icon,
 .orange-A200.checkbox-input.active .checkbox, .orange-A200.radiobutton-input.active .radio {
     color: #FFAB40;
@@ -2431,6 +2877,8 @@ table, .light-theme table,
 }
 
 .orange-A400, .text-primary.orange-A400, .text-secondary.orange-A400, .text-hint.orange-A400, .text-divider.orange-A400,
+.light-theme .orange-A400, .light-theme .text-primary.orange-A400, .light-theme .text-secondary.orange-A400, .text-hint.orange-A400, .light-theme .text-divider.orange-A400,
+.dark-theme .orange-A400, .dark-theme .text-primary.orange-A400, .dark-theme .text-secondary.orange-A400, .text-hint.orange-A400, .dark-theme .text-divider.orange-A400,
 .orange-A400.material-icons, .orange-A400.material-icon,
 .orange-A400.checkbox-input.active .checkbox, .orange-A400.radiobutton-input.active .radio {
     color: #FF9100;
@@ -2438,6 +2886,8 @@ table, .light-theme table,
 }
 
 .orange-A700, .text-primary.orange-A700, .text-secondary.orange-A700, .text-hint.orange-A700, .text-divider.orange-A700,
+.light-theme .orange-A700, .light-theme .text-primary.orange-A700, .light-theme .text-secondary.orange-A700, .text-hint.orange-A700, .light-theme .text-divider.orange-A700,
+.dark-theme .orange-A700, .dark-theme .text-primary.orange-A700, .dark-theme .text-secondary.orange-A700, .text-hint.orange-A700, .dark-theme .text-divider.orange-A700,
 .orange-A700.material-icons, .orange-A700.material-icon,
 .orange-A700.checkbox-input.active .checkbox, .orange-A700.radiobutton-input.active .radio {
     color: #FF6D00;
@@ -2445,6 +2895,8 @@ table, .light-theme table,
 }
 
 .deep-orange-50, .text-primary.deep-orange-50, .text-secondary.deep-orange-50, .text-hint.deep-orange-50, .text-divider.deep-orange-50,
+.light-theme .deep-orange-50, .light-theme .text-primary.deep-orange-50, .light-theme .text-secondary.deep-orange-50, .text-hint.deep-orange-50, .light-theme .text-divider.deep-orange-50,
+.dark-theme .deep-orange-50, .dark-theme .text-primary.deep-orange-50, .dark-theme .text-secondary.deep-orange-50, .text-hint.deep-orange-50, .dark-theme .text-divider.deep-orange-50,
 .deep-orange-50.material-icons, .deep-orange-50.material-icon,
 .deep-orange-50.checkbox-input.active .checkbox, .deep-orange-50.radiobutton-input.active .radio {
     color: #FBE9E7;
@@ -2452,6 +2904,8 @@ table, .light-theme table,
 }
 
 .deep-orange-100, .text-primary.deep-orange-100, .text-secondary.deep-orange-100, .text-hint.deep-orange-100, .text-divider.deep-orange-100,
+.light-theme .deep-orange-100, .light-theme .text-primary.deep-orange-100, .light-theme .text-secondary.deep-orange-100, .text-hint.deep-orange-100, .light-theme .text-divider.deep-orange-100,
+.dark-theme .deep-orange-100, .dark-theme .text-primary.deep-orange-100, .dark-theme .text-secondary.deep-orange-100, .text-hint.deep-orange-100, .dark-theme .text-divider.deep-orange-100,
 .deep-orange-100.material-icons, .deep-orange-100.material-icon,
 .deep-orange-100.checkbox-input.active .checkbox, .deep-orange-100.radiobutton-input.active .radio {
     color: #FFCCBC;
@@ -2459,6 +2913,8 @@ table, .light-theme table,
 }
 
 .deep-orange-200, .text-primary.deep-orange-200, .text-secondary.deep-orange-200, .text-hint.deep-orange-200, .text-divider.deep-orange-200,
+.light-theme .deep-orange-200, .light-theme .text-primary.deep-orange-200, .light-theme .text-secondary.deep-orange-200, .text-hint.deep-orange-200, .light-theme .text-divider.deep-orange-200,
+.dark-theme .deep-orange-200, .dark-theme .text-primary.deep-orange-200, .dark-theme .text-secondary.deep-orange-200, .text-hint.deep-orange-200, .dark-theme .text-divider.deep-orange-200,
 .deep-orange-200.material-icons, .deep-orange-200.material-icon,
 .deep-orange-200.checkbox-input.active .checkbox, .deep-orange-200.radiobutton-input.active .radio {
     color: #FFAB91;
@@ -2466,6 +2922,8 @@ table, .light-theme table,
 }
 
 .deep-orange-300, .text-primary.deep-orange-300, .text-secondary.deep-orange-300, .text-hint.deep-orange-300, .text-divider.deep-orange-300,
+.light-theme .deep-orange-300, .light-theme .text-primary.deep-orange-300, .light-theme .text-secondary.deep-orange-300, .text-hint.deep-orange-300, .light-theme .text-divider.deep-orange-300,
+.dark-theme .deep-orange-300, .dark-theme .text-primary.deep-orange-300, .dark-theme .text-secondary.deep-orange-300, .text-hint.deep-orange-300, .dark-theme .text-divider.deep-orange-300,
 .deep-orange-300.material-icons, .deep-orange-300.material-icon,
 .deep-orange-300.checkbox-input.active .checkbox, .deep-orange-300.radiobutton-input.active .radio {
     color: #FF8A65;
@@ -2473,6 +2931,8 @@ table, .light-theme table,
 }
 
 .deep-orange-400, .text-primary.deep-orange-400, .text-secondary.deep-orange-400, .text-hint.deep-orange-400, .text-divider.deep-orange-400,
+.light-theme .deep-orange-400, .light-theme .text-primary.deep-orange-400, .light-theme .text-secondary.deep-orange-400, .text-hint.deep-orange-400, .light-theme .text-divider.deep-orange-400,
+.dark-theme .deep-orange-400, .dark-theme .text-primary.deep-orange-400, .dark-theme .text-secondary.deep-orange-400, .text-hint.deep-orange-400, .dark-theme .text-divider.deep-orange-400,
 .deep-orange-400.material-icons, .deep-orange-400.material-icon,
 .deep-orange-400.checkbox-input.active .checkbox, .deep-orange-400.radiobutton-input.active .radio {
     color: #FF7043;
@@ -2480,9 +2940,13 @@ table, .light-theme table,
 }
 
 .deep-orange, .text-primary.deep-orange, .text-secondary.deep-orange, .text-hint.deep-orange, .text-divider.deep-orange,
+.light-theme .deep-orange, .light-theme .text-primary.deep-orange, .light-theme .text-secondary.deep-orange, .text-hint.deep-orange, .light-theme .text-divider.deep-orange,
+.dark-theme .deep-orange, .dark-theme .text-primary.deep-orange, .dark-theme .text-secondary.deep-orange, .text-hint.deep-orange, .dark-theme .text-divider.deep-orange,
 .deep-orange.material-icons, .deep-orange.material-icon,
 .deep-orange.checkbox-input.active .checkbox, .deep-orange.radiobutton-input.active .radio,
 .deep-orange-500, .text-primary.deep-orange-500, .text-secondary.deep-orange-500, .text-hint.deep-orange-500, .text-divider.deep-orange-500,
+.light-theme .deep-orange-500, .light-theme .text-primary.deep-orange-500, .light-theme .text-secondary.deep-orange-500, .text-hint.deep-orange-500, .light-theme .text-divider.deep-orange-500,
+.dark-theme .deep-orange-500, .dark-theme .text-primary.deep-orange-500, .dark-theme .text-secondary.deep-orange-500, .text-hint.deep-orange-500, .dark-theme .text-divider.deep-orange-500,
 .deep-orange-500.material-icons, .deep-orange-500.material-icon,
 .deep-orange-500.checkbox-input.active .checkbox, .deep-orange-500.radiobutton-input.active .radio {
     color: #FF5722;
@@ -2490,6 +2954,8 @@ table, .light-theme table,
 }
 
 .deep-orange-600, .text-primary.deep-orange-600, .text-secondary.deep-orange-600, .text-hint.deep-orange-600, .text-divider.deep-orange-600,
+.light-theme .deep-orange-600, .light-theme .text-primary.deep-orange-600, .light-theme .text-secondary.deep-orange-600, .text-hint.deep-orange-600, .light-theme .text-divider.deep-orange-600,
+.dark-theme .deep-orange-600, .dark-theme .text-primary.deep-orange-600, .dark-theme .text-secondary.deep-orange-600, .text-hint.deep-orange-600, .dark-theme .text-divider.deep-orange-600,
 .deep-orange-600.material-icons, .deep-orange-600.material-icon,
 .deep-orange-600.checkbox-input.active .checkbox, .deep-orange-600.radiobutton-input.active .radio {
     color: #F4511E;
@@ -2497,6 +2963,8 @@ table, .light-theme table,
 }
 
 .deep-orange-700, .text-primary.deep-orange-700, .text-secondary.deep-orange-700, .text-hint.deep-orange-700, .text-divider.deep-orange-700,
+.light-theme .deep-orange-700, .light-theme .text-primary.deep-orange-700, .light-theme .text-secondary.deep-orange-700, .text-hint.deep-orange-700, .light-theme .text-divider.deep-orange-700,
+.dark-theme .deep-orange-700, .dark-theme .text-primary.deep-orange-700, .dark-theme .text-secondary.deep-orange-700, .text-hint.deep-orange-700, .dark-theme .text-divider.deep-orange-700,
 .deep-orange-700.material-icons, .deep-orange-700.material-icon,
 .deep-orange-700.checkbox-input.active .checkbox, .deep-orange-700.radiobutton-input.active .radio {
     color: #E64A19;
@@ -2504,6 +2972,8 @@ table, .light-theme table,
 }
 
 .deep-orange-800, .text-primary.deep-orange-800, .text-secondary.deep-orange-800, .text-hint.deep-orange-800, .text-divider.deep-orange-800,
+.light-theme .deep-orange-800, .light-theme .text-primary.deep-orange-800, .light-theme .text-secondary.deep-orange-800, .text-hint.deep-orange-800, .light-theme .text-divider.deep-orange-800,
+.dark-theme .deep-orange-800, .dark-theme .text-primary.deep-orange-800, .dark-theme .text-secondary.deep-orange-800, .text-hint.deep-orange-800, .dark-theme .text-divider.deep-orange-800,
 .deep-orange-800.material-icons, .deep-orange-800.material-icon,
 .deep-orange-800.checkbox-input.active .checkbox, .deep-orange-800.radiobutton-input.active .radio {
     color: #D84315;
@@ -2511,6 +2981,8 @@ table, .light-theme table,
 }
 
 .deep-orange-900, .text-primary.deep-orange-900, .text-secondary.deep-orange-900, .text-hint.deep-orange-900, .text-divider.deep-orange-900,
+.light-theme .deep-orange-900, .light-theme .text-primary.deep-orange-900, .light-theme .text-secondary.deep-orange-900, .text-hint.deep-orange-900, .light-theme .text-divider.deep-orange-900,
+.dark-theme .deep-orange-900, .dark-theme .text-primary.deep-orange-900, .dark-theme .text-secondary.deep-orange-900, .text-hint.deep-orange-900, .dark-theme .text-divider.deep-orange-900,
 .deep-orange-900.material-icons, .deep-orange-900.material-icon,
 .deep-orange-900.checkbox-input.active .checkbox, .deep-orange-900.radiobutton-input.active .radio {
     color: #BF360C;
@@ -2518,6 +2990,8 @@ table, .light-theme table,
 }
 
 .deep-orange-A100, .text-primary.deep-orange-A100, .text-secondary.deep-orange-A100, .text-hint.deep-orange-A100, .text-divider.deep-orange-A100,
+.light-theme .deep-orange-A100, .light-theme .text-primary.deep-orange-A100, .light-theme .text-secondary.deep-orange-A100, .text-hint.deep-orange-A100, .light-theme .text-divider.deep-orange-A100,
+.dark-theme .deep-orange-A100, .dark-theme .text-primary.deep-orange-A100, .dark-theme .text-secondary.deep-orange-A100, .text-hint.deep-orange-A100, .dark-theme .text-divider.deep-orange-A100,
 .deep-orange-A100.material-icons, .deep-orange-A100.material-icon,
 .deep-orange-A100.checkbox-input.active .checkbox, .deep-orange-A100.radiobutton-input.active .radio {
     color: #FF9E80;
@@ -2525,6 +2999,8 @@ table, .light-theme table,
 }
 
 .deep-orange-A200, .text-primary.deep-orange-A200, .text-secondary.deep-orange-A200, .text-hint.deep-orange-A200, .text-divider.deep-orange-A200,
+.light-theme .deep-orange-A200, .light-theme .text-primary.deep-orange-A200, .light-theme .text-secondary.deep-orange-A200, .text-hint.deep-orange-A200, .light-theme .text-divider.deep-orange-A200,
+.dark-theme .deep-orange-A200, .dark-theme .text-primary.deep-orange-A200, .dark-theme .text-secondary.deep-orange-A200, .text-hint.deep-orange-A200, .dark-theme .text-divider.deep-orange-A200,
 .deep-orange-A200.material-icons, .deep-orange-A200.material-icon,
 .deep-orange-A200.checkbox-input.active .checkbox, .deep-orange-A200.radiobutton-input.active .radio {
     color: #FF6E40;
@@ -2532,6 +3008,8 @@ table, .light-theme table,
 }
 
 .deep-orange-A400, .text-primary.deep-orange-A400, .text-secondary.deep-orange-A400, .text-hint.deep-orange-A400, .text-divider.deep-orange-A400,
+.light-theme .deep-orange-A400, .light-theme .text-primary.deep-orange-A400, .light-theme .text-secondary.deep-orange-A400, .text-hint.deep-orange-A400, .light-theme .text-divider.deep-orange-A400,
+.dark-theme .deep-orange-A400, .dark-theme .text-primary.deep-orange-A400, .dark-theme .text-secondary.deep-orange-A400, .text-hint.deep-orange-A400, .dark-theme .text-divider.deep-orange-A400,
 .deep-orange-A400.material-icons, .deep-orange-A400.material-icon,
 .deep-orange-A400.checkbox-input.active .checkbox, .deep-orange-A400.radiobutton-input.active .radio {
     color: #FF3D00;
@@ -2539,6 +3017,8 @@ table, .light-theme table,
 }
 
 .deep-orange-A700, .text-primary.deep-orange-A700, .text-secondary.deep-orange-A700, .text-hint.deep-orange-A700, .text-divider.deep-orange-A700,
+.light-theme .deep-orange-A700, .light-theme .text-primary.deep-orange-A700, .light-theme .text-secondary.deep-orange-A700, .text-hint.deep-orange-A700, .light-theme .text-divider.deep-orange-A700,
+.dark-theme .deep-orange-A700, .dark-theme .text-primary.deep-orange-A700, .dark-theme .text-secondary.deep-orange-A700, .text-hint.deep-orange-A700, .dark-theme .text-divider.deep-orange-A700,
 .deep-orange-A700.material-icons, .deep-orange-A700.material-icon,
 .deep-orange-A700.checkbox-input.active .checkbox, .deep-orange-A700.radiobutton-input.active .radio {
     color: #DD2C00;
@@ -2546,6 +3026,8 @@ table, .light-theme table,
 }
 
 .brown-50, .text-primary.brown-50, .text-secondary.brown-50, .text-hint.brown-50, .text-divider.brown-50,
+.light-theme .brown-50, .light-theme .text-primary.brown-50, .light-theme .text-secondary.brown-50, .text-hint.brown-50, .light-theme .text-divider.brown-50,
+.dark-theme .brown-50, .dark-theme .text-primary.brown-50, .dark-theme .text-secondary.brown-50, .text-hint.brown-50, .dark-theme .text-divider.brown-50,
 .brown-50.material-icons, .brown-50.material-icon,
 .brown-50.checkbox-input.active .checkbox, .brown-50.radiobutton-input.active .radio {
     color: #EFEBE9;
@@ -2553,6 +3035,8 @@ table, .light-theme table,
 }
 
 .brown-100, .text-primary.brown-100, .text-secondary.brown-100, .text-hint.brown-100, .text-divider.brown-100,
+.light-theme .brown-100, .light-theme .text-primary.brown-100, .light-theme .text-secondary.brown-100, .text-hint.brown-100, .light-theme .text-divider.brown-100,
+.dark-theme .brown-100, .dark-theme .text-primary.brown-100, .dark-theme .text-secondary.brown-100, .text-hint.brown-100, .dark-theme .text-divider.brown-100,
 .brown-100.material-icons, .brown-100.material-icon,
 .brown-100.checkbox-input.active .checkbox, .brown-100.radiobutton-input.active .radio {
     color: #D7CCC8;
@@ -2560,6 +3044,8 @@ table, .light-theme table,
 }
 
 .brown-200, .text-primary.brown-200, .text-secondary.brown-200, .text-hint.brown-200, .text-divider.brown-200,
+.light-theme .brown-200, .light-theme .text-primary.brown-200, .light-theme .text-secondary.brown-200, .text-hint.brown-200, .light-theme .text-divider.brown-200,
+.dark-theme .brown-200, .dark-theme .text-primary.brown-200, .dark-theme .text-secondary.brown-200, .text-hint.brown-200, .dark-theme .text-divider.brown-200,
 .brown-200.material-icons, .brown-200.material-icon,
 .brown-200.checkbox-input.active .checkbox, .brown-200.radiobutton-input.active .radio {
     color: #BCAAA4;
@@ -2567,6 +3053,8 @@ table, .light-theme table,
 }
 
 .brown-300, .text-primary.brown-300, .text-secondary.brown-300, .text-hint.brown-300, .text-divider.brown-300,
+.light-theme .brown-300, .light-theme .text-primary.brown-300, .light-theme .text-secondary.brown-300, .text-hint.brown-300, .light-theme .text-divider.brown-300,
+.dark-theme .brown-300, .dark-theme .text-primary.brown-300, .dark-theme .text-secondary.brown-300, .text-hint.brown-300, .dark-theme .text-divider.brown-300,
 .brown-300.material-icons, .brown-300.material-icon,
 .brown-300.checkbox-input.active .checkbox, .brown-300.radiobutton-input.active .radio {
     color: #A1887F;
@@ -2574,6 +3062,8 @@ table, .light-theme table,
 }
 
 .brown-400, .text-primary.brown-400, .text-secondary.brown-400, .text-hint.brown-400, .text-divider.brown-400,
+.light-theme .brown-400, .light-theme .text-primary.brown-400, .light-theme .text-secondary.brown-400, .text-hint.brown-400, .light-theme .text-divider.brown-400,
+.dark-theme .brown-400, .dark-theme .text-primary.brown-400, .dark-theme .text-secondary.brown-400, .text-hint.brown-400, .dark-theme .text-divider.brown-400,
 .brown-400.material-icons, .brown-400.material-icon,
 .brown-400.checkbox-input.active .checkbox, .brown-400.radiobutton-input.active .radio {
     color: #8D6E63;
@@ -2581,9 +3071,13 @@ table, .light-theme table,
 }
 
 .brown, .text-primary.brown, .text-secondary.brown, .text-hint.brown, .text-divider.brown,
+.light-theme .brown, .light-theme .text-primary.brown, .light-theme .text-secondary.brown, .text-hint.brown, .light-theme .text-divider.brown,
+.dark-theme .brown, .dark-theme .text-primary.brown, .dark-theme .text-secondary.brown, .text-hint.brown, .dark-theme .text-divider.brown,
 .brown.material-icons, .brown.material-icon,
 .brown.checkbox-input.active .checkbox, .brown.radiobutton-input.active .radio,
 .brown-500, .text-primary.brown-500, .text-secondary.brown-500, .text-hint.brown-500, .text-divider.brown-500,
+.light-theme .brown-500, .light-theme .text-primary.brown-500, .light-theme .text-secondary.brown-500, .text-hint.brown-500, .light-theme .text-divider.brown-500,
+.dark-theme .brown-500, .dark-theme .text-primary.brown-500, .dark-theme .text-secondary.brown-500, .text-hint.brown-500, .dark-theme .text-divider.brown-500,
 .brown-500.material-icons, .brown-500.material-icon,
 .brown-500.checkbox-input.active .checkbox, .brown-500.radiobutton-input.active .radio {
     color: #795548;
@@ -2591,6 +3085,8 @@ table, .light-theme table,
 }
 
 .brown-600, .text-primary.brown-600, .text-secondary.brown-600, .text-hint.brown-600, .text-divider.brown-600,
+.light-theme .brown-600, .light-theme .text-primary.brown-600, .light-theme .text-secondary.brown-600, .text-hint.brown-600, .light-theme .text-divider.brown-600,
+.dark-theme .brown-600, .dark-theme .text-primary.brown-600, .dark-theme .text-secondary.brown-600, .text-hint.brown-600, .dark-theme .text-divider.brown-600,
 .brown-600.material-icons, .brown-600.material-icon,
 .brown-600.checkbox-input.active .checkbox, .brown-600.radiobutton-input.active .radio {
     color: #6D4C41;
@@ -2598,6 +3094,8 @@ table, .light-theme table,
 }
 
 .brown-700, .text-primary.brown-700, .text-secondary.brown-700, .text-hint.brown-700, .text-divider.brown-700,
+.light-theme .brown-700, .light-theme .text-primary.brown-700, .light-theme .text-secondary.brown-700, .text-hint.brown-700, .light-theme .text-divider.brown-700,
+.dark-theme .brown-700, .dark-theme .text-primary.brown-700, .dark-theme .text-secondary.brown-700, .text-hint.brown-700, .dark-theme .text-divider.brown-700,
 .brown-700.material-icons, .brown-700.material-icon,
 .brown-700.checkbox-input.active .checkbox, .brown-700.radiobutton-input.active .radio {
     color: #5D4037;
@@ -2605,6 +3103,8 @@ table, .light-theme table,
 }
 
 .brown-800, .text-primary.brown-800, .text-secondary.brown-800, .text-hint.brown-800, .text-divider.brown-800,
+.light-theme .brown-800, .light-theme .text-primary.brown-800, .light-theme .text-secondary.brown-800, .text-hint.brown-800, .light-theme .text-divider.brown-800,
+.dark-theme .brown-800, .dark-theme .text-primary.brown-800, .dark-theme .text-secondary.brown-800, .text-hint.brown-800, .dark-theme .text-divider.brown-800,
 .brown-800.material-icons, .brown-800.material-icon,
 .brown-800.checkbox-input.active .checkbox, .brown-800.radiobutton-input.active .radio {
     color: #4E342E;
@@ -2612,6 +3112,8 @@ table, .light-theme table,
 }
 
 .brown-900, .text-primary.brown-900, .text-secondary.brown-900, .text-hint.brown-900, .text-divider.brown-900,
+.light-theme .brown-900, .light-theme .text-primary.brown-900, .light-theme .text-secondary.brown-900, .text-hint.brown-900, .light-theme .text-divider.brown-900,
+.dark-theme .brown-900, .dark-theme .text-primary.brown-900, .dark-theme .text-secondary.brown-900, .text-hint.brown-900, .dark-theme .text-divider.brown-900,
 .brown-900.material-icons, .brown-900.material-icon,
 .brown-900.checkbox-input.active .checkbox, .brown-900.radiobutton-input.active .radio {
     color: #3E2723;
@@ -2619,6 +3121,8 @@ table, .light-theme table,
 }
 
 .grey-50, .text-primary.grey-50, .text-secondary.grey-50, .text-hint.grey-50, .text-divider.grey-50,
+.light-theme .grey-50, .light-theme .text-primary.grey-50, .light-theme .text-secondary.grey-50, .text-hint.grey-50, .light-theme .text-divider.grey-50,
+.dark-theme .grey-50, .dark-theme .text-primary.grey-50, .dark-theme .text-secondary.grey-50, .text-hint.grey-50, .dark-theme .text-divider.grey-50,
 .grey-50.material-icons, .grey-50.material-icon,
 .grey-50.checkbox-input.active .checkbox, .grey-50.radiobutton-input.active .radio {
     color: #FAFAFA;
@@ -2626,6 +3130,8 @@ table, .light-theme table,
 }
 
 .grey-100, .text-primary.grey-100, .text-secondary.grey-100, .text-hint.grey-100, .text-divider.grey-100,
+.light-theme .grey-100, .light-theme .text-primary.grey-100, .light-theme .text-secondary.grey-100, .text-hint.grey-100, .light-theme .text-divider.grey-100,
+.dark-theme .grey-100, .dark-theme .text-primary.grey-100, .dark-theme .text-secondary.grey-100, .text-hint.grey-100, .dark-theme .text-divider.grey-100,
 .grey-100.material-icons, .grey-100.material-icon,
 .grey-100.checkbox-input.active .checkbox, .grey-100.radiobutton-input.active .radio {
     color: #F5F5F5;
@@ -2633,6 +3139,8 @@ table, .light-theme table,
 }
 
 .grey-200, .text-primary.grey-200, .text-secondary.grey-200, .text-hint.grey-200, .text-divider.grey-200,
+.light-theme .grey-200, .light-theme .text-primary.grey-200, .light-theme .text-secondary.grey-200, .text-hint.grey-200, .light-theme .text-divider.grey-200,
+.dark-theme .grey-200, .dark-theme .text-primary.grey-200, .dark-theme .text-secondary.grey-200, .text-hint.grey-200, .dark-theme .text-divider.grey-200,
 .grey-200.material-icons, .grey-200.material-icon,
 .grey-200.checkbox-input.active .checkbox, .grey-200.radiobutton-input.active .radio {
     color: #EEEEEE;
@@ -2640,6 +3148,8 @@ table, .light-theme table,
 }
 
 .grey-300, .text-primary.grey-300, .text-secondary.grey-300, .text-hint.grey-300, .text-divider.grey-300,
+.light-theme .grey-300, .light-theme .text-primary.grey-300, .light-theme .text-secondary.grey-300, .text-hint.grey-300, .light-theme .text-divider.grey-300,
+.dark-theme .grey-300, .dark-theme .text-primary.grey-300, .dark-theme .text-secondary.grey-300, .text-hint.grey-300, .dark-theme .text-divider.grey-300,
 .grey-300.material-icons, .grey-300.material-icon,
 .grey-300.checkbox-input.active .checkbox, .grey-300.radiobutton-input.active .radio {
     color: #E0E0E0;
@@ -2647,6 +3157,8 @@ table, .light-theme table,
 }
 
 .grey-400, .text-primary.grey-400, .text-secondary.grey-400, .text-hint.grey-400, .text-divider.grey-400,
+.light-theme .grey-400, .light-theme .text-primary.grey-400, .light-theme .text-secondary.grey-400, .text-hint.grey-400, .light-theme .text-divider.grey-400,
+.dark-theme .grey-400, .dark-theme .text-primary.grey-400, .dark-theme .text-secondary.grey-400, .text-hint.grey-400, .dark-theme .text-divider.grey-400,
 .grey-400.material-icons, .grey-400.material-icon,
 .grey-400.checkbox-input.active .checkbox, .grey-400.radiobutton-input.active .radio {
     color: #BDBDBD;
@@ -2654,9 +3166,13 @@ table, .light-theme table,
 }
 
 .grey, .text-primary.grey, .text-secondary.grey, .text-hint.grey, .text-divider.grey,
+.light-theme .grey, .light-theme .text-primary.grey, .light-theme .text-secondary.grey, .text-hint.grey, .light-theme .text-divider.grey,
+.dark-theme .grey, .dark-theme .text-primary.grey, .dark-theme .text-secondary.grey, .text-hint.grey, .dark-theme .text-divider.grey,
 .grey.material-icons, .grey.material-icon,
 .grey.checkbox-input.active .checkbox, .grey.radiobutton-input.active .radio,
 .grey-500, .text-primary.grey-500, .text-secondary.grey-500, .text-hint.grey-500, .text-divider.grey-500,
+.light-theme .grey-500, .light-theme .text-primary.grey-500, .light-theme .text-secondary.grey-500, .text-hint.grey-500, .light-theme .text-divider.grey-500,
+.dark-theme .grey-500, .dark-theme .text-primary.grey-500, .dark-theme .text-secondary.grey-500, .text-hint.grey-500, .dark-theme .text-divider.grey-500,
 .grey-500.material-icons, .grey-500.material-icon,
 .grey-500.checkbox-input.active .checkbox, .grey-500.radiobutton-input.active .radio {
     color: #9E9E9E;
@@ -2664,6 +3180,8 @@ table, .light-theme table,
 }
 
 .grey-600, .text-primary.grey-600, .text-secondary.grey-600, .text-hint.grey-600, .text-divider.grey-600,
+.light-theme .grey-600, .light-theme .text-primary.grey-600, .light-theme .text-secondary.grey-600, .text-hint.grey-600, .light-theme .text-divider.grey-600,
+.dark-theme .grey-600, .dark-theme .text-primary.grey-600, .dark-theme .text-secondary.grey-600, .text-hint.grey-600, .dark-theme .text-divider.grey-600,
 .grey-600.material-icons, .grey-600.material-icon,
 .grey-600.checkbox-input.active .checkbox, .grey-600.radiobutton-input.active .radio {
     color: #757575;
@@ -2671,6 +3189,8 @@ table, .light-theme table,
 }
 
 .grey-700, .text-primary.grey-700, .text-secondary.grey-700, .text-hint.grey-700, .text-divider.grey-700,
+.light-theme .grey-700, .light-theme .text-primary.grey-700, .light-theme .text-secondary.grey-700, .text-hint.grey-700, .light-theme .text-divider.grey-700,
+.dark-theme .grey-700, .dark-theme .text-primary.grey-700, .dark-theme .text-secondary.grey-700, .text-hint.grey-700, .dark-theme .text-divider.grey-700,
 .grey-700.material-icons, .grey-700.material-icon,
 .grey-700.checkbox-input.active .checkbox, .grey-700.radiobutton-input.active .radio {
     color: #616161;
@@ -2678,6 +3198,8 @@ table, .light-theme table,
 }
 
 .grey-800, .text-primary.grey-800, .text-secondary.grey-800, .text-hint.grey-800, .text-divider.grey-800,
+.light-theme .grey-800, .light-theme .text-primary.grey-800, .light-theme .text-secondary.grey-800, .text-hint.grey-800, .light-theme .text-divider.grey-800,
+.dark-theme .grey-800, .dark-theme .text-primary.grey-800, .dark-theme .text-secondary.grey-800, .text-hint.grey-800, .dark-theme .text-divider.grey-800,
 .grey-800.material-icons, .grey-800.material-icon,
 .grey-800.checkbox-input.active .checkbox, .grey-800.radiobutton-input.active .radio {
     color: #424242;
@@ -2685,6 +3207,8 @@ table, .light-theme table,
 }
 
 .grey-900, .text-primary.grey-900, .text-secondary.grey-900, .text-hint.grey-900, .text-divider.grey-900,
+.light-theme .grey-900, .light-theme .text-primary.grey-900, .light-theme .text-secondary.grey-900, .text-hint.grey-900, .light-theme .text-divider.grey-900,
+.dark-theme .grey-900, .dark-theme .text-primary.grey-900, .dark-theme .text-secondary.grey-900, .text-hint.grey-900, .dark-theme .text-divider.grey-900,
 .grey-900.material-icons, .grey-900.material-icon,
 .grey-900.checkbox-input.active .checkbox, .grey-900.radiobutton-input.active .radio {
     color: #212121;
@@ -2692,6 +3216,8 @@ table, .light-theme table,
 }
 
 .blue-grey-50, .text-primary.blue-grey-50, .text-secondary.blue-grey-50, .text-hint.blue-grey-50, .text-divider.blue-grey-50,
+.light-theme .blue-grey-50, .light-theme .text-primary.blue-grey-50, .light-theme .text-secondary.blue-grey-50, .text-hint.blue-grey-50, .light-theme .text-divider.blue-grey-50,
+.dark-theme .blue-grey-50, .dark-theme .text-primary.blue-grey-50, .dark-theme .text-secondary.blue-grey-50, .text-hint.blue-grey-50, .dark-theme .text-divider.blue-grey-50,
 .blue-grey-50.material-icons, .blue-grey-50.material-icon,
 .blue-grey-50.checkbox-input.active .checkbox, .blue-grey-50.radiobutton-input.active .radio {
     color: #ECEFF1;
@@ -2699,6 +3225,8 @@ table, .light-theme table,
 }
 
 .blue-grey-100, .text-primary.blue-grey-100, .text-secondary.blue-grey-100, .text-hint.blue-grey-100, .text-divider.blue-grey-100,
+.light-theme .blue-grey-100, .light-theme .text-primary.blue-grey-100, .light-theme .text-secondary.blue-grey-100, .text-hint.blue-grey-100, .light-theme .text-divider.blue-grey-100,
+.dark-theme .blue-grey-100, .dark-theme .text-primary.blue-grey-100, .dark-theme .text-secondary.blue-grey-100, .text-hint.blue-grey-100, .dark-theme .text-divider.blue-grey-100,
 .blue-grey-100.material-icons, .blue-grey-100.material-icon,
 .blue-grey-100.checkbox-input.active .checkbox, .blue-grey-100.radiobutton-input.active .radio {
     color: #CFD8DC;
@@ -2706,6 +3234,8 @@ table, .light-theme table,
 }
 
 .blue-grey-200, .text-primary.blue-grey-200, .text-secondary.blue-grey-200, .text-hint.blue-grey-200, .text-divider.blue-grey-200,
+.light-theme .blue-grey-200, .light-theme .text-primary.blue-grey-200, .light-theme .text-secondary.blue-grey-200, .text-hint.blue-grey-200, .light-theme .text-divider.blue-grey-200,
+.dark-theme .blue-grey-200, .dark-theme .text-primary.blue-grey-200, .dark-theme .text-secondary.blue-grey-200, .text-hint.blue-grey-200, .dark-theme .text-divider.blue-grey-200,
 .blue-grey-200.material-icons, .blue-grey-200.material-icon,
 .blue-grey-200.checkbox-input.active .checkbox, .blue-grey-200.radiobutton-input.active .radio {
     color: #B0BEC5;
@@ -2713,6 +3243,8 @@ table, .light-theme table,
 }
 
 .blue-grey-300, .text-primary.blue-grey-300, .text-secondary.blue-grey-300, .text-hint.blue-grey-300, .text-divider.blue-grey-300,
+.light-theme .blue-grey-300, .light-theme .text-primary.blue-grey-300, .light-theme .text-secondary.blue-grey-300, .text-hint.blue-grey-300, .light-theme .text-divider.blue-grey-300,
+.dark-theme .blue-grey-300, .dark-theme .text-primary.blue-grey-300, .dark-theme .text-secondary.blue-grey-300, .text-hint.blue-grey-300, .dark-theme .text-divider.blue-grey-300,
 .blue-grey-300.material-icons, .blue-grey-300.material-icon,
 .blue-grey-300.checkbox-input.active .checkbox, .blue-grey-300.radiobutton-input.active .radio {
     color: #90A4AE;
@@ -2720,6 +3252,8 @@ table, .light-theme table,
 }
 
 .blue-grey-400, .text-primary.blue-grey-400, .text-secondary.blue-grey-400, .text-hint.blue-grey-400, .text-divider.blue-grey-400,
+.light-theme .blue-grey-400, .light-theme .text-primary.blue-grey-400, .light-theme .text-secondary.blue-grey-400, .text-hint.blue-grey-400, .light-theme .text-divider.blue-grey-400,
+.dark-theme .blue-grey-400, .dark-theme .text-primary.blue-grey-400, .dark-theme .text-secondary.blue-grey-400, .text-hint.blue-grey-400, .dark-theme .text-divider.blue-grey-400,
 .blue-grey-400.material-icons, .blue-grey-400.material-icon,
 .blue-grey-400.checkbox-input.active .checkbox, .blue-grey-400.radiobutton-input.active .radio {
     color: #78909C;
@@ -2727,9 +3261,13 @@ table, .light-theme table,
 }
 
 .blue-grey, .text-primary.blue-grey, .text-secondary.blue-grey, .text-hint.blue-grey, .text-divider.blue-grey,
+.light-theme .blue-grey, .light-theme .text-primary.blue-grey, .light-theme .text-secondary.blue-grey, .text-hint.blue-grey, .light-theme .text-divider.blue-grey,
+.dark-theme .blue-grey, .dark-theme .text-primary.blue-grey, .dark-theme .text-secondary.blue-grey, .text-hint.blue-grey, .dark-theme .text-divider.blue-grey,
 .blue-grey.material-icons, .blue-grey.material-icon,
 .blue-grey.checkbox-input.active .checkbox, .blue-grey.radiobutton-input.active .radio,
 .blue-grey-500, .text-primary.blue-grey-500, .text-secondary.blue-grey-500, .text-hint.blue-grey-500, .text-divider.blue-grey-500,
+.light-theme .blue-grey-500, .light-theme .text-primary.blue-grey-500, .light-theme .text-secondary.blue-grey-500, .text-hint.blue-grey-500, .light-theme .text-divider.blue-grey-500,
+.dark-theme .blue-grey-500, .dark-theme .text-primary.blue-grey-500, .dark-theme .text-secondary.blue-grey-500, .text-hint.blue-grey-500, .dark-theme .text-divider.blue-grey-500,
 .blue-grey-500.material-icons, .blue-grey-500.material-icon,
 .blue-grey-500.checkbox-input.active .checkbox, .blue-grey-500.radiobutton-input.active .radio {
     color: #607D8B;
@@ -2737,6 +3275,8 @@ table, .light-theme table,
 }
 
 .blue-grey-600, .text-primary.blue-grey-600, .text-secondary.blue-grey-600, .text-hint.blue-grey-600, .text-divider.blue-grey-600,
+.light-theme .blue-grey-600, .light-theme .text-primary.blue-grey-600, .light-theme .text-secondary.blue-grey-600, .text-hint.blue-grey-600, .light-theme .text-divider.blue-grey-600,
+.dark-theme .blue-grey-600, .dark-theme .text-primary.blue-grey-600, .dark-theme .text-secondary.blue-grey-600, .text-hint.blue-grey-600, .dark-theme .text-divider.blue-grey-600,
 .blue-grey-600.material-icons, .blue-grey-600.material-icon,
 .blue-grey-600.checkbox-input.active .checkbox, .blue-grey-600.radiobutton-input.active .radio {
     color: #546E7A;
@@ -2744,6 +3284,8 @@ table, .light-theme table,
 }
 
 .blue-grey-700, .text-primary.blue-grey-700, .text-secondary.blue-grey-700, .text-hint.blue-grey-700, .text-divider.blue-grey-700,
+.light-theme .blue-grey-700, .light-theme .text-primary.blue-grey-700, .light-theme .text-secondary.blue-grey-700, .text-hint.blue-grey-700, .light-theme .text-divider.blue-grey-700,
+.dark-theme .blue-grey-700, .dark-theme .text-primary.blue-grey-700, .dark-theme .text-secondary.blue-grey-700, .text-hint.blue-grey-700, .dark-theme .text-divider.blue-grey-700,
 .blue-grey-700.material-icons, .blue-grey-700.material-icon,
 .blue-grey-700.checkbox-input.active .checkbox, .blue-grey-700.radiobutton-input.active .radio {
     color: #455A64;
@@ -2751,6 +3293,8 @@ table, .light-theme table,
 }
 
 .blue-grey-800, .text-primary.blue-grey-800, .text-secondary.blue-grey-800, .text-hint.blue-grey-800, .text-divider.blue-grey-800,
+.light-theme .blue-grey-800, .light-theme .text-primary.blue-grey-800, .light-theme .text-secondary.blue-grey-800, .text-hint.blue-grey-800, .light-theme .text-divider.blue-grey-800,
+.dark-theme .blue-grey-800, .dark-theme .text-primary.blue-grey-800, .dark-theme .text-secondary.blue-grey-800, .text-hint.blue-grey-800, .dark-theme .text-divider.blue-grey-800,
 .blue-grey-800.material-icons, .blue-grey-800.material-icon,
 .blue-grey-800.checkbox-input.active .checkbox, .blue-grey-800.radiobutton-input.active .radio {
     color: #37474F;
@@ -2758,6 +3302,8 @@ table, .light-theme table,
 }
 
 .blue-grey-900, .text-primary.blue-grey-900, .text-secondary.blue-grey-900, .text-hint.blue-grey-900, .text-divider.blue-grey-900,
+.light-theme .blue-grey-900, .light-theme .text-primary.blue-grey-900, .light-theme .text-secondary.blue-grey-900, .text-hint.blue-grey-900, .light-theme .text-divider.blue-grey-900,
+.dark-theme .blue-grey-900, .dark-theme .text-primary.blue-grey-900, .dark-theme .text-secondary.blue-grey-900, .text-hint.blue-grey-900, .dark-theme .text-divider.blue-grey-900,
 .blue-grey-900.material-icons, .blue-grey-900.material-icon,
 .blue-grey-900.checkbox-input.active .checkbox, .blue-grey-900.radiobutton-input.active .radio {
     color: #263238;
@@ -2765,6 +3311,8 @@ table, .light-theme table,
 }
 
 .black, .text-primary.black, .text-secondary.black, .text-hint.black, .text-divider.black,
+.light-theme .black, .light-theme .text-primary.black, .light-theme .text-secondary.black, .text-hint.black, .light-theme .text-divider.black,
+.dark-theme .black, .dark-theme .text-primary.black, .dark-theme .text-secondary.black, .text-hint.black, .dark-theme .text-divider.black,
 .black.material-icons, .black.material-icon,
 .black.checkbox-input.active .checkbox, .black.radiobutton-input.active .radio {
     color: #000000;
@@ -2772,6 +3320,8 @@ table, .light-theme table,
 }
 
 .white, .text-primary.white, .text-secondary.white, .text-hint.white, .text-divider.white,
+.light-theme .white, .light-theme .text-primary.white, .light-theme .text-secondary.white, .text-hint.white, .light-theme .text-divider.white,
+.dark-theme .white, .dark-theme .text-primary.white, .dark-theme .text-secondary.white, .text-hint.white, .dark-theme .text-divider.white,
 .white.material-icons, .white.material-icon,
 .white.checkbox-input.active .checkbox, .white.radiobutton-input.active .radio {
     color: #FFFFFF;
