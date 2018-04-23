@@ -318,6 +318,10 @@ html[lang] .form-input .text-input:lang(ar-BH) {
     font-family: 'arabic_notosans_regular', 'roboto_regular', sans-serif;
 }
 
+.form-input.has-error .text-input {
+    border-color: #FF1744 !important;
+}
+
 .form-input textarea.text-input {
     resize: none;
     height: auto;
@@ -381,6 +385,10 @@ html[dir="rtl"] .form-input .label, html[dir] .form-input .label[dir="rtl"] {
     right: 0;
 }
 
+.form-input.has-error .label {
+    color: #FF1744 !important;
+}
+
 .form-input.active .label {
     font-size: 9pt;
     top: 0;
@@ -403,6 +411,20 @@ html[dir="rtl"] .form-input .label, html[dir] .form-input .label[dir="rtl"] {
 .form-input .help-block {
     font-size: 9pt;
     margin-bottom: 8px;
+}
+
+.form-input.has-error .help-block,
+.light-theme .form-input.has-error .help-block,
+.dark-theme .light-theme .form-input.has-error .help-block,
+.form-input.has-error.light-theme .help-block,
+.dark-theme .form-input.has-error.light-theme .help-block {
+    color: rgba(255, 23, 68, 0.87) !important;
+}
+.dark-theme .form-input.has-error .help-block,
+.light-theme .dark-theme .form-input.has-error .help-block,
+.form-input.has-error.dark-theme .help-block,
+.light-theme .form-input.has-error.dark-theme .help-block {
+    color: #FF1744 !important;
 }
 
 .form-input.box-style .text-input,
@@ -849,7 +871,8 @@ html[dir] .list-item.radiobutton-input[dir="rtl"] .radio:after {
 .checkbox-input.block, .radiobutton-input.block {
     display: block;
     width: auto;
-    padding: 13px 0;
+    margin: 13px 0;
+    padding: 0;
 }
 
 .checkbox-input.disabled, .radiobutton-input.disabled {
