@@ -84,10 +84,6 @@ html, body {
     background-image: linear-gradient(top,#4d90fe,#4787ed);
 }
 
-.plain-page .sign-in .footer {
-    text-align: left;
-}
-
 .plain-page .error-page {
     max-width: 100%;
     width: 720px;
