@@ -219,4 +219,14 @@ class Html extends BaseHtml
 
         return $lines;
     }
+
+    public static function activePasswordInput($model, $attribute, $options = [])
+    {
+        return static::a('visibility_off', 'javascript: ;', [
+                   'class' => 'material-icon side-action',
+                   'tabindex' => 999,
+                   'data-action' => 'change_visibility',
+               ]).
+               parent::activePasswordInput($model, $attribute, $options);
+    }
 }

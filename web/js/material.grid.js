@@ -274,6 +274,18 @@ function material_grid_init() {
         var max = $(this).attr('maxLength');
         $(this).siblings('.hint').children('.char-count').html(max - count);
     });
+
+    $('.form-input').on('click', '.side-action', function() {
+        switch($(this).attr('data-action')) {
+            case 'change_visibility':
+                if ($(this).html() == 'visibility') {
+                    $(this).html('visibility_off').siblings('.text-input').prop('type', 'password');
+                } else {
+                    $(this).html('visibility').siblings('.text-input').prop('type', 'text');
+                }
+            break;
+        }
+    });
 }
 
 function open_dialog(id) {
