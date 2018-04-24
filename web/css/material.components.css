@@ -2217,12 +2217,12 @@ html[dir="rtl"] .data-table > .summary .select-control .select-value, html[dir] 
     clear: both;
 }
 
-.card .title {
+.card .card-title {
     padding: 0 16px;
     margin: 16px 0;
 }
 
-.card .title:before, .card .title:after {
+.card .card-title:before, .card .card-title:after {
     content: '';
     display: block;
     width: 100%;
@@ -2230,7 +2230,7 @@ html[dir="rtl"] .data-table > .summary .select-control .select-value, html[dir] 
     clear: both;
 }
 
-.card .title > .avatar {
+.card .card-title > .avatar {
     height: 40px;
     width: 40px;
     float: left;
@@ -2238,88 +2238,88 @@ html[dir="rtl"] .data-table > .summary .select-control .select-value, html[dir] 
     overflow: hidden;
 }
 
-.card .title > .avatar > img {
+.card .card-title > .avatar > img {
     height: 40px;
     width: 40px;
     display: inline-block;
     border-radius: 50%;
 }
 
-.card .title > h2 {
+.card .card-title > h2 {
     margin: 0;
     padding: 8px 0 0;
     font-size: 18pt;
     line-height: 1;
 }
 
-.card .title > h3 {
+.card .card-title > h3 {
     margin: 0;
     font-size: 10.5pt;
 }
 
-.card .title > .subtext {
+.card .card-title > .subtext {
     margin: 8px 0 0;
     font-size: 10.5pt;
     line-height: 1;
 }
 
-.card .title > h3 + .subtext {
+.card .card-title > h3 + .subtext {
     margin-top: 4px;
 }
 
-.card .title > .media {
+.card .card-title > .media {
     float: right;
     width: 80px;
     height: 80px;
     margin-bottom: -16px;
 }
 
-.card .title > .media.size-1 {
+.card .card-title > .media.size-1 {
     width: 80px;
     height: 80px;
 }
 
-.card .title > .media.size-1 + h2, .card .title > .media.size-1 + h3,
-.card .title > .media.size-1 + h2 + .subtext, .card .title > .media.size-1 + h3 + .subtext {
+.card .card-title > .media.size-1 + h2, .card .card-title > .media.size-1 + h3,
+.card .card-title > .media.size-1 + h2 + .subtext, .card .card-title > .media.size-1 + h3 + .subtext {
     margin-right: 96px;
 }
 
-.card .title > .media.size-2 {
+.card .card-title > .media.size-2 {
     width: 120px;
     height: 120px;
 }
 
-.card .title > .media.size-2 + h2, .card .title > .media.size-2 + h3,
-.card .title > .media.size-2 + h2 + .subtext, .card .title > .media.size-2 + h3 + .subtext {
+.card .card-title > .media.size-2 + h2, .card .card-title > .media.size-2 + h3,
+.card .card-title > .media.size-2 + h2 + .subtext, .card .card-title > .media.size-2 + h3 + .subtext {
     margin-right: 136px;
 }
 
-.card .title > .media.size-3 {
+.card .card-title > .media.size-3 {
     width: 160px;
     height: 160px;
 }
 
-.card .title > .media.size-3 + h2, .card .title > .media.size-3 + h3,
-.card .title > .media.size-3 + h2 + .subtext, .card .title > .media.size-3 + h3 + .subtext {
+.card .card-title > .media.size-3 + h2, .card .card-title > .media.size-3 + h3,
+.card .card-title > .media.size-3 + h2 + .subtext, .card .card-title > .media.size-3 + h3 + .subtext {
     margin-right: 176px;
 }
 
-.card .title > .media > img {
+.card .card-title > .media > img {
     width: 100%;
     height: 100%;
 }
 
-.card .text {
+.card .card-text {
     padding: 0 16px;
     margin: 16px 0;
 }
 
-.card .text > p {
+.card .card-text > p {
     margin: 0;
     font-size: 10.5pt;
 }
 
-.card .title:last-child, .card .text:last-child {
+.card .card-title:last-child, .card .card-text:last-child {
     margin-bottom: 24px;
 }
 
