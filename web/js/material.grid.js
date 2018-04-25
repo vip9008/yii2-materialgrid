@@ -286,6 +286,14 @@ function material_grid_init() {
             break;
         }
     });
+
+    $('.dialog.date-picker > .header').on('click', '.year' , function() {
+        $(this).parent('.header').parent('.dialog').addClass('show-years').removeClass('show-month');
+    })
+
+    $('.dialog.date-picker > .header').on('click', '.day' , function() {
+        $(this).parent('.header').parent('.dialog').addClass('show-month').removeClass('show-years');
+    })
 }
 
 function open_dialog(id) {

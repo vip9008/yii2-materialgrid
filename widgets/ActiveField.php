@@ -105,8 +105,8 @@ class ActiveField extends BaseActiveField
     public function textInput($options = [])
     {
         Html::addCssClass($this->options, 'form-input');
-        Html::addCssClass($this->inputOptions, 'text-input');
         $options = array_merge($this->inputOptions, $options);
+        Html::addCssClass($options, 'text-input');
         $this->parts['{input}'] = Html::activeTextInput($this->model, $this->attribute, $options);
 
         return $this;
@@ -115,8 +115,8 @@ class ActiveField extends BaseActiveField
     public function textarea($options = [])
     {
         Html::addCssClass($this->options, 'form-input');
-        Html::addCssClass($this->inputOptions, 'text-input');
         $options = array_merge($this->inputOptions, $options);
+        Html::addCssClass($options, 'text-input');
         $this->parts['{input}'] = Html::activeTextarea($this->model, $this->attribute, $options);
 
         return $this;
@@ -133,8 +133,8 @@ class ActiveField extends BaseActiveField
     public function passwordInput($options = [])
     {
         Html::addCssClass($this->options, 'form-input');
-        Html::addCssClass($this->inputOptions, 'text-input');
         $options = array_merge($this->inputOptions, $options);
+        Html::addCssClass($options, 'text-input');
         $this->parts['{input}'] = Html::activePasswordInput($this->model, $this->attribute, $options);
 
         return $this;
