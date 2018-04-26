@@ -75,6 +75,16 @@ class Html extends BaseHtml
         return $dropDownList;
     }
 
+    public static function dropDownInput($name, $selection = null, $items = [], $options = [])
+    {
+        $label = ArrayHelper::remove($options, 'placeholder', ArrayHelper::remove($options, 'label', $name));
+        $type = "select-control " . ArrayHelper::remove($options, 'type', 'default-menu');
+        return static::tag('div',
+            static::tag('div', $label, ['class' => 'select-value']).
+            static::dropDownList($name, $selection, $items, $options),
+        ['class' => $type]);
+    }
+
     public static function renderSelectOptions($selection, $items, &$tagOptions = [])
     {
         $lines = [];
