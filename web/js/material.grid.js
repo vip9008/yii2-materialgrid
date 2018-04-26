@@ -289,6 +289,8 @@ function material_grid_init() {
 
     $('.form-input.date-picker').on('click', function() {
 
+        $(this).addClass('dialog-opened');
+
         var attributes = [
             'data-starting-date',
             'data-ending-date',
@@ -306,37 +308,99 @@ function material_grid_init() {
             }
         }
 
+        var target = $(this).attr('data-target');
+
         var current_date = date_picker_config.initial_date;
         if (date_picker_config.selected_date) {
             current_date = date_picker_config.selected_date;
         }
 
-        date_picker_init($(this).children('.text-input').attr('data-target'), current_date);
+        $(target).attr('data-selected-date', current_date.toISOString().substr(0, 10));
+
+        var format = days_string[current_date.getDay()].substr(0, 3) + ', ' + months_string[current_date.getMonth()].substr(0, 3) + ' ' + current_date.getDate();
+        $(target).children('.dialog-container').children('.date-picker').children('.header').children('.day').html(format);
+        $(target).children('.dialog-container').children('.date-picker').children('.header').children('.year').html(current_date.getFullYear());
+
+        date_picker_calendar(target, current_date);
+        open_dialog(target);
     });
 
-    $('.form-input.date-picker').on('click', '.calendar > .month-control > a.prev, .calendar > .month-control > a.next', function() {
-        // function to change calendar >> prev and next
+    $('.dialog.date-picker').on('click', '.calendar > .month-control > a.prev, .calendar > .month-control > a.next', function() {
+        var target = $(this).closest('.date-picker-container');
+        var current_date = new Date($(target).attr('data-current-date'));
+
+        if ($(this).hasClass('prev')) {
+            current_date.setDate(0);
+        } else {
+            current_date.setDate(1);
+            current_date.setMonth(current_date.getMonth() + 1);
+        }
+
+        if (current_date >= date_picker_config.starting_date && current_date <= date_picker_config.ending_date) {
+            date_picker_calendar(target, current_date);
+        }
+    });
+
+    $('.dialog.date-picker').on('click', '.years > .btn', function() {
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active').siblings('.btn').removeClass('active').closest('.dialog.date-picker').removeClass('show-years');
+            var target = $(this).closest('.date-picker-container');
+            var current_date = new Date($(target).attr('data-current-date'));
+            current_date.setYear($(this).html());
+            date_picker_calendar(target, current_date);
+        }
     });
 
     $('.dialog.date-picker').on('click', '.header > .year', function() {
         $(this).parent('.header').parent('.dialog').addClass('show-years');
-    })
+    });
 
     $('.dialog.date-picker').on('click', '.header > .day', function() {
         $(this).parent('.header').parent('.dialog').removeClass('show-years');
-    })
+    });
 
     $('.dialog.date-picker').on('click', '.calendar > .full-month > a.day-number,  > .calendar > .full-month > button.day-number' , function() {
-        $(this).addClass('active').siblings('.day-number').removeClass('active');
-    })
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active').siblings('.day-number').removeClass('active');
+
+            var selected_date = $(this).attr('data-fulldate');
+            var target = $(this).closest('.date-picker-container');
+
+            $(target).attr('data-current-date', selected_date);
+
+            selected_date = new Date(selected_date);
+            var format = days_string[selected_date.getDay()].substr(0, 3) + ', ' + months_string[selected_date.getMonth()].substr(0, 3) + ' ' + selected_date.getDate();
+            $(target).children('.dialog-container').children('.date-picker').children('.header').children('.day').html(format);
+            $(target).children('.dialog-container').children('.date-picker').children('.header').children('.year').html(selected_date.getFullYear());
+        }
+    });
+
+    $('.dialog.date-picker').on('click', '.actions .btn.abort', function() {
+        $(this).closest('.dialog.date-picker').removeClass('show-years');
+        var target = $(this).closest('.date-picker-container');
+        $(target).attr('data-current-date', '');
+
+        $('.form-input.date-picker.dialog-opened').removeClass('dialog-opened');
+        close_dialog(target);
+    });
+
+    $('.dialog.date-picker').on('click', '.actions .btn.confirm', function() {
+        $(this).closest('.dialog.date-picker').removeClass('show-years');
+        var target = $(this).closest('.date-picker-container');
+        var new_date = $(target).attr('data-current-date');
+        $(target).attr('data-selected-date', new_date);
+        $('.form-input.date-picker.dialog-opened').removeClass('dialog-opened').attr('data-selected-date', new_date).children('.text-input').val(new_date).trigger('change');
+        date_picker_config.selected_date = new Date(new_date);
+        close_dialog(target);
+    });
 }
 
-function open_dialog(id) {
-    $(id).addClass('active');
+function open_dialog(target) {
+    $(target).addClass('active');
 }
 
-function close_dialog(id) {
-    $(id).removeClass('active');
+function close_dialog(target) {
+    $(target).removeClass('active');
 }
 
 // DATE PICKER FUNCTIONS
@@ -348,43 +412,38 @@ var date_picker_config = {
     'initial_date': new Date()
 };
 
-function date_picker_init(target, current_date) {
-    var months_string = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December"
-    ];
+var months_string = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+];
 
-    var days_string = [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday'
-    ];
+var days_string = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+];
 
-    var format = days_string[current_date.getDay()].substr(0, 3) + ', ' + months_string[current_date.getMonth()].substr(0, 3) + ' ' + current_date.getDate();
-    $(target + ' .dialog.date-picker > .header > .day').html(format);
-
+function date_picker_calendar(target, current_date) {
     // if the same month is selected dont re-render calendar
-    if (current_date.toISOString().substr(0, 7) != $(target).attr('data-selected-date')) {
-        $(target).attr('data-selected-date', current_date.toISOString().substr(0, 7));
+    if (current_date.toISOString().substr(0, 7) != $(target).attr('data-current-date').substr(0, 7)) {
+        $(target).attr('data-current-date', current_date.toISOString().substr(0, 10));
 
-        $(target + ' .dialog.date-picker > .header > .year').html(current_date.getFullYear());
-
-        format = months_string[current_date.getMonth()] + ' ' + current_date.getFullYear();
-        $(target + ' .dialog.date-picker > .calendar > .month-control > .month-text').html(format);
+        var format = months_string[current_date.getMonth()] + ' ' + current_date.getFullYear();
+        $(target).children('.dialog-container').children('.date-picker').children('.calendar').children('.month-control').children('.month-text').html(format);
 
         // number of days in the current month
         var last_day = new Date(current_date.getFullYear(), current_date.getMonth() + 1, 0).getDate();
@@ -392,23 +451,48 @@ function date_picker_init(target, current_date) {
         var first_day_index = new Date(current_date.getFullYear(), current_date.getMonth(), 1).getDay();
 
         // clear calendar
-        $(target + ' .dialog.date-picker > .calendar > .full-month').html('');
+        $(target).children('.dialog-container').children('.date-picker').children('.calendar').children('.full-month').html('');
 
         var index; // for loops
         // add week indicators
         for (index = 0; index < days_string.length; index++) {
-            $(target + ' .dialog.date-picker > .calendar > .full-month').append('<div class="week-day text-secondary">' + days_string[index].substr(0, 1) + '</div>');
+            $(target).children('.dialog-container').children('.date-picker').children('.calendar').children('.full-month').append('<div class="week-day text-secondary">' + days_string[index].substr(0, 1) + '</div>');
         }
         // add empty days
         for (index = 0; index < first_day_index; index++) {
-            $(target + ' .dialog.date-picker > .calendar > .full-month').append('<div class="day-number text-hint"></div>');
+            $(target).children('.dialog-container').children('.date-picker').children('.calendar').children('.full-month').append('<div class="day-number text-hint"></div>');
         }
         // add month days
         for (index = 0; index < last_day; index++) {
             format = current_date.toISOString().substr(0, 8) + (index + 1).toString().padStart(2, '0');
-            $(target + ' .dialog.date-picker > .calendar > .full-month').append('<a href="javascript: close_dialog(\'' + target + '\');" class="day-number bg-indigo" data-fulldate="' + format + '">' + (index + 1) + '</a>');
+            var html = index + 1;
+            if ((new Date(format)) >= date_picker_config.starting_date && (new Date(format)) <= date_picker_config.ending_date) {
+                var css_class = 'day-number bg-indigo';
+                // if this is the selected date then select it
+                if (format == $(target).attr('data-selected-date')) {
+                    css_class += ' active';
+                }
+                // if this is today then highlight it
+                if (format == (new Date().toISOString().substr(0, 10))) {
+                    html = '<b class="today indigo">' + html + '</b>';
+                }
+
+                $(target).children('.dialog-container').children('.date-picker').children('.calendar').children('.full-month').append('<a href="javascript: ;" class="' + css_class + '" data-fulldate="' + format + '">' + html + '</a>');
+            } else {
+                $(target).children('.dialog-container').children('.date-picker').children('.calendar').children('.full-month').append('<div class="day-number text-hint">' + html + '</div>');
+            }
+        }
+
+        // add years
+        $(target).children('.dialog-container').children('.date-picker').children('.years').html('');
+        var min_year = date_picker_config.starting_date.getFullYear();
+        var max_year = date_picker_config.ending_date.getFullYear();
+        for (index = min_year; index <= max_year; index++) {
+            var css_class = 'btn text-primary';
+            if (current_date.getFullYear() == index) {
+                css_class += ' active';
+            }
+            $(target).children('.dialog-container').children('.date-picker').children('.years').append('<a href="javascript: ;" class="' + css_class + '">' + index + '</a>');
         }
     }
-
-    open_dialog(target);
 }
