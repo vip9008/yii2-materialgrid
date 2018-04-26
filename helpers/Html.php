@@ -77,7 +77,7 @@ class Html extends BaseHtml
 
     public static function dropDownInput($name, $selection = null, $items = [], $options = [])
     {
-        $label = ArrayHelper::remove($options, 'placeholder', ArrayHelper::remove($options, 'label', $name));
+        $label = empty($selection) ? ArrayHelper::remove($options, 'placeholder', ArrayHelper::remove($options, 'label', $name)) : $selection;
         $type = "select-control " . ArrayHelper::remove($options, 'type', 'default-menu');
         return static::tag('div',
             static::tag('div', $label, ['class' => 'select-value']).

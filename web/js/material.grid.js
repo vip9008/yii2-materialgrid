@@ -89,11 +89,11 @@ function material_grid_init() {
 
     activate_snackbar();
 
-    $(window).on('click', function(e) {
+    $('body').on('click', function(e) {
         $('.select-control.active').removeClass('active');
     });
 
-    $('a[href*="#"]:not([href="#"])').on('click', function() {
+    $('body').on('click', 'a[href*="#"]:not([href="#"])', function() {
         var hash_code = $(this).attr('href');
         $('a[href="' + hash_code + '"]').each(function() {
             $(this).parent().children('a.active').removeClass('active');
@@ -112,7 +112,7 @@ function material_grid_init() {
         }
     });
 
-    $('#snackbars').on('click', '.item a.control.close', function() {
+    $('body').on('click', '#snackbars .item a.control.close', function() {
         $(this).parent().remove();
     });
 
@@ -140,7 +140,7 @@ function material_grid_init() {
         }
     });
 
-    $('.data-table table > tbody > tr').on('click', 'td.control > .checkbox-input', function() {
+    $('body').on('click', '.data-table table > tbody > tr > td.control > .checkbox-input', function() {
         if (!$(this).hasClass('active')) {
             $(this).parent('.control').parent('tr').addClass('seleceted');
         } else {
@@ -159,7 +159,7 @@ function material_grid_init() {
         }
     });
 
-    $('.data-table table > thead > tr').on('click', 'th.control > .checkbox-input', function() {
+    $('body').on('click', '.data-table table > thead > tr > th.control > .checkbox-input', function() {
 
         if (!$(this).hasClass('active')) {
             $(this).parents('thead').siblings('tbody').children('tr').children('td.control').children('.checkbox-input').each(function() {
@@ -186,7 +186,7 @@ function material_grid_init() {
         return;
     });
 
-    $('.radiobutton-input').on('click', function() {
+    $('body').on('click', '.radiobutton-input', function() {
         if ($(this).hasClass('disabled')) {
             return false;
         }
@@ -206,11 +206,11 @@ function material_grid_init() {
         }
     });
 
-    $('.select-control').on('click', function(event) {
+    $('body').on('click', '.select-control', function(event) {
         event.stopPropagation();
     });
 
-    $('.select-control').on('click', '.select-value, .select-btn', function() {
+    $('body').on('click', '.select-control > .select-value, .select-control > .select-btn', function() {
         if ($(this).parent('.select-control').hasClass('active')) {
             $(this).parent('.select-control').removeClass('active');
             $(this).siblings('.select-menu').css('margin-top', '');
@@ -229,7 +229,7 @@ function material_grid_init() {
         }
     });
 
-    $('.select-control .select-menu').on('click', 'button.list-item, a.list-item', function() {
+    $('body').on('click', '.select-control .select-menu button.list-item, .select-control .select-menu a.list-item', function() {
         if ($(this).hasClass('disabled') || $(this).is(':disabled')) {
             return;
         }
@@ -244,7 +244,7 @@ function material_grid_init() {
         $(this).closest('.select-menu').css('margin-top', '').parent('.select-control').removeClass('active');
     });
 
-    $('.expansion-panel .panel').on('click', '.icon', function() {
+    $('body').on('click', '.expansion-panel .panel > .icon', function() {
         if (!$(this).parent('.panel').hasClass('active')) {
             $(this).parent('.panel').siblings('.panel.active').removeClass('active');
             $(this).parent('.panel').addClass('active').closest('.expansion-panel').addClass('active');
@@ -269,13 +269,13 @@ function material_grid_init() {
         }
     });
 
-    $('.form-input.has-count .text-input').on('keyup change click blur', function() {
+    $('body').on('keyup change click blur', '.form-input.has-count .text-input', function() {
         var count = $(this).val().length;
         var max = $(this).attr('maxLength');
         $(this).siblings('.hint').children('.char-count').html(max - count);
     });
 
-    $('.form-input').on('click', '.side-action', function() {
+    $('body').on('click', '.form-input .side-action', function() {
         switch($(this).attr('data-action')) {
             case 'change_visibility':
                 if ($(this).html() == 'visibility') {
@@ -287,7 +287,7 @@ function material_grid_init() {
         }
     });
 
-    $('.form-input.date-picker').on('click', function() {
+    $('body').on('click', '.form-input.date-picker', function() {
 
         $(this).addClass('dialog-opened');
 
@@ -325,7 +325,7 @@ function material_grid_init() {
         open_dialog(target);
     });
 
-    $('.dialog.date-picker').on('click', '.calendar > .month-control > a.prev, .calendar > .month-control > a.next', function() {
+    $('body').on('click', '.dialog.date-picker > .calendar > .month-control > a.prev, .dialog.date-picker > .calendar > .month-control > a.next', function() {
         var target = $(this).closest('.date-picker-container');
         var current_date = new Date($(target).attr('data-current-date'));
 
@@ -341,7 +341,7 @@ function material_grid_init() {
         }
     });
 
-    $('.dialog.date-picker').on('click', '.years > .btn', function() {
+    $('body').on('click', '.dialog.date-picker > .years > .btn', function() {
         if (!$(this).hasClass('active')) {
             $(this).addClass('active').siblings('.btn').removeClass('active').closest('.dialog.date-picker').removeClass('show-years');
             var target = $(this).closest('.date-picker-container');
@@ -351,15 +351,15 @@ function material_grid_init() {
         }
     });
 
-    $('.dialog.date-picker').on('click', '.header > .year', function() {
+    $('body').on('click', '.dialog.date-picker > .header > .year', function() {
         $(this).parent('.header').parent('.dialog').addClass('show-years');
     });
 
-    $('.dialog.date-picker').on('click', '.header > .day', function() {
+    $('body').on('click', '.dialog.date-picker > .header > .day', function() {
         $(this).parent('.header').parent('.dialog').removeClass('show-years');
     });
 
-    $('.dialog.date-picker').on('click', '.calendar > .full-month > a.day-number,  > .calendar > .full-month > button.day-number' , function() {
+    $('body').on('click', '.dialog.date-picker > .calendar > .full-month > a.day-number, .dialog.date-picker > .calendar > .full-month > button.day-number' , function() {
         if (!$(this).hasClass('active')) {
             $(this).addClass('active').siblings('.day-number').removeClass('active');
 
@@ -375,7 +375,7 @@ function material_grid_init() {
         }
     });
 
-    $('.dialog.date-picker').on('click', '.actions .btn.abort', function() {
+    $('body').on('click', '.dialog.date-picker > .actions .btn.abort', function() {
         $(this).closest('.dialog.date-picker').removeClass('show-years');
         var target = $(this).closest('.date-picker-container');
         $(target).attr('data-current-date', '');
@@ -384,7 +384,7 @@ function material_grid_init() {
         close_dialog(target);
     });
 
-    $('.dialog.date-picker').on('click', '.actions .btn.confirm', function() {
+    $('body').on('click', '.dialog.date-picker > .actions .btn.confirm', function() {
         $(this).closest('.dialog.date-picker').removeClass('show-years');
         var target = $(this).closest('.date-picker-container');
         var new_date = $(target).attr('data-current-date');
