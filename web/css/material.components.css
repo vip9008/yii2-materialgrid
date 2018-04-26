@@ -2504,6 +2504,13 @@ html[dir] .dialog-background[dir="rtl"] > .dialog-container > .dialog > .actions
 
 .dialog-background > .dialog-container > .dialog.date-picker {
     width: 328px;
+    
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently not supported by any browser */
 }
 
 .dialog-background > .dialog-container > .dialog.date-picker > .header {
@@ -2525,24 +2532,23 @@ html[dir] .dialog-background[dir="rtl"] > .dialog-container > .dialog > .actions
 }
 
 .dialog-background > .dialog-container > .dialog.date-picker > .header > .year,
-.dialog-background > .dialog-container > .dialog.date-picker > .header > .day,
+.dialog-background > .dialog-container > .dialog.date-picker.show-years > .header > .day,
 .light-theme .dialog-background > .dialog-container > .dialog.date-picker > .header > .year,
-.light-theme .dialog-background > .dialog-container > .dialog.date-picker > .header > .day,
+.light-theme .dialog-background > .dialog-container > .dialog.date-picker.show-years > .header > .day,
 .dark-theme .light-theme .dialog-background > .dialog-container > .dialog.date-picker > .header > .year,
-.dark-theme .light-theme .dialog-background > .dialog-container > .dialog.date-picker > .header > .day,
+.dark-theme .light-theme .dialog-background > .dialog-container > .dialog.date-picker.show-years > .header > .day,
 .dark-theme .light-theme.dialog-background > .dialog-container > .dialog.date-picker > .header > .year,
-.dark-theme .light-theme.dialog-background > .dialog-container > .dialog.date-picker > .header > .day {
+.dark-theme .light-theme.dialog-background > .dialog-container > .dialog.date-picker.show-years > .header > .day {
     opacity: 0.54;
 }
 .dark-theme .dialog-background > .dialog-container > .dialog.date-picker > .header > .year,
-.dark-theme .dialog-background > .dialog-container > .dialog.date-picker > .header > .day,
+.dark-theme .dialog-background > .dialog-container > .dialog.date-picker.show-years > .header > .day,
 .dark-theme.dialog-background > .dialog-container > .dialog.date-picker > .header > .year,
-.dark-theme.dialog-background > .dialog-container > .dialog.date-picker > .header > .day {
+.dark-theme.dialog-background > .dialog-container > .dialog.date-picker.show-years > .header > .day {
     opacity: 0.7;
 }
 
 .dialog-background > .dialog-container > .dialog.date-picker.show-years > .header > .year,
-.dialog-background > .dialog-container > .dialog.date-picker.show-month > .header > .day,
 .dialog-background > .dialog-container > .dialog.date-picker > .header > .year:hover,
 .dialog-background > .dialog-container > .dialog.date-picker > .header > .day:hover {
     opacity: 1 !important;
@@ -2609,14 +2615,18 @@ html[dir] .dialog-background[dir="rtl"] > .dialog-container > .dialog > .actions
     cursor: pointer;
 }
 
-.light-theme .dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active),
-.dark-theme .light-theme .dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active),
-.dark-theme .light-theme.dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active) {
+.dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > div.day-number.text-hint {
+    cursor: default;
+}
+
+.light-theme .dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active):not(.text-hint),
+.dark-theme .light-theme .dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active):not(.text-hint),
+.dark-theme .light-theme.dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active):not(.text-hint) {
     color: rgba(0, 0, 0, 0.87);
     background-color: transparent;
 }
-.dark-theme .dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active),
-.dark-theme.dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active) {
+.dark-theme .dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active):not(.text-hint),
+.dark-theme.dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active):not(.text-hint) {
     color: rgba(255, 255, 255, 1);
     background-color: transparent;
 }
@@ -2627,10 +2637,32 @@ html[dir] .dialog-background[dir="rtl"] > .dialog-container > .dialog > .actions
 
 .dialog-background > .dialog-container > .dialog.date-picker > .years {
     height: 342px;
-    max-height: 342px;
-    min-height: 342px;
     overflow-y: auto;
     display: none;
+    position: absolute;
+    left: 0;
+    bottom: 52px;
+    right: 0;
+}
+
+.dialog-background > .dialog-container > .dialog.date-picker.show-years > .years {
+    display: block;
+}
+
+.dialog-background > .dialog-container > .dialog.date-picker > .years > .btn {
+    display: block;
+    margin: 4px 0;
+    width: 100%;
+    font-size: 12pt;
+    font-family: 'roboto_regular', sans-serif;
+    line-height: 40px;
+}
+
+.dialog-background > .dialog-container > .dialog.date-picker > .years > .btn.active {
+    font-size: 19.5pt;
+    font-family: 'roboto_bold', sans-serif;
+    color: inherit;
+    line-height: 70px;
 }
 
 /* Custom breakpoint for dialogs only!! */
@@ -2657,6 +2689,49 @@ html[dir] .dialog-background[dir="rtl"] > .dialog-container > .dialog > .actions
 
     .dialog-background > .dialog-container > .dialog.date-picker {
         width: 512px;
+    }
+
+    .dialog-background > .dialog-container > .dialog.date-picker > .header {
+        width: 168px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .dialog-background > .dialog-container > .dialog.date-picker > .calendar {
+        padding: 4px 4px 0;
+        margin-left: 168px;
+        height: 272px;
+        max-height: 272px;
+        min-height: 272px;
+    }
+
+    .dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month {
+        padding: 0 0 4px 14px;
+    }
+
+    .dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .week-day {
+        width: 32px;
+        margin: 4px 14px 0 0;
+    }
+
+    .dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        margin: 0 14px 0 0;
+    }
+
+    .dialog-background > .dialog-container > .dialog.date-picker > .years {
+        height: 272px;
+        top: 0;
+        bottom: auto;
+        margin-left: 168px;
+    }
+
+    .dialog-background > .dialog-container > .dialog.date-picker > .actions {
+        margin-left: 168px;
     }
 }
 

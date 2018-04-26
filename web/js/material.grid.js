@@ -288,11 +288,15 @@ function material_grid_init() {
     });
 
     $('.dialog.date-picker > .header').on('click', '.year' , function() {
-        $(this).parent('.header').parent('.dialog').addClass('show-years').removeClass('show-month');
+        $(this).parent('.header').parent('.dialog').addClass('show-years');
     })
 
     $('.dialog.date-picker > .header').on('click', '.day' , function() {
-        $(this).parent('.header').parent('.dialog').addClass('show-month').removeClass('show-years');
+        $(this).parent('.header').parent('.dialog').removeClass('show-years');
+    })
+
+    $('.dialog.date-picker > .calendar > .full-month').on('click', 'a.day-number, button.day-number' , function() {
+        $(this).addClass('active').siblings('.day-number').removeClass('active');
     })
 }
 
