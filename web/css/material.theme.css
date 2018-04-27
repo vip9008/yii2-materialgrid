@@ -340,7 +340,7 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
     height: 46px;
     width: 46px;
     text-align: center;
-    padding: 0;
+    padding: 11px;
     margin: 9px 10px 0 -12px;
     border-width: 0;
     background: transparent;
@@ -388,7 +388,7 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
 
 #page-content > .top-bar .user-wrapper .select-menu.right {
     right: -12px;
-    top: 16px;
+    top: 0;
 }
 
 #page-content > .page-header {

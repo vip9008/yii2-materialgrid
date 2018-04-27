@@ -50,12 +50,6 @@ class ActiveField extends BaseActiveField
 
     public function label($label = null, $options = [])
     {
-        switch ($this->role['name']) {
-            case 'select':
-                return $this->selectLabel($label, $options);
-            break;
-        }
-
         if ($label === false) {
             $this->parts['{label}'] = '';
             return $this;
@@ -70,34 +64,27 @@ class ActiveField extends BaseActiveField
 
         $this->parts['{label}'] = Html::tag('div', $label, $options);
 
-        return $this;
-    }
+        switch ($this->role['name']) {
+            case 'select':
+                $textOptions = [
+                    'type' => 'text',
+                    'class' => 'text-input',
+                    'value' => ArrayHelper::remove($options, 'textValue', ''),
+                ];
 
-    public function selectLabel($label = null, $options = [])
-    {
-        if ($label === false) {
-            $label = '';
+                if (ArrayHelper::getValue($this->options, 'placeholder', false)) {
+                    $textOptions['placeholder'] = ArrayHelper::remove($this->options, 'placeholder', '');
+                }
+
+                if ($this->role['type'] != 'bar-menu') {
+                    $textOptions['disabled'] = true;
+                }
+
+                $this->parts['{label}'] = Html::tag('div', 'arrow_drop_down', ['class' => 'material-icon side-action text-secondary']).
+                    Html::tag('input', '', $textOptions).
+                    $this->parts['{label}'];
+            break;
         }
-
-        $options = array_merge($this->labelOptions, $options);
-        Html::addCssClass($options, 'select-value');
-
-        if ($label === null) {
-            $label = $this->model->getAttributeLabel($this->attribute);
-        }
-
-        if (is_array($this->role['type'])) {
-            $labelHtml = '';
-            if (isset($this->role['type']['avatar'])) {
-                $labelHtml .= Html::tag('div', Html::tag('div', '', ['class' => 'img']), ['class' => 'avatar']) . "\n";
-            }
-            $labelHtml .= Html::tag('div', Html::tag('div', $label, ['class' => 'title']), ['class' => 'text']) . "\n";
-            $label = "\n" . Html::tag('div', "\n" . $labelHtml, ['class' => 'list-item one-line']) . "\n";
-        }
-
-        $selectLabel = Html::tag('div', $label, $options);
-
-        $this->parts['{label}'] = $selectLabel;
 
         return $this;
     }
@@ -187,25 +174,22 @@ class ActiveField extends BaseActiveField
 
     public function dropDownList($items, $options = [])
     {
-        $this->template = "{label}\n{input}\n{hint}\n{error}";
         $this->role['name'] = 'select';
+        $this->role['type'] = ArrayHelper::remove($options, 'type', '');
 
-        Html::removeCssClass($this->options, $this->themeColor);
+        Html::addCssClass($this->options, "form-input select-control {$this->role['type']}");
 
-        $selectControl = 'default-menu';
-        $listType = empty($items) ? '' : array_values($items)[0];
-        if (is_array($listType)) {
-            $selectControl = 'list-menu';
-            Html::addCssClass($this->options, $selectControl);
-            $this->role['type'] = $listType;
-        }
-
-        if (!isset($this->options['class'])) {
-            Html::addCssClass($this->options, "select-control $selectControl");
-        } else {
-            Html::addCssClass($this->options, 'select-control');
-        }
         $options = array_merge($this->inputOptions, $options);
+
+        if ($this->role['type'] == 'bar-menu') {
+            $options['errorMessage'] = ArrayHelper::getValue($options, 'errorMessage', "Can't find any match!");
+        }
+
+        $selection = isset($options['value']) ? $options['value'] : Html::getAttributeValue($this->model, $this->attribute);
+        if (isset($items[$selection])) {
+            $this->labelOptions['textValue'] = $items[$selection];
+        }
+
         $this->parts['{input}'] = Html::activeDropDownList($this->model, $this->attribute, $items, $options);
         
         return $this;

@@ -218,14 +218,14 @@ function material_grid_init() {
             $('.form-input.select-control.opened').not($(this)).removeClass('opened');
             $(this).addClass('opened').children('.side-action').html('arrow_drop_up');
 
-            if ($('body').hasClass('width-sm') && $(this).hasClass('default-menu')) {
-                var index = $(this).children('.select-menu').find('.list-item.active').index();
-                var position = -14;
-                if (index > 0) {
-                    position = position - (index * 48);
-                    $(this).children('.select-menu').css('margin-top', position);
-                }
-            }
+            // if ($('body').hasClass('width-sm') && $(this).hasClass('default-menu')) {
+            //     var index = $(this).children('.select-menu').find('.list-item.active').index();
+            //     var position = -14;
+            //     if (index > 0) {
+            //         position = position - (index * 48);
+            //         $(this).children('.select-menu').css('margin-top', position);
+            //     }
+            // }
         }
     });
 
@@ -247,7 +247,7 @@ function material_grid_init() {
         }
     });
 
-    $('body').on('click', '.form-input.select-control .select-menu button.list-item, .form-input.select-control .select-menu a.list-item', function() {
+    $('body').on('click', '.form-input.select-control .select-menu button.list-item, .form-input.select-control .select-menu a.list-item', function(event) {
         if ($(this).hasClass('disabled') || $(this).is(':disabled')) {
             return;
         }
@@ -261,7 +261,12 @@ function material_grid_init() {
         
         $(this).closest('.select-menu').css('margin-top', '').parent('.form-input.select-control').removeClass('opened').children('.side-action').html('arrow_drop_down');
 
-        return false;
+        if ($(this).closest('.form-input.select-control').hasClass('bar-menu')) {
+            $(this).siblings('.list-item').removeAttr('style');
+            $(this).siblings('.list-item.error-message').addClass('hidden');
+        }
+
+        event.stopPropagation();
     });
 
     $('body').on('click', '.expansion-panel .panel > .icon', function() {

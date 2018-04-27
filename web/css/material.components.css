@@ -2176,6 +2176,7 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
 .card .card-title > h3 {
     margin: 0;
     font-size: 10.5pt;
+    line-height: 1.5;
 }
 
 .card .card-title > .subtext {
