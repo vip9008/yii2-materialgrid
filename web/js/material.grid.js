@@ -86,7 +86,18 @@ function material_grid_init() {
     activate_snackbar();
 
     $('body').on('click', function(e) {
-        $('.form-input.select-control.opened').removeClass('opened').children('.side-action').html('arrow_drop_down');
+        $('.form-input.select-control.opened').each(function() {
+            $(this).removeClass('opened').children('.side-action').html('arrow_drop_down');
+            if ($(this).hasClass('bar-menu')) {
+                var value = '';
+                if ($(this).children('.select-value').val().length) {
+                    value = $(this).find('.list-item.active > .text > .title').html();
+                }
+                $(this).find('.list-item').removeAttr('style');
+                $(this).find('.list-item.error-message').addClass('hidden');
+                $(this).children('.text-input').val(value).trigger('change');
+            }
+        });
     });
 
     $('body').on('click', 'a[href*="#"]:not([href="#"])', function() {
@@ -200,7 +211,7 @@ function material_grid_init() {
     });
 
     $('body').on('click', '.form-input.select-control', function() {
-        if ($(this).hasClass('opened')) {
+        if ($(this).hasClass('opened') && !$(this).hasClass('bar-menu')) {
             $(this).removeClass('opened').children('.side-action').html('arrow_drop_down');;
             $(this).children('.select-menu').css('margin-top', '');
         } else {
@@ -215,6 +226,24 @@ function material_grid_init() {
                     $(this).children('.select-menu').css('margin-top', position);
                 }
             }
+        }
+    });
+
+    $('body').on('keyup', '.form-input.select-control.bar-menu > .text-input', function() {
+        var filter = $(this).val().toUpperCase();
+        var found = false;
+        $(this).siblings('.select-menu').find('.list-item').each(function() {
+            if ($(this).children('.text').children('.title').html().toUpperCase().indexOf(filter) > -1) {
+                $(this).show();
+                found = true;
+            } else {
+                $(this).hide();
+            }
+        });
+        if (!found) {
+            $(this).siblings('.select-menu').find('.list-item.error-message').removeClass('hidden').show();
+        } else {
+            $(this).siblings('.select-menu').find('.list-item.error-message').addClass('hidden').hide();
         }
     });
 

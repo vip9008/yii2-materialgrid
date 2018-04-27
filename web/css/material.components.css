@@ -419,6 +419,7 @@ html[dir] .form-input.select-control[dir="rtl"] .select-menu.right {
 }
 
 .form-input.select-control.box-style .select-menu {
+    top: 8px;
     left: -8px;
 }
 html[dir="ltr"] .form-input.select-control.box-style .select-menu,
@@ -444,6 +445,21 @@ html[dir] .form-input.select-control.box-style[dir="rtl"] .select-menu {
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
+}
+
+.form-input.select-control.bar-menu.opened > .text-input {
+    z-index: 8008;
+    border-color: transparent;
+    background: transparent;
+}
+
+.form-input.select-control.bar-menu .select-menu {
+    padding-top: 58px;
+}
+
+.form-input.select-control.bar-menu .select-menu .items-container {
+    border-top-width: 1px;
+    border-top-style: solid;
 }
 
 .form-input.select-control .select-menu .list-item {
