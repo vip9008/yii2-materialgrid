@@ -272,7 +272,7 @@ html[dir="rtl"] .btn-group.btn-align-right > .btn + .btn, html[dir] .btn-group.b
     margin: 16px 15px 0 0;
     transition: all 0.2s;
     display: inline-block;
-    z-index: 1;
+    z-index: auto;
 }
 
 html[dir="ltr"] .form-input, html[dir] .form-input[dir="ltr"] {
@@ -291,6 +291,179 @@ html[dir="rtl"] .form-input, html[dir] .form-input[dir="rtl"] {
 html[dir="ltr"] .form-input.block, html[dir] .form-input.block[dir="ltr"],
 html[dir="rtl"] .form-input.block, html[dir] .form-input.block[dir="rtl"] {
     margin: 16px 0;
+}
+
+.form-input.date-picker, .form-input.date-picker *,
+.form-input.select-control, .form-input.select-control * {
+    cursor: pointer;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+}
+
+.form-input.select-control.context-menu {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.form-input.select-control .select-menu {
+    border-radius: 2px;
+    transition: all 0.2s;
+    position: absolute;
+    top: 0;
+    left: -24px;
+    z-index: 8000;
+    opacity: 0;
+    visibility: hidden;
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -ms-transform-origin: top;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    min-width: 96px;
+    box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2),
+                0 9px 12px 1px rgba(0, 0, 0, 0.14),
+                0 3px 16px 2px rgba(0, 0, 0, 0.12);
+}
+html[dir="ltr"] .form-input.select-control .select-menu, html[dir] .form-input.select-control[dir="ltr"] .select-menu {
+    left: -24px;
+    right: auto;
+}
+html[dir="rtl"] .form-input.select-control .select-menu, html[dir] .form-input.select-control[dir="rtl"] .select-menu {
+    left: auto;
+    right: -24px;
+}
+
+.form-input.select-control .select-menu.left {
+    left: -24px;
+    right: auto;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -ms-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+html[dir="ltr"] .form-input.select-control .select-menu.left, html[dir] .form-input.select-control[dir="ltr"] .select-menu.left {
+    left: -24px;
+    right: auto;
+    -ms-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+html[dir="rtl"] .form-input.select-control .select-menu.left, html[dir] .form-input.select-control[dir="rtl"] .select-menu.left {
+    left: auto;
+    right: -24px;
+    -ms-transform-origin: top right;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+}
+
+.form-input.select-control.context-menu .select-menu.left,
+html[dir="ltr"] .form-input.select-control.context-menu .select-menu.left,
+html[dir] .form-input.select-control.context-menu[dir="ltr"] .select-menu.left {
+    top: -12px;
+    left: -12px;
+    right: auto;
+}
+html[dir="rtl"] .form-input.select-control .select-menu.left,
+html[dir] .form-input.select-control[dir="rtl"] .select-menu.left {
+    top: -12px;
+    left: auto;
+    right: -12px;
+}
+
+.form-input.select-control .select-menu.right {
+    left: auto;
+    right: -24px;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -ms-transform-origin: top right;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+}
+html[dir="ltr"] .form-input.select-control .select-menu.right, html[dir] .form-input.select-control[dir="ltr"] .select-menu.right {
+    left: auto;
+    right: -24px;
+    -ms-transform-origin: top right;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+}
+html[dir="rtl"] .form-input.select-control .select-menu.right, html[dir] .form-input.select-control[dir="rtl"] .select-menu.right {
+    left: -24px;
+    right: auto;
+    -ms-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+
+.form-input.select-control.context-menu .select-menu.right,
+html[dir="ltr"] .form-input.select-control.context-menu .select-menu.right,
+html[dir] .form-input.select-control.context-menu[dir="ltr"] .select-menu.right {
+    top: -12px;
+    left: auto;
+    right: -12px;
+}
+html[dir="rtl"] .form-input.select-control .select-menu.right,
+html[dir] .form-input.select-control[dir="rtl"] .select-menu.right {
+    top: -12px;
+    left: -12px;
+    right: auto;
+}
+
+.form-input.select-control.box-style .select-menu {
+    top: 8px;
+    left: -8px;
+}
+html[dir="ltr"] .form-input.select-control.box-style .select-menu,
+html[dir] .form-input.select-control.box-style[dir="ltr"] .select-menu {
+    left: -8px;
+    right: auto;
+}
+html[dir="rtl"] .form-input.select-control.box-style .select-menu,
+html[dir] .form-input.select-control.box-style[dir="rtl"] .select-menu {
+    left: auto;
+    right: -8px;
+}
+
+.form-input.select-control .select-menu .items-container {
+    max-height: 248px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.form-input.select-control.opened .select-menu {
+    opacity: 1;
+    visibility: visible;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.form-input.select-control.bar-menu.opened > .text-input {
+    z-index: 8008;
+    border-color: transparent;
+    background: transparent;
+}
+
+.form-input.select-control.bar-menu .select-menu {
+    padding-top: 58px;
+}
+
+.form-input.select-control.bar-menu .select-menu .items-container {
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+.form-input.select-control .select-menu .list-item {
+    padding: 0 8px;
 }
 
 .form-input .text-input:-webkit-autofill,
@@ -313,6 +486,7 @@ html[dir="rtl"] .form-input.block, html[dir] .form-input.block[dir="rtl"] {
     line-height: 1.5;
     font-family: 'roboto_regular', sans-serif;
     transition: all 0.2s;
+    z-index: 2;
 }
 
 html:lang(en-US) .form-input .text-input,
@@ -352,8 +526,8 @@ html[lang] .form-input .text-input:lang(ar-BH) {
     border-width: 2px;
 }
 
-.form-input:not(.date-picker) .text-input[disabled], .form-input:not(.date-picker) .text-input:disabled,
-.form-input:not(.date-picker) .text-input[disabled]:hover, .form-input:not(.date-picker) .text-input:disabled:hover {
+.form-input:not(.date-picker):not(.select-control) .text-input[disabled], .form-input:not(.date-picker):not(.select-control) .text-input:disabled,
+.form-input:not(.date-picker):not(.select-control) .text-input[disabled]:hover, .form-input:not(.date-picker):not(.select-control) .text-input:disabled:hover {
     border-bottom-style: dotted;
     border-bottom-width: 1px;
     padding-bottom: 9px;
@@ -370,9 +544,14 @@ html[lang] .form-input .text-input:lang(ar-BH) {
 .form-input .material-icons.side-action {
     position: absolute;
     right: 0;
-    top: 24px;
+    top: 18px;
     z-index: 8;
     margin-right: 15px;
+}
+
+.form-input .material-icon.side-action:before,
+.form-input .material-icons.side-action:before {
+    display: none;
 }
 
 html[dir="ltr"] .form-input .material-icon.side-action,
@@ -432,7 +611,7 @@ html[dir] .form-input[dir="rtl"] .material-icons.side-action + .text-input {
     position: absolute;
     top: 24px;
     left: 0;
-    z-index: -1;
+    z-index: 0;
     padding: 0;
     cursor: default;
 
@@ -506,7 +685,7 @@ html[dir="rtl"] .form-input .label, html[dir] .form-input .label[dir="rtl"] {
 
 .form-input.box-style .material-icon.side-action,
 .form-input.box-style .material-icons.side-action {
-    top: 25px;
+    top: 26px;
     right: 9px;
 }
 
@@ -1181,247 +1360,6 @@ html[dir] .checkbox-input.switch.active[dir="rtl"] .checkbox:after {
     left: 0;
 }
 
-.select-control {
-    position: relative;
-    display: inline-block;
-    transition: width 0.2s;
-    margin: 16px 15px 0 0;
-    height: 36px;
-    max-width: 100%;
-
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none;   /* Chrome/Safari/Opera */
-    -khtml-user-select: none;    /* Konqueror */
-    -moz-user-select: none;      /* Firefox */
-    -ms-user-select: none;       /* Internet Explorer/Edge */
-    user-select: none;           /* Non-prefixed version, currently not supported by any browser */
-}
-html[dir="ltr"] .select-control, html[dir] .select-control[dir="ltr"] {
-    margin: 16px 15px 0 0;
-}
-html[dir="rtl"] .select-control, html[dir] .select-control[dir="rtl"] {
-    margin: 16px 0 0 15px;
-}
-
-.select-control.block {
-    display: block;
-    margin-right: 0;
-}
-
-.select-control.list-menu {
-    height: auto;
-}
-
-.select-control.list-menu .list-item {
-    width: 345px;
-    max-width: 100%;
-}
-
-.select-control.list-menu .select-menu .list-item {
-    padding: 0;
-}
-
-.select-control .select-value {
-    position: relative;
-    height: 36px;
-    line-height: 32px;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    padding: 0 28px 1px 0;
-    font-size: 12pt;
-    cursor: pointer;
-    transition: border-color 0.2s;
-}
-html[dir="ltr"] .select-control .select-value, html[dir] .select-control[dir="ltr"] .select-value {
-    padding: 0 28px 1px 0;
-}
-html[dir="rtl"] .select-control .select-value, html[dir] .select-control[dir="rtl"] .select-value {
-    padding: 0 0 1px 28px;
-}
-
-.select-control.bar-menu.active .select-value {
-    z-index: 8001;
-}
-
-.select-control .select-value:after {
-    display: inline-block;
-    content: 'arrow_drop_down';
-    position: absolute;
-    top: 4px;
-    right: 0;
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    width: 1em;
-    height: 1em;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    font-feature-settings: 'liga';
-    transition: all 0.2s;
-}
-html[dir="ltr"] .select-control .select-value:after, html[dir] .select-control[dir="ltr"] .select-value:after {
-    left: auto;
-    right: 0;
-}
-html[dir="rtl"] .select-control .select-value:after, html[dir] .select-control[dir="rtl"] .select-value:after {
-    left: 0;
-    right: auto;
-}
-
-.select-control.list-menu .select-value {
-    line-height: 1;
-    border: none;
-    height: auto;
-    padding: 0;
-    background-color: white;
-    border-radius: 2px;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2),
-                0 1px 1px 0 rgba(0, 0, 0, 0.14),
-                0 2px 1px -1px rgba(0, 0, 0, 0.12);
-}
-
-.select-control.active .select-value:after {
-    z-index: 8002;
-    content: 'arrow_drop_up';
-    display: none;
-}
-
-.select-control.list-menu .select-value:after {
-    display: none;
-}
-
-.select-control .select-menu {
-    border-radius: 2px;
-    transition: all 0.2s;
-    position: absolute;
-    top: 0;
-    left: -24px;
-    z-index: 8000;
-    opacity: 0;
-    visibility: hidden;
-    -ms-transform: scaleY(0);
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -ms-transform-origin: top;
-    -webkit-transform-origin: top;
-    transform-origin: top;
-    /*margin-top: -62px;*/
-    margin-top: -14px;
-    min-width: 96px;
-    box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2),
-                0 9px 12px 1px rgba(0, 0, 0, 0.14),
-                0 3px 16px 2px rgba(0, 0, 0, 0.12);
-}
-html[dir="ltr"] .select-control .select-menu, html[dir] .select-control[dir="ltr"] .select-menu {
-    left: -24px;
-    right: auto;
-}
-html[dir="rtl"] .select-control .select-menu, html[dir] .select-control[dir="rtl"] .select-menu {
-    left: auto;
-    right: -24px;
-}
-
-.select-control.list-menu .select-menu,
-html[dir="ltr"] .select-control.list-menu .select-menu, html[dir] .select-control.list-menu[dir="ltr"] .select-menu,
-html[dir="rtl"] .select-control.list-menu .select-menu, html[dir] .select-control.list-menu[dir="rtl"] .select-menu {
-    left: 0;
-    right: 0;
-    margin-top: -8px;
-}
-
-.select-control .select-menu.left {
-    margin-top: -14px;
-    left: -24px;
-    right: auto;
-    -ms-transform: scale(0);
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -ms-transform-origin: top left;
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-}
-html[dir="ltr"] .select-control .select-menu.left, html[dir] .select-control[dir="ltr"] .select-menu.left {
-    left: -24px;
-    right: auto;
-    -ms-transform-origin: top left;
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-}
-html[dir="rtl"] .select-control .select-menu.left, html[dir] .select-control[dir="rtl"] .select-menu.left {
-    left: auto;
-    right: -24px;
-    -ms-transform-origin: top right;
-    -webkit-transform-origin: top right;
-    transform-origin: top right;
-}
-
-.select-control .select-menu.right {
-    margin-top: -14px;
-    left: auto;
-    right: -24px;
-    -ms-transform: scale(0);
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -ms-transform-origin: top right;
-    -webkit-transform-origin: top right;
-    transform-origin: top right;
-}
-html[dir="ltr"] .select-control .select-menu.right, html[dir] .select-control[dir="ltr"] .select-menu.right {
-    left: auto;
-    right: -24px;
-    -ms-transform-origin: top right;
-    -webkit-transform-origin: top right;
-    transform-origin: top right;
-}
-html[dir="rtl"] .select-control .select-menu.right, html[dir] .select-control[dir="rtl"] .select-menu.right {
-    left: -24px;
-    right: auto;
-    -ms-transform-origin: top left;
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-}
-
-.select-control.bar-menu .select-menu {
-    padding-top: 65px;
-}
-
-.select-control.bar-menu .select-menu:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 64px;
-    border-bottom: solid 1px;
-}
-
-.select-control .select-menu .items-container {
-    max-height: 248px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.select-control.active .select-menu {
-    opacity: 1;
-    visibility: visible;
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-
-.select-control .select-menu .list-item {
-    padding: 0 8px;
-}
-
 .expansion-panel {
     max-width: 840px;
     margin: 0 0 8px;
@@ -2059,24 +1997,6 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
     margin-right: 24px;
 }
 
-.data-table > .summary .select-control {
-    margin: 0 32px 0 20px;
-}
-
-.data-table > .summary .select-control .select-value {
-    border: none;
-    padding: 0 24px 0 0;
-    width: 44px;
-    text-align: center;
-    font-size: inherit;
-}
-html[dir="ltr"] .data-table > .summary .select-control .select-value, html[dir] .data-table[dir="ltr"] > .summary .select-control .select-value {
-    padding: 0 24px 0 0;
-}
-html[dir="rtl"] .data-table > .summary .select-control .select-value, html[dir] .data-table[dir="rtl"] > .summary .select-control .select-value {
-    padding: 0 0 0 24px;
-}
-
 .card {
     display: block;
     border-radius: 2px;
@@ -2256,6 +2176,7 @@ html[dir="rtl"] .data-table > .summary .select-control .select-value, html[dir] 
 .card .card-title > h3 {
     margin: 0;
     font-size: 10.5pt;
+    line-height: 1.5;
 }
 
 .card .card-title > .subtext {
@@ -3207,64 +3128,52 @@ html[dir="rtl"] .progress > .indeterminate:after, html[dir] .progress[dir="rtl"]
 }
 
 @media (max-width: 599px) {
-    .select-control, .form-input,
-    html[dir="ltr"] .select-control, html[dir="ltr"] .form-input,
-    html[dir] .select-control[dir="ltr"], html[dir] .form-input[dir="ltr"],
-    html[dir="rtl"] .select-control, html[dir="rtl"] .form-input,
-    html[dir] .select-control[dir="rtl"], html[dir] .form-input[dir="rtl"] {
+    .form-input,
+    html[dir="ltr"] .form-input,
+    html[dir] .form-input[dir="ltr"],
+    html[dir="rtl"] .form-input,
+    html[dir] .form-input[dir="rtl"] {
         margin-left: 0;
         margin-right: 0;
     }
-
-    .select-control .select-value,
-    html[dir="ltr"] .select-control .select-value,
-    html[dir] .select-control[dir="ltr"] .select-value {
-        padding-left: 0;
-        padding-right: 22px;
-    }
-    html[dir="rtl"] .select-control .select-value,
-    html[dir] .select-control[dir="rtl"] .select-value {
-        padding-left: 22px;
-        padding-right: 0;
-    }
     
-    .select-control .select-menu,
-    html[dir="ltr"] .select-control .select-menu,
-    html[dir] .select-control[dir="ltr"] .select-menu {
+    .form-input.select-control .select-menu,
+    html[dir="ltr"] .form-input.select-control .select-menu,
+    html[dir] .form-input.select-control[dir="ltr"] .select-menu {
         min-width: 112px;
         left: -16px;
         right: auto;
     }
-    html[dir="rtl"] .select-control .select-menu,
-    html[dir] .select-control[dir="rtl"] .select-menu {
+    html[dir="rtl"] .form-input.select-control .select-menu,
+    html[dir] .form-input.select-control[dir="rtl"] .select-menu {
         min-width: 112px;
         left: auto;
         right: -16px;
     }
 
-    .select-control .select-menu.left,
-    html[dir="ltr"] .select-control .select-menu.left,
-    html[dir] .select-control[dir="ltr"] .select-menu.left
-    html[dir="rtl"] .select-control .select-menu.right,
-    html[dir] .select-control[dir="rtl"] .select-menu.right {
+    .form-input.select-control .select-menu.left,
+    html[dir="ltr"] .form-input.select-control .select-menu.left,
+    html[dir] .form-input.select-control[dir="ltr"] .select-menu.left
+    html[dir="rtl"] .form-input.select-control .select-menu.right,
+    html[dir] .form-input.select-control[dir="rtl"] .select-menu.right {
         left: -16px;
         right: auto;
     }
 
-    .select-control .select-menu.right,
-    html[dir="ltr"] .select-control .select-menu.right,
-    html[dir] .select-control[dir="ltr"] .select-menu.right
-    html[dir="rtl"] .select-control .select-menu.left,
-    html[dir] .select-control[dir="rtl"] .select-menu.left {
+    .form-input.select-control .select-menu.right,
+    html[dir="ltr"] .form-input.select-control .select-menu.right,
+    html[dir] .form-input.select-control[dir="ltr"] .select-menu.right
+    html[dir="rtl"] .form-input.select-control .select-menu.left,
+    html[dir] .form-input.select-control[dir="rtl"] .select-menu.left {
         left: auto;
         right: -16px;
     }
     
-    .select-control .select-menu .list-item,
-    html[dir="ltr"] .select-control .select-menu .list-item,
-    html[dir="rtl"] .select-control .select-menu .list-item,
-    html[dir] .select-control[dir="ltr"] .select-menu .list-item,
-    html[dir] .select-control[dir="rtl"] .select-menu .list-item {
+    .form-input.select-control .select-menu .list-item,
+    html[dir="ltr"] .form-input.select-control .select-menu .list-item,
+    html[dir="rtl"] .form-input.select-control .select-menu .list-item,
+    html[dir] .form-input.select-control[dir="ltr"] .select-menu .list-item,
+    html[dir] .form-input.select-control[dir="rtl"] .select-menu .list-item {
         padding: 0;
     }
 

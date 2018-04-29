@@ -211,11 +211,16 @@ html[lang] #side-nav > .side-nav-container > .logo > a:lang(ar-BH) {
 
 #side-nav > .side-nav-container .list .list-item .sub-menu {
     display: none;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+    margin: 1px 0;
 }
 
 #side-nav > .side-nav-container .list .list-item.active > .sub-menu,
 #side-nav > .side-nav-container .list .list-item.current > .sub-menu {
     display: block;
+    opacity: 1;
 }
 
 #side-nav > .side-nav-container .list .list-item > .sub-menu > a {
@@ -340,7 +345,7 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
     height: 46px;
     width: 46px;
     text-align: center;
-    padding: 0;
+    padding: 11px;
     margin: 9px 10px 0 -12px;
     border-width: 0;
     background: transparent;
@@ -388,7 +393,7 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
 
 #page-content > .top-bar .user-wrapper .select-menu.right {
     right: -12px;
-    top: 16px;
+    top: 0;
 }
 
 #page-content > .page-header {
