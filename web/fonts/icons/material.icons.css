@@ -81,17 +81,26 @@ button.material-icons:before, button.material-icon:before {
     height: 48px;
     width: 48px;
     transition: all 0.2s;
+    opacity: 0;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
     transform: scale(0);
 }
 
 a.material-icons:focus:before, a.material-icon:focus:before,
 button.material-icons:focus:before, button.material-icon:focus:before {
+    opacity: 1;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
     transform: scale(1);
     background-color: rgba(153, 153, 153, 0.2);
 }
 
 a.material-icons:active:before, a.material-icon:active:before,
 button.material-icons:active:before, button.material-icon:active:before {
+    opacity: 1;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
     transform: scale(1);
     background-color: rgba(153, 153, 153, 0.4);
 }

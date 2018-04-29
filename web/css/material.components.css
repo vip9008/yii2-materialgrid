@@ -449,8 +449,8 @@ html[dir] .form-input.select-control.box-style[dir="rtl"] .select-menu {
 
 .form-input.select-control.bar-menu.opened > .text-input {
     z-index: 8008;
-    border-color: transparent;
-    background: transparent;
+    border-color: transparent !important;
+    background: transparent !important;
 }
 
 .form-input.select-control.bar-menu .select-menu {
@@ -549,8 +549,8 @@ html[lang] .form-input .text-input:lang(ar-BH) {
     margin-right: 15px;
 }
 
-.form-input .material-icon.side-action:before,
-.form-input .material-icons.side-action:before {
+.form-input .material-icon.side-action:focus:before,
+.form-input .material-icons.side-action:focus:before {
     display: none;
 }
 
@@ -2056,12 +2056,12 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
     color: inherit;
 }
 
-.card .actions {
+.card > .actions {
     margin: 0;
     padding: 8px;
 }
 
-.card .actions:before, .card .actions:after {
+.card > .actions:before, .card .actions:after {
     content: '';
     height: 0;
     width: 100%;
@@ -2069,49 +2069,49 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
     clear: both;
 }
 
-.card .actions > .btn {
+.card > .actions > .btn {
     float: left;
     margin: 0;
 }
 
-.card .actions.left > .btn {
+.card > .actions.left > .btn {
     float: left;
 }
 
-.card .actions.right > .btn {
+.card > .actions.right > .btn {
     float: right;
 }
 
-.card .actions > .btn + .btn, .card .actions.left > .btn + .btn {
+.card > .actions > .btn + .btn, .card > .actions.left > .btn + .btn {
     margin-left: 8px;
 }
 
-.card .actions.right > .btn + .btn {
+.card > .actions.right > .btn + .btn {
     margin-left: 0;
     margin-right: 8px;
 }
 
-.card .actions.vertical > .btn {
+.card > .actions.vertical > .btn {
     display: block;
     float: none;
     margin: 0;
 }
 
-.card .actions.vertical.left > .btn {
+.card > .actions.vertical.left > .btn {
     margin-left: 0;
     margin-right: auto;
 }
 
-.card .actions.vertical.right > .btn {
+.card > .actions.vertical.right > .btn {
     margin-left: auto;
     margin-right: 0;
 }
 
-.card .actions.vertical > .btn + .btn {
+.card > .actions.vertical > .btn + .btn {
     margin-top: 4px;
 }
 
-.card .actions .material-icons, .card .actions .material-icon {
+.card > .actions .material-icons, .card > .actions .material-icon {
     padding: 6px;
     margin: 0 6px;
     float: left;
@@ -2119,19 +2119,19 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
     width: 36px;
 }
 
-.card .actions > .icons-group {
+.card > .actions > .icons-group {
     float: left;
 }
 
-.card .actions > .icons-group.left {
+.card > .actions > .icons-group.left {
     float: left;
 }
 
-.card .actions > .icons-group.right {
+.card > .actions > .icons-group.right {
     float: right;
 }
 
-.card .actions > .icons-group:before, .card .actions > .icons-group:after {
+.card > .actions > .icons-group:before, .card > .actions > .icons-group:after {
     content: '';
     height: 0;
     width: 100%;
@@ -2269,6 +2269,7 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
     position: relative;
     transition: all 0.2s;
     height: 72px;
+    overflow: hidden;
 }
 
 .stepper .step-container:before {
@@ -2289,6 +2290,8 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
 
 .stepper .step-container.state-active {
     height: auto;
+    z-index: 24;
+    overflow: visible;
 }
 
 .stepper .step-container .step {
@@ -2397,7 +2400,6 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
 .stepper .step-container .step-content {
     margin-top: -16px;
     padding: 16px 48px 20px 60px;
-    overflow: hidden;
     height: 0;
     opacity: 0;
     visibility: hidden;
