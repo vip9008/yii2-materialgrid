@@ -319,6 +319,30 @@ function material_grid_init() {
         $(this).parent('.step-container').addClass('state-active').siblings('.step-container').removeClass('state-active');
     });
 
+    $('body').on('click', '.stepper .step-container .actions .next-step', function() {
+        var target = $(this).closest('.step-container').removeClass('state-active').next('.step-container');
+
+        while ($(target).length && $(target).hasClass('state-complete')) {
+            target = $(target).next('.step-container');
+        }
+
+        if ($(target).length) {
+            $(target).addClass('state-active');
+        }
+    });
+
+    $('body').on('click', '.stepper .step-container .actions .prev-step', function() {
+        var target = $(this).closest('.step-container').removeClass('state-active').prev('.step-container');
+
+        while ($(target).length && $(target).hasClass('state-complete')) {
+            target = $(target).prev('.step-container');
+        }
+
+        if ($(target).length) {
+            $(target).addClass('state-active');
+        }
+    });
+
     $('body').on('click', '.form-input.date-picker', function() {
 
         $(this).addClass('dialog-opened');
