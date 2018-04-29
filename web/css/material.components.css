@@ -1493,6 +1493,7 @@ html[dir="rtl"] .expansion-panel .panel > .expansion-content, html[dir] .expansi
     transform: scaleY(0);
     -ms-transform-origin: top;
     -webkit-transform-origin: top;
+    transform-origin: top;
 }
 
 .expansion-panel .panel > .expansion-controls {
@@ -2262,6 +2263,169 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
 
 .card.color .title > *, .card.color .text > *, .card .color .title > *, .card .color .text > * {
     color: inherit;
+}
+
+.stepper .step-container {
+    position: relative;
+    transition: all 0.2s;
+    height: 72px;
+}
+
+.stepper .step-container:before {
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 36px;
+    bottom: -16px;
+    width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: inherit;
+}
+
+.stepper .step-container:last-child:before {
+    display: none;
+}
+
+.stepper .step-container.state-active {
+    height: auto;
+}
+
+.stepper .step-container .step {
+    display: block;
+    width: 100%;
+    padding: 20px 48px 20px 24px;
+    text-align: left;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.stepper .step-container .step:active {
+    background-color: rgba(153, 153, 153, 0.2);
+}
+
+.stepper .step-container .step .icon {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-top: 4px;
+    margin-right: 12px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 24px;
+    position: relative;
+}
+
+.stepper .step-container:not(.state-active) .step .icon {
+    background-color: #9E9E9E;
+    color: white;
+}
+
+.stepper .step-container .step .icon:before {
+    font-family: 'Material Icons' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 4px;
+    border-radius: 100%;
+    color: inherit;
+    background: inherit;
+}
+
+.stepper .step-container.state-complete .step .icon:before {
+    content: 'check';
+}
+
+.stepper .step-container.state-edit .step .icon:before {
+    content: 'mode_edit';
+}
+
+.stepper .step-container.state-error .step .icon {
+    background-color: transparent;
+    color: transparent;
+}
+
+.stepper .step-container.state-error .step .icon:before {
+    color: #F44336;
+    content: 'warning';
+    padding: 0;
+    font-size: 24px;
+}
+.stepper .step-container .step .title {
+    font-size: 10.5pt;
+    line-height: 1.2;
+}
+
+.stepper .step-container .step:not(.state-active) .title {
+    font-family: inherit;
+    font-weight: normal;
+}
+
+.stepper .step-container .step .title:last-child {
+    padding: 8px 0;
+}
+
+.stepper .step-container .step .subtitle {
+    font-size: 10pt;
+    line-height: 1.25;
+}
+
+.stepper .step-container.state-error .step .title,
+.stepper .step-container.state-error .step .subtitle {
+    color: #F44336;
+}
+
+.stepper .step-container .step-content {
+    margin-top: -16px;
+    padding: 16px 48px 20px 60px;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -ms-transform-origin: top;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+}
+
+.stepper .step-container.state-active .step-content {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    -ms-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.stepper .step-container .step-content .actions {
+    margin-top: 16px;
+}
+
+.stepper .step-container .step-content .actions .btn {
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 .dialog-background {

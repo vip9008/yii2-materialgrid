@@ -186,7 +186,7 @@ class ActiveField extends BaseActiveField
         }
 
         $selection = isset($options['value']) ? $options['value'] : Html::getAttributeValue($this->model, $this->attribute);
-        if (isset($items[$selection])) {
+        if ($selection !== null && isset($items[$selection])) {
             $this->labelOptions['textValue'] = $items[$selection];
         }
 

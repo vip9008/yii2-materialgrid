@@ -1306,6 +1306,64 @@
                             </div>
                         </div>
 
+                        <div class="stepper">
+                            <div class="step-container state-complete">
+                                <a href="javascript: ;" class="step">
+                                    <div class="icon bg-indigo">1</div>
+                                    <div class="title text-primary bold">Step one here</div>
+                                </a>
+                                <div class="step-content">
+                                    1 content here
+                                    <div class="actions btn-group">
+                                        <button class="btn bg-indigo">Continue</button>
+                                        <button class="btn">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-container state-error">
+                                <button class="step">
+                                    <div class="icon bg-indigo">2</div>
+                                    <div class="title text-primary bold">Step two here</div>
+                                    <div class="subtitle text-secondary">optional</div>
+                                </button>
+                                <div class="step-content">
+                                    2 content here
+                                    <div class="actions btn-group">
+                                        <button class="btn bg-indigo">Continue</button>
+                                        <button class="btn">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-container state-active">
+                                <button class="step">
+                                    <div class="icon bg-indigo">2</div>
+                                    <div class="title text-primary bold">Step two here</div>
+                                    <div class="subtitle text-secondary">optional</div>
+                                </button>
+                                <div class="step-content">
+                                    2 content here
+                                    <div class="actions btn-group">
+                                        <button class="btn bg-indigo">Continue</button>
+                                        <button class="btn">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-container state-edit">
+                                <button class="step">
+                                    <div class="icon bg-indigo">3</div>
+                                    <div class="title text-primary bold">Step two here</div>
+                                    <div class="subtitle text-secondary">optional</div>
+                                </button>
+                                <div class="step-content">
+                                    3 content here
+                                    <div class="actions btn-group">
+                                        <button class="btn bg-indigo">Save</button>
+                                        <button class="btn">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <pre>
 <?= htmlspecialchars("
 ") ?>

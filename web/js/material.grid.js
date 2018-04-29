@@ -311,6 +311,14 @@ function material_grid_init() {
         }
     });
 
+    $('body').on('click', '.stepper .step-container a.step, .stepper .step-container button.step', function() {
+        if ($(this).parent('.step-container').hasClass('state-active') || $(this).parent().hasClass('state-complete')) {
+            return false;
+        }
+
+        $(this).parent('.step-container').addClass('state-active').siblings('.step-container').removeClass('state-active');
+    });
+
     $('body').on('click', '.form-input.date-picker', function() {
 
         $(this).addClass('dialog-opened');
