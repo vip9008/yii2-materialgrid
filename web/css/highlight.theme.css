@@ -1,0 +1,15 @@
+.hljs-tag {
+    color: #3b78e7;
+}
+
+.hljs-attr {
+    color: #9c27b0;
+}
+
+.hljs-string {
+    color: #0d904f;
+}
+
+.space {
+    padding: 8px;
+}

@@ -60,14 +60,19 @@ class Html extends BaseHtml
             return static::listBox($name, $selection, $items, $options);
         }
 
+        $error_message = ArrayHelper::remove($options, 'errorMessage', false);
+
         unset($options['unselect'], $options['name']);
-        $selectOptions = static::renderSelectOptions($selection, $items, $options);
+        $selectOptions = static::renderSelectOptions($selection, $items, $options, $error_message);
 
         $menuOptions['class'] = 'items-container list';
         if (isset($options['listHeight'])) {
             $menuOptions['style'] = "max-height: none; height: {$options['listHeight']}px;";
             unset($options['listHeight']);
         }
+
+        static::addCssClass($options, "select-value");
+
         $dropDownList = static::tag('div', "\n" . $selectOptions . "\n", $menuOptions);
         $dropDownList = static::tag('div', "\n" . $dropDownList . "\n", ['class' => 'select-menu']);
         $dropDownList .= "\n" . static::hiddenInput($name, $selection, $options);
@@ -77,15 +82,35 @@ class Html extends BaseHtml
 
     public static function dropDownInput($name, $selection = null, $items = [], $options = [])
     {
-        $label = ArrayHelper::remove($options, 'placeholder', ArrayHelper::remove($options, 'label', $name));
-        $type = "select-control " . ArrayHelper::remove($options, 'type', 'default-menu');
+        $label = ArrayHelper::remove($options, 'label', $name);
+        $type = ArrayHelper::remove($options, 'type', '');
+        static::addCssClass($options, ['form-input', 'select-control', $type]);
+        $class = ArrayHelper::remove($options, 'class');
+        $textOptions = ['type' => 'text', 'class' => 'text-input'];
+
+        if (ArrayHelper::getValue($options, 'placeholder', false)) {
+            $textOptions['placeholder'] = ArrayHelper::remove($options, 'placeholder', '');
+        }
+
+        if (isset($items[$selection])) {
+            $textOptions['value'] = $items[$selection];
+        }
+
+        if ($type != 'bar-menu') {
+            $textOptions['disabled'] = true;
+        } else {
+            $options['errorMessage'] = ArrayHelper::getValue($options, 'errorMessage', "Can't find any match!");
+        }
+
         return static::tag('div',
-            static::tag('div', $label, ['class' => 'select-value']).
+            static::tag('div', 'arrow_drop_down', ['class' => 'material-icon side-action text-secondary']).
+            static::tag('input', '', $textOptions).
+            static::tag('div', $label, ['class' => 'label']).
             static::dropDownList($name, $selection, $items, $options),
-        ['class' => $type]);
+        ['class' => $class]);
     }
 
-    public static function renderSelectOptions($selection, $items, &$tagOptions = [])
+    public static function renderSelectOptions($selection, $items, &$tagOptions = [], $error_message = false)
     {
         $lines = [];
         $encodeSpaces = ArrayHelper::remove($tagOptions, 'encodeSpaces', false);
@@ -159,6 +184,16 @@ class Html extends BaseHtml
             unset($attrs['value']);
             $attrs['href'] = 'javascript: ;';
             $lines[] = static::tag('a', $text, $attrs);
+        }
+
+        if ($error_message) {
+            $lines[] = static::tag('div',
+                static::tag('div',
+                    static::tag('div',
+                        $error_message,
+                    ['class' => 'title']),
+                ['class' => 'text text-secondary']),
+            ['class' => 'list-item one-line error-message hidden']);
         }
 
         return static::tag('div', implode("\n", $lines), ['class' => 'list-group']);
