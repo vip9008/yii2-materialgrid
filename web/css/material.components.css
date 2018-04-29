@@ -2375,7 +2375,7 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
     line-height: 1.2;
 }
 
-.stepper .step-container .step:not(.state-active) .title {
+.stepper .step-container:not(.state-active) .step .title {
     font-family: inherit;
     font-weight: normal;
 }
