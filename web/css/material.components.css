@@ -2267,8 +2267,8 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
 
 .stepper .step-container {
     position: relative;
-    transition: all 0.2s;
-    height: 72px;
+    transition: all 0.3s;
+    max-height: 72px;
 }
 
 .stepper .step-container:before {
@@ -2288,7 +2288,7 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
 }
 
 .stepper .step-container.state-active {
-    height: auto;
+    max-height: 1200px;
     z-index: 24;
 }
 
@@ -2403,6 +2403,8 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
     position: absolute;
     visibility: hidden;
     transition: all 0.2s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
     -ms-transform: scaleY(0);
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
@@ -2416,6 +2418,8 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
     opacity: 1;
     position: relative;
     visibility: visible;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
     -ms-transform: scaleY(1);
     -webkit-transform: scaleY(1);
     transform: scaleY(1);

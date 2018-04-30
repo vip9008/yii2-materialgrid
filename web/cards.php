@@ -3,6 +3,8 @@ $primaryColor = 'indigo';
 $accentColor = 'orange';
 $theme = 'dark-theme';
 $pageTitle = 'Getting started';
+$page = 'cards.php';
+$pageCat = 'Components - ';
 ?>
 <?php include 'includes/_header.php'; ?>
 

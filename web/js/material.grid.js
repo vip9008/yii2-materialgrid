@@ -68,6 +68,7 @@ function window_width() {
 
 function activate_snackbar() {
     var snackbar = $('#snackbars > .item').first();
+    var switch_delay = 5000;
     if (snackbar.length) {
         $(snackbar).addClass('active');
         setTimeout(function() {
@@ -76,7 +77,7 @@ function activate_snackbar() {
                 activate_snackbar();
                 next();
             });
-        }, 3000);
+        }, switch_delay);
     }
 }
 

@@ -3,6 +3,8 @@ $primaryColor = 'red';
 $accentColor = 'red';
 $theme = 'light-theme';
 $pageTitle = 'Getting started';
+$page = 'index.php';
+$pageCat = '';
 ?>
 <?php include 'includes/_header.php'; ?>
 
