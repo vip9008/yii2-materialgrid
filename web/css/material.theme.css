@@ -179,6 +179,9 @@ html[lang] #side-nav > .side-nav-container > .logo > a:lang(ar-BH) {
     background-color: rgba(255, 255, 255, 0.04);
 }
 
+#side-nav > .side-nav-container .list .subheader {
+    margin: 0 8px;
+}
 
 #side-nav > .side-nav-container .list .list-item > a,
 #side-nav > .side-nav-container .list .list-item > button {

@@ -2,7 +2,7 @@
 $primaryColor = 'indigo';
 $accentColor = 'orange';
 $theme = 'dark-theme';
-$pageTitle = 'Getting started';
+$pageTitle = 'Cards';
 $page = 'cards.php';
 $pageCat = 'Components - ';
 ?>

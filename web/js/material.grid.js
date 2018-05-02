@@ -28,6 +28,10 @@ function select_menu_width() {
     }
 
     $('.form-input.select-control').each(function() {
+        if ($(this).hasClass('block')) {
+            return false;
+        }
+
         var width = $(this).css('width', '').children('.select-menu').css('width', '').width();
         var label_width = $(this).css('width', '').outerWidth();
 
@@ -255,7 +259,7 @@ function material_grid_init() {
         if (!$(this).closest('.form-input.select-control').hasClass('context-menu')) {
             $(this).closest('.select-menu').find('.list-item.active').removeClass('active');
             $(this).closest('.form-input.select-control').children('.text-input').val($(this).find('.title').html()).trigger('change');
-            $(this).closest('.form-input.select-control').children('.select-value').val($(this).attr('data-value'));
+            $(this).closest('.form-input.select-control').children('.select-value').val($(this).attr('data-value')).trigger('change');
             $(this).addClass('active');
         }
         

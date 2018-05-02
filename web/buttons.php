@@ -2,8 +2,8 @@
 $primaryColor = 'indigo';
 $accentColor = 'orange';
 $theme = 'dark-theme';
-$pageTitle = 'Getting started';
-$page = 'button.php';
+$pageTitle = 'Buttons';
+$page = 'buttons.php';
 $pageCat = 'Components - ';
 ?>
 <?php include 'includes/_header.php'; ?>
@@ -233,32 +233,9 @@ $pageCat = 'Components - ';
 
                 <h3>Example</h3>
                 <div class="module">
-                    <h4>Regular buttons</h4>
-                    <div class="btn-group">
-                        <button class="btn text-primary blue">Flat Button</button>
-                        <button class="btn text-primary blue" disabled>Flat Button (Disabled)</button>
-                    </div>
-
-                    <h4>Dense style buttons</h4>
-                    <div class="btn-group">
-                        <button class="btn text-primary dense blue">Flat Button</button>
-                        <button class="btn text-primary dense blue" disabled>Flat Button (Disabled)</button>
-                    </div>
-<pre class="html">
-<?= htmlspecialchars('
-<div class="btn-group">
-<button class="btn text-primary blue">Flat Button</button>
-<button class="btn text-primary blue" disabled>Flat Button (Disabled)</button>
-</div>
-
-<div class="btn-group">
-<button class="btn text-primary dense blue">Flat Button</button>
-<button class="btn text-primary dense blue" disabled>Flat Button (Disabled)</button>
-</div>
-
-') ?>
-</pre>
-<p class="italic">Note: to align buttons inside <code class="hljs-string">.btn-group</code> you can add <code class="hljs-string">.btn-align-left</code> and <code class="hljs-string">.btn-align-right</code> classes</p>
+                    <?= file_get_contents('includes/components/buttons_flat.html') ?>
+                    <pre class="html"><?= htmlspecialchars(file_get_contents('includes/components/buttons_flat.html')) ?></pre>
+                    <p class="italic">Note: to align buttons inside <code class="hljs-string">.btn-group</code> you can add <code class="hljs-string">.btn-align-left</code> and <code class="hljs-string">.btn-align-right</code> classes</p>
                 </div>
             </div>
         </div>
@@ -283,51 +260,18 @@ $pageCat = 'Components - ';
 
                 <h3>Example</h3>
                 <div class="module">
-                    <h4>Regular buttons</h4>
-                    <div class="btn-group">
-                        <button class="btn text-primary raised bg-blue">Raised Button</button>
-                        <button class="btn text-primary raised bg-blue" disabled>Raised Button (Disabled)</button>
-                    </div>
-
-                    <h4>Dense style buttons</h4>
-                    <div class="btn-group">
-                        <button class="btn text-primary dense raised bg-blue">Raised Button</button>
-                        <button class="btn text-primary dense raised bg-blue" disabled>Raised Button (Disabled)</button>
-                    </div>
-<pre class="html">
-<?= htmlspecialchars('
-<div class="btn-group">
-<button class="btn text-primary raised bg-blue">Raised Button</button>
-<button class="btn text-primary raised bg-blue" disabled>Raised Button (Disabled)</button>
-</div>
-
-<div class="btn-group">
-<button class="btn text-primary dense raised bg-blue">Raised Button</button>
-<button class="btn text-primary dense raised bg-blue" disabled>Raised Button (Disabled)</button>
-</div>
-
-') ?>
-</pre>
+                    <?= file_get_contents('includes/components/buttons_raised.html') ?>
+                    <pre class="html"><?= htmlspecialchars(file_get_contents('includes/components/buttons_raised.html')) ?></pre>
                 </div>
                 <div class="module">
                     <h4>Button Elevation</h4>
                     <p>Raised buttons have a default elevation of 2dp.</p>
                     <p>On desktop, raised buttons can gain this elevation on hover.</p>
                     <p>To achieve this effect add <code class="hljs-string">.elevate</code> to a raised button element.</p>
-                    <div class="btn-group">
-                        <button class="btn text-primary raised elevate bg-blue">Raised Button</button>
-                        <button class="btn text-primary dense raised elevate bg-blue">Raised Button</button>
-                    </div>
-<pre class="html">
-<?= htmlspecialchars('
-<div class="btn-group">
-<button class="btn text-primary raised elevate bg-blue">Raised Button</button>
-<button class="btn text-primary dense raised elevate bg-blue">Raised Button</button>
-</div>
-
-') ?>
-</pre>
-<p class="italic">Note: to align buttons inside <code class="hljs-string">.btn-group</code> you can add <code class="hljs-string">.btn-align-left</code> and <code class="hljs-string">.btn-align-right</code> classes</p>
+                </div>
+                <div class="module">
+                    <h4>Buttons Alignment</h4>
+                    <p>To align buttons inside <code class="hljs-string">.btn-group</code> you can add <code class="hljs-string">.btn-align-left</code> and <code class="hljs-string">.btn-align-right</code> classes</p>
                 </div>
             </div>
         </div>
@@ -351,20 +295,9 @@ $pageCat = 'Components - ';
 
                 <h3>Example</h3>
                 <div class="module">
-                    <button class="btn text-primary raised floating bg-blue">edit</button>
-                    <button class="btn text-primary raised floating bg-blue" disabled="">edit</button>
-                    <button class="btn text-primary raised floating mini bg-blue">edit</button>
-                    <button class="btn text-primary raised floating mini bg-blue" disabled="">edit</button>
-<pre class="html">
-<?= htmlspecialchars('
-<button class="btn text-primary raised floating bg-blue">edit</button>
-<button class="btn text-primary raised floating bg-blue" disabled="">edit</button>
-<button class="btn text-primary raised floating mini bg-blue">edit</button>
-<button class="btn text-primary raised floating mini bg-blue" disabled="">edit</button>
-
-') ?>
-</pre>
-<p class="italic">Note: floating buttons uses Material icons. to see the full list of available icons please visit <a href="https://material.io/icons/" target="_blank">Material icons website</a></p>
+                    <?= file_get_contents('includes/components/buttons_floating.html') ?>
+                    <pre class="html"><?= htmlspecialchars(file_get_contents('includes/components/buttons_floating.html')) ?></pre>
+                    <p class="italic">Note: floating buttons uses Material icons. to see the full list of available icons please visit <a href="https://material.io/icons/" target="_blank">Material icons website</a></p>
                 </div>
             </div>
         </div>

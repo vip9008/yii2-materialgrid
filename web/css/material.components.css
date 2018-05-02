@@ -284,6 +284,7 @@ html[dir="rtl"] .form-input, html[dir] .form-input[dir="rtl"] {
 
 .form-input.block {
     display: block;
+    min-width: 100%;
     width: auto;
     margin: 16px 0;
 }
@@ -338,6 +339,10 @@ html[dir="ltr"] .form-input.select-control .select-menu, html[dir] .form-input.s
 html[dir="rtl"] .form-input.select-control .select-menu, html[dir] .form-input.select-control[dir="rtl"] .select-menu {
     left: auto;
     right: -24px;
+}
+
+.block.form-input.select-control .select-menu {
+    min-width: calc(100% + 16px) !important;
 }
 
 .form-input.select-control .select-menu.left {
@@ -1828,14 +1833,37 @@ html[lang] .data-table > .table-container > table > thead > tr > th:lang(ar-BH) 
     font-weight: inherit;
     text-align: inherit;
     padding: 0;
-    margin: 0;
+    margin: 0 26px 0 0;
     text-decoration: none;
     position: relative;
     transition: all 0.2s;
 }
 
+html:dir(ltr) .data-table > .table-container > table > thead > tr > th > a,
+html[dir] .data-table > .table-container > table > thead > tr > th > a:dir(ltr) {
+    margin: 0 26px 0 0;
+}
+
+html:dir(rtl) .data-table > .table-container > table > thead > tr > th > a,
+html[dir] .data-table > .table-container > table > thead > tr > th > a:dir(rtl) {
+    margin: 0 0 0 26px;
+}
+
 .data-table > .table-container > table > thead > tr > th > a:hover {
-    padding-left: 24px;
+    padding: 0 0 0 26px;
+    margin: 0;
+}
+
+html:dir(ltr) .data-table > .table-container > table > thead > tr > th > a:hover,
+html[dir] .data-table > .table-container > table > thead > tr > th > a:dir(ltr):hover {
+    padding: 0 0 0 26px;
+    margin: 0;
+}
+
+html:dir(rtl) .data-table > .table-container > table > thead > tr > th > a:hover,
+html[dir] .data-table > .table-container > table > thead > tr > th > a:dir(rtl):hover {
+    padding: 0 26px 0 0;
+    margin: 0;
 }
 
 .data-table > .table-container > table > thead > tr > th > a:before {
@@ -1867,7 +1895,24 @@ html[lang] .data-table > .table-container > table > thead > tr > th:lang(ar-BH) 
 
 .data-table > .table-container > table > thead > tr > th > a.asc,
 .data-table > .table-container > table > thead > tr > th > a.desc {
-    padding-left: 24px;
+    padding: 0 0 0 26px;
+    margin: 0;
+}
+
+html:dir(ltr) .data-table > .table-container > table > thead > tr > th > a.asc,
+html[dir] .data-table > .table-container > table > thead > tr > th > a:dir(ltr).asc,
+html:dir(ltr) .data-table > .table-container > table > thead > tr > th > a.desc,
+html[dir] .data-table > .table-container > table > thead > tr > th > a:dir(ltr).desc {
+    padding: 0 0 0 26px;
+    margin: 0;
+}
+
+html:dir(rtl) .data-table > .table-container > table > thead > tr > th > a.asc,
+html[dir] .data-table > .table-container > table > thead > tr > th > a:dir(rtl).asc,
+html:dir(rtl) .data-table > .table-container > table > thead > tr > th > a.desc,
+html[dir] .data-table > .table-container > table > thead > tr > th > a:dir(rtl).desc {
+    padding: 0 26px 0 0;
+    margin: 0;
 }
 
 .data-table > .table-container > table > thead > tr > th > a.desc:before {
@@ -2056,12 +2101,12 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
     color: inherit;
 }
 
-.card > .actions {
+.card .actions {
     margin: 0;
     padding: 8px;
 }
 
-.card > .actions:before, .card .actions:after {
+.card .actions:before, .card .actions:after {
     content: '';
     height: 0;
     width: 100%;
@@ -2069,49 +2114,49 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
     clear: both;
 }
 
-.card > .actions > .btn {
+.card .actions > .btn {
     float: left;
     margin: 0;
 }
 
-.card > .actions.left > .btn {
+.card .actions.left > .btn {
     float: left;
 }
 
-.card > .actions.right > .btn {
+.card .actions.right > .btn {
     float: right;
 }
 
-.card > .actions > .btn + .btn, .card > .actions.left > .btn + .btn {
+.card .actions > .btn + .btn, .card .actions.left > .btn + .btn {
     margin-left: 8px;
 }
 
-.card > .actions.right > .btn + .btn {
+.card .actions.right > .btn + .btn {
     margin-left: 0;
     margin-right: 8px;
 }
 
-.card > .actions.vertical > .btn {
+.card .actions.vertical > .btn {
     display: block;
     float: none;
     margin: 0;
 }
 
-.card > .actions.vertical.left > .btn {
+.card .actions.vertical.left > .btn {
     margin-left: 0;
     margin-right: auto;
 }
 
-.card > .actions.vertical.right > .btn {
+.card .actions.vertical.right > .btn {
     margin-left: auto;
     margin-right: 0;
 }
 
-.card > .actions.vertical > .btn + .btn {
+.card .actions.vertical > .btn + .btn {
     margin-top: 4px;
 }
 
-.card > .actions .material-icons, .card > .actions .material-icon {
+.card .actions .material-icons, .card .actions .material-icon {
     padding: 6px;
     margin: 0 6px;
     float: left;
@@ -2119,19 +2164,19 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
     width: 36px;
 }
 
-.card > .actions > .icons-group {
+.card .actions > .icons-group {
     float: left;
 }
 
-.card > .actions > .icons-group.left {
+.card .actions > .icons-group.left {
     float: left;
 }
 
-.card > .actions > .icons-group.right {
+.card .actions > .icons-group.right {
     float: right;
 }
 
-.card > .actions > .icons-group:before, .card > .actions > .icons-group:after {
+.card .actions > .icons-group:before, .card .actions > .icons-group:after {
     content: '';
     height: 0;
     width: 100%;
@@ -2427,6 +2472,7 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
 
 .stepper .step-container .step-content .actions {
     margin-top: 16px;
+    padding: 0;
 }
 
 .stepper .step-container .step-content .actions .btn {

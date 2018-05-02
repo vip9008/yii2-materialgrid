@@ -8,7 +8,9 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
-        $("#side-nav > .side-nav-container > .nav > .nav-block > .sub-menu > a[href='<?= $page ?>']").addClass('active').parent('.sub-menu').parent('.nav-block').addClass('current');
+        $("#side-nav > .side-nav-container > .list > .list-item > a[href='<?= $page ?>']").parent('.list-item').addClass('active').addClass('current');
+
+        $("#side-nav > .side-nav-container > .list > .list-item > .sub-menu > a[href='<?= $page ?>']").addClass('active').parent('.sub-menu').parent('.list-item').addClass('current');
 
         $('pre.html').each(function(i, block) {
             hljs.highlightBlock(block);
