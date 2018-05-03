@@ -84,6 +84,22 @@ class ActiveField extends BaseActiveField
                     Html::tag('input', '', $textOptions).
                     $this->parts['{label}'];
             break;
+            case 'date-picker':
+                $textOptions = [
+                    'type' => 'text',
+                    'class' => 'text-input',
+                    'disabled' => true,
+                    'value' => ArrayHelper::remove($options, 'textValue', ''),
+                ];
+
+                if (ArrayHelper::getValue($this->options, 'placeholder', false)) {
+                    $textOptions['placeholder'] = ArrayHelper::remove($this->options, 'placeholder', '');
+                }
+
+                $this->parts['{label}'] = Html::tag('div', 'date_range', ['class' => 'material-icon side-action text-secondary']).
+                    Html::tag('input', '', $textOptions).
+                    $this->parts['{label}'];
+            break;
         }
 
         return $this;
@@ -191,6 +207,31 @@ class ActiveField extends BaseActiveField
         }
 
         $this->parts['{input}'] = Html::activeDropDownList($this->model, $this->attribute, $items, $options);
+        
+        return $this;
+    }
+
+    public function datePicker($options = [])
+    {
+        $this->role['name'] = 'date-picker';
+
+        Html::addCssClass($this->options, "form-input date-picker");
+
+        $options = array_merge($this->inputOptions, $options);
+
+        if (!array_key_exists('id', $options)) {
+            $options['id'] = Html::getInputId($this->model, $this->attribute);
+        }
+
+        $options['datepicker-id'] = $options['id']."-datepicker";
+        $this->options['data-target'] = "#".$options['datepicker-id'];
+
+        $selection = isset($options['value']) ? $options['value'] : Html::getAttributeValue($this->model, $this->attribute);
+        if ($selection !== null) {
+            $this->labelOptions['textValue'] = $selection;
+        }
+
+        $this->parts['{input}'] = Html::activeDatePicker($this->model, $this->attribute, $options);
         
         return $this;
     }

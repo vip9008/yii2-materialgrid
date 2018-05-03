@@ -456,9 +456,9 @@ function material_grid_init() {
         $(this).closest('.dialog.date-picker').removeClass('show-years');
         var target = $(this).closest('.date-picker-container');
         var new_date = $(target).attr('data-current-date');
-        $(target).attr('data-selected-date', new_date);
-        $('.form-input.date-picker.dialog-opened').removeClass('dialog-opened').attr('data-selected-date', new_date).children('.text-input').val(new_date).trigger('change');
         date_picker_config.selected_date = new Date(new_date);
+        $(target).attr('data-selected-date', new_date);
+        $('.form-input.date-picker.dialog-opened').removeClass('dialog-opened').attr('data-selected-date', new_date).children('.text-input').val(new_date).trigger('change').siblings('.select-value').val(date_picker_config.selected_date.getTime() / 1000);
         close_dialog(target);
     });
 }

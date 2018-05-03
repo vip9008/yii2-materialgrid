@@ -2465,9 +2465,9 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
     visibility: visible;
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
-    -ms-transform: scaleY(1);
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
 }
 
 .stepper .step-container .step-content .actions {

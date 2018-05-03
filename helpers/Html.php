@@ -199,6 +199,52 @@ class Html extends BaseHtml
         return static::tag('div', implode("\n", $lines), ['class' => 'list-group']);
     }
 
+    protected static function datePicker($name, $selection = null, $options = [])
+    {
+        $picker_id = ArrayHelper::remove($options, 'datepicker-id', 'date-picker');
+
+        unset($options['name']);
+        static::addCssClass($options, "select-value");
+
+        $datePicker = static::hiddenInput($name, $selection, $options);
+        $datePicker .= static::renderDatePickerDialog($picker_id);
+
+        return $datePicker;
+    }
+
+    protected static function renderDatePickerDialog($id = 'date-picker')
+    {
+        return <<<HTML
+<div id="{$id}" class="dialog-background date-picker-container" data-selected-date="" data-current-date="">
+    <div class="dialog-container">
+        <div class="dialog date-picker">
+            <div class="header bg-indigo">
+                <div class="year"></div>
+                <div class="day"></div>
+            </div>
+            <div class="calendar">
+                <div class="month-control text-primary">
+                    <a href="javascript: ;" class="material-icon prev">keyboard_arrow_left</a>
+                    <span class="month-text"></span>
+                    <a href="javascript: ;" class="material-icon next">keyboard_arrow_right</a>
+                </div>
+                <div class="full-month">
+                </div>
+            </div>
+            <div class="years layout-cards indigo">
+            </div>
+            <div class="actions">
+                <div class="btn-group">
+                    <a href="javascript: close_dialog('#{$id}');" class="btn text-secondary abort">Cancel</a>
+                    <a href="javascript: close_dialog('#{$id}');" class="btn text-secondary confirm">Ok</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+HTML;
+    }
+
     protected static function booleanInput($type, $name, $checked = false, $options = [])
     {
         $value = $checked ? 1 : 0;
@@ -273,5 +319,13 @@ class Html extends BaseHtml
                    'data-action' => 'change_visibility',
                ]).
                parent::activePasswordInput($model, $attribute, $options);
+    }
+
+    public static function activeDatePicker($model, $attribute, $options = [])
+    {
+        $name = isset($options['name']) ? $options['name'] : static::getInputName($model, $attribute);
+        $selection = isset($options['value']) ? $options['value'] : static::getAttributeValue($model, $attribute);
+
+        return static::datePicker($name, $selection, $options);
     }
 }
