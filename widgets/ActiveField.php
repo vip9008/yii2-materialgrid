@@ -231,6 +231,8 @@ class ActiveField extends BaseActiveField
             $this->labelOptions['textValue'] = $selection;
         }
 
+        $options['themeColor'] = $this->themeColor;
+
         $this->parts['{input}'] = Html::activeDatePicker($this->model, $this->attribute, $options);
         
         return $this;

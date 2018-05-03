@@ -202,23 +202,24 @@ class Html extends BaseHtml
     protected static function datePicker($name, $selection = null, $options = [])
     {
         $picker_id = ArrayHelper::remove($options, 'datepicker-id', 'date-picker');
+        $themeColor = ArrayHelper::remove($options, 'themeColor', 'indigo');
 
         unset($options['name']);
         static::addCssClass($options, "select-value");
 
         $datePicker = static::hiddenInput($name, $selection, $options);
-        $datePicker .= static::renderDatePickerDialog($picker_id);
+        $datePicker .= static::renderDatePickerDialog($picker_id, $themeColor);
 
         return $datePicker;
     }
 
-    protected static function renderDatePickerDialog($id = 'date-picker')
+    protected static function renderDatePickerDialog($id = 'date-picker', $themeColor = '')
     {
         return <<<HTML
-<div id="{$id}" class="dialog-background date-picker-container" data-selected-date="" data-current-date="">
+<div id="{$id}" class="dialog-background date-picker-container" data-color="{$themeColor}" data-selected-date="" data-current-date="">
     <div class="dialog-container">
         <div class="dialog date-picker">
-            <div class="header bg-indigo">
+            <div class="header bg-{$themeColor}">
                 <div class="year"></div>
                 <div class="day"></div>
             </div>
@@ -231,12 +232,12 @@ class Html extends BaseHtml
                 <div class="full-month">
                 </div>
             </div>
-            <div class="years layout-cards indigo">
+            <div class="years layout-cards {$themeColor}">
             </div>
             <div class="actions">
                 <div class="btn-group">
-                    <a href="javascript: close_dialog('#{$id}');" class="btn text-secondary abort">Cancel</a>
-                    <a href="javascript: close_dialog('#{$id}');" class="btn text-secondary confirm">Ok</a>
+                    <a href="javascript: ;" class="btn text-secondary abort">Cancel</a>
+                    <a href="javascript: ;" class="btn text-secondary confirm">Ok</a>
                 </div>
             </div>
         </div>

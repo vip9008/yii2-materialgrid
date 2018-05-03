@@ -90,7 +90,7 @@ function material_grid_init() {
 
     activate_snackbar();
 
-    $('body').on('click', function(e) {
+    $('body').on('click', function(event) {
         $('.form-input.select-control.opened').each(function() {
             $(this).removeClass('opened').children('.side-action').html('arrow_drop_down');
             if ($(this).hasClass('bar-menu')) {
@@ -212,9 +212,6 @@ function material_grid_init() {
 
     $('body').on('click', '.form-input.select-control', function(event) {
         event.stopPropagation();
-    });
-
-    $('body').on('click', '.form-input.select-control', function() {
         if ($(this).hasClass('opened') && !$(this).hasClass('bar-menu')) {
             $(this).removeClass('opened').children('.side-action').html('arrow_drop_down');;
             $(this).children('.select-menu').css('margin-top', '');
@@ -348,7 +345,12 @@ function material_grid_init() {
         }
     });
 
-    $('body').on('click', '.form-input.date-picker', function() {
+    $('body').on('click', '.form-input.date-picker', function(event) {
+        event.stopPropagation();
+
+        if($(event.target).hasClass('date-picker-container') || $(event.target).closest('.date-picker-container').length) {
+            return false;
+        }
 
         $(this).addClass('dialog-opened');
 
@@ -386,7 +388,9 @@ function material_grid_init() {
         open_dialog(target);
     });
 
-    $('body').on('click', '.dialog.date-picker > .calendar > .month-control > a.prev, .dialog.date-picker > .calendar > .month-control > a.next', function() {
+    $('body').on('click', '.dialog.date-picker > .calendar > .month-control > a.prev, .dialog.date-picker > .calendar > .month-control > a.next', function(event) {
+        event.stopPropagation();
+
         var target = $(this).closest('.date-picker-container');
         var current_date = new Date($(target).attr('data-current-date'));
 
@@ -402,9 +406,11 @@ function material_grid_init() {
         }
     });
 
-    $('body').on('click', '.dialog.date-picker > .years > .btn', function() {
+    $('body').on('click', '.dialog.date-picker > .years > .btn', function(event) {
+        event.stopPropagation();
+        
         if (!$(this).hasClass('active')) {
-            $(this).addClass('active').siblings('.btn').removeClass('active').closest('.dialog.date-picker').removeClass('show-years');
+            $(this).addClass('active').siblings('.btn.active').removeClass('active').closest('.dialog.date-picker').removeClass('show-years');
             var target = $(this).closest('.date-picker-container');
             var current_date = new Date($(target).attr('data-current-date'));
             current_date.setYear($(this).html());
@@ -412,7 +418,9 @@ function material_grid_init() {
         }
     });
 
-    $('body').on('click', '.dialog.date-picker > .header > .year', function() {
+    $('body').on('click', '.dialog.date-picker > .header > .year', function(event) {
+        event.stopPropagation();
+        
         $(this).parent('.header').parent('.dialog').addClass('show-years');
 
         var target = $(this).parent('.header').parent('.dialog');
@@ -423,11 +431,15 @@ function material_grid_init() {
         $(target).children('.years').scrollTop(offset);
     });
 
-    $('body').on('click', '.dialog.date-picker > .header > .day', function() {
+    $('body').on('click', '.dialog.date-picker > .header > .day', function(event) {
+        event.stopPropagation();
+        
         $(this).parent('.header').parent('.dialog').removeClass('show-years');
     });
 
-    $('body').on('click', '.dialog.date-picker > .calendar > .full-month > a.day-number, .dialog.date-picker > .calendar > .full-month > button.day-number' , function() {
+    $('body').on('click', '.dialog.date-picker > .calendar > .full-month > a.day-number, .dialog.date-picker > .calendar > .full-month > button.day-number' , function(event) {
+        event.stopPropagation();
+        
         if (!$(this).hasClass('active')) {
             $(this).addClass('active').siblings('.day-number').removeClass('active');
 
@@ -443,7 +455,9 @@ function material_grid_init() {
         }
     });
 
-    $('body').on('click', '.dialog.date-picker > .actions .btn.abort', function() {
+    $('body').on('click', '.dialog.date-picker > .actions .btn.abort', function(event) {
+        event.stopPropagation();
+        
         $(this).closest('.dialog.date-picker').removeClass('show-years');
         var target = $(this).closest('.date-picker-container');
         $(target).attr('data-current-date', '');
@@ -452,7 +466,9 @@ function material_grid_init() {
         close_dialog(target);
     });
 
-    $('body').on('click', '.dialog.date-picker > .actions .btn.confirm', function() {
+    $('body').on('click', '.dialog.date-picker > .actions .btn.confirm', function(event) {
+        event.stopPropagation();
+        
         $(this).closest('.dialog.date-picker').removeClass('show-years');
         var target = $(this).closest('.date-picker-container');
         var new_date = $(target).attr('data-current-date');
@@ -506,6 +522,11 @@ var days_string = [
 ];
 
 function date_picker_calendar(target, current_date) {
+    var color = $(target).attr('data-color');
+    if (!color) {
+        color = 'indigo';
+    }
+
     // if the same month is selected dont re-render calendar
     if (current_date.toISOString().substr(0, 7) != $(target).attr('data-current-date').substr(0, 7)) {
         $(target).attr('data-current-date', current_date.toISOString().substr(0, 10));
@@ -535,14 +556,14 @@ function date_picker_calendar(target, current_date) {
             format = current_date.toISOString().substr(0, 8) + (index + 1).toString().padStart(2, '0');
             var html = index + 1;
             if ((new Date(format)) >= date_picker_config.starting_date && (new Date(format)) <= date_picker_config.ending_date) {
-                var css_class = 'day-number bg-indigo';
+                var css_class = 'day-number bg-' + color;
                 // if this is the selected date then select it
                 if (format == $(target).attr('data-selected-date')) {
                     css_class += ' active';
                 }
                 // if this is today then highlight it
                 if (format == (new Date().toISOString().substr(0, 10))) {
-                    html = '<b class="today indigo">' + html + '</b>';
+                    html = '<b class="today ' + color + '">' + html + '</b>';
                 }
 
                 $(target).children('.dialog-container').children('.date-picker').children('.calendar').children('.full-month').append('<a href="javascript: ;" class="' + css_class + '" data-fulldate="' + format + '">' + html + '</a>');
