@@ -1558,9 +1558,9 @@ html[dir="rtl"] .expansion-panel .panel > .expansion-controls > .btn + .btn, htm
     height: auto;
     opacity: 1;
     visibility: visible;
-    -ms-transform: scaleY(1);
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
 }
 
 .expansion-panel .panel.active > .expansion-controls {
@@ -2769,6 +2769,7 @@ html[dir] .dialog-background[dir="rtl"] > .dialog-container > .dialog > .actions
     cursor: default;
 }
 
+.dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active):not(.text-hint),
 .light-theme .dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active):not(.text-hint),
 .dark-theme .light-theme .dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active):not(.text-hint),
 .dark-theme .light-theme.dialog-background > .dialog-container > .dialog.date-picker > .calendar > .full-month > .day-number:not(.active):not(.text-hint) {
