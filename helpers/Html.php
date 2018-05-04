@@ -144,6 +144,15 @@ class Html extends BaseHtml
             }
 
             if (is_array($value)) {
+                if (isset($value['subheader'])) {
+                    if (!empty($lines)) {
+                        $lines[] = self::endTag('div').self::beginTag('div', ['class' => 'list-group']);
+                    }
+                    $list_item_class = "subheader " . ArrayHelper::getValue($value, 'class', '');
+                    $lines[] = self::tag('div', $value['subheader'], ['class' => $list_item_class]);
+                    continue;
+                }
+
                 $list_item_class = "list-item one-line";
                 $text = '';
                 if (isset($value['avatar'])) {
@@ -195,7 +204,6 @@ class Html extends BaseHtml
                 ['class' => 'text text-secondary']),
             ['class' => 'list-item one-line error-message hidden']);
         }
-
         return static::tag('div', implode("\n", $lines), ['class' => 'list-group']);
     }
 
