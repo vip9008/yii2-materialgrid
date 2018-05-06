@@ -96,7 +96,7 @@ function material_grid_init() {
             if ($(this).hasClass('bar-menu')) {
                 var value = '';
                 if ($(this).children('.select-value').val().length) {
-                    value = $(this).find('.list-item.active > .text > .title').html();
+                    value = $(this).find('.list-item.active > .text > .title').text();
                 }
                 $(this).find('.list-item').removeAttr('style');
                 $(this).find('.list-item.error-message').addClass('hidden');
@@ -234,7 +234,7 @@ function material_grid_init() {
         var filter = $(this).val().toUpperCase();
         var found = false;
         $(this).siblings('.select-menu').find('.list-item').each(function() {
-            if ($(this).children('.text').children('.title').html().toUpperCase().indexOf(filter) > -1) {
+            if ($(this).children('.text').children('.title').text().toUpperCase().indexOf(filter) > -1) {
                 $(this).show();
                 found = true;
             } else {
@@ -255,7 +255,7 @@ function material_grid_init() {
 
         if (!$(this).closest('.form-input.select-control').hasClass('context-menu')) {
             $(this).closest('.select-menu').find('.list-item.active').removeClass('active');
-            $(this).closest('.form-input.select-control').children('.text-input').val($(this).find('.title').html()).trigger('change');
+            $(this).closest('.form-input.select-control').children('.text-input').val($(this).find('.title').text()).trigger('change');
             $(this).closest('.form-input.select-control').children('.select-value').val($(this).attr('data-value')).trigger('change');
             $(this).addClass('active');
         }

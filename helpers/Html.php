@@ -98,6 +98,7 @@ class Html extends BaseHtml
 
         if ($type != 'bar-menu') {
             $textOptions['disabled'] = true;
+            $options['encode'] = false;
         } else {
             $options['errorMessage'] = ArrayHelper::getValue($options, 'errorMessage', "Can't find any match!");
         }

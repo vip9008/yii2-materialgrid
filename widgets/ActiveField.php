@@ -199,6 +199,7 @@ class ActiveField extends BaseActiveField
 
         if ($this->role['type'] == 'bar-menu') {
             $options['errorMessage'] = ArrayHelper::getValue($options, 'errorMessage', "Can't find any match!");
+            $options['encode'] = false;
         }
 
         $selection = isset($options['value']) ? $options['value'] : Html::getAttributeValue($this->model, $this->attribute);
