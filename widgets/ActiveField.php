@@ -228,7 +228,7 @@ class ActiveField extends BaseActiveField
 
         $selection = isset($options['value']) ? $options['value'] : Html::getAttributeValue($this->model, $this->attribute);
         if ($selection !== null) {
-            $this->labelOptions['textValue'] = $selection;
+            $this->labelOptions['textValue'] = date('j F Y', $selection);
         }
 
         $options['themeColor'] = $this->themeColor;
