@@ -342,7 +342,7 @@ html[dir="rtl"] .form-input.select-control .select-menu, html[dir] .form-input.s
 }
 
 .block.form-input.select-control .select-menu {
-    min-width: calc(100% + 16px) !important;
+    min-width: calc(100% + 48px) !important;
 }
 
 .form-input.select-control .select-menu.left {
@@ -436,6 +436,10 @@ html[dir="rtl"] .form-input.select-control.box-style .select-menu,
 html[dir] .form-input.select-control.box-style[dir="rtl"] .select-menu {
     left: auto;
     right: -8px;
+}
+
+.block.form-input.select-control.box-style .select-menu {
+    min-width: calc(100% + 16px) !important;
 }
 
 .form-input.select-control .select-menu .items-container {
