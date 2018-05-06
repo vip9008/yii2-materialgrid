@@ -287,6 +287,14 @@ function material_grid_init() {
         }
     });
 
+    $('.form-input.date-picker').each(function() {
+        if ($(this).children('.date-value').val()) {
+            var date = new Date($(this).children('.date-value').val() * 1000);
+            var date_string = date.getDate() + ' ' + months_string[date.getMonth()] + ' ' + date.getFullYear();
+            $(this).children('.text-input').val(date_string).trigger("change");
+        }
+    });
+
     $('body').on('change', '.form-input .text-input', function() {
         if($(this).val()) {
             $(this).parent('.form-input').addClass('active');
@@ -474,7 +482,10 @@ function material_grid_init() {
         var new_date = $(target).attr('data-current-date');
         date_picker_config.selected_date = new Date(new_date);
         $(target).attr('data-selected-date', new_date);
-        $('.form-input.date-picker.dialog-opened').removeClass('dialog-opened').attr('data-selected-date', new_date).children('.text-input').val(new_date).trigger('change').siblings('.select-value').val(date_picker_config.selected_date.getTime() / 1000);
+
+        var date_string = date_picker_config.selected_date.getDate() + ' ' + months_string[date_picker_config.selected_date.getMonth()] + ' ' + date_picker_config.selected_date.getFullYear();
+
+        $('.form-input.date-picker.dialog-opened').removeClass('dialog-opened').attr('data-selected-date', new_date).children('.text-input').val(date_string).trigger('change').siblings('.select-value').val(date_picker_config.selected_date.getTime() / 1000);
         close_dialog(target);
     });
 }
