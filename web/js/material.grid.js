@@ -212,10 +212,7 @@ function material_grid_init() {
 
     $('body').on('click focus', '.form-input.select-control', function(event) {
         event.stopPropagation();
-        if ($(this).hasClass('opened') && !$(this).hasClass('bar-menu')) {
-            $(this).removeClass('opened').children('.side-action').html('arrow_drop_down');;
-            $(this).children('.select-menu').css('margin-top', '');
-        } else {
+        if (!$(this).hasClass('opened')) {
             $('.form-input.select-control.opened').not($(this)).removeClass('opened');
             $(this).addClass('opened').children('.side-action').html('arrow_drop_up');
 
