@@ -1189,6 +1189,47 @@ html[dir] .checkbox-input[dir="rtl"] .checkbox, html[dir] .radiobutton-input[dir
     float: right;
 }
 
+.checkbox-group:before, .radiobutton-group:before {
+    content: '';
+    display: table;
+}
+
+.checkbox-group:after, .radiobutton-group:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox-group .checkbox-input, .radiobutton-group .radiobutton-input {
+    padding: 13px 0;
+    float: left;
+}
+
+html[dir="ltr"] .checkbox-group .checkbox-input, html[dir="ltr"] .radiobutton-group .radiobutton-input,
+html[dir] .checkbox-group[dir="ltr"] .checkbox-input, html[dir] .radiobutton-group[dir="ltr"] .radiobutton-input {
+    float: left;
+}
+html[dir="rtl"] .checkbox-group .checkbox-input, html[dir="rtl"] .radiobutton-group .radiobutton-input,
+html[dir] .checkbox-group[dir="rtl"] .checkbox-input, html[dir] .radiobutton-group[dir="rtl"] .radiobutton-input {
+    float: right;
+}
+
+.checkbox-group .checkbox-input + .checkbox-input, .radiobutton-group .radiobutton-input + .radiobutton-input {
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+html[dir="ltr"] .checkbox-group .checkbox-input + .checkbox-input, html[dir="ltr"] .radiobutton-group .radiobutton-input + .radiobutton-input,
+html[dir] .checkbox-group[dir="ltr"] .checkbox-input + .checkbox-input, html[dir] .radiobutton-group[dir="ltr"] .radiobutton-input + .radiobutton-input {
+    padding-left: 15px;
+    padding-right: 0;
+}
+html[dir="rtl"] .checkbox-group .checkbox-input + .checkbox-input, html[dir="rtl"] .radiobutton-group .radiobutton-input + .radiobutton-input,
+html[dir] .checkbox-group[dir="rtl"] .checkbox-input + .checkbox-input, html[dir] .radiobutton-group[dir="rtl"] .radiobutton-input + .radiobutton-input {
+    padding-left: 0;
+    padding-right: 15px;
+}
+
 .checkbox-input .label, .radiobutton-input .label {
     margin-left: 36px;
 }
@@ -2074,6 +2115,10 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
 
 .card:after {
     margin-top: -1px;
+}
+
+.card .clearfix {
+    border-radius: inherit;
 }
 
 .card .rich-media, .card .rich-media.ratio-16by9 {
