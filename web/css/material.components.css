@@ -171,6 +171,13 @@ html[lang] .btn:lang(ar-BH) {
                 0 1px 18px 0 rgba(0, 0, 0, 0.12);
 }
 
+html:lang(en-US) .btn.raised.floating,
+html[lang] .btn.raised.floating:lang(en-US),
+html:lang(ar-BH) .btn.raised.floating,
+html[lang] .btn.raised.floating:lang(ar-BH) {
+    font-family: 'Material Icons';
+}
+
 .btn.raised.floating:before {
     border-radius: 50%;
 }
@@ -2382,7 +2389,7 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
 }
 
 .stepper .step-container.state-active {
-    max-height: 1200px;
+    max-height: 10800px;
     z-index: 24;
 }
 
