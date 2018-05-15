@@ -2,6 +2,10 @@
     width: device-width;
 }
 
+:root {
+    font-size: 16px;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -93,13 +97,13 @@ img {
 }
 
 p {
-    margin: 0 0 0.5em;
-    max-width: 40em;
+    margin: 0 0 0.5rem;
+    max-width: 40rem;
 }
 
 .article p {
-    font-size: 10pt;
-    margin: 0 0 1.3em;
+    font-size: 0.875rem;
+    margin: 0 0 1.25rem;
 }
 
 b, .bold {
@@ -147,23 +151,23 @@ a:focus {
 }
 
 ol, ul {
-    margin-bottom: 1.3em;
-    padding-left: 1.3em;
+    margin-bottom: 1.25rem;
+    padding-left: 1.25rem;
 }
 html[dir="ltr"] ol, html[dir] ol[dir="ltr"], html[dir="ltr"] ul, html[dir] ul[dir="ltr"] {
-    padding-left: 1.3em;
+    padding-left: 1.25rem;
     padding-right: 0;
 }
 html[dir="rtl"] ol, html[dir] ol[dir="rtl"], html[dir="rtl"] ul, html[dir] ul[dir="rtl"] {
     padding-left: 0;
-    padding-right: 1.3em;
+    padding-right: 1.25rem;
 }
 
 ol li, ul li {
-    font-size: 10pt;
+    font-size: 0.875rem;
     line-height: 1.8;
-    margin: 0 0 0.5em;
-    max-width: 40em;
+    margin: 0 0 0.5rem;
+    max-width: 40rem;
 }
 
 body * {
@@ -173,17 +177,17 @@ body * {
 table {
     table-layout: auto;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     border-collapse: collapse;
 }
 
 table th, table td {
     border-style: solid;
-    border-width: 1px;
-    font-size: 10pt;
+    border-width: 0.0625rem;
+    font-size: 0.875rem;
     font-weight: normal;
     line-height: 1.8;
-    padding: 12px 12px 12px 24px;
+    padding: 0.75rem 0.75rem 0.75rem 1.5rem;
     text-align: left;
 }
 html[dir="ltr"] table th, html[dir="ltr"] table td,
@@ -196,12 +200,12 @@ html[dir] table[dir="rtl"] th, html[dir] table[dir="rtl"] td {
 }
 
 pre {
-    margin: 16px 0;
+    margin: 1rem 0;
     overflow-x: auto;
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
     color: inherit;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0.0625rem;
 }
 html[dir="ltr"] pre, html[dir] pre[dir="ltr"],
 html[dir="rtl"] pre, html[dir] pre[dir="rtl"] {
@@ -209,10 +213,10 @@ html[dir="rtl"] pre, html[dir] pre[dir="rtl"] {
 }
 
 code {
-    padding: 0 4px;
+    padding: 0 0.25rem;
     color: inherit;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0.0625rem;
 }
 html[dir="ltr"] code, html[dir] code[dir="ltr"],
 html[dir="rtl"] code, html[dir] code[dir="rtl"] {
@@ -220,15 +224,15 @@ html[dir="rtl"] code, html[dir] code[dir="rtl"] {
 }
 
 .module {
-    padding-bottom: 40px;
-    margin-right: 40px;
+    padding-bottom: 2.5rem;
+    margin-right: 2.5rem;
 }
 html[dir="ltr"] .module, html[dir] .module[dir="ltr"] {
     margin-left: 0;
-    margin-right: 40px;
+    margin-right: 2.5rem;
 }
 html[dir="rtl"] .module, html[dir] .module[dir="rtl"] {
-    margin-left: 40px;
+    margin-left: 2.5rem;
     margin-right: 0;
 }
 
@@ -266,92 +270,92 @@ html[dir="rtl"] .module, html[dir] .module[dir="rtl"] {
 
 .z-depth-0 {
     position: relative;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 0.0625rem rgba(0, 0, 0, 0.2);
 }
 
 .z-depth-1 {
     position: relative;
     z-index: 1000;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2),
-                0 1px 1px 0 rgba(0, 0, 0, 0.14),
-                0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.2),
+                0 0.0625rem 0.0625rem 0 rgba(0, 0, 0, 0.14),
+                0 0.125rem 0.0625rem -0.0625rem rgba(0, 0, 0, 0.12);
 }
 
 .z-depth-2 {
     position: relative;
     z-index: 2000;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2),
-                0 2px 2px 0 rgba(0, 0, 0, 0.14),
-                0 3px 1px -2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.2),
+                0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.14),
+                0 0.1875rem 0.0625rem -0.125rem rgba(0, 0, 0, 0.12);
 }
 
 .z-depth-3 {
     position: relative;
     z-index: 3000;
-    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2),
-                0 3px 4px 0 rgba(0, 0, 0, 0.14),
-                0 3px 3px -2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0625rem 0.5rem 0 rgba(0, 0, 0, 0.2),
+                0 0.1875rem 0.25rem 0 rgba(0, 0, 0, 0.14),
+                0 0.1875rem 0.1875rem -0.125rem rgba(0, 0, 0, 0.12);
 }
 
 .z-depth-4 {
     position: relative;
     z-index: 4000;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
-                0 4px 5px 0 rgba(0, 0, 0, 0.14),
-                0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.125rem 0.25rem -0.0625rem rgba(0, 0, 0, 0.2),
+                0 0.25rem 0.3125rem 0 rgba(0, 0, 0, 0.14),
+                0 0.0625rem 0.625rem 0 rgba(0, 0, 0, 0.12);
 }
 
 .z-depth-6 {
     position: relative;
     z-index: 6000;
-    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
-                0 6px 10px 0 rgba(0, 0, 0, 0.14),
-                0 1px 18px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.1875rem 0.3125rem -0.0625rem rgba(0, 0, 0, 0.2),
+                0 0.375rem 0.625rem 0 rgba(0, 0, 0, 0.14),
+                0 0.0625rem 1.125rem 0 rgba(0, 0, 0, 0.12);
 }
 
 .z-depth-8 {
     position: relative;
     z-index: 8000;
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-                0 8px 10px 1px rgba(0, 0, 0, 0.14),
-                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.3125rem 0.3125rem -0.1875rem rgba(0, 0, 0, 0.2),
+                0 0.5rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.14),
+                0 0.1875rem 0.875rem 0.125rem rgba(0, 0, 0, 0.12);
 }
 
 .z-depth-9 {
     position: relative;
     z-index: 9000;
-    box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2),
-                0 9px 12px 1px rgba(0, 0, 0, 0.14),
-                0 3px 16px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.3125rem 0.375rem -0.1875rem rgba(0, 0, 0, 0.2),
+                0 0.5625rem 0.75rem 0.0625rem rgba(0, 0, 0, 0.14),
+                0 0.1875rem 1rem 0.125rem rgba(0, 0, 0, 0.12);
 }
 
 .z-depth-12 {
     position: relative;
     z-index: 12000;
-    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
-                0 12px 17px 2px rgba(0, 0, 0, 0.14),
-                0 5px 22px 4px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.4375rem 0.5rem -0.25rem rgba(0, 0, 0, 0.2),
+                0 0.75rem 1.0625rem 0.125rem rgba(0, 0, 0, 0.14),
+                0 0.3125rem 1.375rem 0.25rem rgba(0, 0, 0, 0.12);
 }
 
 .z-depth-16 {
     position: relative;
     z-index: 16000;
-    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2),
-                0 16px 24px 2px rgba(0, 0, 0, 0.14),
-                0 6px 30px 5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.5rem 0.625rem -0.3125rem rgba(0, 0, 0, 0.2),
+                0 1rem 1.5rem 0.125rem rgba(0, 0, 0, 0.14),
+                0 0.375rem 1.875rem 0.3125rem rgba(0, 0, 0, 0.12);
 }
 
 .z-depth-24 {
     position: relative;
     z-index: 24000;
-    box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
-                0 24px 38px 3px rgba(0, 0, 0, 0.14),
-                0 9px 46px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.6875rem 0.9375rem -0.4375rem rgba(0, 0, 0, 0.2),
+                0 1.5rem 2.375rem 0.1875rem rgba(0, 0, 0, 0.14),
+                0 0.5625rem 2.875rem 0.5rem rgba(0, 0, 0, 0.12);
 }
 
 .container, .container-fluid, .container-standard {
     margin: 0 auto;
-    padding: 0 8px;
+    padding: 0 0.5rem;
     max-width: 100%;
 }
 
@@ -385,7 +389,7 @@ html[dir="rtl"] .module, html[dir] .module[dir="rtl"] {
 }
 
 .row.row-nested {
-    margin: 0 -8px;
+    margin: 0 -0.5rem;
 }
 
 .col {
@@ -395,7 +399,7 @@ html[dir="rtl"] .module, html[dir] .module[dir="rtl"] {
 
     position: relative;
     min-height: 1px;
-    padding: 0 8px;
+    padding: 0 0.5rem;
     float: left;
     width: 100%;
 }
@@ -1057,11 +1061,11 @@ html[dir="rtl"] .row .col.xsmall-pull-4, html[dir] .row[dir="rtl"] .col.xsmall-p
 
 @media (min-width: 840px) {
     .container, .container-fluid, .container-standard, .col {
-        padding: 0 12px;
+        padding: 0 0.75rem;
     }
 
     .row.row-nested {
-        margin: 0 -12px;
+        margin: 0 -0.75rem;
     }
 
     .col.smallext-1, .col.smallext-2, .col.smallext-3, .col.smallext-4,

@@ -113,14 +113,27 @@ html, body {
 #side-nav {
     position: fixed;
     top: 0;
-    left: 0;
     height: 100%;
     width: 256px;
     z-index: 16000;
+    overflow-y: auto;
+}
+
+#side-nav, html[dir="ltr"] #side-nav {
+    left: 0;
+    right: auto;
+    transition: left 0.3s;
+    border-left-width: 0;
     border-right-width: 1px;
     border-right-style: solid;
-    transition: left 0.3s;
-    overflow-y: auto;
+}
+html[dir="rtl"] #side-nav {
+    left: auto;
+    right: 0;
+    transition: right 0.3s;
+    border-right-width: 0;
+    border-left-width: 1px;
+    border-left-style: solid;
 }
 
 #side-nav > .side-nav-container {
@@ -304,7 +317,6 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
 #page-content {
     padding-top: 64px;
     padding-bottom: 100px;
-    margin-left: 256px;
     transition: margin 0.5s;
     min-height: 100%;
 }
@@ -315,10 +327,22 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
     left: 0;
     right: 0;
     height: 64px;
-    margin-left: 256px;
     padding: 0 24px;
     z-index: 4000;
     transition: box-shadow 0.5s, margin 0.5s, background 0.2s;
+}
+
+#page-content,
+html[dir="ltr"] #page-content,
+#page-content > .top-bar,
+html[dir="ltr"] #page-content > .top-bar {
+    margin-left: 256px;
+    margin-right: 0;
+}
+html[dir="rtl"] #page-content,
+html[dir="rtl"] #page-content > .top-bar {
+    margin-left: 0;
+    margin-right: 256px;
 }
 
 #page-content > .top-bar.blend {
@@ -349,13 +373,21 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
     width: 46px;
     text-align: center;
     padding: 11px;
-    margin: 9px 10px 0 -12px;
     border-width: 0;
     background: transparent;
-    float: left;
     cursor: pointer;
     opacity: 0.85;
     transition: all 0.5s;
+}
+
+#page-content > .top-bar > .side-nav-toggle,
+html[dir="ltr"] #page-content > .top-bar > .side-nav-toggle {
+    margin: 9px 10px 0 -12px;
+    float: left;
+}
+html[dir="rtl"] #page-content > .top-bar > .side-nav-toggle {
+    margin: 9px -12px 0 10px;
+    float: right;
 }
 
 #page-content > .top-bar > .side-nav-toggle:hover {
@@ -371,10 +403,33 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
     outline: none;
 }
 
+#page-content > .top-bar .language-wrapper {
+    height: 40px;
+    float: right;
+    margin: 12px 8px 0 0;
+    padding: 8px;
+}
+
+html[dir="ltr"] #page-content > .top-bar .language-wrapper {
+    margin: 12px 8px 0 0;
+}
+html[dir="rtl"] #page-content > .top-bar .language-wrapper {
+    margin: 12px 0 0 8px;
+}
+
 #page-content > .top-bar .user-wrapper {
     height: 40px;
     float: right;
     margin: 12px 0 0;
+}
+
+html[dir="ltr"] #page-content > .top-bar .language-wrapper,
+html[dir="ltr"] #page-content > .top-bar .user-wrapper {
+    float: right;
+}
+html[dir="rtl"] #page-content > .top-bar .language-wrapper,
+html[dir="rtl"] #page-content > .top-bar .user-wrapper {
+    float: left;
 }
 
 #page-content > .top-bar .user-wrapper .select-btn {
@@ -394,8 +449,18 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
     float: right;
 }
 
-#page-content > .top-bar .user-wrapper .select-menu.right {
+#page-content > .top-bar .language-wrapper .select-menu.right,
+#page-content > .top-bar .user-wrapper .select-menu.right,
+html[dir="ltr"] #page-content > .top-bar .language-wrapper .select-menu.right,
+html[dir="ltr"] #page-content > .top-bar .user-wrapper .select-menu.right {
     right: -12px;
+    left: auto;
+    top: 0;
+}
+html[dir="rtl"] #page-content > .top-bar .language-wrapper .select-menu.right,
+html[dir="rtl"] #page-content > .top-bar .user-wrapper .select-menu.right {
+    right: auto;
+    left: -12px;
     top: 0;
 }
 
@@ -445,12 +510,19 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
 }
 
 @media (max-width: 1439px) {
-    #side-nav {
+    #side-nav, html[dir="ltr"] #side-nav {
+        right: auto;
         left: -256px;
     }
+    html[dir="rtl"] #side-nav {
+        right: -256px;
+        left: auto;
+    }
 
-    #page-content, #page-content > .top-bar {
+    #page-content, html[dir="ltr"] #page-content, html[dir="rtl"] #page-content,
+    #page-content > .top-bar, html[dir="ltr"] #page-content > .top-bar, html[dir="rtl"] #page-content > .top-bar {
         margin-left: 0;
+        margin-right: 0;
     }
 
     #page-content > .top-bar > .side-nav-toggle {
@@ -462,11 +534,20 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
     }
 
     body.side-nav-expand #side-nav {
-        left: 0px;
         box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
                     0 6px 30px 5px rgba(0, 0, 0, 0.12),
                     0 16px 24px 2px rgba(0, 0, 0, 0.14),
                     0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    }
+
+    body.side-nav-expand #side-nav,
+    html[dir="ltr"] body.side-nav-expand #side-nav {
+        right: auto;
+        left: 0;
+    }
+    html[dir="rtl"] body.side-nav-expand #side-nav {
+        right: 0;
+        left: auto;
     }
 
     body.side-nav-expand #page-content-overlay {
@@ -481,10 +562,6 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
 }
 
 @media (max-width: 839px) {
-    #page-content > .top-bar > .side-nav-toggle {
-        margin-right: 0;
-    }
-
     #page-content .page-header .page-title {
         padding: 0;
         font-size: 18pt;
@@ -507,6 +584,10 @@ html[lang] #side-nav > .side-nav-container .list .list-item.current > .sub-menu 
 }
 
 @media (max-width: 599px) {
+    #page-content > .top-bar .section-title {
+        display: none;
+    }
+
     .plain-page .banner > h1 {
         font-size: 17pt;
     }

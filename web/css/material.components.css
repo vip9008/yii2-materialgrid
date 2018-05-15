@@ -301,8 +301,8 @@ html[dir="rtl"] .form-input.block, html[dir] .form-input.block[dir="rtl"] {
     margin: 16px 0;
 }
 
-.form-input.date-picker, .form-input.date-picker *,
-.form-input.select-control, .form-input.select-control * {
+.form-input.date-picker, .form-input.date-picker > *,
+.form-input.select-control, .form-input.select-control > * {
     cursor: pointer;
 
     -webkit-touch-callout: none; /* iOS Safari */
@@ -320,6 +320,7 @@ html[dir="rtl"] .form-input.block, html[dir] .form-input.block[dir="rtl"] {
 }
 
 .form-input.select-control .select-menu {
+    cursor: default;
     border-radius: 2px;
     transition: all 0.2s;
     position: absolute;
@@ -2171,25 +2172,61 @@ html[dir] .data-table[dir="rtl"] > .summary > .summary-right .controls .material
 }
 
 .card .actions > .btn {
-    float: left;
     margin: 0;
 }
 
-.card .actions.left > .btn {
+.card .actions > .btn,
+.card .actions.left > .btn,
+html[dir="ltr"] .card .actions > .btn,
+html[dir="ltr"] .card .actions.left > .btn,
+html[dir] .card[dir="ltr"] .actions > .btn,
+html[dir] .card[dir="ltr"] .actions.left > .btn {
     float: left;
 }
-
-.card .actions.right > .btn {
+html[dir="rtl"] .card .actions > .btn,
+html[dir="rtl"] .card .actions.left > .btn,
+html[dir] .card[dir="rtl"] .actions > .btn,
+html[dir] .card[dir="rtl"] .actions.left > .btn {
     float: right;
 }
 
-.card .actions > .btn + .btn, .card .actions.left > .btn + .btn {
+.card .actions > .btn + .btn,
+.card .actions.left > .btn + .btn
+html[dir="ltr"] .card .actions > .btn + .btn,
+html[dir="ltr"] .card .actions.left > .btn + .btn,
+html[dir] .card[dir="ltr"] .actions > .btn + .btn,
+html[dir] .card[dir="ltr"] .actions.left > .btn + .btn {
     margin-left: 8px;
+    margin-right: 0;
 }
-
-.card .actions.right > .btn + .btn {
+html[dir="rtl"] .card .actions > .btn + .btn,
+html[dir="rtl"] .card .actions.left > .btn + .btn,
+html[dir] .card[dir="rtl"] .actions > .btn + .btn,
+html[dir] .card[dir="rtl"] .actions.left > .btn + .btn {
     margin-left: 0;
     margin-right: 8px;
+}
+
+.card .actions.right > .btn,
+html[dir="ltr"] .card .actions.right > .btn,
+html[dir] .card[dir="ltr"] .actions.right > .btn {
+    float: right;
+}
+html[dir="rtl"] .card .actions.right > .btn,
+html[dir] .card[dir="rtl"] .actions.right > .btn {
+    float: left;
+}
+
+.card .actions.right > .btn + .btn,
+html[dir="ltr"] .card .actions.right > .btn + .btn,
+html[dir] .card[dir="ltr"] .actions.right > .btn + .btn {
+    margin-left: 0;
+    margin-right: 8px;
+}
+html[dir="rtl"] .card .actions.right > .btn + .btn,
+html[dir] .card[dir="rtl"] .actions.right > .btn + .btn {
+    margin-left: 8px;
+    margin-right: 0;
 }
 
 .card .actions.vertical > .btn {
