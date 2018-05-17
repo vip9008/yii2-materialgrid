@@ -2420,6 +2420,24 @@ html[dir] .card[dir="rtl"] .actions.right > .btn + .btn {
     border-left-width: 1px;
     border-left-color: inherit;
 }
+html[dir="ltr"] .stepper .step-container:before,
+html[dir] .stepper[dir="ltr"] .step-container:before {
+    right: auto;
+    left: 36px;
+    border-right: none;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: inherit;
+}
+html[dir="rtl"] .stepper .step-container:before,
+html[dir] .stepper[dir="rtl"] .step-container:before {
+    right: 36px;
+    left: auto;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: inherit;
+    border-left: none;
+}
 
 .stepper .step-container:last-child:before {
     display: none;
@@ -2441,6 +2459,16 @@ html[dir] .card[dir="rtl"] .actions.right > .btn + .btn {
     border: none;
     transition: all 0.2s;
 }
+html[dir="ltr"] .stepper .step-container .step,
+html[dir] .stepper[dir="ltr"] .step-container .step {
+    padding: 20px 48px 20px 24px;
+    text-align: left;
+}
+html[dir="rtl"] .stepper .step-container .step,
+html[dir] .stepper[dir="rtl"] .step-container .step {
+    padding: 20px 24px 20px 48px;
+    text-align: right;
+}
 
 .stepper .step-container .step:active {
     background-color: rgba(153, 153, 153, 0.2);
@@ -2456,6 +2484,18 @@ html[dir] .card[dir="rtl"] .actions.right > .btn + .btn {
     text-align: center;
     line-height: 24px;
     position: relative;
+}
+html[dir="ltr"] .stepper .step-container .step .icon,
+html[dir] .stepper[dir="ltr"] .step-container .step .icon {
+    float: left;
+    margin-right: 12px;
+    margin-left: 0;
+}
+html[dir="rtl"] .stepper .step-container .step .icon,
+html[dir] .stepper[dir="rtl"] .step-container .step .icon {
+    float: right;
+    margin-right: 0;
+    margin-left: 12px;
 }
 
 .stepper .step-container:not(.state-active) .step .icon {
@@ -2549,6 +2589,14 @@ html[dir] .card[dir="rtl"] .actions.right > .btn + .btn {
     -ms-transform-origin: top;
     -webkit-transform-origin: top;
     transform-origin: top;
+}
+html[dir="ltr"] .stepper .step-container .step-content,
+html[dir] .stepper[dir="ltr"] .step-container .step-content {
+    padding: 16px 48px 20px 60px;
+}
+html[dir="rtl"] .stepper .step-container .step-content,
+html[dir] .stepper[dir="rtl"] .step-container .step-content {
+    padding: 16px 60px 20px 48px;
 }
 
 .stepper .step-container.state-active .step-content {
